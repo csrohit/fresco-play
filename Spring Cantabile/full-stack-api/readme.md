@@ -1,6 +1,6 @@
 # Important notes
 
-## tests might not pass directly, following changes should be made
-1. remove dependency for spring security in pom.xml
-2. delete SecurityCOnfig.java
-3. delete AuthenticationEntryPoint.java
+# Just make sure that you also added the code of the below files present in building-rest-client file
+
+1 AuthenticationEntryPoint.java
+2 SpringSecurityConfig.java
