@@ -1,4 +1,4 @@
-package com.csrohit.cantabilerest.consume;
+package com.example.project;
 
 public class News {
     private String title;
