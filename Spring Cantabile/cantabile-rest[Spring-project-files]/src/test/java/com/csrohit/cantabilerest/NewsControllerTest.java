@@ -1,4 +1,4 @@
-package com.csrohit.cantabilerest;
+package com.example.project;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
