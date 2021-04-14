@@ -22,7 +22,7 @@ public class HospitalService {
     }
 
     public void addHospital(Hospital hospital) {
-        hospitalRepository.fin
+//        hospitalRepository.fin
 		hospitalRepository.save(hospital);
     }
 
