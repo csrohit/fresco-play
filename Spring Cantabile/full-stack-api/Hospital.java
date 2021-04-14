@@ -1,4 +1,4 @@
-package com.csrohit.cantabilerest.solution;
+package com.example.project;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
