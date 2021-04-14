@@ -1,4 +1,4 @@
-package com.csrohit.cantabilerest.solution;
+package com.example.project;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
