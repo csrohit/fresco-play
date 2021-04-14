@@ -1,4 +1,4 @@
-package com.csrohit.cantabilerest.consume;
+package com.example.project;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;
