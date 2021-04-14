@@ -1,4 +1,4 @@
-#Important note
+# Important note
 
 To pass all tests, generate an API token from nytimes and replace `<your___api__key>` in `NewsService.java`
 
