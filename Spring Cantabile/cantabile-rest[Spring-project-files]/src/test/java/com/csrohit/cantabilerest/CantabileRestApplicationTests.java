@@ -1,4 +1,4 @@
-package com.csrohit.cantabilerest;
+package com.example.project;
 
 import com.csrohit.cantabilerest.solution.Hospital;
 
