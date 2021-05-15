@@ -6,7 +6,8 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
-<a href="<%= request.getContextPath() %>/FileExplorer">View all my repos</a>
+<body style="text-align:center;">
+<h1>
+<a href="<%= request.getContextPath() %>/FileExplorer">View All My Repos</a></h1>
 </body>
 </html>

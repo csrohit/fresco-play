@@ -1,6 +1,8 @@
-
+package io.csrohit.explorer;
 
 import java.io.IOException;
+
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -8,16 +10,16 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Editor
+ * Servlet implementation class FileExplorer
  */
-@WebServlet("/Editor")
-public class Editor extends HttpServlet {
+//@WebServlet("/FileExplorer")
+public class FileExplorer extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * Default constructor. 
      */
-    public Editor() {
+    public FileExplorer() {
         // TODO Auto-generated constructor stub
     }
 
@@ -26,7 +28,8 @@ public class Editor extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		RequestDispatcher dispatcher = request.getRequestDispatcher("/view.jsp");
+		dispatcher.include(request, response);
 	}
 
 }
