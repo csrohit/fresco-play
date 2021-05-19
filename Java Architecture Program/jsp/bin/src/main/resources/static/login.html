@@ -1,0 +1,126 @@
+<html>
+<head>
+<style>
+body {
+	background: #f2f2f2;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+	background:
+}
+.glass{
+	background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	width:100vw;
+	height:100vh;
+	z-index:-1;
+	opacity:0;
+	transition: opacity 2s;
+	position:fixed;
+	top:0;
+	left:0;
+}
+input[type=text]:focus  + .glass, input[type=password]:focus + .glass {
+	opacity:0.8;
+}
+input[type=text], input[type=password] {
+	    font-family: arial;
+    width: 100%;
+    padding: 15px 20px;
+    margin: 30px 0 10px 0;
+    border:2px solid #bbb;
+	border-top:none;
+    border-left:none;
+    border-right:none;
+    outline: none;	
+}
+input[type=text]:focus, input[type=password]:focus {
+	border-image: linear-gradient( to right, #21d4fd, #b721ff ) 1 1;
+
+}
+
+::-webkit-input-placeholder { 
+  font-family: Courier New;
+  font-size:16px;
+}
+
+#login-card {
+	box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.1);
+	background: #fff;
+	border-radius: 10px;
+	padding: 77px 55px 33px 55px;
+	width: 390px;
+	box-sizing: border-box;
+	height: 100%;
+	text-align:center;
+}
+#login-label{
+	display: block;
+    font-family: arial;
+    font-size: 40px;
+    color: #333333;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 800;
+    }
+input[type=submit]{
+	width:100%;
+	margin-top:40px;
+	padding:15px 30px;
+	border-radius:25px;
+	background:-webkit-linear-gradient(right,#21d4fd,#b721ff);
+	color:white;
+	outline: none;	
+	font-size:16px;
+	font-family:cursive;
+}
+#signup-label{
+color:#666;
+font-family:arial;
+font-size:15px;
+margin-top:70px;
+display:block;
+}
+#login-form:focus, #reg-form:focus{
+visibility: hidden;
+opacity: 0;
+transition: visibility 0s, opacity 0.5s linear;
+}
+</style>
+</head>
+<body>
+	<div id="login-card">
+		<form action="login" method="POST" id="login-form">
+			<span id="login-label">Welcome</span>
+			<br> <input type=text name=username placeholder="Username" >
+			<div class="glass"></div>
+			<br> <input type=password name=password placeholder="Password">
+			<div class="glass"></div>
+			<br> <input type=submit value="Log in" name=submit>
+			<span id="signup-label">Don’t have an account?<a href="javascript:formChange()"> Sign up</a></span>
+		</form>
+		<form action="register" method="POST" id="reg-form" style="display:none">
+			<span id="login-label" style="margin-top:-20px;">Register</span>
+			<br> <input type=text name=fullname placeholder="Full name">
+			<div class="glass"></div>
+			<br> <input type=text name=username placeholder="Email/Phone">
+			<div class="glass"></div>
+			<br> <input type=password name=password placeholder="Password">
+			<div class="glass"></div>
+			<br> <input type=submit value="Register" name=submit>
+			<span id="signup-label" style="margin-top:40px;">Back to<a href="javascript:formChange()"> Log in</a></span>
+		</form>
+	</div>
+<script>
+function formChange(){
+	var login_form = document.getElementById('login-form');
+	var reg_form = document.getElementById('reg-form');
+	login_form.style.display = login_form.style.display == "none" ? "block" : "none";
+	reg_form.style.display = reg_form.style.display == "none" ? "block" : "none";
+}
+</script>
+</body>
+</html>
