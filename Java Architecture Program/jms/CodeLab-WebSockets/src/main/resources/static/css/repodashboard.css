@@ -1,0 +1,45 @@
+.menu{
+	height:20%;
+	padding: 0 20%;
+}
+.menu button{
+	width:150px;
+	height:50px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	opacity: 0.9;
+	font-size:14px;
+	font-weight:600;
+}
+.container{
+	height:70%;
+	padding: 10% 20% 0 20%;
+}
+
+#create_new_repo_div{
+	display:none;
+}
+
+#view_all_repos_div{
+	display:none;
+}
+
+#view_my_repos_div{
+	
+}
+
+.repo-td{
+	padding:10px 0px;
+	background: lightgray;
+	width: 100vw;
+}
+.repo-link{
+	color:black;
+	text-decoration:none;
+	font-weight:bold;
+	padding:0px 10px;
+}
