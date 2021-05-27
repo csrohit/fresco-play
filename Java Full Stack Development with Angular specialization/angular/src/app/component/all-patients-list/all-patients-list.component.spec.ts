@@ -29,7 +29,7 @@ const patientList2 = [patientDetails2];
 class MockDataService {
 
   public getAllPatientsList(): Observable<any> {
-  	return of(patientList);
+    return of(patientList);
   }
 
 }
@@ -64,8 +64,8 @@ describe('AllPatientsListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AllPatientsListComponent, MockComponent ],
-      schemas:[CUSTOM_ELEMENTS_SCHEMA],
+      declarations: [AllPatientsListComponent, MockComponent],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
       imports: [
         RouterTestingModule.withRoutes(mockRoutes),
       ],
@@ -73,7 +73,7 @@ describe('AllPatientsListComponent', () => {
         { provide: DataService, useClass: MockDataService }
       ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -89,15 +89,15 @@ describe('AllPatientsListComponent', () => {
   //   expect(component).toBeTruthy();
   // });
 
-  it('should call getAllPatientsList method when page loads ',() => {
-  	spyOn(dataService,'getAllPatientsList').and.callThrough();
-  	component.ngOnInit();
-  	expect(dataService.getAllPatientsList).toHaveBeenCalled();
+  it('should call getAllPatientsList method when page loads ', () => {
+    spyOn(dataService, 'getAllPatientsList').and.callThrough();
+    component.ngOnInit();
+    expect(dataService.getAllPatientsList).toHaveBeenCalled();
   });
 
   it('should call view method with the id of selected patient', fakeAsync(() => {
-  	spyOn(component, 'view').and.callThrough();
-    spyOn(dataService,'getAllPatientsList').and.returnValue(of(patientList));
+    spyOn(component, 'view').and.callThrough();
+    spyOn(dataService, 'getAllPatientsList').and.returnValue(of(patientList));
     component.ngOnInit();
     fixture.detectChanges();
     viewBtn = fixture.nativeElement.querySelector('#view');
@@ -107,8 +107,8 @@ describe('AllPatientsListComponent', () => {
   }));
 
   it('should call view method with the id of selected patient : case 1', fakeAsync(() => {
-  	spyOn(component, 'view').and.callThrough();
-    spyOn(dataService,'getAllPatientsList').and.returnValue(of(patientList));
+    spyOn(component, 'view').and.callThrough();
+    spyOn(dataService, 'getAllPatientsList').and.returnValue(of(patientList));
     component.ngOnInit();
     fixture.detectChanges();
     viewBtn = fixture.nativeElement.querySelector('#view');
@@ -121,8 +121,8 @@ describe('AllPatientsListComponent', () => {
   }));
 
   it('should call view method with the id of selected patient : case 2', fakeAsync(() => {
-  	spyOn(component, 'view').and.callThrough();
-    spyOn(dataService,'getAllPatientsList').and.returnValue(of(patientList2));
+    spyOn(component, 'view').and.callThrough();
+    spyOn(dataService, 'getAllPatientsList').and.returnValue(of(patientList2));
     component.ngOnInit();
     fixture.detectChanges();
     viewBtn = fixture.nativeElement.querySelector('#view');

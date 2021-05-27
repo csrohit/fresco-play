@@ -9,132 +9,141 @@ import { Patient } from '../models/patient';
 import { Appointment } from '../models/appointment';
 
 import { ApiService } from './api.service';
+import { tap } from 'rxjs/operators';
+import { map } from 'rxjs/operator/map';
 
 @Injectable()
 export class DataService {
 
-  isLoggedIn = false;
-  isLogIn: BehaviorSubject<boolean>;
-  constructor(private api: ApiService) {
-    this.isLogIn = new BehaviorSubject<boolean>(false);
-  }
+    isLoggedIn = false;
+    isLogIn: BehaviorSubject<boolean>;
+    constructor(private api: ApiService) {
+        this.isLogIn = new BehaviorSubject<boolean>(false);
+    }
 
-  authenticateUser(username: string, password: string): Observable<boolean> {
+    authenticateUser(username: string, password: string): Observable<boolean> {
+        return this.api.checkLogin(username, password)
+            .map(data => {
+                if (data && data.userId) {
+                    // store 'userId' from response as key name 'userId' to the localstorage
+                    localStorage.setItem('userId', data.userId + '');
+                    // return true if user authenticated
+                    return true;
+                } else {
+                    // return false if user not authenticated
+                    return false;
+                }
+            });
+    }
 
-    // store 'userId' from response as key name 'userId' to the localstorage
+    getAuthStatus(): Observable<boolean> {
+        return this.isLogIn.asObservable(); // passed
+    }
+    doLogOut() {
+        // remove the key 'userId' if exists
+        this.isLoggedIn = false;
+        if (localStorage.getItem('userId')) {
+            localStorage.removeItem('userId');
+        }
 
-    // return true if user authenticated
+    }
 
-    // return false if user not authenticated 
+    getUserDetails(userId: number): Observable<Users> {
 
-    return;
-  }
+        // should return user details retrieved from api service
 
-  getAuthStatus(): Observable<boolean> {
-    // return this.isLogIn.asObservable();
-    return;
-  }
-  doLogOut() {
-    // remove the key 'userId' if exists
+        return;
+    }
 
-  }
+    updateProfile(userDetails): Observable<boolean> {
 
-  getUserDetails(userId: number): Observable<Users> {
+        // should return the updated status according to the response from api service
 
-    // should return user details retrieved from api service
+        return;
+    }
 
-    return;
-  }
-
-  updateProfile(userDetails): Observable<boolean> {
-
-    // should return the updated status according to the response from api service
-
-    return;
-  }
-
-  registerPatient(patientDetails): Observable<any> {
-
-
-    // should return response retrieved from ApiService
-
-    // handle error 
-
-    return;
-
-  }
-
-  getAllPatientsList(): Observable<any> {
+    registerPatient(patientDetails): Observable<any> {
 
 
-    // should return all patients list retrieved from ApiService
+        // should return response retrieved from ApiService
 
-    // handle error 
+        // handle error
 
-    return;
+        return;
 
-  }
+    }
 
-  getParticularPatient(id): Observable<any> {
+    getAllPatientsList(): Observable<any> {
 
-    // should return particular patient details retrieved from ApiService
 
-    // handle error 
+        // should return all patients list retrieved from ApiService
 
-    return;
-  }
-  
-  getDiseasesList(): Observable<any> {
+        // handle error
 
-    // should return response retrieved from ApiService
+        return;
 
-    // handle error 
+    }
 
-    return;
-  }
+    getParticularPatient(id): Observable<any> {
 
-  bookAppointment(appointmentDetails): Observable<any> {
+        // should return particular patient details retrieved from ApiService
 
-    // should return response retrieved from ApiService
+        // handle error
 
-    // handle error 
+        return;
+    }
 
-    return;
-  }
+    getDiseasesList(): Observable<any> {
 
-  getAppointments(patientId): Observable<any> {
+        // should return response retrieved from ApiService
 
-    // should return response retrieved from ApiService
+        // handle error
 
-    // handle error 
+        return;
+    }
 
-    return;
-  }
+    bookAppointment(appointmentDetails): Observable<any> {
 
-  deleteAppointment(appointmentId): Observable<any> {
+        // should return response retrieved from ApiService
 
-    // should return response retrieved from ApiService
+        // handle error
 
-    // handle error 
+        return;
+    }
 
-    return;
-  }
+    getAppointments(patientId): Observable<any> {
 
-  requestedAppointments(): Observable<any> {
+        // should return response retrieved from ApiService
 
-    // should return response retrieved from ApiService
+        // handle error
 
-    // handle error 
+        return;
+    }
 
-    return;
-  }
+    deleteAppointment(appointmentId): Observable<any> {
 
-  getUserId(): number {
+        // should return response retrieved from ApiService
 
-    // retrieve 'userId' from localstorage
+        // handle error
 
-    return;
-  }
+        return;
+    }
+
+    requestedAppointments(): Observable<any> {
+
+        // should return response retrieved from ApiService
+
+        // handle error
+
+        return;
+    }
+
+    getUserId(): number {
+
+        // retrieve 'userId' from localstorage
+
+        return;
+    }
 
 
 }

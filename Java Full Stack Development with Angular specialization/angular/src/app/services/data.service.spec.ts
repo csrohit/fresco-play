@@ -7,7 +7,7 @@ import { of } from 'rxjs/observable/of';
 import { Credentials } from '../models/credentials.model';
 import { Users } from '../models/users.model';
 import { ApiService } from './api.service';
-import { DataService} from './data.service';
+import { DataService } from './data.service';
 
 const patientDetails = {
   'patientId': 20,
@@ -30,10 +30,10 @@ user.email = 'test@test.com';
 user.userId = 1;
 
 const diseasesList = [
-  {name: "Adenovirus Infection"},
-  {name: "Asthma"},
-  {name: "Bird Flu"},
-  {name: "Cancer"}
+  { name: 'Adenovirus Infection' },
+  { name: 'Asthma' },
+  { name: 'Bird Flu' },
+  { name: 'Cancer' }
 ];
 const deleteResponse = {};
 
@@ -55,36 +55,36 @@ class MockApiService {
     return of(new Users);
   }
 
-  public registerPatient(patientDetails): Observable<any> {
+  public registerPatient(patientDetails: any): Observable<any> {
     return of(patientDetails);
   }
 
   public getAllPatientsList(): Observable<any> {
-  	return of(patientList);
+    return of(patientList);
   }
 
   public getParticularPatient(id): Observable<any> {
-	return of(patientDetails);
+    return of(patientDetails);
   }
 
   public getDiseasesList(): Observable<any> {
-  	return of(diseasesList);
+    return of(diseasesList);
   }
 
   public bookAppointment(appointmentDetails: any) {
-  	return of(patientDetails);
+    return of(patientDetails);
   }
 
   public getAppointments(userId): Observable<any> {
-  	return of(patientList);
+    return of(patientList);
   }
 
   public deleteAppointment(appointmentId) {
-  	return of(deleteResponse);
+    return of(deleteResponse);
   }
 
   public requestedAppointments(): Observable<any> {
-  	return of(patientList);
+    return of(patientList);
   }
 }
 

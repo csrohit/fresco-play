@@ -131,13 +131,13 @@ describe('ApiService', () => {
     const requestUrl = API_URL + '/allpatients';
 
     const patientDetails = {
-    	name: 'name',
-    	mobile: 9876543210
+      name: 'name',
+      mobile: 9876543210
     };
-    
+
     const expectedRequestBody = {
-    	name: 'name',
-    	mobile: 9876543210
+      name: 'name',
+      mobile: 9876543210
     };
 
     apiService.registerPatient(patientDetails).subscribe((response) => {
@@ -157,12 +157,12 @@ describe('ApiService', () => {
       name: 'name',
       mobile: 9876543210
     };
-    
+
     const expectedResponse = {
       name: 'name',
       mobile: 9876543210
     };
-    
+
     apiService.registerPatient(patientDetails).subscribe(response => {
       expect(response).toEqual(expectedResponse);
       done();
@@ -178,16 +178,16 @@ describe('ApiService', () => {
     const reqURL = API_URL + '/allpatients/' + id;
 
     const patientDetails = {
-      firstName: "dinakaran", 
-      lastName: "narayanan", 
-      gender: "Male", dob: "2019-09-13",
-      mobile: "4466162463"
+      firstName: 'dinakaran',
+      lastName: 'narayanan',
+      gender: 'Male', dob: '2019-09-13',
+      mobile: '4466162463'
     };
 
     const mockResponse = [
-      {firstName: "dinakaran", lastName: "narayanan", gender: "Male", dob: "2019-09-13", mobile: "4466162463"},
-      {firstName: "vignesh", lastName: "kumar", gender: "Male", dob: "2019-09-12", mobile: "6666666666"},
-      {firstName: "robin", lastName: "singh", gender: "Male", dob: "2019-09-13", mobile: "9876543111"}
+      { firstName: 'dinakaran', lastName: 'narayanan', gender: 'Male', dob: '2019-09-13', mobile: '4466162463' },
+      { firstName: 'vignesh', lastName: 'kumar', gender: 'Male', dob: '2019-09-12', mobile: '6666666666' },
+      { firstName: 'robin', lastName: 'singh', gender: 'Male', dob: '2019-09-13', mobile: '9876543111' }
     ];
     apiService.getParticularPatient(id).subscribe(response => {
       expect(response).toEqual(patientDetails);
@@ -203,9 +203,9 @@ describe('ApiService', () => {
   it('getAllPatientsList should return all patient details', (done) => {
     const reqURL = API_URL + '/allpatients';
     const mockResponse = [
-      {firstName: "dinakaran", lastName: "narayanan", gender: "Male", dob: "2019-09-13", mobile: "4466162463"},
-      {firstName: "vignesh", lastName: "kumar", gender: "Male", dob: "2019-09-12", mobile: "6666666666"},
-      {firstName: "robin", lastName: "singh", gender: "Male", dob: "2019-09-13", mobile: "9876543111"}
+      { firstName: 'dinakaran', lastName: 'narayanan', gender: 'Male', dob: '2019-09-13', mobile: '4466162463' },
+      { firstName: 'vignesh', lastName: 'kumar', gender: 'Male', dob: '2019-09-12', mobile: '6666666666' },
+      { firstName: 'robin', lastName: 'singh', gender: 'Male', dob: '2019-09-13', mobile: '9876543111' }
     ];
     apiService.getAllPatientsList().subscribe(response => {
       expect(response).toEqual(mockResponse);
@@ -221,10 +221,10 @@ describe('ApiService', () => {
   it('getDiseasesList should return disease list', (done) => {
     const reqURL = API_URL + '/diseases';
     const mockResponse = [
-      {name: "Adenovirus Infection"},
-      {name: "Asthma"},
-      {name: "Bird Flu"},
-      {name: "Cancer"}
+      { name: 'Adenovirus Infection' },
+      { name: 'Asthma' },
+      { name: 'Bird Flu' },
+      { name: 'Cancer' }
     ];
     apiService.getDiseasesList().subscribe(response => {
       expect(response).toEqual(mockResponse);
@@ -243,10 +243,10 @@ describe('ApiService', () => {
 
     const appointmentDetails = {
       patientId: 1,
-      patientFirstName: "check1",
-      patientLastName: "ckeck2",
-      disease: "Asthma",
-      priority: "Normal"
+      patientFirstName: 'check1',
+      patientLastName: 'ckeck2',
+      disease: 'Asthma',
+      priority: 'Normal'
     };
 
     apiService.bookAppointment(appointmentDetails).subscribe((response) => {
@@ -264,12 +264,12 @@ describe('ApiService', () => {
 
     const appointmentDetails = {
       patientId: 1,
-      patientFirstName: "check1",
-      patientLastName: "ckeck2",
-      disease: "Asthma",
-      priority: "Normal"
+      patientFirstName: 'check1',
+      patientLastName: 'ckeck2',
+      disease: 'Asthma',
+      priority: 'Normal'
     };
-    
+
     apiService.bookAppointment(appointmentDetails).subscribe(response => {
       expect(response).toEqual(appointmentDetails);
       done();
@@ -284,9 +284,9 @@ describe('ApiService', () => {
     const reqURL = API_URL + '/reqappointments?patientId=' + id;
 
     const mockResponse = [
-      {firstName: "dinakaran", lastName: "narayanan", gender: "Male", tentativedate: "2019-09-13"},
-      {firstName: "dinakaran", lastName: "narayanan", gender: "Male", tentativedate: "2019-09-13"},
-      {firstName: "dinakaran", lastName: "narayanan", gender: "Male", tentativedate: "2019-09-13"}
+      { firstName: 'dinakaran', lastName: 'narayanan', gender: 'Male', tentativedate: '2019-09-13' },
+      { firstName: 'dinakaran', lastName: 'narayanan', gender: 'Male', tentativedate: '2019-09-13' },
+      { firstName: 'dinakaran', lastName: 'narayanan', gender: 'Male', tentativedate: '2019-09-13' }
     ];
     apiService.getAppointments(id).subscribe(response => {
       expect(response).toEqual(mockResponse);
@@ -319,9 +319,9 @@ describe('ApiService', () => {
     const reqURL = API_URL + '/reqappointments';
 
     const mockResponse = [
-      {firstName: "dinakaran", lastName: "narayanan", gender: "Male", tentativedate: "2019-09-13"},
-      {firstName: "abc", lastName: "ghi", gender: "Male", tentativedate: "2019-09-15"},
-      {firstName: "def", lastName: "jkl", gender: "Female", tentativedate: "2019-09-19"}
+      { firstName: 'dinakaran', lastName: 'narayanan', gender: 'Male', tentativedate: '2019-09-13' },
+      { firstName: 'abc', lastName: 'ghi', gender: 'Male', tentativedate: '2019-09-15' },
+      { firstName: 'def', lastName: 'jkl', gender: 'Female', tentativedate: '2019-09-19' }
     ];
     apiService.requestedAppointments().subscribe(response => {
       expect(response).toEqual(mockResponse);

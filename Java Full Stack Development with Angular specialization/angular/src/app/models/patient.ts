@@ -4,10 +4,10 @@ export class Patient {
     lastName: string;
     gender: string;
     dob: string;
-    mobile: number;
+    mobile: string;
     email: string;
     description?: string;
-    registeredTime: Date;
+    registeredTime: string;
 
     constructor(values: Object = {}) {
         Object.assign(this, values);
