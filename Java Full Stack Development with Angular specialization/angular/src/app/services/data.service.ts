@@ -52,14 +52,14 @@ export class DataService {
 
         // should return user details retrieved from api service
 
-        return;
+        return this.api.getUserDetails(userId);
     }
 
     updateProfile(userDetails): Observable<boolean> {
 
         // should return the updated status according to the response from api service
-
-        return;
+        return this.api.updateDetails(userDetails)
+            .map(data => data ? true : false);
     }
 
     registerPatient(patientDetails): Observable<any> {
@@ -142,7 +142,7 @@ export class DataService {
 
         // retrieve 'userId' from localstorage
 
-        return;
+        return parseInt(localStorage.getItem('userId'), 10);
     }
 
 

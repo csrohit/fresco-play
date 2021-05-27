@@ -37,10 +37,8 @@ export class ApiService {
 
     public getUserDetails(userId: number): Observable<Users> {
         // should return user details retireved from server
-
+        return this.http.get<Users>(this.API_URL + '/users/' + userId);
         // handle error
-
-        return;
     }
 
     public updateDetails(userDetails: Users): Observable<Users> {
