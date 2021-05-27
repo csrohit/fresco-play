@@ -10,6 +10,7 @@ import { Credentials } from '../models/credentials.model';
 import { Users } from '../models/users.model';
 import { Patient } from '../models/patient';
 import { Appointment } from '../models/appointment';
+import { Disease } from '../models/Disease';
 
 @Injectable()
 export class ApiService {
@@ -49,40 +50,40 @@ export class ApiService {
         return;
     }
 
-    public registerPatient(patientDetails: any): Observable<any> {
+    public registerPatient(patientDetails: Patient): Observable<Patient> {
 
         // should return response from server if patientDetails added successfully
 
         // handle error
 
-        return;
+        return this.http.post<Patient>(this.API_URL + '/allpatients', patientDetails);
     }
 
-    public getAllPatientsList(): Observable<any> {
+    public getAllPatientsList(): Observable<Patient[]> {
 
         // should return all patients from server
 
         // handle error
 
-        return;
+        return this.http.get<Patient[]>(this.API_URL + '/allpatients');
     }
 
-    public getParticularPatient(id): Observable<any> {
+    public getParticularPatient(id: number): Observable<Patient> {
 
         // should return particular patient details from server
 
         // handle error
 
-        return;
+        return this.http.get<Patient>(this.API_URL + '/allpatients/' + id);
     }
 
-    public getDiseasesList(): Observable<any> {
+    public getDiseasesList(): Observable<Disease[]> {
 
         // should return diseases from server
 
         // handle error
 
-        return;
+        return this.http.get<Disease[]>(this.API_URL + '/diseases');
     }
 
     public bookAppointment(appointmentDetails: any): Observable<any> {

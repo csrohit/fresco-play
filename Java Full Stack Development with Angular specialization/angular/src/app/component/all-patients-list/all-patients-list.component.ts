@@ -5,28 +5,28 @@ import { DataService } from '../../services/data.service';
 import { ActivatedRoute, RouterLinkActive } from '@angular/router';
 
 @Component({
-  selector: 'app-all-patients-list',
-  templateUrl: './all-patients-list.component.html',
-  styleUrls: ['./all-patients-list.component.css']
+    selector: 'app-all-patients-list',
+    templateUrl: './all-patients-list.component.html',
+    styleUrls: ['./all-patients-list.component.css']
 })
 export class AllPatientsListComponent implements OnInit {
 
-  allPatients;
-  patient;
-  constructor(private route: Router, private dataService: DataService) { }
+    allPatients: Patient[] = [];
+    patient: Patient = null;
+    constructor(private route: Router, private dataService: DataService) { }
 
-  ngOnInit() {
+    ngOnInit() {
 
-    // get all patients list from service
-    this.dataService.getAllPatientsList()
-      .subscribe(data => {
-        this.allPatients = data;
-      });
-  }
+        // get all patients list from service
+        this.dataService.getAllPatientsList()
+            .subscribe(data => {
+                this.allPatients = data;
+            });
+    }
 
-  view(patientId) {
+    view(patientId: number) {
 
-    // should navigate to 'patientList' page with selected patientId
-
-  }
+        // should navigate to 'patientList' page with selected patientId
+        this.route.navigate(['patientList', patientId]);
+    }
 }

@@ -11,6 +11,7 @@ import { Appointment } from '../models/appointment';
 import { ApiService } from './api.service';
 import { tap } from 'rxjs/operators';
 import { map } from 'rxjs/operator/map';
+import { Disease } from '../models/Disease';
 
 @Injectable()
 export class DataService {
@@ -69,7 +70,7 @@ export class DataService {
 
         // handle error
 
-        return;
+        return this.api.registerPatient(patientDetails);
 
     }
 
@@ -80,17 +81,17 @@ export class DataService {
 
         // handle error
 
-        return;
+        return this.api.getAllPatientsList();
 
     }
 
-    getParticularPatient(id): Observable<any> {
+    getParticularPatient(id: number): Observable<any> {
 
         // should return particular patient details retrieved from ApiService
 
         // handle error
 
-        return;
+        return this.api.getParticularPatient(id);
     }
 
     getDiseasesList(): Observable<any> {
@@ -99,7 +100,7 @@ export class DataService {
 
         // handle error
 
-        return;
+        return this.api.getDiseasesList();
     }
 
     bookAppointment(appointmentDetails): Observable<any> {
