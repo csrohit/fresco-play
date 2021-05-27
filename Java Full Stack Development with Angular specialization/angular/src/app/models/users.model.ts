@@ -4,5 +4,6 @@ export class Users {
     mobile: string;
     email: string;
     location: string;
+
 }
 
