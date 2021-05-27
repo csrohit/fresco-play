@@ -3,9 +3,7 @@ import { Component } from '@angular/core';
 import { async, ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
+import { Observable, of, throwError } from 'rxjs';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { Users } from '../../models/users.model';
@@ -58,8 +56,7 @@ describe('ProfileComponent', () => {
       imports: [
         RouterTestingModule,
         FormsModule,
-        ReactiveFormsModule,
-        AngularFontAwesomeModule
+        ReactiveFormsModule
       ],
       providers: [
         { provide: DataService, useClass: MockDataService }
@@ -266,7 +263,7 @@ describe('ProfileComponent', () => {
   }));
 
   it('#getProfileDetails should return error on occurence of error', fakeAsync(() => {
-    spyOn(dataService, 'getUserDetails').and.returnValue(Observable.throw(errorResponse));
+    spyOn(dataService, 'getUserDetails').and.returnValue(throwError(errorResponse));
     fixture = TestBed.createComponent(ProfileComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

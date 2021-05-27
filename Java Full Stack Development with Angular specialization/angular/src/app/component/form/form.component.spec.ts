@@ -2,14 +2,11 @@ import { async, ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core
 import { AbstractControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
+import { Observable, of } from 'rxjs';
 import { Component } from '@angular/core';
-
 
 import { DataService } from '../../services/data.service';
 import { FormComponent } from './form.component';
-
 
 const patientDetails = {
   'patientId': 20,
@@ -225,9 +222,9 @@ let successful =
     fixture.detectChanges();
   });
 
-  // it('should create', () => {
-  //   expect(component).toBeTruthy();
-  // });
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
 
   it('All validation errors should be hidden and form should be invalid by default', fakeAsync(() => {
     component.ngOnInit();
@@ -315,7 +312,7 @@ let successful =
     });
   }));
 
-  it('should display no firstname validation error when the field kept as null(dirty)', fakeAsync(() => {
+  it('should display no lastname validation error when the field kept as null(dirty)', fakeAsync(() => {
     fixture.whenStable().then(() => {
       lastnameCtrl = component.complexForm.controls['lastName'];
       const elemInput: HTMLInputElement = fixture.nativeElement.querySelector('#lastname');
@@ -327,7 +324,7 @@ let successful =
       errorAlertNoLastname = fixture.nativeElement.querySelector('#error-no-lastname');
       errorAlertMinlengthLastname = fixture.nativeElement.querySelector('#error-minlength-lastname');
       errorAlertMaxlengthLastname = fixture.nativeElement.querySelector('#error-maxlength-lastname');
-      expect(firstnameCtrl.valid).toBeFalsy();
+      expect(lastnameCtrl.valid).toBeFalsy();
       expect(errorAlertNoLastname).toBeTruthy();
       expect(errorAlertMinlengthLastname).toBeFalsy();
       expect(errorAlertMaxlengthLastname).toBeFalsy();
@@ -389,6 +386,7 @@ let successful =
   });
 
   it('gender validation gets pass when clicking male radio button', fakeAsync(() => {
+    genderCtrl = component.complexForm.controls['gender'];
     fixture.nativeElement.querySelector('#male').click();
     fixture.detectChanges();
     tick();
@@ -402,6 +400,7 @@ let successful =
 
 
   it('gender validation gets pass when clicking female radio button', fakeAsync(() => {
+    genderCtrl = component.complexForm.controls['gender'];
     fixture.nativeElement.querySelector('#female').click();
     fixture.detectChanges();
     tick();
@@ -534,7 +533,7 @@ let successful =
     });
   }));
 
-  it('should display email pattern validation error when the field has kept as null(dirty)', fakeAsync(() => {
+  it('should display no email validation error when the field has kept as null(dirty)', fakeAsync(() => {
     fixture.whenStable().then(() => {
       emailCtrl = component.complexForm.controls['email'];
       const elemInput: HTMLInputElement = fixture.nativeElement.querySelector('#email');
@@ -543,41 +542,34 @@ let successful =
       expect(component.complexForm.valid).toBeFalsy();
       tick();
       fixture.detectChanges();
+      errorAlertNoEmail = fixture.nativeElement.querySelector('#error-no-email');
       errorAlertPatternEmail = fixture.nativeElement.querySelector('#error-pattern-email');
-      expect(emailCtrl.valid).toBeFalsy();
-      expect(errorAlertPatternEmail).toBeTruthy();
-      expect(fixture.nativeElement.querySelector('#error-pattern-email').textContent.trim()).toBe('Pattern does not match.');
-    });
-  }));
 
-  it('should display email pattern validation error when the field has no value', fakeAsync(() => {
-    fixture.whenStable().then(() => {
-      emailCtrl = component.complexForm.controls['email'];
-      const elemInput: HTMLInputElement = fixture.nativeElement.querySelector('#email');
-      elemInput.value = 'jgkff!@df.';
-      elemInput.dispatchEvent(new Event('input'));
-      expect(component.complexForm.valid).toBeFalsy();
-      tick();
-      fixture.detectChanges();
-      errorAlertPatternEmail = fixture.nativeElement.querySelector('#error-pattern-email');
       expect(emailCtrl.valid).toBeFalsy();
-      expect(errorAlertPatternEmail).toBeTruthy();
-      expect(fixture.nativeElement.querySelector('#error-pattern-email').textContent.trim()).toBe('Pattern does not match.');
-    });
-  }));
-
-  it('should not display email validation error when the field has valid input', fakeAsync(() => {
-    fixture.whenStable().then(() => {
-      emailCtrl = component.complexForm.controls['email'];
-      const elemInput: HTMLInputElement = fixture.nativeElement.querySelector('#email');
-      elemInput.value = 'jgkff!@df.in';
-      elemInput.dispatchEvent(new Event('input'));
-      expect(component.complexForm.valid).toBeFalsy();
-      tick();
-      fixture.detectChanges();
-      errorAlertPatternEmail = fixture.nativeElement.querySelector('#error-pattern-email');
-      expect(emailCtrl.valid).toBeTruthy();
+      expect(errorAlertNoEmail).toBeTruthy();
       expect(errorAlertPatternEmail).toBeFalsy();
+
+      expect(fixture.nativeElement.querySelector('#error-no-email').textContent.trim()).toBe('You must include a valid email.');
+    });
+  }));
+
+  it('should display  email pattern validation error when the field has no value', fakeAsync(() => {
+    fixture.whenStable().then(() => {
+      emailCtrl = component.complexForm.controls['email'];
+      const elemInput: HTMLInputElement = fixture.nativeElement.querySelector('#email');
+      elemInput.value = 'jgkff!@df.vv';
+      elemInput.dispatchEvent(new Event('input'));
+      expect(component.complexForm.valid).toBeFalsy();
+      tick();
+      fixture.detectChanges();
+      errorAlertNoEmail = fixture.nativeElement.querySelector('#error-no-email');
+      errorAlertPatternEmail = fixture.nativeElement.querySelector('#error-pattern-email');
+
+      expect(emailCtrl.valid).toBeFalsy();
+      expect(errorAlertNoEmail).toBeFalsy();
+      expect(errorAlertPatternEmail).toBeTruthy();
+
+      expect(fixture.nativeElement.querySelector('#error-pattern-email').textContent.trim()).toBe('Pattern does not match.');
     });
   }));
 

@@ -71,10 +71,6 @@ html,body,.container{
     text-align: center;
 }
 .login-view{
-    // width: 100%;
-    // min-height: 100%;
-    // padding: 20px 50px;
-    // margin: 0;
     width: 500px;
     height: 500px;
     background-color: #fff;
@@ -100,7 +96,6 @@ html,body,.container{
     margin-bottom: 20px;
 }
 .form-group label{
-    // width: 100%;
     font-size: 14px;
     margin-bottom: 5px;
     opacity: 0.8;
@@ -156,7 +151,7 @@ border: 2px solid #e74c3c;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    /*align-items: end;*/
 }
 .radio-form-group{
     padding: 7px 2px;
@@ -278,8 +273,8 @@ font-size: 18px;
     outline-color: #fff !important;
 }
 .form-inp-error{
-border-color: red !important;
-outline-color: #fff !important;
+  border-color: red !important;
+  outline-color: #fff !important;
 }
 .fa{
     color: #3498db;
@@ -303,10 +298,13 @@ button:disabled{
   margin-right: 350px;
 }
 .list-items {
-text-align: left;
-    margin-left: 0px ! important;
-    padding-left: 0px ! important;
+  text-align: left;
+  margin-left: 0px ! important;
+  padding-left: 0px ! important;
 }
 .fa-icon {
   text-align: center ! important;
+}
+.profile-img {
+  margin-right: 100px;
 }

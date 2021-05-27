@@ -24,12 +24,8 @@
     float: right;
 }
 .user {
-    color: #4555de;
+    color: #b1a5a2;
     font-size: 20px;
-    background: #e4d8d8;
-    padding: 8px;
-    border-radius: 13px;
-    font-style: oblique;
 }
 .current-link {
     background: #ddd;
@@ -39,3 +35,4 @@
 .container-fluid {
     font-family: roboto;
 }
+

@@ -1,8 +1,7 @@
 import { async, ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AbstractControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { Observable } from 'rxjs/Observable';
-import { of } from 'rxjs/observable/of';
+import { Observable, of } from 'rxjs';
 import { Component } from '@angular/core';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { Location } from '@angular/common';
@@ -20,9 +19,9 @@ const patientDetails = {
 };
 const patientList = [patientDetails];
 
-const diseasesList = [
-	{name: 'fever'},
-	{name: 'cold'}
+const sufferList = [
+    {name: 'fever'},
+    {name: 'cold'}
 ];
 
 const bookAppointment = { 
@@ -64,19 +63,19 @@ const mockRoutes = [
 class MockDataService {
 
   public getParticularPatient(id): Observable<any> {
-	return of(patientDetails);
+    return of(patientDetails);
   }
 
   public getDiseasesList(): Observable<any> {
-  	return of(diseasesList);
+      return of(sufferList);
   }
 
   public bookAppointment(appointmentDetails: any) {
-  	return of(patientDetails);
+      return of(patientDetails);
   }
 
   public getAppointments(userId): Observable<any> {
-  	return of(patientList);
+      return of(patientList);
   }
 
   public deleteAppointment(appointmentId): Observable<any> {
@@ -121,12 +120,12 @@ describe('ViewPatientComponent', () => {
     fixture.detectChanges();
   });
 
-  // it('should create', () => {
-  //   expect(component).toBeTruthy();
-  // });
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
 
   it('should call getParticularPatient method of DataService by default', fakeAsync(() => {
-  	spyOn(dataService, 'getParticularPatient').and.callThrough();
+      spyOn(dataService, 'getParticularPatient').and.callThrough();
     component.ngOnInit();
     fixture.detectChanges();
     expect(dataService.getParticularPatient).toHaveBeenCalled();
@@ -139,42 +138,42 @@ describe('ViewPatientComponent', () => {
     expect(SchdldAppnmt).toBeFalsy();
   }));
 
-  it('"Book Appointment" button should be disabled after clicking on that button', fakeAsync(() => {
+  it('"Scheduled Appointment" button should be disabled when clicking on "Book Appointment"', fakeAsync(() => {
     fixture.whenStable().then(() => {
       fixture.nativeElement.querySelector('#book-appointment').click();
       tick();
       fixture.detectChanges();
       expect(fixture.debugElement.nativeElement.querySelector('#book-appointment').disabled).toBeTruthy();
-	    expect(fixture.debugElement.nativeElement.querySelector('#Scheduled-appointment').disabled).toBeFalsy();
-	    
-	    expect(fixture.nativeElement.querySelector('#form-container')).toBeTruthy();
-	    expect(fixture.nativeElement.querySelector('#table-container')).toBeFalsy();
+        expect(fixture.debugElement.nativeElement.querySelector('#Scheduled-appointment').disabled).toBeFalsy();
+        
+        expect(fixture.nativeElement.querySelector('#form-container')).toBeTruthy();
+        expect(fixture.nativeElement.querySelector('#table-container')).toBeFalsy();
     });
   }));
 
-  it('"Scheduled Appointment" button should be disabled after clicking on that button', fakeAsync(() => {
+  it('"Book Appointment" button should be disabled when clicking on "Scheduled Appointment"', fakeAsync(() => {
     fixture.whenStable().then(() => {
       fixture.nativeElement.querySelector('#Scheduled-appointment').click();
       tick();
       fixture.detectChanges();
       expect(fixture.debugElement.nativeElement.querySelector('#book-appointment').disabled).toBeFalsy();
-	    expect(fixture.debugElement.nativeElement.querySelector('#Scheduled-appointment').disabled).toBeTruthy();
+        expect(fixture.debugElement.nativeElement.querySelector('#Scheduled-appointment').disabled).toBeTruthy();
 
-	    expect(fixture.nativeElement.querySelector('#form-container')).toBeFalsy();
-	    expect(fixture.nativeElement.querySelector('#table-container')).toBeTruthy();
+        expect(fixture.nativeElement.querySelector('#form-container')).toBeFalsy();
+        expect(fixture.nativeElement.querySelector('#table-container')).toBeTruthy();
     });
   }));
 
-  it('should get diseasesList when clicking on "Book Appointment"', fakeAsync(() => {
+  it('should get sufferList when clicking on "Book Appointment"', fakeAsync(() => {
     spyOn(component,'bookAppointment').and.callThrough();
     spyOn(dataService,'getDiseasesList').and.callThrough();
     fixture.whenStable().then(() => {
       fixture.nativeElement.querySelector('#book-appointment').click();
       tick();
       fixture.detectChanges();
-	    expect(fixture.nativeElement.querySelector('#form-container')).toBeTruthy();
-	    expect(component.bookAppointment).toHaveBeenCalled();
-	    expect(dataService.getDiseasesList).toHaveBeenCalled();
+        expect(fixture.nativeElement.querySelector('#form-container')).toBeTruthy();
+        expect(component.bookAppointment).toHaveBeenCalled();
+        expect(dataService.getDiseasesList).toHaveBeenCalled();
     });
   }));
 
@@ -185,7 +184,7 @@ describe('ViewPatientComponent', () => {
       fixture.nativeElement.querySelector('#book-appointment').click();
       tick();
       fixture.detectChanges();
-	    expect(fixture.nativeElement.querySelector('#form-container')).toBeTruthy();
+        expect(fixture.nativeElement.querySelector('#form-container')).toBeTruthy();
       component.appointmentForm.controls['selectDisease'].setValue('xxxxxxx');
       component.appointmentForm.controls['priority'].setValue('yyyyyyyy');
       component.appointmentForm.controls['tentativeDate'].setValue('2018-12-25');

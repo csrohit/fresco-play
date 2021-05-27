@@ -1,111 +1,122 @@
-import 'rxjs/add/observable/throw';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/map';
-
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+import { Observable, of, throwError } from 'rxjs';
 
 import { Credentials } from '../models/credentials.model';
 import { Users } from '../models/users.model';
 import { Patient } from '../models/patient';
 import { Appointment } from '../models/appointment';
+import { tap } from 'rxjs/operators';
+import { catchError, retry } from 'rxjs/operators';
 
 @Injectable()
 export class ApiService {
 
-    API_URL: String;
-    AUTH_API_URL = '/auth/server/';
-    allPatients: Patient[] = [];
-    appointments: Appointment[] = [];
-    users: Users[] = [];
-    authUsers: {
-        id: number;
-        username: string;
-        password: string;
-    }[] = [];
+  API_URL: String;
+  AUTH_API_URL = '/auth/server/';
 
-    constructor(private http: HttpClient) {
-        this.API_URL = 'api';
-    }
+  constructor(private http: HttpClient) {
+    this.API_URL = 'api';
+  }
 
-    public checkLogin(username: string, password: string): Observable<Credentials> {
-        return this.http.post<Credentials>(this.API_URL + this.AUTH_API_URL, { username, password });
-    }
+  public checkLogin(username: string, password: string): Observable<Credentials> {
+    // should return response from server
 
-    public getUserDetails(userId: number): Observable<Users> {
-        // should return user details retireved from server
-        return this.http.get<Users>(this.API_URL + '/users/' + userId).catch(this.handleError);
-        // handle error
-    }
+    // handle error 
 
-    public updateDetails(userDetails: Users): Observable<Users> {
-        // should return user details if successfully updated the details
+    return;
+  }
 
-        // handle error
+  public getUserDetails(userId: number): Observable<Users> {
+    // should return user details retireved from server
 
-        return this.http.put<Users>(this.API_URL + '/users/' + userDetails.userId, userDetails);
-    }
+    // handle error 
 
-    public registerPatient(patientDetails: any): Observable<any> {
-        // should return response from server if patientDetails added successfully
-        // handle error
-        return this.http.post<Patient>(this.API_URL + '/allpatients', patientDetails).catch(this.handleError);
-    }
+    return;
+  }
 
-    public getAllPatientsList(): Observable<any> {
-        // should return all patients from server
-        // handle error
-        return this.http.get<any>(this.API_URL + '/allpatients');
-    }
+  public updateDetails(userDetails: Users): Observable<Users> {
+    // should return user details if successfully updated the details
 
-    public getParticularPatient(id: number): Observable<any> {
-        // should return particular patient details from server
-        // handle error
-        return this.http.get<any>(this.API_URL + '/allpatients/' + id);
-    }
+    // handle error 
 
-    public getDiseasesList(): Observable<any[]> {
-        // should return diseases from server
-        // handle error
-        return this.http.get<any[]>(this.API_URL + '/diseases');
-    }
+    return;
+  }
 
-    public bookAppointment(appointmentDetails): Observable<any> {
+  public registerPatient(patientDetails: any): Observable<any> {
 
-        // should return response from server if appointment booked successfully
+    // should return response from server if patientDetails added successfully
 
-        // handle error
+    // handle error 
 
-        return this.http.post<Appointment>(this.API_URL + '/reqappointments', appointmentDetails);
-    }
+    return;
+  }
 
-    public requestedAppointments(): Observable<any> {
+  public getAllPatientsList(): Observable<any> {
 
-        // should return all requested appointments from server
+    // should return all patients from server
 
-        // handle error
+    // handle error 
 
-        return this.http.get<Appointment[]>(this.API_URL + '/reqappointments');
-    }
+    return;
+  }
 
-    public getAppointments(userId): Observable<any> {
+  public getParticularPatient(id): Observable<any> {
 
-        // should return appointments of particular patient from server
+    // should return particular patient details from server
 
-        // handle error
+    // handle error 
 
-        return this.http.get<Appointment[]>(this.API_URL + '/reqappointments?patientId=' + userId).catch(this.handleError);
-    }
+    return;
+  }
 
-    public deleteAppointment(appointmentId): Observable<any> {
-        // should delete the appointment
-        // handle error
-        return this.http.delete<void>(this.API_URL + '/reqappointments/' + appointmentId).catch(this.handleError);
-    }
+  public getDiseasesList(): Observable<any> {
 
-    private handleError(error: Response | any) {
-        return Observable.throw(error);
-    }
+    // should return diseases from server
 
+    // handle error 
+
+    return;
+  }
+
+  public bookAppointment(appointmentDetails: any): Observable<any> {
+
+    // should return response from server if appointment booked successfully
+
+    // handle error 
+
+    return;
+  }
+
+  public requestedAppointments(): Observable<any> {
+
+    // should return all requested appointments from server
+
+    // handle error 
+
+    return;
+  }
+
+  public getAppointments(userId): Observable<any> {
+
+    // should return appointments of particular patient from server
+
+    // handle error 
+
+    return;
+  }
+
+  public deleteAppointment(appointmentId): Observable<any> {
+
+    // should delete the appointment
+
+    // handle error
+
+    return;
+  }
+
+  private handleError(error: HttpErrorResponse) {
+    // handle error
+  }
+  
 }

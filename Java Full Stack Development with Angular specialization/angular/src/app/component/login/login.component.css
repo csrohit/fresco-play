@@ -55,7 +55,7 @@ html,body,.container{
 }
 .login-view{
     width: 500px;
-    height: fit-content;
+    height: 490px;
     background-color: #fff;
     position: absolute;
     left: 0;
@@ -92,7 +92,6 @@ html,body,.container{
     border: 1px solid #ccc;
     width:100%;
 }
-
 
 .ro-form{
     width: 100%;
@@ -134,7 +133,7 @@ border: 2px solid #e74c3c;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    /*align-items: end;*/
 }
 .radio-form-group{
     padding: 7px 2px;

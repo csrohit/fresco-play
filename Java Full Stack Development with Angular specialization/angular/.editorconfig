@@ -1,12 +1,16 @@
-# EditorConfig is awesome: https://EditorConfig.org
-
-# top-most EditorConfig file
+# Editor configuration, see https://editorconfig.org
 root = true
 
 [*]
-indent_style = space
-indent_size = 4
-end_of_line = crlf
 charset = utf-8
+indent_style = space
+indent_size = 2
+insert_final_newline = true
 trim_trailing_whitespace = true
-insert_final_newline = false
+
+[*.ts]
+quote_type = single
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false

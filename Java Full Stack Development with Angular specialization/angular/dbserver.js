@@ -36,6 +36,6 @@ server.post('/auth/server', (req, res) => {
 server.use(router)
 
 server.listen(8001, () => {
-    console.log('Server connected on 8001')
+    console.log('Run Auth API Server')
 })
 
