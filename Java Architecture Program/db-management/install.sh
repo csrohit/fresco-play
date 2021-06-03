@@ -1,0 +1,22 @@
+$(sudo apt-get update)
+$(sudo apt install maven -y)
+$(python3 -m pip install mysql-connector)
+$(pip3 install selenium)
+$(rm chromedriver)
+$(wget https://chromedriver.storage.googleapis.com/89.0.4389.23/chromedriver_linux64.zip)
+$(unzip -o chromedriver_linux64.zip)
+$(rm chromedriver_linux64.zip)
+$(wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+)
+$(sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+)
+$(sudo apt-get update)
+$(sudo apt-get install google-chrome-stable -y)
+$(echo 'mysql-server mysql-server/root_password password mysql' | sudo debconf-set-selections)
+$(echo 'mysql-server mysql-server/root_password_again password mysql' | sudo debconf-set-selections)
+$(sudo apt-get -y install mysql-server)
+$(sudo service mysql start)
+$(mysqladmin -uroot -pmysql create DBConnection)
+$(echo "create table users(userId varchar(150),userName varchar(100))" | mysql -uroot -pmysql -DDBConnection)
+$(echo "create table repos(repoId varchar(150),userId varchar(150),repoName varchar(150),repoDesc varchar(150),RepoDev varchar(150))" | mysql -uroot -pmysql -DDBConnection)
+echo "Installation is done !"

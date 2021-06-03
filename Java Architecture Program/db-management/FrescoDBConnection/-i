@@ -1,0 +1,37 @@
+--2021-05-12 09:01:47--  http://localhost:8000/
+Resolving localhost (localhost)... 127.0.0.1, ::1
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|::1|:8000... failed: Cannot assign requested address.
+Retrying.
+
+--2021-05-12 09:01:48--  (try: 2)  http://localhost:8000/
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|::1|:8000... failed: Cannot assign requested address.
+Retrying.
+
+--2021-05-12 09:01:50--  (try: 3)  http://localhost:8000/
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|::1|:8000... failed: Cannot assign requested address.
+Retrying.
+
+--2021-05-12 09:01:53--  (try: 4)  http://localhost:8000/
+Connecting to localhost (localhost)|127.0.0.1|:8000... failed: Connection refused.
+Connecting to localhost (localhost)|::1|:8000... failed: Cannot assign requested address.
+Retrying.
+
+--2021-05-12 09:01:57--  (try: 5)  http://localhost:8000/
+Connecting to localhost (localhost)|127.0.0.1|:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1112 (1.1K) [text/html]
+Saving to: ‘index.html’
+
+     0K .                                                     100%  120M=0s
+
+2021-05-12 09:01:57 (120 MB/s) - ‘index.html’ saved [1112/1112]
+
+--2021-05-12 09:01:57--  http://refused/
+Resolving refused (refused)... failed: Name or service not known.
+wget: unable to resolve host address ‘refused’
+FINISHED --2021-05-12 09:01:57--
+Total wall clock time: 11s
+Downloaded: 1 files, 1.1K in 0s (120 MB/s)

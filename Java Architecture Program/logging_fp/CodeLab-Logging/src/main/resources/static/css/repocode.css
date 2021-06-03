@@ -1,0 +1,37 @@
+.code-editor-link{
+	cursor: pointer;
+}
+.code-editor{
+	box-shadow: 0px 0px 28px #888888;
+    background: #eeeeee;
+    border: 2px solid lightgray;
+    padding-right: 3px;
+	position:fixed;
+	width:90%;
+	height:90%;
+	top:5%;
+	left:5%;
+	display:none;
+	text-align:right;
+	z-index:100;
+}
+.code-editor span{
+	position:absolute;
+	left:0;
+	font-size:14px;
+	font-weight:bold;
+}
+.code-editor form{
+	width:100%;
+	height:100%;
+}
+.code-editor textarea{
+	width:100%;
+	height:95%;
+	padding:0px;
+	margin:0px;
+}
+.code-editor  button{
+	width:70px;
+	height:5%;
+}

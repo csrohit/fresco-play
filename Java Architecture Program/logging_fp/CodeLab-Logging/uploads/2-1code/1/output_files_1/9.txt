@@ -1,0 +1,6 @@
+{ "_id" : "United States", "count" : 145 }
+{ "_id" : "Australia", "count" : 92 }
+{ "_id" : "Netherlands", "count" : 32 }
+{ "_id" : "Japan", "count" : 30 }
+{ "_id" : "China", "count" : 29 }
+
