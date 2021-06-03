@@ -1,0 +1,43 @@
+<div id="table-div" class="table-div" *ngIf="allMembers; else loader">
+  <h2 id="title-header" class="title-header">All member's:</h2>
+  <div *ngIf="!allMembers.length" id="no-records" class="no-records">
+    <p><span class="err glyphicon glyphicon-warning-sign"></span>No records found</p>
+  </div>
+  <table *ngIf="allMembers.length" id="table-id" class="table-class">
+    <thead>
+      <tr class="table-head">
+        <th>Name</th>
+        <th>Gender</th>
+        <th>DOB</th>
+        <th>Email</th>
+        <th>Sections Accessible</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="table-row" *ngFor="let item of allMembers;let i = index">
+        <td id="table-firstname" class="td-column">{{item.name}}</td>
+        <td id="table-gender">{{item.gender}}</td>
+        <td id="table-dob">{{item.dob| date: 'dd/MM/yyyy'}}</td>
+        <td id="table-email">{{item.email}}</td>
+        <td id="table-remarks">
+          <ng-container *ngIf="item.science">{{item.science}}</ng-container><ng-container *ngIf="(item.science)&&(item.fiction || item.journals)">,</ng-container><ng-container *ngIf="item.fiction">{{item.fiction}}</ng-container><ng-container *ngIf="item.fiction && item.journals">,</ng-container><ng-container *ngIf="item.journals">{{item.journals}}</ng-container><ng-container *ngIf="!item.science && !item.fiction && !item.journals">----</ng-container>
+        </td>
+        <td id="actions" class="column-btn">
+          <button id="user-edit" class="btn btn-outline-info member-btn btn-edt" (click)="edit(item,i)">
+            <span class="btn-value">Edit</span>
+          </button>
+          <button id="user-delete" class="btn btn-outline-info member-btn btn-dlt" (click)="delete(item.id,i)">
+            <span class="btn-value">Delete</span>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button id="add-member" class="add-new" (click)="addNewMember()">
+    +
+  </button>
+</div>
+<ng-template #loader>
+  <span id="loader" class="loader">Loading Member's List... </span>
+</ng-template>

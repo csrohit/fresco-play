@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 0.0.0 (Windows 10 0.0.0)" package="unit" timestamp="2021-05-28T16:03:10" id="0" hostname="XPS9500" tests="3" errors="0" failures="2" time="0.162">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/90.0.4430.212 Safari/537.36"/>
+  </properties>
+  <testcase name="NavbarComponent should create" time="0.035" classname="unit.NavbarComponent"/>
+  <testcase name="RegisterComponent should create" time="0.024" classname="unit.RegisterComponent">
+    <failure type="">Can't bind to 'formGroup' since it isn't a known property of 'form'. ("ster today to become a prime member!&#xD;
+	&lt;/h2&gt;&#xD;
+    &lt;form id="membershipForm" class="membership-form" [ERROR -&gt;][formGroup]="membershipForm"&gt;&#xD;
+&#xD;
+	    &lt;div id="memId" class="mem-id div-content"&gt;&#xD;
+"): ng:///DynamicTestModule/RegisterComponent.html@5:54
+Can't bind to 'formControl' since it isn't a known property of 'input'. ("	&lt;input id="date-input" class="input-dob textbox dropdown glyphicon glyphicon-calendar" type="date" [ERROR -&gt;][formControl]="membershipForm.controls['dob']" min="1968-01-01" max="{{today}}" formControlName="dob""): ng:///DynamicTestModule/RegisterComponent.html@45:105
+Can't bind to 'formControl' since it isn't a known property of 'input'. ("    &lt;input id="science" type="checkbox" class="science" value="Science &amp; Technology" name="science" [ERROR -&gt;][formControl]="membershipForm.controls['science']"&gt;&#xD;
+            &lt;label for="science" class="sections"): ng:///DynamicTestModule/RegisterComponent.html@66:108
+Can't bind to 'formControl' since it isn't a known property of 'input'. ("   &lt;input id="fiction" type="checkbox" class="fiction" value="Fiction &amp; Non fiction" name="fiction" [ERROR -&gt;][formControl]="membershipForm.controls['fiction']"&gt;&#xD;
+            &lt;label for="fiction" class="sections"): ng:///DynamicTestModule/RegisterComponent.html@69:109
+Can't bind to 'formControl' since it isn't a known property of 'input'. (" &lt;input id="journals" type="checkbox" class="journals" value="Journals &amp; Magazines" name="journals" [ERROR -&gt;][formControl]="membershipForm.controls['journals']"&gt;&#xD;
+            &lt;label for="journals" class="sectio"): ng:///DynamicTestModule/RegisterComponent.html@72:111
+Error: Template parse errors:
+    at syntaxError node_modules/@angular/compiler/esm5/compiler.js:486:22)
+    at TemplateParser.webpackJsonp../node_modules/@angular/compiler/esm5/compiler.js.TemplateParser.parse node_modules/@angular/compiler/esm5/compiler.js:24674:1)
+    at JitCompiler.webpackJsonp../node_modules/@angular/compiler/esm5/compiler.js.JitCompiler._parseTemplate node_modules/@angular/compiler/esm5/compiler.js:34629:1)
+    at JitCompiler.webpackJsonp../node_modules/@angular/compiler/esm5/compiler.js.JitCompiler._compileTemplate node_modules/@angular/compiler/esm5/compiler.js:34604:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/compiler/esm5/compiler.js:34505:48
+    at Set.forEach (&lt;anonymous&gt;)
+    at JitCompiler.webpackJsonp../node_modules/@angular/compiler/esm5/compiler.js.JitCompiler._compileComponents node_modules/@angular/compiler/esm5/compiler.js:34505:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/compiler/esm5/compiler.js:34393:1
+    at Object.then node_modules/@angular/compiler/esm5/compiler.js:475:33)
+    at JitCompiler.webpackJsonp../node_modules/@angular/compiler/esm5/compiler.js.JitCompiler._compileModuleAndAllComponents node_modules/@angular/compiler/esm5/compiler.js:34391:1)
+</failure>
+    <failure type="">Error: Template parse errors:
+Can't bind to 'formGroup' since it isn't a known property of 'form'. ("ster today to become a prime member!&#xD;
+	&lt;/h2&gt;&#xD;
+    &lt;form id="membershipForm" class="membership-form" [ERROR -&gt;][formGroup]="membershipForm"&gt;&#xD;
+&#xD;
+	    &lt;div id="memId" class="mem-id div-content"&gt;&#xD;
+"): ng:///DynamicTestModule/RegisterComponent.html@5:54
+Can't bind to 'formControl' since it isn't a known property of 'input'. ("	&lt;input id="date-input" class="input-dob textbox dropdown glyphicon glyphicon-calendar" type="date" [ERROR -&gt;][formControl]="membershipForm.controls['dob']" min="1968-01-01" max="{{today}}" formControlName="dob""): ng:///DynamicTestModule/RegisterComponent.html@45:105
+Can't bind to 'formControl' since it isn't a known property of 'input'. ("    &lt;input id="science" type="checkbox" class="science" value="Science &amp; Technology" name="science" [ERROR -&gt;][formControl]="membershipForm.controls['science']"&gt;&#xD;
+            &lt;label for="science" class="sections"): ng:///DynamicTestModule/RegisterComponent.html@66:108
+Can't bind to 'formControl' since it isn't a known property of 'input'. ("   &lt;input id="fiction" type="checkbox" class="fiction" value="Fiction &amp; Non fiction" name="fiction" [ERROR -&gt;][formControl]="membershipForm.controls['fiction']"&gt;&#xD;
+            &lt;label for="fiction" class="sections"): ng:///DynamicTestModule/RegisterComponent.html@69:109
+Can't bind to 'formControl' since it isn't a known property of 'input'. (" &lt;input id="journals" type="checkbox" class="journals" value="Journals &amp; Magazines" name="journals" [ERROR -&gt;][formControl]="membershipForm.controls['journals']"&gt;&#xD;
+            &lt;label for="journals" class="sectio"): ng:///DynamicTestModule/RegisterComponent.html@72:111
+    at syntaxError node_modules/@angular/compiler/esm5/compiler.js:486:22)
+    at TemplateParser.webpackJsonp../node_modules/@angular/compiler/esm5/compiler.js.TemplateParser.parse node_modules/@angular/compiler/esm5/compiler.js:24674:1)
+    at JitCompiler.webpackJsonp../node_modules/@angular/compiler/esm5/compiler.js.JitCompiler._parseTemplate node_modules/@angular/compiler/esm5/compiler.js:34629:1)
+    at JitCompiler.webpackJsonp../node_modules/@angular/compiler/esm5/compiler.js.JitCompiler._compileTemplate node_modules/@angular/compiler/esm5/compiler.js:34604:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/compiler/esm5/compiler.js:34505:48
+    at Set.forEach (&lt;anonymous&gt;)
+    at JitCompiler.webpackJsonp../node_modules/@angular/compiler/esm5/compiler.js.JitCompiler._compileComponents node_modules/@angular/compiler/esm5/compiler.js:34505:1)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/compiler/esm5/compiler.js:34393:1
+    at Object.then node_modules/@angular/compiler/esm5/compiler.js:475:33)
+    at JitCompiler.webpackJsonp../node_modules/@angular/compiler/esm5/compiler.js.JitCompiler._compileModuleAndAllComponents node_modules/@angular/compiler/esm5/compiler.js:34391:1)
+</failure>
+    <failure type="">Expected undefined to be truthy.
+    at UserContext.&lt;anonymous&gt; src/app/components/register/register.component.spec.ts:23:23)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+</failure>
+  </testcase>
+  <testcase name="HomeComponent should create" time="0.103" classname="unit.HomeComponent">
+    <failure type="">Error: StaticInjectorError(DynamicTestModule)[HomeComponent -&gt; ApiService]: 
+  StaticInjectorError(Platform: core)[HomeComponent -&gt; ApiService]: 
+    NullInjectorError: No provider for ApiService!
+    at _NullInjector.webpackJsonp../node_modules/@angular/core/esm5/core.js._NullInjector.get node_modules/@angular/core/esm5/core.js:1003:1)
+    at resolveToken node_modules/@angular/core/esm5/core.js:1301:1)
+    at tryResolveToken node_modules/@angular/core/esm5/core.js:1243:1)
+    at StaticInjector.webpackJsonp../node_modules/@angular/core/esm5/core.js.StaticInjector.get node_modules/@angular/core/esm5/core.js:1111:1)
+    at resolveToken node_modules/@angular/core/esm5/core.js:1301:1)
+    at tryResolveToken node_modules/@angular/core/esm5/core.js:1243:1)
+    at StaticInjector.webpackJsonp../node_modules/@angular/core/esm5/core.js.StaticInjector.get node_modules/@angular/core/esm5/core.js:1111:1)
+    at resolveNgModuleDep node_modules/@angular/core/esm5/core.js:10896:1)
+    at NgModuleRef_.webpackJsonp../node_modules/@angular/core/esm5/core.js.NgModuleRef_.get node_modules/@angular/core/esm5/core.js:12129:1)
+    at resolveDep node_modules/@angular/core/esm5/core.js:12619:1)
+</failure>
+    <failure type="">Expected undefined to be truthy.
+    at UserContext.&lt;anonymous&gt; src/app/components/home/home.component.spec.ts:23:23)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:391:1)
+    at ProxyZoneSpec.webpackJsonp../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke node_modules/zone.js/dist/zone-testing.js:289:1)
+    at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
+</failure>
+  </testcase>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

@@ -1,0 +1,242 @@
+<div id="companyName">
+  <div style="Float:left; margin-top: 5px; width:50%;">
+    <input style=" width:100%;
+        border: none;     color: #369;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 150%;" [(ngModel)]="address.name" placeholder="Name">
+  </div>
+
+  <div style="Float:right; margin-top: 5px; width: 50%;">
+
+    <span style="display: block;float: right;width: 100%;">
+      <input style=" float:right; width: 100%; text-align: right;
+        border: none; font-size: 100%;" [(ngModel)]="address.address" placeholder="Address">
+    </span>
+    <span style="display: block;float: right;width: 100%; text-align: right;">
+      P:
+      <input id="address-contact" style=" float:right; text-align: right;border: none; font-size: 100%; "
+        [(ngModel)]="address.contact" placeholder="Contact">
+    </span>
+    <span style="display: block;float: right;width: 100%;">
+      <input style=" float:right; width: 45%; text-align: right;
+        border: none; font-size: 100%;
+    " [(ngModel)]="address.email" placeholder="Email">
+    </span>
+  </div>
+</div>
+
+<div style="border-top: 1px solid grey; margin-top: 75px;" id="client">
+  <div style="Float:left; margin-top: 5px; width:50%;">
+    <input style=" width:100%;
+        border: none;     color: #369;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;font-weight: bold;
+    " [(ngModel)]="client.name" placeholder="Name">
+    <input style=" width: 100%;
+        border: none; font-size: 100%;
+    " [(ngModel)]="client.address" placeholder="Address">
+    P: <input style="width: 40%;
+        border: none; font-size: 100%;
+    " [(ngModel)]="client.contact" placeholder="Contact">
+    <input style=" width: 45%; display:block;
+        border: none; font-size: 100%;
+    " [(ngModel)]="client.email" placeholder="Email">
+    <span style="display: block;float: right;width: 100%;"> Privileged:
+      <!--call privChange method whenever checking checkbox -->
+      <input type="checkbox" id="privileged" (change)="privChange($event)" style=" border: none; font-size: 100%;
+    " [(ngModel)]="client.privileged" checked>
+    </span>
+  </div>
+  <div style="Float:right; margin-top: 5px; width: 50%;">
+
+    <span style="display: block;float: right;width: 100%; text-align:right;">
+      Invoice #:
+      <input style=" float:right; width: 25%; text-align: right;
+        border: none; font-size: 100%;
+    " [(ngModel)]="invoiceInfo.number" placeholder="Invoice">
+    </span>
+    <span style="display: block;float: right;width: 100%; text-align:right;">
+      Date:
+      <input type="date" [ngModel]="invoiceInfo.date | date:'yyyy-MM-dd'" min="{{date | date:'yyyy-MM-dd'}}" />
+    </span>
+    <span style="display: block;float: right;width: 100%; text-align:right;">
+      Due Date:
+      <input type="date" [ngModel]="invoiceInfo.dueDate | date:'yyyy-MM-dd'"
+        min="{{invoiceInfo.date | date:'yyyy-MM-dd'}}" />
+    </span>
+    <span style="display: block;float: right;width: 100%; text-align:right;">
+      Currency:
+      <!--display INR as a default currency -->
+      <select style="width:25%;" name="profile" [(ngModel)]="currency">
+        <!--display currency types -->
+        <option *ngFor="let profile of allProfiles" [value]="profile.value">
+          {{profile.text}}
+        </option>
+      </select>
+    </span>
+  </div>
+</div>
+
+
+<div style="border: 1px solid grey; margin-top: 130px;" id="bills">
+  <table class="table table-condensed table-striped" style="width: 95%;
+    margin-top: 15px; text-align: center;
+    margin-left: 25px;">
+    <thead>
+      <tr>
+        <th style="border-bottom: 1px solid grey"></th>
+        <th style="border-bottom: 1px solid grey">Item</th>
+        <th style="border-bottom: 1px solid grey">Task</th>
+        <th style="border-bottom: 1px solid grey">Hours</th>
+        <th style="border-bottom: 1px solid grey">Rate</th>
+        <th id="amount-head" style="border-bottom: 1px solid grey">
+          Amount({{invoiceInfo.currency}})
+        </th>
+        <th style="width: 10px;border-bottom: 1px solid grey;">Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- display billItems array -->
+      <tr *ngFor="let item of billItems; let i = index">
+        <td>{{i+1}}</td>
+        <td style="width:25%">
+          <input style=" float:right; width: 100%; text-align: center;
+                    border: none; font-size: 100%;
+                " placeholder="Title" [value]="item.item">
+        </td>
+        <td style="width:40%">
+          <input style=" float:right; width: 100%; text-align: center;
+                    border: none; font-size: 100%;
+                " placeholder="Desc" [value]="item.task">
+        </td>
+        <td>
+          <input style=" float:right; width: 100%; text-align: center;
+                    border: none; font-size: 100%;
+                " placeholder="0" [value]="item.hours">
+        </td>
+        <td>
+          <input style=" float:right; width: 100%; text-align: center;
+                    border: none; font-size: 100%;
+                " placeholder="0"  [value]="item.rate">
+        </td>
+        <td>
+          <!--display amount here -->
+          <input style=" float:right; width: 100%; text-align: center;
+          border: none; font-size: 100%;
+      " placeholder="0"  [value]="item.rate * item.hours">
+        </td>
+        <td>
+          <!--call onSelect method when clicking X button -->
+          <input (click)="onSelect(i)" type="button" id="remove" name="name" value="X" />
+        </td>
+      </tr>
+    </tbody>
+
+    <tfoot class="subtotal">
+      <tr>
+        <td colspan=2></td>
+        <td id="subtotal-head" colspan=2 style="padding-top:25px; text-align: right">
+          <p class="h5">
+            Subtotal({{invoiceInfo.currency}}):
+          </p>
+        </td>
+        <td id="subtotal" style="padding-top:25px" colspan=2>
+          <p class="h5">
+            {{getSubTotal()}}
+          </p>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan=2 style="border:none"></td>
+        <td colspan=2 style="border:none; text-align: right;">
+          <p class="h5">Discount in %: </p>
+        </td>
+        <td id="discount" colspan=2>
+          <p class="h5">
+            <input style=" width: 35%; text-align: center;
+                    border: none; font-size: 100%;" [(ngModel)]="discount" placeholder="0">
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan=2 style="border:none"></td>
+        <td colspan=2 style="border:none; text-align:right;">
+          <p class="h5">Taxes in %: </p>
+        </td>
+        <td id="taxes" colspan=2>
+          <p class="h5"><input max=100 style=" width: 35%; text-align: center;
+                    border: none; font-size: 100%;" [(ngModel)]="taxes" placeholder="0"></p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan=2 style="border:none"></td>
+        <td id="deposit-head" colspan=2 style="border:none;text-align:right;">
+          <p class="h5">
+            Deposit({{invoiceInfo.currency}}):
+          </p>
+        </td>
+        <td id="deposit" colspan=2>
+          <p class="h5"><input style="width: 67%; text-align: center; border: none; font-size: 100%;"
+              [(ngModel)]="deposit" placeholder="0"></p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan=2 style="border:none"></td>
+        <td id="total-head" colspan=2 style="border:none; text-align: right">
+          <p class="h5">
+            Total({{invoiceInfo.currency}}):
+          </p>
+        </td>
+        <td id="total" colspan=2>
+          <p class="h5">
+            {{getTotal()}}
+          </p>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+<!--display addItem division based on mouse position in  addItemLink division -->
+<div id="addItemLink" (mouseenter)="mouseEnterAddItem($event)" (mouseleave)="mouseLeaveAddItem($event)">
+  <p class="h4">Add New Item</p>
+  <div id="addItem" [ngStyle]="{'display': addNew? 'block': 'none'}">
+    <div class="row editor" style="border:1px solid grey">
+      <div class="col-xs-12">
+        <form class="form-horizontal" role="form" ng-submit="addItem()">
+          <div class="form-group">
+            <label for="taskTitle" class="col-sm-2 control-label">Title</label>
+            <div class="col-xs-10">
+              <input type="text" [(ngModel)]="tempItem" name="tempItem" class="form-control" id="taskTitle"
+                placeholder="Tested Amile software" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="taskDesc" class="col-sm-2 control-label">Description</label>
+            <div class="col-xs-10">
+              <input type="text" [(ngModel)]="tempTask" name="tempTask" class="form-control" id="taskDesc"
+                placeholder="Consisted of integration and acceptance testing" />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="unitsWorked" class="col-sm-2 control-label">Hours</label>
+            <div class="col-xs-1">
+              <input type="text" [(ngModel)]="tempHours" name="tempHours" class="form-control" id="unitsWorked" placeholder="10" />
+            </div>
+            <label for="unitCost" class="col-sm-2 control-label">Rate</label>
+            <div class="col-xs-1">
+              <input type="text" [(ngModel)]="tempRate" name="tempRate" class="form-control" id="unitCost" placeholder="150" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <!--call addItem method when clicking Add button -->
+              <button id="submit" (click)="addItem()">Add</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

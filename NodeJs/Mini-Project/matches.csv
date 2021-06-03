@@ -1,0 +1,637 @@
+MATCH_ID,SEASON,CITY,DATE,TEAM1,TEAM2,TOSS_WINNER,TOSS_DECISION,RESULT,WINNER
+1,2017,Hyderabad,2017-04-05,Sunrisers Hyderabad,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Sunrisers Hyderabad
+2,2017,Pune,2017-04-06,Mumbai Indians,Rising Pune Supergiant,Rising Pune Supergiant,field,normal,Rising Pune Supergiant
+3,2017,Rajkot,2017-04-07,Gujarat Lions,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+4,2017,Indore,2017-04-08,Rising Pune Supergiant,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+5,2017,Bangalore,2017-04-08,Royal Challengers Bangalore,Delhi Daredevils,Royal Challengers Bangalore,bat,normal,Royal Challengers Bangalore
+6,2017,Hyderabad,2017-04-09,Gujarat Lions,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Sunrisers Hyderabad
+7,2017,Mumbai,2017-04-09,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+8,2017,Indore,2017-04-10,Royal Challengers Bangalore,Kings XI Punjab,Royal Challengers Bangalore,bat,normal,Kings XI Punjab
+9,2017,Pune,2017-04-11,Delhi Daredevils,Rising Pune Supergiant,Rising Pune Supergiant,field,normal,Delhi Daredevils
+10,2017,Mumbai,2017-04-12,Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+11,2017,Kolkata,2017-04-13,Kings XI Punjab,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+12,2017,Bangalore,2017-04-14,Royal Challengers Bangalore,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+13,2017,Rajkot,2017-04-14,Rising Pune Supergiant,Gujarat Lions,Gujarat Lions,field,normal,Gujarat Lions
+14,2017,Kolkata,2017-04-15,Kolkata Knight Riders,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Kolkata Knight Riders
+15,2017,Delhi,2017-04-15,Delhi Daredevils,Kings XI Punjab,Delhi Daredevils,bat,normal,Delhi Daredevils
+16,2017,Mumbai,2017-04-16,Gujarat Lions,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+17,2017,Bangalore,2017-04-16,Rising Pune Supergiant,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Rising Pune Supergiant
+18,2017,Delhi,2017-04-17,Delhi Daredevils,Kolkata Knight Riders,Delhi Daredevils,bat,normal,Kolkata Knight Riders
+19,2017,Hyderabad,2017-04-17,Sunrisers Hyderabad,Kings XI Punjab,Kings XI Punjab,field,normal,Sunrisers Hyderabad
+20,2017,Rajkot,2017-04-18,Royal Challengers Bangalore,Gujarat Lions,Gujarat Lions,field,normal,Royal Challengers Bangalore
+21,2017,Hyderabad,2017-04-19,Sunrisers Hyderabad,Delhi Daredevils,Sunrisers Hyderabad,bat,normal,Sunrisers Hyderabad
+22,2017,Indore,2017-04-20,Kings XI Punjab,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+23,2017,Kolkata,2017-04-21,Kolkata Knight Riders,Gujarat Lions,Gujarat Lions,field,normal,Gujarat Lions
+24,2017,Mumbai,2017-04-22,Mumbai Indians,Delhi Daredevils,Delhi Daredevils,field,normal,Mumbai Indians
+25,2017,Pune,2017-04-22,Sunrisers Hyderabad,Rising Pune Supergiant,Rising Pune Supergiant,field,normal,Rising Pune Supergiant
+26,2017,Rajkot,2017-04-23,Kings XI Punjab,Gujarat Lions,Gujarat Lions,field,normal,Kings XI Punjab
+27,2017,Kolkata,2017-04-23,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Kolkata Knight Riders
+28,2017,Mumbai,2017-04-24,Rising Pune Supergiant,Mumbai Indians,Mumbai Indians,field,normal,Rising Pune Supergiant
+29,2017,Pune,2017-04-26,Rising Pune Supergiant,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+30,2017,Bangalore,2017-04-27,Royal Challengers Bangalore,Gujarat Lions,Gujarat Lions,field,normal,Gujarat Lions
+31,2017,Kolkata,2017-04-28,Delhi Daredevils,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+32,2017,Chandigarh,2017-04-28,Sunrisers Hyderabad,Kings XI Punjab,Kings XI Punjab,field,normal,Sunrisers Hyderabad
+33,2017,Pune,2017-04-29,Rising Pune Supergiant,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Rising Pune Supergiant
+34,2017,Rajkot,2017-04-29,Gujarat Lions,Mumbai Indians,Gujarat Lions,bat,tie,Mumbai Indians
+35,2017,Chandigarh,2017-04-30,Delhi Daredevils,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+36,2017,Hyderabad,2017-04-30,Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Sunrisers Hyderabad
+37,2017,Mumbai,2017-05-01,Royal Challengers Bangalore,Mumbai Indians,Royal Challengers Bangalore,bat,normal,Mumbai Indians
+38,2017,Pune,2017-05-01,Gujarat Lions,Rising Pune Supergiant,Rising Pune Supergiant,field,normal,Rising Pune Supergiant
+39,2017,Delhi,2017-05-02,Sunrisers Hyderabad,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+40,2017,Kolkata,2017-05-03,Kolkata Knight Riders,Rising Pune Supergiant,Rising Pune Supergiant,field,normal,Rising Pune Supergiant
+41,2017,Delhi,2017-05-04,Gujarat Lions,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+42,2017,Bangalore,2017-05-05,Kings XI Punjab,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Kings XI Punjab
+43,2017,Hyderabad,2017-05-06,Rising Pune Supergiant,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Rising Pune Supergiant
+44,2017,Delhi,2017-05-06,Mumbai Indians,Delhi Daredevils,Delhi Daredevils,field,normal,Mumbai Indians
+45,2017,Bangalore,2017-05-07,Royal Challengers Bangalore,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+46,2017,Chandigarh,2017-05-07,Kings XI Punjab,Gujarat Lions,Gujarat Lions,field,normal,Gujarat Lions
+47,2017,Hyderabad,2017-05-08,Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,bat,normal,Sunrisers Hyderabad
+48,2017,Chandigarh,2017-05-09,Kings XI Punjab,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kings XI Punjab
+49,2017,Kanpur,2017-05-10,Gujarat Lions,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+50,2017,Mumbai,2017-05-11,Kings XI Punjab,Mumbai Indians,Mumbai Indians,field,normal,Kings XI Punjab
+51,2017,Delhi,2017-05-12,Delhi Daredevils,Rising Pune Supergiant,Delhi Daredevils,bat,normal,Delhi Daredevils
+52,2017,Kanpur,2017-05-13,Gujarat Lions,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Sunrisers Hyderabad
+53,2017,Kolkata,2017-05-13,Mumbai Indians,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Mumbai Indians
+54,2017,Pune,2017-05-14,Kings XI Punjab,Rising Pune Supergiant,Rising Pune Supergiant,field,normal,Rising Pune Supergiant
+55,2017,Delhi,2017-05-14,Royal Challengers Bangalore,Delhi Daredevils,Royal Challengers Bangalore,bat,normal,Royal Challengers Bangalore
+56,2017,Mumbai,2017-05-16,Rising Pune Supergiant,Mumbai Indians,Mumbai Indians,field,normal,Rising Pune Supergiant
+57,2017,Bangalore,2017-05-17,Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+58,2017,Bangalore,2017-05-19,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+59,2017,Hyderabad,2017-05-21,Mumbai Indians,Rising Pune Supergiant,Mumbai Indians,bat,normal,Mumbai Indians
+60,2008,Bangalore,2008-04-18,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Kolkata Knight Riders
+61,2008,Chandigarh,2008-04-19,Chennai Super Kings,Kings XI Punjab,Chennai Super Kings,bat,normal,Chennai Super Kings
+62,2008,Delhi,2008-04-19,Rajasthan Royals,Delhi Daredevils,Rajasthan Royals,bat,normal,Delhi Daredevils
+63,2008,Mumbai,2008-04-20,Mumbai Indians,Royal Challengers Bangalore,Mumbai Indians,bat,normal,Royal Challengers Bangalore
+64,2008,Kolkata,2008-04-20,Deccan Chargers,Kolkata Knight Riders,Deccan Chargers,bat,normal,Kolkata Knight Riders
+65,2008,Jaipur,2008-04-21,Kings XI Punjab,Rajasthan Royals,Kings XI Punjab,bat,normal,Rajasthan Royals
+66,2008,Hyderabad,2008-04-22,Deccan Chargers,Delhi Daredevils,Deccan Chargers,bat,normal,Delhi Daredevils
+67,2008,Chennai,2008-04-23,Chennai Super Kings,Mumbai Indians,Mumbai Indians,field,normal,Chennai Super Kings
+68,2008,Hyderabad,2008-04-24,Deccan Chargers,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+69,2008,Chandigarh,2008-04-25,Kings XI Punjab,Mumbai Indians,Mumbai Indians,field,normal,Kings XI Punjab
+70,2008,Bangalore,2008-04-26,Royal Challengers Bangalore,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+71,2008,Chennai,2008-04-26,Kolkata Knight Riders,Chennai Super Kings,Kolkata Knight Riders,bat,normal,Chennai Super Kings
+72,2008,Mumbai,2008-04-27,Mumbai Indians,Deccan Chargers,Deccan Chargers,field,normal,Deccan Chargers
+73,2008,Chandigarh,2008-04-27,Delhi Daredevils,Kings XI Punjab,Delhi Daredevils,bat,normal,Kings XI Punjab
+74,2008,Bangalore,2008-04-28,Chennai Super Kings,Royal Challengers Bangalore,Chennai Super Kings,bat,normal,Chennai Super Kings
+75,2008,Kolkata,2008-04-29,Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,bat,normal,Mumbai Indians
+76,2008,Delhi,2008-04-30,Delhi Daredevils,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Delhi Daredevils
+77,2008,Hyderabad,2008-05-01,Deccan Chargers,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+78,2008,Jaipur,2008-05-01,Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,bat,normal,Rajasthan Royals
+79,2008,Chennai,2008-05-02,Chennai Super Kings,Delhi Daredevils,Chennai Super Kings,bat,normal,Delhi Daredevils
+80,2008,Hyderabad,2008-05-25,Deccan Chargers,Royal Challengers Bangalore,Deccan Chargers,bat,normal,Royal Challengers Bangalore
+81,2008,Chandigarh,2008-05-03,Kings XI Punjab,Kolkata Knight Riders,Kings XI Punjab,bat,normal,Kings XI Punjab
+82,2008,Mumbai,2008-05-04,Mumbai Indians,Delhi Daredevils,Delhi Daredevils,field,normal,Mumbai Indians
+83,2008,Jaipur,2008-05-04,Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,bat,normal,Rajasthan Royals
+84,2008,Bangalore,2008-05-05,Royal Challengers Bangalore,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+85,2008,Chennai,2008-05-06,Chennai Super Kings,Deccan Chargers,Deccan Chargers,field,normal,Deccan Chargers
+86,2008,Mumbai,2008-05-07,Rajasthan Royals,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+87,2008,Delhi,2008-05-08,Delhi Daredevils,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+88,2008,Kolkata,2008-05-08,Kolkata Knight Riders,Royal Challengers Bangalore,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+89,2008,Jaipur,2008-05-09,Deccan Chargers,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+90,2008,Bangalore,2008-05-28,Royal Challengers Bangalore,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+91,2008,Chennai,2008-05-10,Chennai Super Kings,Kings XI Punjab,Kings XI Punjab,field,normal,Chennai Super Kings
+92,2008,Hyderabad,2008-05-11,Kolkata Knight Riders,Deccan Chargers,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+93,2008,Jaipur,2008-05-11,Delhi Daredevils,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+94,2008,Chandigarh,2008-05-12,Royal Challengers Bangalore,Kings XI Punjab,Royal Challengers Bangalore,bat,normal,Kings XI Punjab
+95,2008,Kolkata,2008-05-13,Kolkata Knight Riders,Delhi Daredevils,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+96,2008,Mumbai,2008-05-14,Chennai Super Kings,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+97,2008,Chandigarh,2008-05-28,Kings XI Punjab,Rajasthan Royals,Rajasthan Royals,field,normal,Kings XI Punjab
+98,2008,Delhi,2008-05-15,Delhi Daredevils,Deccan Chargers,Deccan Chargers,field,normal,Delhi Daredevils
+99,2008,Mumbai,2008-05-16,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+100,2008,Delhi,2008-05-17,Delhi Daredevils,Kings XI Punjab,Delhi Daredevils,bat,normal,Kings XI Punjab
+101,2008,Jaipur,2008-05-17,Rajasthan Royals,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Rajasthan Royals
+102,2008,Hyderabad,2008-05-18,Mumbai Indians,Deccan Chargers,Deccan Chargers,field,normal,Mumbai Indians
+103,2008,Kolkata,2008-05-18,Kolkata Knight Riders,Chennai Super Kings,Kolkata Knight Riders,bat,normal,Chennai Super Kings
+104,2008,Bangalore,2008-05-19,Royal Challengers Bangalore,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+105,2008,Kolkata,2008-05-20,Kolkata Knight Riders,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+106,2008,Mumbai,2008-05-21,Kings XI Punjab,Mumbai Indians,Mumbai Indians,field,normal,Kings XI Punjab
+107,2008,Chennai,2008-05-21,Royal Challengers Bangalore,Chennai Super Kings,Royal Challengers Bangalore,bat,normal,Royal Challengers Bangalore
+108,2008,Chandigarh,2008-05-23,Deccan Chargers,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+109,2008,Delhi,2008-05-24,Mumbai Indians,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+110,2008,Chennai,2008-05-24,Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,bat,normal,Rajasthan Royals
+111,2008,Bangalore,2008-05-03,Royal Challengers Bangalore,Deccan Chargers,Deccan Chargers,field,normal,Royal Challengers Bangalore
+112,2008,Kolkata,2008-05-25,Kings XI Punjab,Kolkata Knight Riders,Kings XI Punjab,bat,normal,Kolkata Knight Riders
+113,2008,Jaipur,2008-05-26,Mumbai Indians,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+114,2008,Hyderabad,2008-05-27,Deccan Chargers,Chennai Super Kings,Deccan Chargers,bat,normal,Chennai Super Kings
+115,2008,Mumbai,2008-05-30,Rajasthan Royals,Delhi Daredevils,Delhi Daredevils,field,normal,Rajasthan Royals
+116,2008,Mumbai,2008-05-31,Kings XI Punjab,Chennai Super Kings,Kings XI Punjab,bat,normal,Chennai Super Kings
+117,2008,Mumbai,2008-06-01,Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+118,2009,Cape Town,2009-04-18,Mumbai Indians,Chennai Super Kings,Chennai Super Kings,field,normal,Mumbai Indians
+119,2009,Cape Town,2009-04-18,Royal Challengers Bangalore,Rajasthan Royals,Royal Challengers Bangalore,bat,normal,Royal Challengers Bangalore
+120,2009,Cape Town,2009-04-19,Kings XI Punjab,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+121,2009,Cape Town,2009-04-19,Kolkata Knight Riders,Deccan Chargers,Kolkata Knight Riders,bat,normal,Deccan Chargers
+122,2009,Port Elizabeth,2009-04-20,Chennai Super Kings,Royal Challengers Bangalore,Chennai Super Kings,bat,normal,Chennai Super Kings
+123,2009,Durban,2009-04-21,Kings XI Punjab,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+124,2009,Cape Town,2009-04-22,Deccan Chargers,Royal Challengers Bangalore,Deccan Chargers,bat,normal,Deccan Chargers
+125,2009,Durban,2009-04-23,Delhi Daredevils,Chennai Super Kings,Delhi Daredevils,bat,normal,Delhi Daredevils
+126,2009,Cape Town,2009-04-23,Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,field,tie,Rajasthan Royals
+127,2009,Durban,2009-04-24,Royal Challengers Bangalore,Kings XI Punjab,Royal Challengers Bangalore,bat,normal,Kings XI Punjab
+128,2009,Durban,2009-04-25,Deccan Chargers,Mumbai Indians,Deccan Chargers,bat,normal,Deccan Chargers
+129,2009,Port Elizabeth,2009-04-26,Royal Challengers Bangalore,Delhi Daredevils,Royal Challengers Bangalore,bat,normal,Delhi Daredevils
+130,2009,Cape Town,2009-04-26,Kings XI Punjab,Rajasthan Royals,Kings XI Punjab,bat,normal,Kings XI Punjab
+131,2009,Durban,2009-04-27,Chennai Super Kings,Deccan Chargers,Deccan Chargers,field,normal,Deccan Chargers
+132,2009,Port Elizabeth,2009-04-27,Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,bat,normal,Mumbai Indians
+133,2009,Centurion,2009-04-28,Delhi Daredevils,Rajasthan Royals,Delhi Daredevils,bat,normal,Rajasthan Royals
+134,2009,Durban,2009-04-29,Kolkata Knight Riders,Royal Challengers Bangalore,Kolkata Knight Riders,bat,normal,Royal Challengers Bangalore
+135,2009,Durban,2009-04-29,Kings XI Punjab,Mumbai Indians,Kings XI Punjab,bat,normal,Kings XI Punjab
+136,2009,Centurion,2009-04-30,Deccan Chargers,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+137,2009,Centurion,2009-04-30,Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,field,normal,Chennai Super Kings
+138,2009,East London,2009-05-01,Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,bat,normal,Mumbai Indians
+139,2009,Durban,2009-05-01,Royal Challengers Bangalore,Kings XI Punjab,Royal Challengers Bangalore,bat,normal,Royal Challengers Bangalore
+140,2009,Port Elizabeth,2009-05-02,Deccan Chargers,Rajasthan Royals,Deccan Chargers,bat,normal,Rajasthan Royals
+141,2009,Johannesburg,2009-05-02,Chennai Super Kings,Delhi Daredevils,Delhi Daredevils,field,normal,Chennai Super Kings
+142,2009,Port Elizabeth,2009-05-03,Kolkata Knight Riders,Kings XI Punjab,Kolkata Knight Riders,bat,normal,Kings XI Punjab
+143,2009,Johannesburg,2009-05-03,Mumbai Indians,Royal Challengers Bangalore,Mumbai Indians,bat,normal,Royal Challengers Bangalore
+144,2009,East London,2009-05-04,Chennai Super Kings,Deccan Chargers,Chennai Super Kings,bat,normal,Chennai Super Kings
+145,2009,Durban,2009-05-05,Rajasthan Royals,Kings XI Punjab,Kings XI Punjab,field,normal,Rajasthan Royals
+146,2009,Durban,2009-05-05,Kolkata Knight Riders,Delhi Daredevils,Kolkata Knight Riders,bat,normal,Delhi Daredevils
+147,2009,Centurion,2009-05-06,Deccan Chargers,Mumbai Indians,Deccan Chargers,bat,normal,Deccan Chargers
+148,2009,Centurion,2009-05-07,Royal Challengers Bangalore,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+149,2009,Centurion,2009-05-07,Chennai Super Kings,Kings XI Punjab,Chennai Super Kings,bat,normal,Chennai Super Kings
+150,2009,East London,2009-05-08,Mumbai Indians,Delhi Daredevils,Mumbai Indians,bat,normal,Delhi Daredevils
+151,2009,Kimberley,2009-05-09,Deccan Chargers,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+152,2009,Kimberley,2009-05-09,Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,bat,normal,Chennai Super Kings
+153,2009,Port Elizabeth,2009-05-10,Mumbai Indians,Royal Challengers Bangalore,Mumbai Indians,bat,normal,Mumbai Indians
+154,2009,Johannesburg,2009-05-10,Kolkata Knight Riders,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+155,2009,Kimberley,2009-05-11,Deccan Chargers,Rajasthan Royals,Deccan Chargers,bat,normal,Deccan Chargers
+156,2009,Centurion,2009-05-12,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+157,2009,Centurion,2009-05-12,Kings XI Punjab,Mumbai Indians,Kings XI Punjab,bat,normal,Mumbai Indians
+158,2009,Durban,2009-05-13,Delhi Daredevils,Deccan Chargers,Deccan Chargers,field,normal,Delhi Daredevils
+159,2009,Durban,2009-05-14,Chennai Super Kings,Royal Challengers Bangalore,Chennai Super Kings,bat,normal,Royal Challengers Bangalore
+160,2009,Durban,2009-05-14,Rajasthan Royals,Mumbai Indians,Rajasthan Royals,bat,normal,Rajasthan Royals
+161,2009,Bloemfontein,2009-05-15,Delhi Daredevils,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+162,2009,Port Elizabeth,2009-05-16,Mumbai Indians,Chennai Super Kings,Mumbai Indians,bat,normal,Chennai Super Kings
+163,2009,Johannesburg,2009-05-16,Kolkata Knight Riders,Deccan Chargers,Deccan Chargers,field,normal,Deccan Chargers
+164,2009,Johannesburg,2009-05-17,Kings XI Punjab,Deccan Chargers,Deccan Chargers,field,normal,Kings XI Punjab
+165,2009,Bloemfontein,2009-05-17,Delhi Daredevils,Rajasthan Royals,Delhi Daredevils,bat,normal,Delhi Daredevils
+166,2009,Centurion,2009-05-18,Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,bat,normal,Kolkata Knight Riders
+167,2009,Johannesburg,2009-05-19,Delhi Daredevils,Royal Challengers Bangalore,Delhi Daredevils,bat,normal,Royal Challengers Bangalore
+168,2009,Durban,2009-05-20,Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+169,2009,Durban,2009-05-20,Chennai Super Kings,Kings XI Punjab,Chennai Super Kings,bat,normal,Chennai Super Kings
+170,2009,Centurion,2009-05-21,Mumbai Indians,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+171,2009,Centurion,2009-05-21,Royal Challengers Bangalore,Deccan Chargers,Royal Challengers Bangalore,bat,normal,Royal Challengers Bangalore
+172,2009,Centurion,2009-05-22,Delhi Daredevils,Deccan Chargers,Deccan Chargers,field,normal,Deccan Chargers
+173,2009,Johannesburg,2009-05-23,Chennai Super Kings,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+174,2009,Johannesburg,2009-05-24,Deccan Chargers,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Deccan Chargers
+175,2010,Mumbai,2010-03-12,Kolkata Knight Riders,Deccan Chargers,Deccan Chargers,field,normal,Kolkata Knight Riders
+176,2010,Mumbai,2010-03-13,Mumbai Indians,Rajasthan Royals,Mumbai Indians,bat,normal,Mumbai Indians
+177,2010,Chandigarh,2010-03-13,Kings XI Punjab,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+178,2010,Kolkata,2010-03-14,Royal Challengers Bangalore,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+179,2010,Chennai,2010-03-14,Deccan Chargers,Chennai Super Kings,Deccan Chargers,bat,normal,Deccan Chargers
+180,2010,Ahmedabad,2010-03-15,Rajasthan Royals,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+181,2010,Bangalore,2010-03-16,Kings XI Punjab,Royal Challengers Bangalore,Kings XI Punjab,bat,normal,Royal Challengers Bangalore
+182,2010,Kolkata,2010-03-16,Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,bat,normal,Chennai Super Kings
+183,2010,Delhi,2010-03-17,Mumbai Indians,Delhi Daredevils,Delhi Daredevils,field,normal,Mumbai Indians
+184,2010,Bangalore,2010-03-18,Rajasthan Royals,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+185,2010,Delhi,2010-03-19,Delhi Daredevils,Chennai Super Kings,Delhi Daredevils,bat,normal,Chennai Super Kings
+186,2010,Cuttack,2010-03-19,Deccan Chargers,Kings XI Punjab,Kings XI Punjab,field,normal,Deccan Chargers
+187,2010,Ahmedabad,2010-03-20,Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,bat,normal,Rajasthan Royals
+188,2010,Mumbai,2010-03-20,Mumbai Indians,Royal Challengers Bangalore,Mumbai Indians,bat,normal,Royal Challengers Bangalore
+189,2010,Cuttack,2010-03-21,Deccan Chargers,Delhi Daredevils,Deccan Chargers,bat,normal,Deccan Chargers
+190,2010,Chennai,2010-03-21,Kings XI Punjab,Chennai Super Kings,Chennai Super Kings,field,tie,Kings XI Punjab
+191,2010,Mumbai,2010-03-22,Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,bat,normal,Mumbai Indians
+192,2010,Bangalore,2010-03-23,Royal Challengers Bangalore,Chennai Super Kings,Chennai Super Kings,field,normal,Royal Challengers Bangalore
+193,2010,Chandigarh,2010-03-24,Rajasthan Royals,Kings XI Punjab,Kings XI Punjab,field,normal,Rajasthan Royals
+194,2010,Mumbai,2010-03-25,Chennai Super Kings,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+195,2010,Ahmedabad,2010-03-26,Deccan Chargers,Rajasthan Royals,Deccan Chargers,bat,normal,Rajasthan Royals
+196,2010,Chandigarh,2010-03-27,Kolkata Knight Riders,Kings XI Punjab,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+197,2010,Bangalore,2010-03-25,Delhi Daredevils,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Delhi Daredevils
+198,2010,Ahmedabad,2010-03-28,Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,bat,normal,Rajasthan Royals
+199,2010,Mumbai,2010-03-28,Mumbai Indians,Deccan Chargers,Deccan Chargers,field,normal,Mumbai Indians
+200,2010,Delhi,2010-03-29,Delhi Daredevils,Kolkata Knight Riders,Delhi Daredevils,bat,normal,Delhi Daredevils
+201,2010,Mumbai,2010-03-30,Kings XI Punjab,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+202,2010,Chennai,2010-03-31,Royal Challengers Bangalore,Chennai Super Kings,Royal Challengers Bangalore,bat,normal,Chennai Super Kings
+203,2010,Delhi,2010-03-31,Delhi Daredevils,Rajasthan Royals,Delhi Daredevils,bat,normal,Delhi Daredevils
+204,2010,Kolkata,2010-04-01,Kolkata Knight Riders,Deccan Chargers,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+205,2010,Chandigarh,2010-04-02,Kings XI Punjab,Royal Challengers Bangalore,Kings XI Punjab,bat,normal,Royal Challengers Bangalore
+206,2010,Chennai,2010-04-03,Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,bat,normal,Chennai Super Kings
+207,2010,Mumbai,2010-04-03,Mumbai Indians,Deccan Chargers,Mumbai Indians,bat,normal,Mumbai Indians
+208,2010,Kolkata,2010-04-04,Kolkata Knight Riders,Kings XI Punjab,Kolkata Knight Riders,bat,normal,Kings XI Punjab
+209,2010,Delhi,2010-04-04,Delhi Daredevils,Royal Challengers Bangalore,Delhi Daredevils,bat,normal,Delhi Daredevils
+210,2010,Nagpur,2010-04-05,Rajasthan Royals,Deccan Chargers,Rajasthan Royals,bat,normal,Rajasthan Royals
+211,2010,Chennai,2010-04-06,Chennai Super Kings,Mumbai Indians,Chennai Super Kings,bat,normal,Chennai Super Kings
+212,2010,Jaipur,2010-04-07,Kings XI Punjab,Rajasthan Royals,Kings XI Punjab,bat,normal,Rajasthan Royals
+213,2010,Kolkata,2010-04-07,Kolkata Knight Riders,Delhi Daredevils,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+214,2010,Bangalore,2010-04-08,Royal Challengers Bangalore,Deccan Chargers,Deccan Chargers,field,normal,Deccan Chargers
+215,2010,Chandigarh,2010-04-09,Mumbai Indians,Kings XI Punjab,Mumbai Indians,bat,normal,Kings XI Punjab
+216,2010,Nagpur,2010-04-10,Chennai Super Kings,Deccan Chargers,Chennai Super Kings,bat,normal,Deccan Chargers
+217,2010,Bangalore,2010-04-10,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+218,2010,Delhi,2010-04-11,Delhi Daredevils,Kings XI Punjab,Delhi Daredevils,bat,normal,Kings XI Punjab
+219,2010,Jaipur,2010-04-11,Mumbai Indians,Rajasthan Royals,Rajasthan Royals,field,normal,Mumbai Indians
+220,2010,Nagpur,2010-04-12,Deccan Chargers,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Deccan Chargers
+221,2010,Mumbai,2010-04-13,Mumbai Indians,Delhi Daredevils,Mumbai Indians,bat,normal,Mumbai Indians
+222,2010,Chennai,2010-04-13,Kolkata Knight Riders,Chennai Super Kings,Kolkata Knight Riders,bat,normal,Chennai Super Kings
+223,2010,Jaipur,2010-04-14,Rajasthan Royals,Royal Challengers Bangalore,Rajasthan Royals,bat,normal,Royal Challengers Bangalore
+224,2010,Chennai,2010-04-15,Chennai Super Kings,Delhi Daredevils,Chennai Super Kings,bat,normal,Delhi Daredevils
+225,2010,Dharamsala,2010-04-16,Kings XI Punjab,Deccan Chargers,Deccan Chargers,field,normal,Deccan Chargers
+226,2010,Bangalore,2010-04-17,Mumbai Indians,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Mumbai Indians
+227,2010,Kolkata,2010-04-17,Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,bat,normal,Kolkata Knight Riders
+228,2010,Dharamsala,2010-04-18,Kings XI Punjab,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+229,2010,Delhi,2010-04-18,Deccan Chargers,Delhi Daredevils,Deccan Chargers,bat,normal,Deccan Chargers
+230,2010,Kolkata,2010-04-19,Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,bat,normal,Kolkata Knight Riders
+231,2010,Mumbai,2010-04-21,Mumbai Indians,Royal Challengers Bangalore,Mumbai Indians,bat,normal,Mumbai Indians
+232,2010,Mumbai,2010-04-22,Chennai Super Kings,Deccan Chargers,Chennai Super Kings,bat,normal,Chennai Super Kings
+233,2010,Mumbai,2010-04-24,Deccan Chargers,Royal Challengers Bangalore,Deccan Chargers,bat,normal,Royal Challengers Bangalore
+234,2010,Mumbai,2010-04-25,Chennai Super Kings,Mumbai Indians,Chennai Super Kings,bat,normal,Chennai Super Kings
+235,2011,Chennai,2011-04-08,Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,bat,normal,Chennai Super Kings
+236,2011,Hyderabad,2011-04-09,Deccan Chargers,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+237,2011,Kochi,2011-04-09,Kochi Tuskers Kerala,Royal Challengers Bangalore,Kochi Tuskers Kerala,bat,normal,Royal Challengers Bangalore
+238,2011,Delhi,2011-04-10,Delhi Daredevils,Mumbai Indians,Delhi Daredevils,bat,normal,Mumbai Indians
+239,2011,Mumbai,2011-04-10,Kings XI Punjab,Pune Warriors,Kings XI Punjab,bat,normal,Pune Warriors
+240,2011,Kolkata,2011-04-11,Kolkata Knight Riders,Deccan Chargers,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+241,2011,Jaipur,2011-04-12,Delhi Daredevils,Rajasthan Royals,Delhi Daredevils,bat,normal,Rajasthan Royals
+242,2011,Bangalore,2011-04-12,Royal Challengers Bangalore,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+243,2011,Chandigarh,2011-04-13,Chennai Super Kings,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+244,2011,Mumbai,2011-04-13,Kochi Tuskers Kerala,Pune Warriors,Kochi Tuskers Kerala,bat,normal,Pune Warriors
+245,2011,Hyderabad,2011-04-14,Deccan Chargers,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Deccan Chargers
+246,2011,Jaipur,2011-04-15,Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+247,2011,Mumbai,2011-04-15,Mumbai Indians,Kochi Tuskers Kerala,Kochi Tuskers Kerala,field,normal,Kochi Tuskers Kerala
+248,2011,Chennai,2011-04-16,Chennai Super Kings,Royal Challengers Bangalore,Chennai Super Kings,bat,normal,Chennai Super Kings
+249,2011,Hyderabad,2011-04-16,Deccan Chargers,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+250,2011,Mumbai,2011-04-17,Pune Warriors,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+251,2011,Kolkata,2011-04-17,Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+252,2011,Kochi,2011-04-18,Chennai Super Kings,Kochi Tuskers Kerala,Kochi Tuskers Kerala,field,normal,Kochi Tuskers Kerala
+253,2011,Delhi,2011-04-19,Deccan Chargers,Delhi Daredevils,Deccan Chargers,bat,normal,Deccan Chargers
+254,2011,Mumbai,2011-04-20,Pune Warriors,Mumbai Indians,Pune Warriors,bat,normal,Mumbai Indians
+255,2011,Kolkata,2011-04-20,Kochi Tuskers Kerala,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kochi Tuskers Kerala
+256,2011,Chandigarh,2011-04-21,Kings XI Punjab,Rajasthan Royals,Rajasthan Royals,field,normal,Kings XI Punjab
+257,2011,Mumbai,2011-04-22,Mumbai Indians,Chennai Super Kings,Chennai Super Kings,field,normal,Mumbai Indians
+258,2011,Kolkata,2011-04-22,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+259,2011,Delhi,2011-04-23,Delhi Daredevils,Kings XI Punjab,Kings XI Punjab,field,normal,Delhi Daredevils
+260,2011,Hyderabad,2011-04-24,Mumbai Indians,Deccan Chargers,Deccan Chargers,field,normal,Mumbai Indians
+261,2011,Jaipur,2011-04-24,Kochi Tuskers Kerala,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+262,2011,Chennai,2011-04-25,Chennai Super Kings,Pune Warriors,Pune Warriors,field,normal,Chennai Super Kings
+263,2011,Delhi,2011-04-26,Delhi Daredevils,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+264,2011,Mumbai,2011-04-27,Pune Warriors,Chennai Super Kings,Pune Warriors,bat,normal,Chennai Super Kings
+265,2011,Kochi,2011-04-27,Deccan Chargers,Kochi Tuskers Kerala,Kochi Tuskers Kerala,field,normal,Deccan Chargers
+266,2011,Delhi,2011-04-28,Kolkata Knight Riders,Delhi Daredevils,Delhi Daredevils,field,normal,Kolkata Knight Riders
+267,2011,Jaipur,2011-04-29,Mumbai Indians,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+268,2011,Bangalore,2011-04-29,Royal Challengers Bangalore,Pune Warriors,Pune Warriors,field,normal,Royal Challengers Bangalore
+269,2011,Kochi,2011-04-30,Delhi Daredevils,Kochi Tuskers Kerala,Delhi Daredevils,bat,normal,Delhi Daredevils
+270,2011,Kolkata,2011-04-30,Kings XI Punjab,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+271,2011,Jaipur,2011-05-01,Pune Warriors,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+272,2011,Chennai,2011-05-01,Chennai Super Kings,Deccan Chargers,Chennai Super Kings,bat,normal,Chennai Super Kings
+273,2011,Mumbai,2011-05-02,Mumbai Indians,Kings XI Punjab,Kings XI Punjab,field,normal,Mumbai Indians
+274,2011,Delhi,2011-05-02,Delhi Daredevils,Kochi Tuskers Kerala,Kochi Tuskers Kerala,field,normal,Kochi Tuskers Kerala
+275,2011,Hyderabad,2011-05-03,Kolkata Knight Riders,Deccan Chargers,Deccan Chargers,field,normal,Kolkata Knight Riders
+276,2011,Chennai,2011-05-04,Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,bat,normal,Chennai Super Kings
+277,2011,Mumbai,2011-05-04,Mumbai Indians,Pune Warriors,Pune Warriors,field,normal,Mumbai Indians
+278,2011,Kochi,2011-05-05,Kochi Tuskers Kerala,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kochi Tuskers Kerala
+279,2011,Hyderabad,2011-05-05,Deccan Chargers,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+280,2011,Bangalore,2011-05-06,Royal Challengers Bangalore,Kings XI Punjab,Kings XI Punjab,field,normal,Royal Challengers Bangalore
+281,2011,Kolkata,2011-05-07,Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,bat,normal,Kolkata Knight Riders
+282,2011,Mumbai,2011-05-07,Mumbai Indians,Delhi Daredevils,Delhi Daredevils,field,normal,Mumbai Indians
+283,2011,Bangalore,2011-05-08,Kochi Tuskers Kerala,Royal Challengers Bangalore,Kochi Tuskers Kerala,bat,normal,Royal Challengers Bangalore
+284,2011,Chandigarh,2011-05-08,Kings XI Punjab,Pune Warriors,Kings XI Punjab,bat,normal,Pune Warriors
+285,2011,Jaipur,2011-05-09,Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,field,normal,Chennai Super Kings
+286,2011,Hyderabad,2011-05-10,Deccan Chargers,Pune Warriors,Deccan Chargers,bat,normal,Pune Warriors
+287,2011,Chandigarh,2011-05-10,Kings XI Punjab,Mumbai Indians,Mumbai Indians,field,normal,Kings XI Punjab
+288,2011,Jaipur,2011-05-11,Rajasthan Royals,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+289,2011,Chennai,2011-05-12,Chennai Super Kings,Delhi Daredevils,Chennai Super Kings,bat,normal,Chennai Super Kings
+290,2011,Indore,2011-05-13,Kochi Tuskers Kerala,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+291,2011,Bangalore,2011-05-14,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+292,2011,Mumbai,2011-05-14,Deccan Chargers,Mumbai Indians,Deccan Chargers,bat,normal,Deccan Chargers
+293,2011,Dharamsala,2011-05-15,Kings XI Punjab,Delhi Daredevils,Delhi Daredevils,field,normal,Kings XI Punjab
+294,2011,Indore,2011-05-15,Rajasthan Royals,Kochi Tuskers Kerala,Kochi Tuskers Kerala,field,normal,Kochi Tuskers Kerala
+295,2011,Mumbai,2011-05-16,Pune Warriors,Deccan Chargers,Deccan Chargers,field,normal,Deccan Chargers
+296,2011,Dharamsala,2011-05-17,Kings XI Punjab,Royal Challengers Bangalore,Kings XI Punjab,bat,normal,Kings XI Punjab
+297,2011,Chennai,2011-05-18,Chennai Super Kings,Kochi Tuskers Kerala,Chennai Super Kings,bat,normal,Chennai Super Kings
+298,2011,Mumbai,2011-05-19,Pune Warriors,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+299,2011,Mumbai,2011-05-20,Mumbai Indians,Rajasthan Royals,Mumbai Indians,bat,normal,Rajasthan Royals
+300,2011,Dharamsala,2011-05-21,Deccan Chargers,Kings XI Punjab,Kings XI Punjab,field,normal,Deccan Chargers
+301,2011,Delhi,2011-05-21,Delhi Daredevils,Pune Warriors,Delhi Daredevils,bat,no result,
+302,2011,Bangalore,2011-05-22,Chennai Super Kings,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+303,2011,Kolkata,2011-05-22,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+304,2011,Mumbai,2011-05-24,Royal Challengers Bangalore,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+305,2011,Mumbai,2011-05-25,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+306,2011,Chennai,2011-05-27,Royal Challengers Bangalore,Mumbai Indians,Mumbai Indians,field,normal,Royal Challengers Bangalore
+307,2011,Chennai,2011-05-28,Chennai Super Kings,Royal Challengers Bangalore,Chennai Super Kings,bat,normal,Chennai Super Kings
+308,2012,Chennai,2012-04-04,Chennai Super Kings,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+309,2012,Kolkata,2012-04-05,Kolkata Knight Riders,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+310,2012,Mumbai,2012-04-06,Pune Warriors,Mumbai Indians,Mumbai Indians,field,normal,Pune Warriors
+311,2012,Jaipur,2012-04-06,Rajasthan Royals,Kings XI Punjab,Kings XI Punjab,field,normal,Rajasthan Royals
+312,2012,Bangalore,2012-04-07,Royal Challengers Bangalore,Delhi Daredevils,Delhi Daredevils,field,normal,Royal Challengers Bangalore
+313,2012,Visakhapatnam,2012-04-07,Chennai Super Kings,Deccan Chargers,Deccan Chargers,field,normal,Chennai Super Kings
+314,2012,Jaipur,2012-04-08,Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Rajasthan Royals
+315,2012,Pune,2012-04-08,Pune Warriors,Kings XI Punjab,Pune Warriors,bat,normal,Pune Warriors
+316,2012,Visakhapatnam,2012-04-09,Deccan Chargers,Mumbai Indians,Deccan Chargers,bat,normal,Mumbai Indians
+317,2012,Bangalore,2012-04-10,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Kolkata Knight Riders
+318,2012,Delhi,2012-04-10,Chennai Super Kings,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+319,2012,Mumbai,2012-04-11,Mumbai Indians,Rajasthan Royals,Rajasthan Royals,field,normal,Mumbai Indians
+320,2012,Chennai,2012-04-12,Royal Challengers Bangalore,Chennai Super Kings,Royal Challengers Bangalore,bat,normal,Chennai Super Kings
+321,2012,Chandigarh,2012-04-12,Pune Warriors,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+322,2012,Kolkata,2012-04-13,Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,bat,normal,Kolkata Knight Riders
+323,2012,Delhi,2012-04-19,Deccan Chargers,Delhi Daredevils,Deccan Chargers,bat,normal,Delhi Daredevils
+324,2012,Pune,2012-04-14,Chennai Super Kings,Pune Warriors,Chennai Super Kings,bat,normal,Pune Warriors
+325,2012,Kolkata,2012-04-15,Kings XI Punjab,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kings XI Punjab
+326,2012,Bangalore,2012-04-15,Rajasthan Royals,Royal Challengers Bangalore,Rajasthan Royals,bat,normal,Rajasthan Royals
+327,2012,Mumbai,2012-04-16,Mumbai Indians,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+328,2012,Jaipur,2012-04-17,Deccan Chargers,Rajasthan Royals,Deccan Chargers,bat,normal,Rajasthan Royals
+329,2012,Bangalore,2012-04-17,Pune Warriors,Royal Challengers Bangalore,Pune Warriors,bat,normal,Royal Challengers Bangalore
+330,2012,Chandigarh,2012-04-18,Kings XI Punjab,Kolkata Knight Riders,Kings XI Punjab,bat,normal,Kolkata Knight Riders
+331,2012,Hyderabad,2012-05-10,Deccan Chargers,Delhi Daredevils,Deccan Chargers,bat,normal,Delhi Daredevils
+332,2012,Chennai,2012-04-19,Chennai Super Kings,Pune Warriors,Pune Warriors,field,normal,Chennai Super Kings
+333,2012,Chandigarh,2012-04-20,Kings XI Punjab,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+334,2012,Chennai,2012-04-21,Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,bat,normal,Chennai Super Kings
+335,2012,Delhi,2012-04-21,Pune Warriors,Delhi Daredevils,Delhi Daredevils,field,normal,Pune Warriors
+336,2012,Mumbai,2012-04-22,Mumbai Indians,Kings XI Punjab,Mumbai Indians,bat,normal,Kings XI Punjab
+337,2012,Cuttack,2012-04-22,Deccan Chargers,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+338,2012,Jaipur,2012-04-23,Royal Challengers Bangalore,Rajasthan Royals,Rajasthan Royals,field,normal,Royal Challengers Bangalore
+339,2012,Pune,2012-04-24,Pune Warriors,Delhi Daredevils,Pune Warriors,bat,normal,Delhi Daredevils
+340,2012,Chandigarh,2012-04-25,Kings XI Punjab,Mumbai Indians,Kings XI Punjab,bat,normal,Mumbai Indians
+341,2012,Pune,2012-04-26,Deccan Chargers,Pune Warriors,Deccan Chargers,bat,normal,Deccan Chargers
+342,2012,Delhi,2012-04-27,Delhi Daredevils,Mumbai Indians,Mumbai Indians,field,normal,Delhi Daredevils
+343,2012,Chennai,2012-04-28,Kings XI Punjab,Chennai Super Kings,Kings XI Punjab,bat,normal,Kings XI Punjab
+344,2012,Kolkata,2012-04-28,Kolkata Knight Riders,Royal Challengers Bangalore,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+345,2012,Delhi,2012-04-29,Delhi Daredevils,Rajasthan Royals,Delhi Daredevils,bat,normal,Delhi Daredevils
+346,2012,Mumbai,2012-04-29,Deccan Chargers,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+347,2012,Chennai,2012-04-30,Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,bat,normal,Kolkata Knight Riders
+348,2012,Cuttack,2012-05-01,Deccan Chargers,Pune Warriors,Deccan Chargers,bat,normal,Deccan Chargers
+349,2012,Jaipur,2012-05-01,Rajasthan Royals,Delhi Daredevils,Rajasthan Royals,bat,normal,Delhi Daredevils
+350,2012,Bangalore,2012-05-02,Royal Challengers Bangalore,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+351,2012,Pune,2012-05-03,Mumbai Indians,Pune Warriors,Mumbai Indians,bat,normal,Mumbai Indians
+352,2012,Chennai,2012-05-04,Chennai Super Kings,Deccan Chargers,Chennai Super Kings,bat,normal,Chennai Super Kings
+353,2012,Kolkata,2012-05-05,Kolkata Knight Riders,Pune Warriors,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+354,2012,Chandigarh,2012-05-05,Rajasthan Royals,Kings XI Punjab,Rajasthan Royals,bat,normal,Rajasthan Royals
+355,2012,Mumbai,2012-05-06,Chennai Super Kings,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+356,2012,Bangalore,2012-05-06,Deccan Chargers,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+357,2012,Delhi,2012-05-07,Delhi Daredevils,Kolkata Knight Riders,Delhi Daredevils,bat,normal,Kolkata Knight Riders
+358,2012,Pune,2012-05-08,Pune Warriors,Rajasthan Royals,Pune Warriors,bat,normal,Rajasthan Royals
+359,2012,Hyderabad,2012-05-08,Kings XI Punjab,Deccan Chargers,Deccan Chargers,field,normal,Kings XI Punjab
+360,2012,Mumbai,2012-05-09,Mumbai Indians,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+361,2012,Jaipur,2012-05-10,Rajasthan Royals,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+362,2012,Pune,2012-05-11,Royal Challengers Bangalore,Pune Warriors,Pune Warriors,field,normal,Royal Challengers Bangalore
+363,2012,Kolkata,2012-05-12,Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,bat,normal,Mumbai Indians
+364,2012,Chennai,2012-05-12,Delhi Daredevils,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+365,2012,Jaipur,2012-05-13,Rajasthan Royals,Pune Warriors,Rajasthan Royals,bat,normal,Rajasthan Royals
+366,2012,Chandigarh,2012-05-13,Deccan Chargers,Kings XI Punjab,Deccan Chargers,bat,normal,Kings XI Punjab
+367,2012,Bangalore,2012-05-14,Royal Challengers Bangalore,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+368,2012,Kolkata,2012-05-14,Kolkata Knight Riders,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+369,2012,Delhi,2012-05-15,Kings XI Punjab,Delhi Daredevils,Kings XI Punjab,bat,normal,Delhi Daredevils
+370,2012,Mumbai,2012-05-16,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,normal,Kolkata Knight Riders
+371,2012,Dharamsala,2012-05-17,Chennai Super Kings,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+372,2012,Delhi,2012-05-17,Royal Challengers Bangalore,Delhi Daredevils,Delhi Daredevils,field,normal,Royal Challengers Bangalore
+373,2012,Hyderabad,2012-05-18,Rajasthan Royals,Deccan Chargers,Rajasthan Royals,bat,normal,Deccan Chargers
+374,2012,Dharamsala,2012-05-19,Kings XI Punjab,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+375,2012,Pune,2012-05-19,Kolkata Knight Riders,Pune Warriors,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+376,2012,Hyderabad,2012-05-20,Deccan Chargers,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Deccan Chargers
+377,2012,Jaipur,2012-05-20,Rajasthan Royals,Mumbai Indians,Rajasthan Royals,bat,normal,Mumbai Indians
+378,2012,Pune,2012-05-22,Kolkata Knight Riders,Delhi Daredevils,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+379,2012,Bangalore,2012-05-23,Chennai Super Kings,Mumbai Indians,Mumbai Indians,field,normal,Chennai Super Kings
+380,2012,Chennai,2012-05-25,Chennai Super Kings,Delhi Daredevils,Delhi Daredevils,field,normal,Chennai Super Kings
+381,2012,Chennai,2012-05-27,Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,bat,normal,Kolkata Knight Riders
+382,2013,Kolkata,2013-04-03,Delhi Daredevils,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+383,2013,Bangalore,2013-04-04,Royal Challengers Bangalore,Mumbai Indians,Mumbai Indians,field,normal,Royal Challengers Bangalore
+384,2013,Hyderabad,2013-04-05,Sunrisers Hyderabad,Pune Warriors,Pune Warriors,field,normal,Sunrisers Hyderabad
+385,2013,Delhi,2013-04-06,Rajasthan Royals,Delhi Daredevils,Rajasthan Royals,bat,normal,Rajasthan Royals
+386,2013,Chennai,2013-04-06,Mumbai Indians,Chennai Super Kings,Mumbai Indians,bat,normal,Mumbai Indians
+387,2013,Pune,2013-04-07,Pune Warriors,Kings XI Punjab,Pune Warriors,bat,normal,Kings XI Punjab
+388,2013,Hyderabad,2013-04-07,Royal Challengers Bangalore,Sunrisers Hyderabad,Royal Challengers Bangalore,bat,tie,Sunrisers Hyderabad
+389,2013,Jaipur,2013-04-08,Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Rajasthan Royals
+390,2013,Mumbai,2013-04-09,Mumbai Indians,Delhi Daredevils,Mumbai Indians,bat,normal,Mumbai Indians
+391,2013,Chandigarh,2013-04-10,Kings XI Punjab,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+392,2013,Bangalore,2013-04-11,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+393,2013,Pune,2013-04-11,Rajasthan Royals,Pune Warriors,Rajasthan Royals,bat,normal,Pune Warriors
+394,2013,Delhi,2013-04-12,Delhi Daredevils,Sunrisers Hyderabad,Delhi Daredevils,bat,normal,Sunrisers Hyderabad
+395,2013,Mumbai,2013-04-13,Mumbai Indians,Pune Warriors,Mumbai Indians,bat,normal,Mumbai Indians
+396,2013,Chennai,2013-04-13,Royal Challengers Bangalore,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+397,2013,Kolkata,2013-04-14,Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+398,2013,Jaipur,2013-04-14,Kings XI Punjab,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+399,2013,Chennai,2013-04-15,Pune Warriors,Chennai Super Kings,Pune Warriors,bat,normal,Pune Warriors
+400,2013,Chandigarh,2013-04-16,Kings XI Punjab,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kings XI Punjab
+401,2013,Bangalore,2013-04-16,Delhi Daredevils,Royal Challengers Bangalore,Royal Challengers Bangalore,field,tie,Royal Challengers Bangalore
+402,2013,Pune,2013-04-17,Sunrisers Hyderabad,Pune Warriors,Pune Warriors,field,normal,Sunrisers Hyderabad
+403,2013,Jaipur,2013-04-17,Rajasthan Royals,Mumbai Indians,Rajasthan Royals,bat,normal,Rajasthan Royals
+404,2013,Delhi,2013-04-18,Chennai Super Kings,Delhi Daredevils,Chennai Super Kings,bat,normal,Chennai Super Kings
+405,2013,Hyderabad,2013-04-19,Kings XI Punjab,Sunrisers Hyderabad,Kings XI Punjab,bat,normal,Sunrisers Hyderabad
+406,2013,Kolkata,2013-04-20,Kolkata Knight Riders,Chennai Super Kings,Kolkata Knight Riders,bat,normal,Chennai Super Kings
+407,2013,Bangalore,2013-04-20,Rajasthan Royals,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+408,2013,Delhi,2013-04-21,Mumbai Indians,Delhi Daredevils,Mumbai Indians,bat,normal,Delhi Daredevils
+409,2013,Chandigarh,2013-04-21,Pune Warriors,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+410,2013,Chennai,2013-04-22,Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,bat,normal,Chennai Super Kings
+411,2013,Bangalore,2013-04-23,Royal Challengers Bangalore,Pune Warriors,Pune Warriors,field,normal,Royal Challengers Bangalore
+412,2013,Dharamsala,2013-05-16,Kings XI Punjab,Delhi Daredevils,Delhi Daredevils,field,normal,Kings XI Punjab
+413,2013,Kolkata,2013-04-24,Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,bat,normal,Mumbai Indians
+414,2013,Chennai,2013-04-25,Sunrisers Hyderabad,Chennai Super Kings,Sunrisers Hyderabad,bat,normal,Chennai Super Kings
+415,2013,Kolkata,2013-04-26,Kings XI Punjab,Kolkata Knight Riders,Kings XI Punjab,bat,normal,Kolkata Knight Riders
+416,2013,Jaipur,2013-04-27,Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,bat,normal,Rajasthan Royals
+417,2013,Mumbai,2013-04-27,Mumbai Indians,Royal Challengers Bangalore,Mumbai Indians,bat,normal,Mumbai Indians
+418,2013,Chennai,2013-04-28,Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Chennai Super Kings
+419,2013,Raipur,2013-04-28,Delhi Daredevils,Pune Warriors,Pune Warriors,field,normal,Delhi Daredevils
+420,2013,Jaipur,2013-04-29,Royal Challengers Bangalore,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+421,2013,Mumbai,2013-04-29,Mumbai Indians,Kings XI Punjab,Mumbai Indians,bat,normal,Mumbai Indians
+422,2013,Pune,2013-04-30,Chennai Super Kings,Pune Warriors,Chennai Super Kings,bat,normal,Chennai Super Kings
+423,2013,Hyderabad,2013-05-01,Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,bat,normal,Sunrisers Hyderabad
+424,2013,Raipur,2013-05-01,Kolkata Knight Riders,Delhi Daredevils,Kolkata Knight Riders,bat,normal,Delhi Daredevils
+425,2013,Chennai,2013-05-02,Chennai Super Kings,Kings XI Punjab,Chennai Super Kings,bat,normal,Chennai Super Kings
+426,2013,Pune,2013-05-02,Royal Challengers Bangalore,Pune Warriors,Royal Challengers Bangalore,bat,normal,Royal Challengers Bangalore
+427,2013,Kolkata,2013-05-03,Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,bat,normal,Kolkata Knight Riders
+428,2013,Hyderabad,2013-05-04,Delhi Daredevils,Sunrisers Hyderabad,Delhi Daredevils,bat,normal,Sunrisers Hyderabad
+429,2013,Bangalore,2013-05-14,Royal Challengers Bangalore,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+430,2013,Mumbai,2013-05-05,Mumbai Indians,Chennai Super Kings,Mumbai Indians,bat,normal,Mumbai Indians
+431,2013,Jaipur,2013-05-05,Pune Warriors,Rajasthan Royals,Pune Warriors,bat,normal,Rajasthan Royals
+432,2013,Bangalore,2013-04-09,Sunrisers Hyderabad,Royal Challengers Bangalore,Sunrisers Hyderabad,bat,normal,Royal Challengers Bangalore
+433,2013,Jaipur,2013-05-07,Delhi Daredevils,Rajasthan Royals,Delhi Daredevils,bat,normal,Rajasthan Royals
+434,2013,Mumbai,2013-05-07,Mumbai Indians,Kolkata Knight Riders,Mumbai Indians,bat,normal,Mumbai Indians
+435,2013,Hyderabad,2013-05-08,Chennai Super Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Chennai Super Kings
+436,2013,Chandigarh,2013-05-09,Kings XI Punjab,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+437,2013,Pune,2013-05-09,Kolkata Knight Riders,Pune Warriors,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+438,2013,Delhi,2013-05-10,Royal Challengers Bangalore,Delhi Daredevils,Delhi Daredevils,field,normal,Royal Challengers Bangalore
+439,2013,Pune,2013-05-11,Pune Warriors,Mumbai Indians,Pune Warriors,bat,normal,Mumbai Indians
+440,2013,Chandigarh,2013-05-11,Sunrisers Hyderabad,Kings XI Punjab,Kings XI Punjab,field,normal,Sunrisers Hyderabad
+441,2013,Ranchi,2013-05-12,Royal Challengers Bangalore,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+442,2013,Jaipur,2013-05-12,Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+443,2013,Delhi,2013-04-23,Delhi Daredevils,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+444,2013,Mumbai,2013-05-13,Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,bat,normal,Mumbai Indians
+445,2013,Ranchi,2013-05-15,Pune Warriors,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Pune Warriors
+446,2013,Chennai,2013-05-14,Chennai Super Kings,Delhi Daredevils,Chennai Super Kings,bat,normal,Chennai Super Kings
+447,2013,Mumbai,2013-05-15,Mumbai Indians,Rajasthan Royals,Rajasthan Royals,field,normal,Mumbai Indians
+448,2013,Chandigarh,2013-05-06,Royal Challengers Bangalore,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+449,2013,Hyderabad,2013-05-17,Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,bat,normal,Sunrisers Hyderabad
+450,2013,Dharamsala,2013-05-18,Kings XI Punjab,Mumbai Indians,Mumbai Indians,field,normal,Kings XI Punjab
+451,2013,Pune,2013-05-19,Pune Warriors,Delhi Daredevils,Pune Warriors,bat,normal,Pune Warriors
+452,2013,Bangalore,2013-05-18,Royal Challengers Bangalore,Chennai Super Kings,Chennai Super Kings,field,normal,Royal Challengers Bangalore
+453,2013,Hyderabad,2013-05-19,Kolkata Knight Riders,Sunrisers Hyderabad,Kolkata Knight Riders,bat,normal,Sunrisers Hyderabad
+454,2013,Delhi,2013-05-21,Chennai Super Kings,Mumbai Indians,Chennai Super Kings,bat,normal,Chennai Super Kings
+455,2013,Delhi,2013-05-22,Sunrisers Hyderabad,Rajasthan Royals,Sunrisers Hyderabad,bat,normal,Rajasthan Royals
+456,2013,Kolkata,2013-05-24,Rajasthan Royals,Mumbai Indians,Rajasthan Royals,bat,normal,Mumbai Indians
+457,2013,Kolkata,2013-05-26,Mumbai Indians,Chennai Super Kings,Mumbai Indians,bat,normal,Mumbai Indians
+458,2014,Abu Dhabi,2014-04-16,Kolkata Knight Riders,Mumbai Indians,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+459,2014,Sharjah,2014-04-17,Delhi Daredevils,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+460,2014,Abu Dhabi,2014-04-18,Chennai Super Kings,Kings XI Punjab,Chennai Super Kings,bat,normal,Kings XI Punjab
+461,2014,Abu Dhabi,2014-04-18,Sunrisers Hyderabad,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+462,2014,,2014-04-19,Mumbai Indians,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+463,2014,,2014-04-19,Kolkata Knight Riders,Delhi Daredevils,Kolkata Knight Riders,bat,normal,Delhi Daredevils
+464,2014,Sharjah,2014-04-20,Rajasthan Royals,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+465,2014,Abu Dhabi,2014-04-21,Chennai Super Kings,Delhi Daredevils,Chennai Super Kings,bat,normal,Chennai Super Kings
+466,2014,Sharjah,2014-04-22,Kings XI Punjab,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Kings XI Punjab
+467,2014,,2014-04-23,Chennai Super Kings,Rajasthan Royals,Rajasthan Royals,field,normal,Chennai Super Kings
+468,2014,Sharjah,2014-04-24,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Kolkata Knight Riders
+469,2014,,2014-04-25,Sunrisers Hyderabad,Delhi Daredevils,Sunrisers Hyderabad,bat,normal,Sunrisers Hyderabad
+470,2014,,2014-04-25,Mumbai Indians,Chennai Super Kings,Mumbai Indians,bat,normal,Chennai Super Kings
+471,2014,Abu Dhabi,2014-04-26,Royal Challengers Bangalore,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+472,2014,Abu Dhabi,2014-04-26,Kings XI Punjab,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kings XI Punjab
+473,2014,Sharjah,2014-04-27,Mumbai Indians,Delhi Daredevils,Mumbai Indians,bat,normal,Delhi Daredevils
+474,2014,Sharjah,2014-04-27,Sunrisers Hyderabad,Chennai Super Kings,Sunrisers Hyderabad,bat,normal,Chennai Super Kings
+475,2014,,2014-04-28,Royal Challengers Bangalore,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+476,2014,Abu Dhabi,2014-04-29,Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,bat,tie,Rajasthan Royals
+477,2014,,2014-04-30,Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,field,normal,Sunrisers Hyderabad
+478,2014,Ranchi,2014-05-02,Chennai Super Kings,Kolkata Knight Riders,Chennai Super Kings,bat,normal,Chennai Super Kings
+479,2014,Mumbai,2014-05-03,Kings XI Punjab,Mumbai Indians,Kings XI Punjab,bat,normal,Mumbai Indians
+480,2014,Delhi,2014-05-03,Delhi Daredevils,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+481,2014,Bangalore,2014-05-04,Sunrisers Hyderabad,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+482,2014,Ahmedabad,2014-05-05,Rajasthan Royals,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Rajasthan Royals
+483,2014,Delhi,2014-05-05,Delhi Daredevils,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+484,2014,Mumbai,2014-05-06,Mumbai Indians,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Mumbai Indians
+485,2014,Delhi,2014-05-07,Delhi Daredevils,Kolkata Knight Riders,Delhi Daredevils,bat,normal,Kolkata Knight Riders
+486,2014,Cuttack,2014-05-07,Kings XI Punjab,Chennai Super Kings,Chennai Super Kings,field,normal,Kings XI Punjab
+487,2014,Ahmedabad,2014-05-08,Sunrisers Hyderabad,Rajasthan Royals,Rajasthan Royals,field,normal,Sunrisers Hyderabad
+488,2014,Bangalore,2014-05-09,Kings XI Punjab,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Kings XI Punjab
+489,2014,Delhi,2014-05-10,Delhi Daredevils,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Sunrisers Hyderabad
+490,2014,Mumbai,2014-05-10,Mumbai Indians,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+491,2014,Cuttack,2014-05-11,Kings XI Punjab,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+492,2014,Bangalore,2014-05-11,Royal Challengers Bangalore,Rajasthan Royals,Royal Challengers Bangalore,bat,normal,Rajasthan Royals
+493,2014,Hyderabad,2014-05-12,Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,bat,normal,Mumbai Indians
+494,2014,Ranchi,2014-05-13,Rajasthan Royals,Chennai Super Kings,Rajasthan Royals,bat,normal,Chennai Super Kings
+495,2014,Bangalore,2014-05-13,Royal Challengers Bangalore,Delhi Daredevils,Delhi Daredevils,field,normal,Royal Challengers Bangalore
+496,2014,Hyderabad,2014-05-14,Sunrisers Hyderabad,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+497,2014,Cuttack,2014-05-14,Mumbai Indians,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+498,2014,Ahmedabad,2014-05-15,Rajasthan Royals,Delhi Daredevils,Delhi Daredevils,field,normal,Rajasthan Royals
+499,2014,Ranchi,2014-05-18,Chennai Super Kings,Royal Challengers Bangalore,Chennai Super Kings,bat,normal,Royal Challengers Bangalore
+500,2014,Hyderabad,2014-05-18,Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,bat,normal,Kolkata Knight Riders
+501,2014,Ahmedabad,2014-05-19,Mumbai Indians,Rajasthan Royals,Mumbai Indians,bat,normal,Mumbai Indians
+502,2014,Delhi,2014-05-19,Delhi Daredevils,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+503,2014,Hyderabad,2014-05-20,Royal Challengers Bangalore,Sunrisers Hyderabad,Royal Challengers Bangalore,bat,normal,Sunrisers Hyderabad
+504,2014,Kolkata,2014-05-20,Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+505,2014,Chandigarh,2014-05-21,Kings XI Punjab,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+506,2014,Kolkata,2014-05-22,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Kolkata Knight Riders
+507,2014,Ranchi,2014-05-22,Chennai Super Kings,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Sunrisers Hyderabad
+508,2014,Mumbai,2014-05-23,Mumbai Indians,Delhi Daredevils,Delhi Daredevils,field,normal,Mumbai Indians
+509,2014,Chandigarh,2014-05-23,Kings XI Punjab,Rajasthan Royals,Rajasthan Royals,field,normal,Kings XI Punjab
+510,2014,Bangalore,2014-05-24,Royal Challengers Bangalore,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+511,2014,Kolkata,2014-05-24,Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+512,2014,Chandigarh,2014-05-25,Delhi Daredevils,Kings XI Punjab,Kings XI Punjab,field,normal,Kings XI Punjab
+513,2014,Mumbai,2014-05-25,Rajasthan Royals,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+514,2014,Kolkata,2014-05-27,Kolkata Knight Riders,Kings XI Punjab,Kings XI Punjab,field,normal,Kolkata Knight Riders
+515,2014,Mumbai,2014-05-28,Mumbai Indians,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+516,2014,Mumbai,2014-05-30,Kings XI Punjab,Chennai Super Kings,Chennai Super Kings,field,normal,Kings XI Punjab
+517,2014,Bangalore,2014-06-01,Kings XI Punjab,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+518,2015,Kolkata,2015-04-08,Mumbai Indians,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+519,2015,Chennai,2015-04-09,Chennai Super Kings,Delhi Daredevils,Delhi Daredevils,field,normal,Chennai Super Kings
+520,2015,Pune,2015-04-10,Rajasthan Royals,Kings XI Punjab,Kings XI Punjab,field,normal,Rajasthan Royals
+521,2015,Chennai,2015-04-11,Chennai Super Kings,Sunrisers Hyderabad,Chennai Super Kings,bat,normal,Chennai Super Kings
+522,2015,Kolkata,2015-04-11,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+523,2015,Delhi,2015-04-12,Delhi Daredevils,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+524,2015,Mumbai,2015-04-12,Kings XI Punjab,Mumbai Indians,Mumbai Indians,field,normal,Kings XI Punjab
+525,2015,Bangalore,2015-04-13,Royal Challengers Bangalore,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Sunrisers Hyderabad
+526,2015,Ahmedabad,2015-04-14,Mumbai Indians,Rajasthan Royals,Mumbai Indians,bat,normal,Rajasthan Royals
+527,2015,Kolkata,2015-04-30,Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+528,2015,Pune,2015-04-15,Kings XI Punjab,Delhi Daredevils,Kings XI Punjab,bat,normal,Delhi Daredevils
+529,2015,Visakhapatnam,2015-04-16,Sunrisers Hyderabad,Rajasthan Royals,Rajasthan Royals,field,normal,Rajasthan Royals
+530,2015,Mumbai,2015-04-17,Mumbai Indians,Chennai Super Kings,Mumbai Indians,bat,normal,Chennai Super Kings
+531,2015,Visakhapatnam,2015-04-18,Delhi Daredevils,Sunrisers Hyderabad,Delhi Daredevils,bat,normal,Delhi Daredevils
+532,2015,Pune,2015-04-18,Kings XI Punjab,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+533,2015,Ahmedabad,2015-04-19,Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,bat,normal,Rajasthan Royals
+534,2015,Bangalore,2015-04-19,Mumbai Indians,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Mumbai Indians
+535,2015,Delhi,2015-04-20,Delhi Daredevils,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+536,2015,Ahmedabad,2015-04-21,Rajasthan Royals,Kings XI Punjab,Kings XI Punjab,field,tie,Kings XI Punjab
+537,2015,Visakhapatnam,2015-04-22,Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Sunrisers Hyderabad
+538,2015,Bangalore,2015-04-22,Chennai Super Kings,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Chennai Super Kings
+539,2015,Delhi,2015-04-23,Delhi Daredevils,Mumbai Indians,Mumbai Indians,field,normal,Delhi Daredevils
+540,2015,Ahmedabad,2015-04-24,Rajasthan Royals,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+541,2015,Mumbai,2015-04-25,Mumbai Indians,Sunrisers Hyderabad,Mumbai Indians,bat,normal,Mumbai Indians
+542,2015,Chennai,2015-04-25,Chennai Super Kings,Kings XI Punjab,Chennai Super Kings,bat,normal,Chennai Super Kings
+543,2015,Delhi,2015-04-26,Delhi Daredevils,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+544,2015,Chandigarh,2015-04-27,Sunrisers Hyderabad,Kings XI Punjab,Kings XI Punjab,field,normal,Sunrisers Hyderabad
+545,2015,Kolkata,2015-05-07,Kolkata Knight Riders,Delhi Daredevils,Kolkata Knight Riders,bat,normal,Kolkata Knight Riders
+546,2015,Bangalore,2015-04-29,Royal Challengers Bangalore,Rajasthan Royals,Rajasthan Royals,field,no result,
+547,2015,Chennai,2015-04-28,Chennai Super Kings,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Chennai Super Kings
+548,2015,Delhi,2015-05-01,Kings XI Punjab,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+549,2015,Mumbai,2015-05-01,Mumbai Indians,Rajasthan Royals,Rajasthan Royals,field,normal,Mumbai Indians
+550,2015,Bangalore,2015-05-02,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+551,2015,Hyderabad,2015-05-02,Sunrisers Hyderabad,Chennai Super Kings,Chennai Super Kings,field,normal,Sunrisers Hyderabad
+552,2015,Chandigarh,2015-05-03,Mumbai Indians,Kings XI Punjab,Mumbai Indians,bat,normal,Mumbai Indians
+553,2015,Mumbai,2015-05-03,Rajasthan Royals,Delhi Daredevils,Delhi Daredevils,field,normal,Rajasthan Royals
+554,2015,Chennai,2015-05-04,Chennai Super Kings,Royal Challengers Bangalore,Chennai Super Kings,bat,normal,Chennai Super Kings
+555,2015,Kolkata,2015-05-04,Kolkata Knight Riders,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Kolkata Knight Riders
+556,2015,Mumbai,2015-05-05,Delhi Daredevils,Mumbai Indians,Delhi Daredevils,bat,normal,Mumbai Indians
+557,2015,Bangalore,2015-05-06,Royal Challengers Bangalore,Kings XI Punjab,Kings XI Punjab,field,normal,Royal Challengers Bangalore
+558,2015,Mumbai,2015-05-07,Sunrisers Hyderabad,Rajasthan Royals,Rajasthan Royals,field,normal,Sunrisers Hyderabad
+559,2015,Chennai,2015-05-08,Chennai Super Kings,Mumbai Indians,Chennai Super Kings,bat,normal,Mumbai Indians
+560,2015,Kolkata,2015-05-09,Kings XI Punjab,Kolkata Knight Riders,Kings XI Punjab,bat,normal,Kolkata Knight Riders
+561,2015,Raipur,2015-05-09,Sunrisers Hyderabad,Delhi Daredevils,Sunrisers Hyderabad,bat,normal,Sunrisers Hyderabad
+562,2015,Mumbai,2015-05-10,Royal Challengers Bangalore,Mumbai Indians,Royal Challengers Bangalore,bat,normal,Royal Challengers Bangalore
+563,2015,Chennai,2015-05-10,Chennai Super Kings,Rajasthan Royals,Chennai Super Kings,bat,normal,Chennai Super Kings
+564,2015,Hyderabad,2015-05-11,Sunrisers Hyderabad,Kings XI Punjab,Sunrisers Hyderabad,bat,normal,Sunrisers Hyderabad
+565,2015,Raipur,2015-05-12,Chennai Super Kings,Delhi Daredevils,Chennai Super Kings,bat,normal,Delhi Daredevils
+566,2015,Chandigarh,2015-05-13,Kings XI Punjab,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Kings XI Punjab
+567,2015,Mumbai,2015-05-14,Mumbai Indians,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Mumbai Indians
+568,2015,Hyderabad,2015-05-15,Sunrisers Hyderabad,Royal Challengers Bangalore,Sunrisers Hyderabad,bat,normal,Royal Challengers Bangalore
+569,2015,Chandigarh,2015-05-16,Kings XI Punjab,Chennai Super Kings,Kings XI Punjab,bat,normal,Chennai Super Kings
+570,2015,Mumbai,2015-05-16,Rajasthan Royals,Kolkata Knight Riders,Rajasthan Royals,bat,normal,Rajasthan Royals
+571,2015,Bangalore,2015-05-17,Delhi Daredevils,Royal Challengers Bangalore,Royal Challengers Bangalore,field,no result,
+572,2015,Hyderabad,2015-05-17,Sunrisers Hyderabad,Mumbai Indians,Sunrisers Hyderabad,bat,normal,Mumbai Indians
+573,2015,Mumbai,2015-05-19,Mumbai Indians,Chennai Super Kings,Mumbai Indians,bat,normal,Mumbai Indians
+574,2015,Pune,2015-05-20,Royal Challengers Bangalore,Rajasthan Royals,Royal Challengers Bangalore,bat,normal,Royal Challengers Bangalore
+575,2015,Ranchi,2015-05-22,Royal Challengers Bangalore,Chennai Super Kings,Chennai Super Kings,field,normal,Chennai Super Kings
+576,2015,Kolkata,2015-05-24,Mumbai Indians,Chennai Super Kings,Chennai Super Kings,field,normal,Mumbai Indians
+577,2016,Mumbai,2016-04-09,Mumbai Indians,Rising Pune Supergiants,Mumbai Indians,bat,normal,Rising Pune Supergiants
+578,2016,Kolkata,2016-04-10,Delhi Daredevils,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+579,2016,Chandigarh,2016-04-11,Kings XI Punjab,Gujarat Lions,Gujarat Lions,field,normal,Gujarat Lions
+580,2016,Bangalore,2016-04-12,Royal Challengers Bangalore,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Royal Challengers Bangalore
+581,2016,Kolkata,2016-04-13,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+582,2016,Rajkot,2016-04-14,Rising Pune Supergiants,Gujarat Lions,Rising Pune Supergiants,bat,normal,Gujarat Lions
+583,2016,Delhi,2016-04-15,Kings XI Punjab,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+584,2016,Hyderabad,2016-04-16,Sunrisers Hyderabad,Kolkata Knight Riders,Sunrisers Hyderabad,bat,normal,Kolkata Knight Riders
+585,2016,Mumbai,2016-04-16,Mumbai Indians,Gujarat Lions,Gujarat Lions,field,normal,Gujarat Lions
+586,2016,Chandigarh,2016-04-17,Rising Pune Supergiants,Kings XI Punjab,Rising Pune Supergiants,bat,normal,Kings XI Punjab
+587,2016,Bangalore,2016-04-17,Royal Challengers Bangalore,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+588,2016,Hyderabad,2016-04-18,Mumbai Indians,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Sunrisers Hyderabad
+589,2016,Chandigarh,2016-04-19,Kings XI Punjab,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+590,2016,Mumbai,2016-04-20,Royal Challengers Bangalore,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+591,2016,Rajkot,2016-04-21,Gujarat Lions,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Sunrisers Hyderabad
+592,2016,Pune,2016-04-22,Royal Challengers Bangalore,Rising Pune Supergiants,Rising Pune Supergiants,field,normal,Royal Challengers Bangalore
+593,2016,Delhi,2016-04-23,Delhi Daredevils,Mumbai Indians,Mumbai Indians,field,normal,Delhi Daredevils
+594,2016,Hyderabad,2016-04-23,Kings XI Punjab,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Sunrisers Hyderabad
+595,2016,Rajkot,2016-04-24,Royal Challengers Bangalore,Gujarat Lions,Royal Challengers Bangalore,bat,normal,Gujarat Lions
+596,2016,Pune,2016-04-24,Rising Pune Supergiants,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+597,2016,Chandigarh,2016-04-25,Mumbai Indians,Kings XI Punjab,Kings XI Punjab,field,normal,Mumbai Indians
+598,2016,Hyderabad,2016-04-26,Sunrisers Hyderabad,Rising Pune Supergiants,Rising Pune Supergiants,field,normal,Rising Pune Supergiants
+599,2016,Delhi,2016-04-27,Gujarat Lions,Delhi Daredevils,Delhi Daredevils,field,normal,Gujarat Lions
+600,2016,Mumbai,2016-04-28,Kolkata Knight Riders,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+601,2016,Pune,2016-04-29,Rising Pune Supergiants,Gujarat Lions,Gujarat Lions,field,normal,Gujarat Lions
+602,2016,Delhi,2016-04-30,Delhi Daredevils,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Delhi Daredevils
+603,2016,Hyderabad,2016-04-30,Sunrisers Hyderabad,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Sunrisers Hyderabad
+604,2016,Rajkot,2016-05-01,Kings XI Punjab,Gujarat Lions,Gujarat Lions,field,normal,Kings XI Punjab
+605,2016,Pune,2016-05-01,Rising Pune Supergiants,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+606,2016,Bangalore,2016-05-02,Royal Challengers Bangalore,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Kolkata Knight Riders
+607,2016,Rajkot,2016-05-03,Gujarat Lions,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+608,2016,Kolkata,2016-05-04,Kolkata Knight Riders,Kings XI Punjab,Kings XI Punjab,field,normal,Kolkata Knight Riders
+609,2016,Delhi,2016-05-05,Delhi Daredevils,Rising Pune Supergiants,Rising Pune Supergiants,field,normal,Rising Pune Supergiants
+610,2016,Hyderabad,2016-05-06,Gujarat Lions,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Sunrisers Hyderabad
+611,2016,Bangalore,2016-05-07,Rising Pune Supergiants,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+612,2016,Chandigarh,2016-05-07,Kings XI Punjab,Delhi Daredevils,Delhi Daredevils,field,normal,Kings XI Punjab
+613,2016,Visakhapatnam,2016-05-08,Sunrisers Hyderabad,Mumbai Indians,Mumbai Indians,field,normal,Sunrisers Hyderabad
+614,2016,Kolkata,2016-05-08,Kolkata Knight Riders,Gujarat Lions,Gujarat Lions,field,normal,Gujarat Lions
+615,2016,Chandigarh,2016-05-09,Royal Challengers Bangalore,Kings XI Punjab,Kings XI Punjab,field,normal,Royal Challengers Bangalore
+616,2016,Visakhapatnam,2016-05-10,Sunrisers Hyderabad,Rising Pune Supergiants,Sunrisers Hyderabad,bat,normal,Sunrisers Hyderabad
+617,2016,Bangalore,2016-05-11,Royal Challengers Bangalore,Mumbai Indians,Mumbai Indians,field,normal,Mumbai Indians
+618,2016,Hyderabad,2016-05-12,Sunrisers Hyderabad,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+619,2016,Visakhapatnam,2016-05-13,Mumbai Indians,Kings XI Punjab,Mumbai Indians,bat,normal,Kings XI Punjab
+620,2016,Bangalore,2016-05-14,Royal Challengers Bangalore,Gujarat Lions,Gujarat Lions,field,normal,Royal Challengers Bangalore
+621,2016,Kolkata,2016-05-14,Rising Pune Supergiants,Kolkata Knight Riders,Rising Pune Supergiants,bat,normal,Kolkata Knight Riders
+622,2016,Chandigarh,2016-05-15,Kings XI Punjab,Sunrisers Hyderabad,Kings XI Punjab,bat,normal,Sunrisers Hyderabad
+623,2016,Visakhapatnam,2016-05-15,Mumbai Indians,Delhi Daredevils,Delhi Daredevils,field,normal,Mumbai Indians
+624,2016,Kolkata,2016-05-16,Kolkata Knight Riders,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+625,2016,Visakhapatnam,2016-05-17,Delhi Daredevils,Rising Pune Supergiants,Rising Pune Supergiants,field,normal,Rising Pune Supergiants
+626,2016,Bangalore,2016-05-18,Royal Challengers Bangalore,Kings XI Punjab,Kings XI Punjab,field,normal,Royal Challengers Bangalore
+627,2016,Kanpur,2016-05-19,Kolkata Knight Riders,Gujarat Lions,Gujarat Lions,field,normal,Gujarat Lions
+628,2016,Raipur,2016-05-20,Sunrisers Hyderabad,Delhi Daredevils,Delhi Daredevils,field,normal,Delhi Daredevils
+629,2016,Visakhapatnam,2016-05-21,Kings XI Punjab,Rising Pune Supergiants,Kings XI Punjab,bat,normal,Rising Pune Supergiants
+630,2016,Kanpur,2016-05-21,Mumbai Indians,Gujarat Lions,Gujarat Lions,field,normal,Gujarat Lions
+631,2016,Kolkata,2016-05-22,Kolkata Knight Riders,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Kolkata Knight Riders
+632,2016,Raipur,2016-05-22,Delhi Daredevils,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+633,2016,Bangalore,2016-05-24,Gujarat Lions,Royal Challengers Bangalore,Royal Challengers Bangalore,field,normal,Royal Challengers Bangalore
+634,2016,Delhi,2016-05-25,Sunrisers Hyderabad,Kolkata Knight Riders,Kolkata Knight Riders,field,normal,Sunrisers Hyderabad
+635,2016,Delhi,2016-05-27,Gujarat Lions,Sunrisers Hyderabad,Sunrisers Hyderabad,field,normal,Sunrisers Hyderabad
+636,2016,Bangalore,2016-05-29,Sunrisers Hyderabad,Royal Challengers Bangalore,Sunrisers Hyderabad,bat,normal,Sunrisers Hyderabad

@@ -1,0 +1,226 @@
+input {
+  width: 68%;
+}
+select {
+  width: 24%;
+  text-align:center;
+}
+textarea {
+  width: 68%;
+  background-color: #f1f2f9
+}
+.header {
+  text-align: center;
+  margin-left: 15px;
+  color: #1907ad;
+}
+.form {
+  border: 3px solid #de4b29;
+  border-radius: 5px;
+  width: 66%;
+  padding: 10px 0px 10px 159px;
+  margin: 5px 24px 5px 190px;
+}
+.text-box {
+  background-color: #f1f2f9;
+  border: 1px solid #69737D;
+  border-radius: 5px;
+  color: #3636f9;
+  font-weight: 300;
+}
+
+.date-input {
+  background-color: #f1f2f9;
+  border: 1px solid #69737D;
+  border-radius: 5px;
+  color: #3636f9;
+  font-weight: 300;
+  width: 24%;
+}
+.report-content-wrapperr {
+    padding: 20px 250px 20px 250px;
+    -webkit-box-shadow: 5px 5px 35px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 35px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 35px -9px rgba(0, 0, 0, 0.75);
+    background: #fff;
+}
+.main-vieww{
+    width: 100%;
+    min-height: 100%;
+    padding: 0px 0px 0px 0px;
+    margin: 0;
+}
+
+.main-view{
+    width: 100%;
+    min-height: 100%;
+    padding: 40px 130px 40px 130px;
+    margin: 0px 0px 0px 0px;
+}
+
+.report-content-wrapper {
+    padding: 20px 250px 20px 250px;
+    -webkit-box-shadow: 5px 5px 35px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 35px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 35px -9px rgba(0, 0, 0, 0.75);
+    background: #fff;
+}
+.form-content {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+.error-msg {
+  margin: 4px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 68%;
+  font-size: 12px;
+  font-weight: lighter;
+}
+.input-div {
+  display: block;
+}
+.input-content {
+  width: 30px;
+  margin: 0px 0px 0px -6px;
+}
+.form-header {
+  padding: 0px 0px 0px 0px;
+}
+.form-close {
+  padding: 0px 0px 0px 0px;
+}
+.close2 {
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+  cursor: pointer;
+  float: right;
+  margin-right: 15px;
+}
+.close-form {
+padding: 0px 0px 0px 0px;
+margin: 0px 0px 0px 0px;
+}
+.submit-btn {
+  width: 16%;
+  padding: 8px 0px 8px 0px;
+  font-weight: 600;
+  margin: 0px 0px 0px 358px;
+}
+.label-name {
+  color: #3636f9;
+}
+.label-content {
+  color: #3636f9;
+  font-weight: 300;
+}
+.div-header {
+  padding-left: 30px
+}
+.list-view {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+.table-div {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 20px 0px 20px;
+}
+.no-record {
+  color: red;
+}
+.table-class {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-class td, .table-class th {
+    border: 1px solid #d49394;
+    padding: 8px;
+}
+
+.table-class tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-class tr:hover {background-color: #ddd;}
+
+.table-class th {
+    padding: 5px 5px 5px 10px;
+    text-align: left;
+    background-color: #bd5152;
+    color: white;
+}
+.msg-div {
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  font-size: 16px;
+}
+.btn-value {
+  font-family: lato;
+  font-weight: 600;
+}
+.column-btn {
+
+}
+.btn-width {
+  width: 96px;
+}
+.btn-spc {
+  margin: 10px 0px;
+}
+.required {
+  color: red;
+  padding-left: 2px;
+}
+.btn-div {
+  margin-left: 22px;
+}
+.title-header {
+color: rgba(0,0,0,.5);
+}
+.add-new {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #bd5152;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  outline: none;
+  border: none;
+  font-size: 26px;
+}
+.member-btn {
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.btn-edt {
+  background-color: #008CBA;
+}
+.btn-dlt {
+  background-color: #e21d0f;
+}
+.no-records {
+  color: #e25959;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  margin: 75px 410px;
+  padding: 25px 0px;
+  border-radius: 4px;
+  background-color: #ececec;
+}
+
+.err {
+  margin-right: 7px;
+}

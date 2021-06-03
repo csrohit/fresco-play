@@ -1,0 +1,732 @@
+{
+  error: Error: listen EADDRINUSE: address already in use :::3000
+      at Server.setupListenHandle [as _listen2] (net.js:1317:16)
+      at listenInCluster (net.js:1365:12)
+      at Server.listen (net.js:1451:7)
+      at Object.<anonymous> (D:\Fresco\Socket\dist\app.js:54:13)
+      at Module._compile (internal/modules/cjs/loader.js:1015:30)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+      at Module.load (internal/modules/cjs/loader.js:879:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+      at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+      at internal/main/run_main_module.js:17:47 {
+    code: 'EADDRINUSE',
+    errno: 'EADDRINUSE',
+    syscall: 'listen',
+    address: '::',
+    port: 3000
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::3000\n' +
+    'Error: listen EADDRINUSE: address already in use :::3000\n' +
+    '    at Server.setupListenHandle [as _listen2] (net.js:1317:16)\n' +
+    '    at listenInCluster (net.js:1365:12)\n' +
+    '    at Server.listen (net.js:1451:7)\n' +
+    '    at Object.<anonymous> (D:\\Fresco\\Socket\\dist\\app.js:54:13)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1015:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:879:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)\n' +
+    '    at internal/main/run_main_module.js:17:47',
+  stack: 'Error: listen EADDRINUSE: address already in use :::3000\n' +
+    '    at Server.setupListenHandle [as _listen2] (net.js:1317:16)\n' +
+    '    at listenInCluster (net.js:1365:12)\n' +
+    '    at Server.listen (net.js:1451:7)\n' +
+    '    at Object.<anonymous> (D:\\Fresco\\Socket\\dist\\app.js:54:13)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1015:30)\n' +
+    '    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1035:10)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:879:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)\n' +
+    '    at internal/main/run_main_module.js:17:47',
+  exception: true,
+  date: 'Sun Feb 21 2021 11:24:02 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 11552,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Fresco\\Socket',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.19.0',
+    argv: [
+      'C:\\Program Files\\nodejs\\node.exe',
+      'D:\\Fresco\\Socket\\dist\\app.js'
+    ],
+    memoryUsage: {
+      rss: 39567360,
+      heapTotal: 17809408,
+      heapUsed: 10329152,
+      external: 1575875,
+      arrayBuffers: 131818
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 727299 },
+  trace: [
+    {
+      column: 16,
+      file: 'net.js',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1317,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'net.js',
+      function: 'listenInCluster',
+      line: 1365,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'net.js',
+      function: 'Server.listen',
+      line: 1451,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'D:\\Fresco\\Socket\\dist\\app.js',
+      function: null,
+      line: 54,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1015,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1035,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 879,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 724,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'internal/modules/run_main.js',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 60,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 47,
+      file: 'internal/main/run_main_module.js',
+      function: null,
+      line: 17,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2021-02-21T05:54:02.468Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::3000
+      at Server.setupListenHandle [as _listen2] (net.js:1317:16)
+      at listenInCluster (net.js:1365:12)
+      at Server.listen (net.js:1451:7)
+      at Object.<anonymous> (D:\Fresco\Socket\src\app.ts:35:13)
+      at Module._compile (internal/modules/cjs/loader.js:1015:30)
+      at Module.m._compile (D:\Fresco\Socket\node_modules\ts-node\src\index.ts:1056:23)
+      at Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+      at Object.require.extensions.<computed> [as .ts] (D:\Fresco\Socket\node_modules\ts-node\src\index.ts:1059:12)
+      at Module.load (internal/modules/cjs/loader.js:879:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:724:14) {
+    code: 'EADDRINUSE',
+    errno: 'EADDRINUSE',
+    syscall: 'listen',
+    address: '::',
+    port: 3000
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::3000\n' +
+    'Error: listen EADDRINUSE: address already in use :::3000\n' +
+    '    at Server.setupListenHandle [as _listen2] (net.js:1317:16)\n' +
+    '    at listenInCluster (net.js:1365:12)\n' +
+    '    at Server.listen (net.js:1451:7)\n' +
+    '    at Object.<anonymous> (D:\\Fresco\\Socket\\src\\app.ts:35:13)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1015:30)\n' +
+    '    at Module.m._compile (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1056:23)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:1035:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1059:12)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:879:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:724:14)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::3000\n' +
+    '    at Server.setupListenHandle [as _listen2] (net.js:1317:16)\n' +
+    '    at listenInCluster (net.js:1365:12)\n' +
+    '    at Server.listen (net.js:1451:7)\n' +
+    '    at Object.<anonymous> (D:\\Fresco\\Socket\\src\\app.ts:35:13)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1015:30)\n' +
+    '    at Module.m._compile (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1056:23)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:1035:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1059:12)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:879:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:724:14)',
+  exception: true,
+  date: 'Sun Feb 21 2021 14:41:34 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 1984,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Fresco\\Socket',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.19.0',
+    argv: [
+      'D:\\Fresco\\Socket\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Fresco\\Socket\\src\\app.ts'
+    ],
+    memoryUsage: {
+      rss: 162226176,
+      heapTotal: 129699840,
+      heapUsed: 99671608,
+      external: 2131158,
+      arrayBuffers: 79993
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 739152 },
+  trace: [
+    {
+      column: 16,
+      file: 'net.js',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1317,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'net.js',
+      function: 'listenInCluster',
+      line: 1365,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'net.js',
+      function: 'Server.listen',
+      line: 1451,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'D:\\Fresco\\Socket\\src\\app.ts',
+      function: null,
+      line: 35,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1015,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1056,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1035,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1059,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 879,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 724,
+      method: '_load',
+      native: false
+    }
+  ],
+  timestamp: '2021-02-21T09:11:34.591Z'
+}
+{
+  error: Error: listen EADDRINUSE: address already in use :::3000
+      at Server.setupListenHandle [as _listen2] (net.js:1317:16)
+      at listenInCluster (net.js:1365:12)
+      at Server.listen (net.js:1451:7)
+      at Object.<anonymous> (D:\Fresco\Socket\src\app.ts:68:13)
+      at Module._compile (internal/modules/cjs/loader.js:1015:30)
+      at Module.m._compile (D:\Fresco\Socket\node_modules\ts-node\src\index.ts:1056:23)
+      at Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+      at Object.require.extensions.<computed> [as .ts] (D:\Fresco\Socket\node_modules\ts-node\src\index.ts:1059:12)
+      at Module.load (internal/modules/cjs/loader.js:879:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:724:14) {
+    code: 'EADDRINUSE',
+    errno: 'EADDRINUSE',
+    syscall: 'listen',
+    address: '::',
+    port: 3000
+  },
+  level: 'error',
+  message: 'uncaughtException: listen EADDRINUSE: address already in use :::3000\n' +
+    'Error: listen EADDRINUSE: address already in use :::3000\n' +
+    '    at Server.setupListenHandle [as _listen2] (net.js:1317:16)\n' +
+    '    at listenInCluster (net.js:1365:12)\n' +
+    '    at Server.listen (net.js:1451:7)\n' +
+    '    at Object.<anonymous> (D:\\Fresco\\Socket\\src\\app.ts:68:13)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1015:30)\n' +
+    '    at Module.m._compile (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1056:23)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:1035:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1059:12)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:879:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:724:14)',
+  stack: 'Error: listen EADDRINUSE: address already in use :::3000\n' +
+    '    at Server.setupListenHandle [as _listen2] (net.js:1317:16)\n' +
+    '    at listenInCluster (net.js:1365:12)\n' +
+    '    at Server.listen (net.js:1451:7)\n' +
+    '    at Object.<anonymous> (D:\\Fresco\\Socket\\src\\app.ts:68:13)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1015:30)\n' +
+    '    at Module.m._compile (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1056:23)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:1035:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1059:12)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:879:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:724:14)',
+  exception: true,
+  date: 'Sun Feb 21 2021 20:42:20 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 18372,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Fresco\\Socket',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.19.0',
+    argv: [
+      'D:\\Fresco\\Socket\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Fresco\\Socket\\src\\app.ts'
+    ],
+    memoryUsage: {
+      rss: 156102656,
+      heapTotal: 129175552,
+      heapUsed: 99658376,
+      external: 2126091,
+      arrayBuffers: 74926
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 760797 },
+  trace: [
+    {
+      column: 16,
+      file: 'net.js',
+      function: 'Server.setupListenHandle [as _listen2]',
+      line: 1317,
+      method: 'setupListenHandle [as _listen2]',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'net.js',
+      function: 'listenInCluster',
+      line: 1365,
+      method: null,
+      native: false
+    },
+    {
+      column: 7,
+      file: 'net.js',
+      function: 'Server.listen',
+      line: 1451,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'D:\\Fresco\\Socket\\src\\app.ts',
+      function: null,
+      line: 68,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1015,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1056,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1035,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1059,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 879,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 724,
+      method: '_load',
+      native: false
+    }
+  ],
+  timestamp: '2021-02-21T15:12:20.012Z'
+}
+{
+  error: Error [ERR_SERVER_ALREADY_LISTEN]: Listen method has been called more than once without closing.
+      at Server.listen (net.js:1403:11)
+      at Object.<anonymous> (D:\Fresco\Socket\src\app.ts:68:13)
+      at Module._compile (internal/modules/cjs/loader.js:1015:30)
+      at Module.m._compile (D:\Fresco\Socket\node_modules\ts-node\src\index.ts:1056:23)
+      at Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+      at Object.require.extensions.<computed> [as .ts] (D:\Fresco\Socket\node_modules\ts-node\src\index.ts:1059:12)
+      at Module.load (internal/modules/cjs/loader.js:879:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+      at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+      at main (D:\Fresco\Socket\node_modules\ts-node\src\bin.ts:198:14) {
+    code: 'ERR_SERVER_ALREADY_LISTEN'
+  },
+  level: 'error',
+  message: 'uncaughtException: Listen method has been called more than once without closing.\n' +
+    'Error [ERR_SERVER_ALREADY_LISTEN]: Listen method has been called more than once without closing.\n' +
+    '    at Server.listen (net.js:1403:11)\n' +
+    '    at Object.<anonymous> (D:\\Fresco\\Socket\\src\\app.ts:68:13)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1015:30)\n' +
+    '    at Module.m._compile (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1056:23)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:1035:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1059:12)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:879:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)\n' +
+    '    at main (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\bin.ts:198:14)',
+  stack: 'Error [ERR_SERVER_ALREADY_LISTEN]: Listen method has been called more than once without closing.\n' +
+    '    at Server.listen (net.js:1403:11)\n' +
+    '    at Object.<anonymous> (D:\\Fresco\\Socket\\src\\app.ts:68:13)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1015:30)\n' +
+    '    at Module.m._compile (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1056:23)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:1035:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1059:12)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:879:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)\n' +
+    '    at main (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\bin.ts:198:14)',
+  exception: true,
+  date: 'Sun Feb 21 2021 20:42:45 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 19940,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Fresco\\Socket',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.19.0',
+    argv: [
+      'D:\\Fresco\\Socket\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Fresco\\Socket\\src\\app.ts'
+    ],
+    memoryUsage: {
+      rss: 157143040,
+      heapTotal: 129175552,
+      heapUsed: 99875584,
+      external: 2126091,
+      arrayBuffers: 74926
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 760822 },
+  trace: [
+    {
+      column: 11,
+      file: 'net.js',
+      function: 'Server.listen',
+      line: 1403,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'D:\\Fresco\\Socket\\src\\app.ts',
+      function: null,
+      line: 68,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1015,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1056,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1035,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1059,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 879,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 724,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'internal/modules/run_main.js',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 60,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\bin.ts',
+      function: 'main',
+      line: 198,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2021-02-21T15:12:45.105Z'
+}
+{
+  error: Error [ERR_SERVER_ALREADY_LISTEN]: Listen method has been called more than once without closing.
+      at Server.listen (net.js:1403:11)
+      at Object.<anonymous> (D:\Fresco\Socket\src\app.ts:68:13)
+      at Module._compile (internal/modules/cjs/loader.js:1015:30)
+      at Module.m._compile (D:\Fresco\Socket\node_modules\ts-node\src\index.ts:1056:23)
+      at Module._extensions..js (internal/modules/cjs/loader.js:1035:10)
+      at Object.require.extensions.<computed> [as .ts] (D:\Fresco\Socket\node_modules\ts-node\src\index.ts:1059:12)
+      at Module.load (internal/modules/cjs/loader.js:879:32)
+      at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+      at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)
+      at main (D:\Fresco\Socket\node_modules\ts-node\src\bin.ts:198:14) {
+    code: 'ERR_SERVER_ALREADY_LISTEN'
+  },
+  level: 'error',
+  message: 'uncaughtException: Listen method has been called more than once without closing.\n' +
+    'Error [ERR_SERVER_ALREADY_LISTEN]: Listen method has been called more than once without closing.\n' +
+    '    at Server.listen (net.js:1403:11)\n' +
+    '    at Object.<anonymous> (D:\\Fresco\\Socket\\src\\app.ts:68:13)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1015:30)\n' +
+    '    at Module.m._compile (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1056:23)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:1035:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1059:12)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:879:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)\n' +
+    '    at main (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\bin.ts:198:14)',
+  stack: 'Error [ERR_SERVER_ALREADY_LISTEN]: Listen method has been called more than once without closing.\n' +
+    '    at Server.listen (net.js:1403:11)\n' +
+    '    at Object.<anonymous> (D:\\Fresco\\Socket\\src\\app.ts:68:13)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:1015:30)\n' +
+    '    at Module.m._compile (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1056:23)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:1035:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts:1059:12)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:879:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:724:14)\n' +
+    '    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:60:12)\n' +
+    '    at main (D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\bin.ts:198:14)',
+  exception: true,
+  date: 'Sun Feb 21 2021 20:42:55 GMT+0530 (India Standard Time)',
+  process: {
+    pid: 14664,
+    uid: null,
+    gid: null,
+    cwd: 'D:\\Fresco\\Socket',
+    execPath: 'C:\\Program Files\\nodejs\\node.exe',
+    version: 'v12.19.0',
+    argv: [
+      'D:\\Fresco\\Socket\\node_modules\\ts-node\\dist\\bin.js',
+      'D:\\Fresco\\Socket\\src\\app.ts'
+    ],
+    memoryUsage: {
+      rss: 157777920,
+      heapTotal: 129175552,
+      heapUsed: 99603288,
+      external: 2126091,
+      arrayBuffers: 74926
+    }
+  },
+  os: { loadavg: [ 0, 0, 0 ], uptime: 760833 },
+  trace: [
+    {
+      column: 11,
+      file: 'net.js',
+      function: 'Server.listen',
+      line: 1403,
+      method: 'listen',
+      native: false
+    },
+    {
+      column: 13,
+      file: 'D:\\Fresco\\Socket\\src\\app.ts',
+      function: null,
+      line: 68,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 1015,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: 'D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Module.m._compile',
+      line: 1056,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 1035,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1059,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 879,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 724,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 12,
+      file: 'internal/modules/run_main.js',
+      function: 'Function.executeUserEntryPoint [as runMain]',
+      line: 60,
+      method: 'executeUserEntryPoint [as runMain]',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'D:\\Fresco\\Socket\\node_modules\\ts-node\\src\\bin.ts',
+      function: 'main',
+      line: 198,
+      method: null,
+      native: false
+    }
+  ],
+  timestamp: '2021-02-21T15:12:55.727Z'
+}

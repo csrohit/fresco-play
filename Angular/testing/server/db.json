@@ -1,0 +1,24 @@
+{
+  "memberList": [
+    {
+      "id": 1,
+      "name": "aad",
+      "gender": "female",
+      "dob": "2019-11-08",
+      "email": "abc3@tcs.com",
+      "science": "Science & Technology",
+      "fiction": "Fiction & Non fiction",
+      "journals": ""
+    },
+    {
+      "id": 2,
+      "name": "aad",
+      "gender": "female",
+      "dob": "2019-11-14",
+      "email": "user11@abc.in",
+      "science": "Science & Technology",
+      "fiction": "",
+      "journals": ""
+    }
+  ]
+}

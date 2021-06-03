@@ -1,0 +1,85 @@
+<div id="form-container" >
+  <div id="form" class="form">
+	<h2 id="membership-header" class="membership-header">
+		Register today to become a prime member!
+	</h2>
+    <form id="membershipForm" class="membership-form" [formGroup]="membershipForm">
+
+	    <div id="memId" class="mem-id div-content">
+	    	<div class="label-name">
+	    		Membership ID
+	    	</div>
+	    	<input type="text" id="id" class="textbox textbox-trans input-id" placeholder="This is an auto generating field" formControlName="id" disabled>
+	    </div>
+
+	    <div id="memName" class="mem-name div-content">
+	    	<div class="label-name">
+	    		Name
+	    	</div>
+	    	<input type="text" id="name" class="textbox textbox-trans input-name" placeholder="Enter Name" formControlName="name" [ngClass]="{'form-inp-error': membershipForm.controls['name'].dirty && membershipForm.controls['name'].invalid, 'form-inp-success': membershipForm.controls['name'].dirty && membershipForm.controls['name'].valid }">
+        <div id="error-no-name" class="error-no-name form-error-messages" *ngIf="membershipForm.controls['name'].dirty && membershipForm.controls['name'].invalid">
+          {{emptyName}}
+        </div>
+	    </div>
+
+			<div id="memGender" class="mem-gender div-content">
+	    	<div class="label-name">
+	    		Gender
+	    	</div>
+			  <div id="maleDiv" class="male-div radio-inline trans-type" >
+			    <input type="radio" id="male" class="clsradio input-male" formControlName="gender" value="male">
+			    <label class="label-clsradio" for="male">Male</label>
+			  </div>
+			  <div id="femaleDiv" class="female-div radio-inline trans-type">
+			    <input type="radio" id="female" class="clsradio input-female" formControlName="gender" value="female">
+			    <label class="label-clsradio" for="female">Female</label>
+			  </div>
+        <div id="error-no-gender" class="error-no-gender form-error-messages" *ngIf="membershipForm.controls['gender'].dirty && membershipForm.controls['gender'].invalid">
+          {{emptyGender}}
+        </div>
+			</div>
+
+	    <div id="memDob" class="mem-dob div-content">
+	    	<div class="label-name">
+	    		Date of birth
+	    	</div>
+	    	<input id="date-input" class="input-dob textbox dropdown glyphicon glyphicon-calendar" type="date" [formControl]="membershipForm.controls['dob']" min="1968-01-01" max="{{today}}" formControlName="dob"  [ngClass]="{'form-inp-error':membershipForm.controls['dob'].dirty && membershipForm.controls['dob'].invalid, 'form-inp-success': membershipForm.controls['dob'].dirty && membershipForm.controls['dob'].valid }">
+        <div id="error-no-dob" class="error-no-dob form-error-messages" *ngIf="membershipForm.controls['dob'].dirty && membershipForm.controls['dob'].invalid">
+          {{emptyDOB}}
+        </div>
+	    </div>
+
+	    <div id="memEmail" class="mem-email div-content">
+	    	<div class="label-name">
+	    		Email
+	    	</div>
+	    	<input type="email" id="email" class="input-email textbox textbox-trans" placeholder="email@example.com" formControlName="email" [ngClass]="{'form-inp-error': membershipForm.controls['email'].dirty && membershipForm.controls['email'].invalid, 'form-inp-success': membershipForm.controls['email'].dirty && membershipForm.controls['email'].valid }">
+        <div id="error-no-email" class="error-no-email form-error-messages" *ngIf="membershipForm.controls['email'].dirty && membershipForm.controls['email'].invalid">
+          {{emptyEmail}}
+        </div>
+	    </div>
+
+	    <div id="memSec" class="mem-sec div-content">
+	    	<div class="label-name">
+	    		What library sections would you like to have access?
+	    	</div>
+          <div id="checkDiv" class="check-div input-div">
+            <input id="science" type="checkbox" class="science" value="Science & Technology" name="science" [formControl]="membershipForm.controls['science']">
+            <label for="science" class="sections">Science & Technology</label>
+            <br>
+            <input id="fiction" type="checkbox" class="fiction" value="Fiction & Non fiction" name="fiction" [formControl]="membershipForm.controls['fiction']">
+            <label for="fiction" class="sections">Fiction & Non fiction</label>
+            <br>
+            <input id="journals" type="checkbox" class="journals" value="Journals & Magazines" name="journals" [formControl]="membershipForm.controls['journals']">
+            <label for="journals" class="sections">Journals & Magazines</label>
+          </div>
+	    </div>
+      
+      <div id="act" class=" act trans-btn">
+        <button id="cancelBtn" class="cancel-btn" (click)="cancel()">Cancel</button>
+        <button id="regBtn" class="add-btn" type="submit" (click)="regMembership(membershipForm.value)"  [disabled]="!membershipForm.valid">Register</button>
+      </div>
+
+    </form>
+  </div>
+</div>

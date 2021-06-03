@@ -1,0 +1,9 @@
+Enter Your Name: 
+  <input #userName type="text" value=''>
+  <button #btn (click)=welcomeMe(userName.value)> Welcome Me </button>
+<br>
+<h2> Message from Event Binding</h2>
+<h3 id="output">
+<!--add your welcome message with name like `Welcome <name>`-->
+  Welcome {{name}}
+</h3>

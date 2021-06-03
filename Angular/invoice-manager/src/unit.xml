@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 90.0.4430 (Windows 10.0.0)" package="unit" timestamp="2021-05-26T14:49:34" id="0" hostname="XPS9500" tests="24" errors="0" failures="3" time="2.486">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"/>
+  </properties>
+  <testcase name="InvoiceComponent privChange method have been called when clicking on privileged checkbox" time="0.153" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent privChange method have been called when clicking on privileged checkbox(Unchecked)" time="0.125" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent privChange method have been called when clicking on privileged checkbox(checked)" time="0.111" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent should call onSelect method when delete an item from list" time="0.107" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent  delete 3rd item  out of 4 first" time="0.108" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent  delete 3rd item  out of 4 second" time="0.115" classname="unit.InvoiceComponent">
+    <failure type="">Expected 1 to be 2.
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/main.js:498:44)
+    at UserContext.&lt;anonymous&gt; (http://localhost:9876/_karma_webpack_/vendor.js:83874:30)
+    at ZoneDelegate../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/polyfills.js:2850:26)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/vendor.js:82738:39)
+</failure>
+  </testcase>
+  <testcase name="InvoiceComponent  bill items cannot be null" time="0.106" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent should make calculation when deleting an item from the array" time="0.106" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent should call mouseEnterAddItem method when mouse enter addItemLink division" time="0.106" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent should make addItem division style as display:block when mouse enter addItemLink division" time="0.109" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent should call mouseLeaveAddItem method when mouse leave addItemLink division" time="0.096" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent should make addItem division style as display:none when mouse leave addItemLink division" time="0.098" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent should call addItem method when clicking add button" time="0.103" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent add an item into the array" time="0.097" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent add an item into the array with hours and rate as 0 (empty)" time="0.094" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent should make calculation when adding an item into the array(Privileged checked)" time="0.096" classname="unit.InvoiceComponent">
+    <failure type="">Expected 509511.79999999993 to be 509511.80000000005.
+    at http://localhost:9876/_karma_webpack_/main.js:692:47
+    at ZoneDelegate../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/polyfills.js:2850:26)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/vendor.js:82738:39)
+    at ZoneDelegate../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/polyfills.js:2849:32)
+</failure>
+  </testcase>
+  <testcase name="InvoiceComponent should make calculation when adding an item into the array(Privileged Unchecked)" time="0.13" classname="unit.InvoiceComponent">
+    <failure type="">Expected 532480.7999999999 to be 532480.8.
+    at http://localhost:9876/_karma_webpack_/main.js:729:47
+    at ZoneDelegate../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/polyfills.js:2850:26)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/vendor.js:82738:39)
+    at ZoneDelegate../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/polyfills.js:2849:32)
+</failure>
+  </testcase>
+  <testcase name="InvoiceComponent should display currency value as INR in required places by default" time="0.104" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent should display currency value as USD in required places" time="0.101" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent should display currency value as INR in required places" time="0.093" classname="unit.InvoiceComponent"/>
+  <testcase name="InvoiceComponent should display currency value as GBP in required places" time="0.093" classname="unit.InvoiceComponent"/>
+  <testcase name="AppComponent should create the app" time="0.033" classname="unit.AppComponent"/>
+  <testcase name="AppComponent should render title in a h1 tag" time="0.013" classname="unit.AppComponent"/>
+  <testcase name="InvoiceComponent should create" time="0.189" classname="unit.InvoiceComponent"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
