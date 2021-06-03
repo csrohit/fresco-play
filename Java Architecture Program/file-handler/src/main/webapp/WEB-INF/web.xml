@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>FileDownloadServlet</servlet-name>
+		<display-name>FileDownloadServlet</display-name>
+		<description></description>
+		<servlet-class>com.FileDownloadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<display-name>FileUploadServlet</display-name>
+		<description></description>
+		<servlet-class>com.FileUploadServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UploadedFilesServlet</servlet-name>
+		<display-name>UploadedFilesServlet</display-name>
+		<description></description>
+		<servlet-class>com.UploadedFilesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FileDownloadServlet</servlet-name>
+		<url-pattern>/downloadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FileUploadServlet</servlet-name>
+		<url-pattern>/fileUploadServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UploadedFilesServlet</servlet-name>
+		<url-pattern>/uploadedFilesServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
