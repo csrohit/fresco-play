@@ -1,22 +1,23 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand">Health Care</a>
+      <a class="navbar-brand">Health Care Service</a>
       <label class="navbar-brand">
-        <span class="glyphicon glyphicon-user"></span> Welcome 
+        <span class="glyphicon glyphicon-user"></span> Welcome
         <span id="username" class="user">{{userDetails.username}}</span>
       </label>
     </div>
     <div class="nav-left">
-	    <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav">
         <li>
           <a routerLink="/profile" routerLinkActive="current-link">
             <span class="glyphicon glyphicon-cog"></span> Profile
           </a>
         </li>
-	      <li>
+        <li>
           <a routerLink="/form" routerLinkActive="current-link">
-            <span class="glyphicon glyphicon-envelope"></span> form
+            <i class="fa fa-wpforms" aria-hidden="true"></i>
+            Register patient
           </a>
         </li>
         <li>
@@ -29,12 +30,12 @@
             <span class="glyphicon glyphicon-list-alt"></span> Requested App
           </a>
         </li>
-	      <li>
+        <li>
           <a routerLink="/login">
             <span class="glyphicon glyphicon-log-out" routerLinkActive="current-link"></span> Logout
           </a>
         </li>
-	    </ul>
+      </ul>
     </div>
   </div>
 </nav>

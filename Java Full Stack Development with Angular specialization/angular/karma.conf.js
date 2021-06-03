@@ -30,11 +30,11 @@ module.exports = function (config) {
     browsers: ['ChromeHeadless'],
     // browsers: ['FirefoxHeadless'],
     singleRun: false,
-    restartOnFileChange: true,
+    restartOnFileChange: false,
     junitReporter: {
       useBrowserName: false,
       outputFile : 'unit.xml',
       suite: 'unit'
-    }    
+    }
   });
 };

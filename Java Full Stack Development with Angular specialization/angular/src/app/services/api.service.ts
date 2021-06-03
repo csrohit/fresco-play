@@ -1,122 +1,108 @@
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
-import { Observable, of, throwError } from 'rxjs';
 
 import { Credentials } from '../models/credentials.model';
 import { Users } from '../models/users.model';
 import { Patient } from '../models/patient';
 import { Appointment } from '../models/appointment';
-import { tap } from 'rxjs/operators';
-import { catchError, retry } from 'rxjs/operators';
+import { Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 
 @Injectable()
 export class ApiService {
 
-  API_URL: String;
+  API_URL: string;
   AUTH_API_URL = '/auth/server/';
+  allPatients: Patient[] = [];
+  appointments: Appointment[] = [];
+  users: Users[] = [];
+  authUsers: {
+    id: number;
+    username: string;
+    password: string;
+  }[] = [];
 
   constructor(private http: HttpClient) {
     this.API_URL = 'api';
   }
 
   public checkLogin(username: string, password: string): Observable<Credentials> {
-    // should return response from server
-
-    // handle error 
-
-    return;
+    return this.http.post<Credentials>(this.API_URL + this.AUTH_API_URL, { username, password });
   }
 
   public getUserDetails(userId: number): Observable<Users> {
     // should return user details retireved from server
-
-    // handle error 
-
-    return;
+    return this.http.get<Users>(this.API_URL + '/users/' + userId).pipe(catchError(this.handleError));
+    // handle error
   }
 
   public updateDetails(userDetails: Users): Observable<Users> {
     // should return user details if successfully updated the details
 
-    // handle error 
+    // handle error
 
-    return;
+    return this.http.put<Users>(this.API_URL + '/users/' + userDetails.userId, userDetails);
   }
 
   public registerPatient(patientDetails: any): Observable<any> {
-
     // should return response from server if patientDetails added successfully
-
-    // handle error 
-
-    return;
+    // handle error
+    return this.http.post<Patient>(this.API_URL + '/allpatients', patientDetails).pipe(catchError(this.handleError));
   }
 
   public getAllPatientsList(): Observable<any> {
-
     // should return all patients from server
-
-    // handle error 
-
-    return;
+    // handle error
+    return this.http.get<any>(this.API_URL + '/allpatients');
   }
 
-  public getParticularPatient(id): Observable<any> {
-
+  public getParticularPatient(id: number): Observable<any> {
     // should return particular patient details from server
-
-    // handle error 
-
-    return;
+    // handle error
+    return this.http.get<any>(this.API_URL + '/allpatients/' + id);
   }
 
-  public getDiseasesList(): Observable<any> {
-
+  public getDiseasesList(): Observable<any[]> {
     // should return diseases from server
-
-    // handle error 
-
-    return;
+    // handle error
+    return this.http.get<any[]>(this.API_URL + '/diseases');
   }
 
-  public bookAppointment(appointmentDetails: any): Observable<any> {
+  public bookAppointment(appointmentDetails): Observable<any> {
 
     // should return response from server if appointment booked successfully
 
-    // handle error 
+    // handle error
 
-    return;
+    return this.http.post<Appointment>(this.API_URL + '/reqappointments', appointmentDetails);
   }
 
   public requestedAppointments(): Observable<any> {
 
     // should return all requested appointments from server
 
-    // handle error 
+    // handle error
 
-    return;
+    return this.http.get<Appointment[]>(this.API_URL + '/reqappointments');
   }
 
   public getAppointments(userId): Observable<any> {
 
     // should return appointments of particular patient from server
 
-    // handle error 
+    // handle error
 
-    return;
+    return this.http.get<Appointment[]>(this.API_URL + '/reqappointments?patientId=' + userId).pipe(catchError(this.handleError));
   }
 
   public deleteAppointment(appointmentId): Observable<any> {
-
     // should delete the appointment
-
     // handle error
-
-    return;
+    return this.http.delete<void>(this.API_URL + '/reqappointments/' + appointmentId).pipe(catchError(this.handleError));
   }
 
-  private handleError(error: HttpErrorResponse) {
-    // handle error
+  private handleError(error: Response | any) {
+    return throwError(error);
   }
-  
+
 }

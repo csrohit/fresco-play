@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\component",
+    "\\src\\app\\component\\form",
+    "\\src\\app\\component\\header",
+    "\\src\\app\\component\\login",
+    "\\src\\app\\component\\profile",
+    "\\src\\app\\component\\view-patient",
+    "\\src\\app\\services"
+  ],
+  "SelectedNode": "\\src\\app\\component\\view-patient\\view-patient.component.ts",
+  "PreviewInSolutionExplorer": false
+}

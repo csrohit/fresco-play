@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 90.0.4430.212 (Windows 10)" package="unit" timestamp="2021-05-27T17:14:12" id="0" hostname="XPS9500" tests="120" errors="0" failures="0" time="0.778">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/90.0.4430.212 Safari/537.36"/>
+  </properties>
+  <testcase name="ViewPatientComponent &quot;Scheduled Appointment&quot; button should be disabled when clicking on &quot;Book Appointment&quot;" time="0.073" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call cancelAppointment method with selected appointment id" time="0.01" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call deleteAppointment method of DataService with selected appointment id" time="0.008" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call bookAppointment method of DataService with appointment details" time="0.018" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should navigate to requested_appointments page after booking an appointment" time="0.015" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call scheduleAppointment method for valid form input&quot;" time="0.011" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should create" time="0.005" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent &quot;Book Appointment&quot; button should be disabled when clicking on &quot;Scheduled Appointment&quot;" time="0.007" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should get sufferList when clicking on &quot;Book Appointment&quot;" time="0.01" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent Book Appointment &amp; Scheduled Appointment should be enabled by default" time="0.006" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call getParticularPatient method of DataService by default" time="0.004" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call scheduleded method after deleting an appointment" time="0.007" classname=".ViewPatientComponent"/>
+  <testcase name="ApiService registerPatient should return patient details if POST method success" time="0.006" classname=".ApiService"/>
+  <testcase name="ApiService registerPatient should add patient details in post request body" time="0.003" classname=".ApiService"/>
+  <testcase name="ApiService requestedAppointments should return all appointments requested by all patients" time="0.003" classname=".ApiService"/>
+  <testcase name="ApiService getParticularPatient should return particular patient details" time="0.004" classname=".ApiService"/>
+  <testcase name="ApiService should be created" time="0.001" classname=".ApiService"/>
+  <testcase name="ApiService updateDetails should return new user details after submitting the update" time="0.004" classname=".ApiService"/>
+  <testcase name="ApiService login should return error message if auth fails" time="0.005" classname=".ApiService"/>
+  <testcase name="ApiService getAppointments should return requested appointments of particular patient" time="0.004" classname=".ApiService"/>
+  <testcase name="ApiService getDiseasesList should return suffer list" time="0.004" classname=".ApiService"/>
+  <testcase name="ApiService getAllPatientsList should return all patient details" time="0.004" classname=".ApiService"/>
+  <testcase name="ApiService login should return user Id if auth success" time="0.004" classname=".ApiService"/>
+  <testcase name="ApiService bookAppointment should return patient details if POST method success" time="0.004" classname=".ApiService"/>
+  <testcase name="ApiService getUserDetails should return user details" time="0.003" classname=".ApiService"/>
+  <testcase name="ApiService deleteAppointment returns empty response" time="0.004" classname=".ApiService"/>
+  <testcase name="ApiService bookAppointment should add appointment details in post request body" time="0.003" classname=".ApiService"/>
+  <testcase name="ApiService login should send user credentials in post request body" time="0.003" classname=".ApiService"/>
+  <testcase name="AllPatientsListComponent should call view method with the id of selected patient : case 1" time="0.011" classname=".AllPatientsListComponent"/>
+  <testcase name="AllPatientsListComponent should call view method with the id of selected patient : case 2" time="0.005" classname=".AllPatientsListComponent"/>
+  <testcase name="AllPatientsListComponent should call view method with the id of selected patient" time="0.005" classname=".AllPatientsListComponent"/>
+  <testcase name="AllPatientsListComponent should call getAllPatientsList method when page loads " time="0.005" classname=".AllPatientsListComponent"/>
+  <testcase name="AllPatientsListComponent should create" time="0.003" classname=".AllPatientsListComponent"/>
+  <testcase name="LoginComponent should display minlength 8 password validation error when the password length less than 8" time="0.018" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should redirect to dashboard on correct credentials" time="0.008" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display no password validation error when the field kept as null(dirty)" time="0.007" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should hide validation messages and call login method from authservice for valid credentials" time="0.009" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should enable login button(form valid) when both field are valid" time="0.006" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should not display password error when the password field is valid" time="0.006" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display minlength 3 username validation error when the username length less than 3" time="0.009" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display password pattern validation error" time="0.007" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display maxlength password validation error when the password length exceeds 20" time="0.007" classname=".LoginComponent"/>
+  <testcase name="LoginComponent #authenticateUser should return error on occurence of error" time="0.007" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should not display any error when the username field is valid" time="0.006" classname=".LoginComponent"/>
+  <testcase name="LoginComponent All validation errors should be hidden and form should be invalid by default" time="0.006" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display no username validation error when the field kept as null(dirty)" time="0.007" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display maxlength username validation error when the username length greater than 20" time="0.009" classname=".LoginComponent"/>
+  <testcase name="LoginComponent #dologin should return false if form is invalid" time="0.006" classname=".LoginComponent"/>
+  <testcase name="ProfileComponent #getProfileDetails should return error on occurence of error" time="0.019" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should display profile details on load" time="0.006" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should populate form fields with values on edit profile button click" time="0.01" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should submit profile changes with validation" time="0.011" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should validate the edit profile form" time="0.01" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should display edit profile form on edit profile button click" time="0.008" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should display profile details on clicking discard button" time="0.011" classname=".ProfileComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should call cancelAppointment method with the id of selected patient" time="0.011" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should call view method with the id of selected patient" time="0.006" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should fetch all appointments after cancelling an appointment" time="0.007" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should call view method with the id of selected patient" time="0.005" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should call cancelAppointment method with the id of selected patient" time="0.008" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should create" time="0.004" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should call requestedAppointments method by default " time="0.006" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="FormComponent Date of birth validation gets pass when the field has valid value" time="0.023" classname=".FormComponent"/>
+  <testcase name="FormComponent gender validation gets pass when clicking male radio button" time="0.01" classname=".FormComponent"/>
+  <testcase name="FormComponent should display firstname minimum length validation error when the field has less than 3 length" time="0.01" classname=".FormComponent"/>
+  <testcase name="FormComponent gender field validity" time="0.008" classname=".FormComponent"/>
+  <testcase name="FormComponent should create" time="0.009" classname=".FormComponent"/>
+  <testcase name="FormComponent should display no date of birth validation error when the field kept as null(dirty)" time="0.009" classname=".FormComponent"/>
+  <testcase name="FormComponent should display mobile number pattern validation error when the field has value" time="0.009" classname=".FormComponent"/>
+  <testcase name="FormComponent should call submitform method for valid form" time="0.009" classname=".FormComponent"/>
+  <testcase name="FormComponent gender validation gets pass when clicking female radio button" time="0.008" classname=".FormComponent"/>
+  <testcase name="FormComponent should display no firstname validation error when the field kept as null(dirty)" time="0.009" classname=".FormComponent"/>
+  <testcase name="FormComponent should display no mobile number validation error when the field has kept as null(dirty)" time="0.013" classname=".FormComponent"/>
+  <testcase name="FormComponent should display lastname maximun length validation error when the field has greater than 20 length" time="0.01" classname=".FormComponent"/>
+  <testcase name="FormComponent should display mobile maximun length validation error when the field has greater than 10 length" time="0.008" classname=".FormComponent"/>
+  <testcase name="FormComponent should display firstname maximun length validation error when the field has greater than 20 length" time="0.011" classname=".FormComponent"/>
+  <testcase name="FormComponent All validation errors should be hidden and form should be invalid by default" time="0.008" classname=".FormComponent"/>
+  <testcase name="FormComponent should display lastname minimum length validation error when the field has less than 3 length" time="0.009" classname=".FormComponent"/>
+  <testcase name="FormComponent mobile field validity" time="0.012" classname=".FormComponent"/>
+  <testcase name="FormComponent should display no lastname validation error when the field kept as null(dirty)" time="0.011" classname=".FormComponent"/>
+  <testcase name="FormComponent should display no email validation error when the field has kept as null(dirty)" time="0.009" classname=".FormComponent"/>
+  <testcase name="FormComponent should display  email pattern validation error when the field has no value" time="0.007" classname=".FormComponent"/>
+  <testcase name="HeaderComponent should get profile details by default" time="0.011" classname=".HeaderComponent"/>
+  <testcase name="HeaderComponent should create" time="0.005" classname=".HeaderComponent"/>
+  <testcase name="HeaderComponent should get logged user id by default" time="0.007" classname=".HeaderComponent"/>
+  <testcase name="HeaderComponent should get logged user details" time="0.006" classname=".HeaderComponent"/>
+  <testcase name="DataService #getDiseasesList should return list on providing valid user id" time="0.002" classname=".DataService"/>
+  <testcase name="DataService  should return false after creation" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #updateProfile should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService  should return -1 userId from local storage if exists but isLogin is false" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #requestedAppointments should return appointments on providing valid user id" time="0.004" classname=".DataService"/>
+  <testcase name="DataService #requestedAppointments should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService  should return 1 from local storage if exists and isLogin is true" time="0.002" classname=".DataService"/>
+  <testcase name="DataService #deleteAppointment should return empty object on providing valid user id" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #registerPatient should return patientDetails  on reporting with valid user id " time="0.001" classname=".DataService"/>
+  <testcase name="DataService #updateProfile should return true on providing valid user details" time="0.002" classname=".DataService"/>
+  <testcase name="DataService #registerPatient should return null on reporting with invalid id " time="0.001" classname=".DataService"/>
+  <testcase name="DataService #deleteAppointment should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService  should return -1 if user is no logged in or userid in localstorage is invalid" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #getUserDetails should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService  should return -1 if user is no logged in or userid in localstorage is invalid" time="0.003" classname=".DataService"/>
+  <testcase name="DataService #registerPatient should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #getAppointments should return appointment details on providing valid user id" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #getAllPatientsList should return user details on providing valid user id" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #getAppointments should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService  should return true on logging in with right credentials" time="0.002" classname=".DataService"/>
+  <testcase name="DataService #bookAppointment should return appointmentDetails  on reporting with valid user id " time="0.001" classname=".DataService"/>
+  <testcase name="DataService #getAllPatientsList should return error on providing invalid user id" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #getAllPatientsList should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #bookAppointment should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #getUserDetails should return error on providing invalid user id" time="0.003" classname=".DataService"/>
+  <testcase name="DataService #getParticularPatient should return patient details on providing valid user id" time="0" classname=".DataService"/>
+  <testcase name="DataService #getDiseasesList should return error on providing invalid user id" time="0.002" classname=".DataService"/>
+  <testcase name="DataService  should return -1 if user is no logged in or userid not exists in localstorage" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #getUserDetails should return user details on providing valid user id" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #dologin should return isLogin as false on click logout" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #getParticularPatient should return error on providing invalid user id" time="0.001" classname=".DataService"/>
+  <testcase name="DataService  should return -1 userId from local storage if exists but isLogin is false" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #getDiseasesList should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService #getParticularPatient should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <system-out>
+    <![CDATA[Chrome Headless 90.0.4430.212 (Windows 10) LOG: Object{status: 404}
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) WARN: ''fa' is not a known element:
+1. If 'fa' is an Angular component, then verify that it is part of this module.
+2. To allow any element add 'NO_ERRORS_SCHEMA' to the '@NgModule.schemas' of this component.'
+,Chrome Headless 90.0.4430.212 (Windows 10) LOG: Object{}
+,Chrome Headless 90.0.4430.212 (Windows 10) LOG: Object{}
+,Chrome Headless 90.0.4430.212 (Windows 10) LOG: Object{}
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

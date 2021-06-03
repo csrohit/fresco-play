@@ -1,0 +1,145 @@
+{
+  "users": [
+    {
+      "userId": 1,
+      "username": "User1",
+      "mobile": "9999999999",
+      "email": "user11@abc.in",
+      "location": "bangalore",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "username": "User2",
+      "mobile": "9988776655",
+      "email": "user2@def.com",
+      "location": "kolkata",
+      "userId": 2
+    },
+    {
+      "id": 3,
+      "username": "User3",
+      "mobile": "9998887775",
+      "email": "user3@ghi.com",
+      "location": "mumbai",
+      "userId": 3
+    }
+  ],
+  "allpatients": [
+    {
+      "firstName": "first",
+      "lastName": "name",
+      "gender": "Female",
+      "dob": "2019-02-07",
+      "mobile": "9998887775",
+      "email": "first1@abc.com",
+      "description": "",
+      "registeredTime": "2019-02-11T09:59:08.690Z",
+      "id": 400
+    },
+    {
+      "firstName": "second",
+      "lastName": "name",
+      "gender": "Male",
+      "dob": "2019-01-30",
+      "mobile": "3545454555",
+      "email": "second2@def.com",
+      "description": "",
+      "registeredTime": "2019-02-11T10:10:44.688Z",
+      "id": 401
+    },
+    {
+      "firstName": "third",
+      "lastName": "name",
+      "gender": "Female",
+      "dob": "2019-09-13",
+      "mobile": "4466162463",
+      "email": "third3@ghi.com",
+      "description": "feeling pain ",
+      "registeredTime": "2019-09-16T05:39:51.746Z",
+      "id": 402
+    },
+    {
+      "firstName": "fourth",
+      "lastName": "name",
+      "gender": "Male",
+      "dob": "2019-09-12",
+      "mobile": "6666666666",
+      "email": "fourth4@jkl.com",
+      "registeredTime": "2019-09-16T05:46:50.988Z",
+      "id": 403
+    },
+    {
+      "firstName": "fivth",
+      "lastName": "name",
+      "gender": "Female",
+      "dob": "2019-09-13",
+      "mobile": "9876543111",
+      "email": "fivth5@mno.in",
+      "description": "",
+      "registeredTime": "2019-09-16T19:07:27.459Z",
+      "id": 404
+    },
+    {
+      "firstName": "sixth",
+      "lastName": "name",
+      "gender": "Female",
+      "dob": "1996-11-23",
+      "mobile": "9911002211",
+      "email": "sixth6@abc.in",
+      "description": "",
+      "registeredTime": "2019-10-21T11:08:08.315Z",
+      "id": 405
+    },
+    {
+      "firstName": "seventh",
+      "lastName": "name",
+      "gender": "Female",
+      "dob": "1990-02-28",
+      "mobile": "8899007766",
+      "email": "seventh7@abc.in",
+      "description": "",
+      "registeredTime": "2019-10-21T11:33:33.876Z",
+      "id": 406
+    }
+  ],
+  "reqappointments": [
+    {
+      "patientId": 400,
+      "patientFirstName": "first",
+      "patientLastName": "name",
+      "disease": "Flu",
+      "priority": "Normal",
+      "tentativedate": "2019-02-21",
+      "registeredTime": "2019-02-19T10:30:06.127Z",
+      "id": 13
+    },
+    {
+      "patientId": 401,
+      "patientFirstName": "second",
+      "patientLastName": "name",
+      "disease": "fever, pain",
+      "priority": "Normal",
+      "tentativedate": "2019-10-23",
+      "registeredTime": "2019-10-21T08:21:58.731Z",
+      "id": 14
+    }
+  ],
+  "diseases": [
+    {
+      "name": "Adenovirus Infection"
+    },
+    {
+      "name": "Asthma"
+    },
+    {
+      "name": "Flu"
+    },
+    {
+      "name": "fever, pain"
+    },
+    {
+      "name": "acid reflex"
+    }
+  ]
+}

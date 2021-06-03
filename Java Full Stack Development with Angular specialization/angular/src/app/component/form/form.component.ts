@@ -1,10 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { FormGroup, FormBuilder,Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DatePipe } from '@angular/common';
 import { Router } from '@angular/router';
 import { Patient } from '../../models/patient';
 import { DataService } from '../../services/data.service';
-// import * as alertify from 'alertify.js';
 
 @Component({
   selector: 'app-form',
@@ -16,9 +15,8 @@ export class FormComponent implements OnInit {
 
   complexForm: FormGroup;
   patientDetails = new Patient;
-  result;
-
   today: string;
+  result;
 
   noRecordsFound = 'No patient records found in the list. Click on Register New Patient to add Patient details.';
 
@@ -40,19 +38,22 @@ export class FormComponent implements OnInit {
     this.today = this.datePipe.transform(Date.now(), 'yyyy-MM-dd');
   }
 
-  constructor( fb: FormBuilder,private datePipe: DatePipe,private route: Router, private dataService: DataService){
+  constructor(fb: FormBuilder, private datePipe: DatePipe, private route: Router, private dataService: DataService) {
+
+    // add necessary validators
+
     this.complexForm = fb.group({
-      'firstName' : [''],
-      'lastName': [''],
-      'gender' : [null],
-      'dob' : [null],
-      'mobile' : [''],
-      'email' : [''],
-      'description' : ''
-    })
+      firstName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
+      lastName: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
+      gender: [null, Validators.required],
+      dob: [null, Validators.required],
+      mobile: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(10), Validators.pattern(/^\d{10,}$/)]],
+      email: ['', [Validators.required, Validators.email, Validators.pattern(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)]],
+      description: ''
+    });
   }
 
-  submitForm(value: any){
+  submitForm(value: any) {
 
     // assign new date object to reportedTime
     // should reister new patient using service
