@@ -1,0 +1,49 @@
+Skeleton        18
+Modern Pentathlon       24
+Triathlon       24
+Trampoline      24
+Luge    36
+Nordic Combined 39
+Ski Jumping     40
+Freestyle Skiing        42
+Beach Volleyball        48
+Snowboarding    48
+Figure Skating  54
+Alpine Skiing   61
+Bobsleigh       66
+Table Tennis    67
+Tennis  71
+Curling 82
+Archery 84
+Rhythmic Gymnastics     84
+Badminton       91
+Biathlon        94
+Short-Track Speed Skating       96
+Speed Skating   103
+Synchronized Swimming   109
+Taekwondo       112
+Diving  113
+Cross Country Skiing    128
+Softball        134
+Equestrian      157
+Weightlifting   180
+Shooting        181
+Boxing  188
+Gymnastics      194
+Sailing 210
+Baseball        216
+Judo    224
+Fencing 230
+Wrestling       245
+Cycling 261
+Volleyball      281
+Basketball      287
+Canoeing        295
+Waterpolo       306
+Handball        351
+Ice Hockey      384
+Hockey  388
+Football        407
+Swimming        487
+Rowing  567
+Athletics       687
