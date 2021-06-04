@@ -1,6 +1,0 @@
-{ "_id" : "Athletics", "count" : 687 }
-{ "_id" : "Rowing", "count" : 567 }
-{ "_id" : "Swimming", "count" : 487 }
-{ "_id" : "Football", "count" : 407 }
-{ "_id" : "Hockey", "count" : 388 }
-

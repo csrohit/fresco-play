@@ -1,1 +1,0 @@
-{ "Athlete" : "Jess Schipper", "Age" : 21, "GoldMedals" : 1, "SilverMedals" : 0, "BronzeMedals" : 2, "TotalMedals" : 3 }
