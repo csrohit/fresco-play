@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
-<testsuite name="HeadlessChrome 0.0.0 (Windows 10 0.0.0)" package="unit" timestamp="2021-06-07T02:31:03" id="0" hostname="XPS9500" tests="3" errors="0" failures="2" time="0.151">
+<testsuite name="HeadlessChrome 0.0.0 (Windows 10 0.0.0)" package="unit" timestamp="2021-06-07T02:41:38" id="0" hostname="XPS9500" tests="3" errors="0" failures="2" time="0.153">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/91.0.4472.77 Safari/537.36"/>
   </properties>
-  <testcase name="NavbarComponent should create" time="0.013" classname="unit.NavbarComponent"/>
-  <testcase name="RegisterComponent should create" time="0.039" classname="unit.RegisterComponent">
+  <testcase name="RegisterComponent should create" time="0.035" classname="unit.RegisterComponent">
     <failure type="">Can't bind to 'formGroup' since it isn't a known property of 'form'. ("ster today to become a prime member!&#xD;
 	&lt;/h2&gt;&#xD;
     &lt;form id="membershipForm" class="membership-form" [ERROR -&gt;][formGroup]="membershipForm"&gt;&#xD;
@@ -62,7 +61,7 @@ Can't bind to 'formControl' since it isn't a known property of 'input'. (" &lt;i
     at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
 </failure>
   </testcase>
-  <testcase name="HomeComponent should create" time="0.099" classname="unit.HomeComponent">
+  <testcase name="HomeComponent should create" time="0.104" classname="unit.HomeComponent">
     <failure type="">Error: StaticInjectorError(DynamicTestModule)[HomeComponent -&gt; ApiService]: 
   StaticInjectorError(Platform: core)[HomeComponent -&gt; ApiService]: 
     NullInjectorError: No provider for ApiService!
@@ -84,6 +83,7 @@ Can't bind to 'formControl' since it isn't a known property of 'input'. (" &lt;i
     at ZoneDelegate.webpackJsonp../node_modules/zone.js/dist/zone.js.ZoneDelegate.invoke node_modules/zone.js/dist/zone.js:390:1)
 </failure>
   </testcase>
+  <testcase name="NavbarComponent should create" time="0.014" classname="unit.NavbarComponent"/>
   <system-out>
     <![CDATA[
 ]]>

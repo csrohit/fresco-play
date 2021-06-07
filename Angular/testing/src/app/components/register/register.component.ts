@@ -13,8 +13,8 @@ import { Member } from '../../models/member';
 })
 export class RegisterComponent implements OnInit {
 
-	today;
-  membershipForm : FormGroup;
+  today;
+  membershipForm: FormGroup;
   name: string;
   gender: string;
   dob;
@@ -27,15 +27,15 @@ export class RegisterComponent implements OnInit {
   formValue = {};
   isEdit: boolean;
 
-  constructor(private service: ApiService, private datePipe: DatePipe, private route: Router, private activatedRoute: ActivatedRoute,) { 
-    
+  constructor(private service: ApiService, private datePipe: DatePipe, private route: Router, private activatedRoute: ActivatedRoute,) {
+
     this.isEdit = false;
 
     this.membershipForm = new FormGroup({
       id: new FormControl(''),
-      name: new FormControl('', [ Validators.required]),
+      name: new FormControl('', [Validators.required]),
       gender: new FormControl('', [Validators.required]),
-      dob: new FormControl('', [ Validators.required]),
+      dob: new FormControl('', [Validators.required]),
       email: new FormControl('', [Validators.required, Validators.email]),
       science: new FormControl(''),
       fiction: new FormControl(''),
@@ -53,60 +53,60 @@ export class RegisterComponent implements OnInit {
     })
   }
 
-	ngOnInit() {
+  ngOnInit() {
 
-	}
+  }
 
-  regMembership(value: any){
+  regMembership(value: any) {
     if (!this.isEdit) {
-        if(value.science == true) {
-          value.science = 'Science & Technology';
-        }
-        else {
-          value.science = '';
-        }
-        if(value.fiction == true) {
-          value.fiction = 'Fiction & Non fiction';
-        }
-        else {
-          value.fiction = '';
-        }
-        if(value.journals == true) {
-          value.journals = 'Journals & Magazines';
-        }
-        else {
-          value.journals = '';
-        }
-        this.service.addMember(value).subscribe(res => {
-            this.route.navigate(['/home']);
-          },(error) => {
-            this.membershipForm.reset();
-        });
-    } 
+      if (value.science == true) {
+        value.science = 'Science & Technology';
+      }
+      else {
+        value.science = '';
+      }
+      if (value.fiction == true) {
+        value.fiction = 'Fiction & Non fiction';
+      }
+      else {
+        value.fiction = '';
+      }
+      if (value.journals == true) {
+        value.journals = 'Journals & Magazines';
+      }
+      else {
+        value.journals = '';
+      }
+      this.service.addMember(value).subscribe(res => {
+        this.route.navigate(['/home']);
+      }, (error) => {
+        this.membershipForm.reset();
+      });
+    }
     else {
-      if(value.science == false) {
+      if (value.science == false) {
         value.science = '';
       }
       else {
         value.science = 'Science & Technology';
       }
-      if(value.fiction == false) {
+      if (value.fiction == false) {
         value.fiction = '';
       }
       else {
         value.fiction = 'Fiction & Non fiction';
       }
-      if(value.journals == false) {
+      if (value.journals == false) {
         value.journals = '';
       }
       else {
         value.journals = 'Journals & Magazines';
       }
       this.service.updateMember(value).subscribe(res => {
-          this.service.clearFormValue();
-          this.route.navigate(['/home']);
-          this.membershipForm.reset();
-        },(error) => {
+        this.service.clearFormValue();
+        this.route.navigate(['/home']);
+        this.membershipForm.reset();
+      }, (error) => {
         this.membershipForm.reset();
       });
     }
