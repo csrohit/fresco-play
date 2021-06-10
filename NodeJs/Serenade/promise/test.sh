@@ -1,0 +1,1 @@
+if [[ $(grep -io -e "promisifyAll" -e "then" -e "bluebird" promise.js | wc -l) -gt 1 && $(curl -v --silent localhost:3000/users --stderr - | grep -io -e "Valek" -e "Bea" -e "Frediani" | wc -l) -gt 1 ]]; then echo "FS_SCORE:100%"; else echo "FS_SCORE:0%"; fi
