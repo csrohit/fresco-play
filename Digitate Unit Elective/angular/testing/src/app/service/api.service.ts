@@ -10,7 +10,7 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { catchError, map, tap } from 'rxjs/operators';
 import { Member } from '../models/member';
 
-@Injectable({ providedIn: 'root' })
+@Injectable()
 export class ApiService {
 
   base_url: string;

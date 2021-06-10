@@ -11,9 +11,9 @@ import { Member } from '../../models/member';
 export class HomeComponent implements OnInit {
 
 
-  allMembers: Member[];
+	allMembers:Member[];
 
-  constructor(private service: ApiService, private route: Router) {
+  constructor( private service: ApiService, private route: Router) { 
     this.service.clearFormValue();
   }
 
@@ -23,24 +23,24 @@ export class HomeComponent implements OnInit {
 
   getMembers() {
     this.service.getMembers()
-      .subscribe(response => {
-        this.allMembers = response;
-      });
+    .subscribe(response => {
+      this.allMembers = response;
+    })  
   }
 
   addNewMember() {
     this.route.navigate(['/reg']);
   }
 
-  edit(item, i) {
+  edit(item,i) {
     this.service.setFormValue(item);
     this.route.navigate(['/reg']);
   }
 
-  delete(id, i) {
+  delete(id,i) {
     this.service.deleteMember(id)
-      .subscribe(response => {
-        this.getMembers();
-      });
+    .subscribe(response =>  {
+      this.getMembers();
+    })
   }
 }

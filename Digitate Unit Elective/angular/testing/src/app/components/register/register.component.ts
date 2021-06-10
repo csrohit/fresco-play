@@ -41,16 +41,16 @@ export class RegisterComponent implements OnInit {
       fiction: new FormControl(''),
       journals: new FormControl('')
     });
-    this.today = this.datePipe.transform(Date.now(), 'yyyy-MM-dd')
+    this.today = this.datePipe.transform(Date.now(), 'yyyy-MM-dd');
 
     this.service.getFormStatus().subscribe(res => {
       this.isEdit = res;
-    })
+    });
 
     this.service.getFormValue().subscribe(res => {
       this.formValue = res;
       this.membershipForm.patchValue(this.formValue);
-    })
+    });
   }
 
   ngOnInit() {
@@ -61,20 +61,17 @@ export class RegisterComponent implements OnInit {
     if (!this.isEdit) {
       if (value.science == true) {
         value.science = 'Science & Technology';
-      }
-      else {
+      } else {
         value.science = '';
       }
       if (value.fiction == true) {
         value.fiction = 'Fiction & Non fiction';
-      }
-      else {
+      } else {
         value.fiction = '';
       }
       if (value.journals == true) {
         value.journals = 'Journals & Magazines';
-      }
-      else {
+      } else {
         value.journals = '';
       }
       this.service.addMember(value).subscribe(res => {
@@ -86,20 +83,17 @@ export class RegisterComponent implements OnInit {
     else {
       if (value.science == false) {
         value.science = '';
-      }
-      else {
+      } else {
         value.science = 'Science & Technology';
       }
       if (value.fiction == false) {
         value.fiction = '';
-      }
-      else {
+      } else {
         value.fiction = 'Fiction & Non fiction';
       }
       if (value.journals == false) {
         value.journals = '';
-      }
-      else {
+      } else {
         value.journals = 'Journals & Magazines';
       }
       this.service.updateMember(value).subscribe(res => {

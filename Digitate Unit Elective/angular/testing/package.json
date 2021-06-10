@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "node dbserver.js | ng serve --port 8000 --disable-host-check --host 0.0.0.0  --proxy-config proxy.conf.json ",
     "build": "ng build --prod",
-    "test": "ng test -cc --watch=false",
+    "test": "ng test -cc --watch=false -sm=false",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "myscore": "node myscore.js"
@@ -37,7 +37,7 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-    "@angular/cli": "^1.7.4",
+    "@angular/cli": "~1.7.1",
     "@angular/compiler-cli": "^5.2.0",
     "@angular/language-service": "^5.2.0",
     "@types/jasmine": "~2.8.3",
@@ -48,12 +48,12 @@
     "jasmine-spec-reporter": "~4.2.1",
     "jsdom": "^11.6.2",
     "karma": "~2.0.0",
-    "karma-chrome-launcher": "^2.2.0",
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
     "karma-junit-reporter": "^1.2.0",
     "karma-phantomjs-launcher": "^1.0.4",
+    "karma-chrome-launcher": "^2.2.0",
     "protractor": "~5.1.2",
     "testing": "^1.1.1",
     "ts-node": "~4.1.0",
