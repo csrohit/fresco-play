@@ -1,0 +1,52 @@
+{
+  "name": "cars-api",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "babel-eslint": "^8.2.2",
+    "ejs": "2.3.4",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "include-all": "^1.0.0",
+    "rc": "1.0.1",
+    "sails": "~0.12.14",
+    "sails-disk": "~0.10.9",
+    "xml-js": "^1.6.2"
+  },
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node node_modules/sails/bin/sails.js lift --port 8000",
+    "coverage": "istanbul cover --report clover _mocha test",
+    "pretest": "eslint ./test -o eslint.xml -f junit;exit 0;",
+    "test": "rm -rf ./unit.xml && CI=true; node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/**/*.test.js --reporter mocha-junit-reporter",
+    "posttest": "npm run coverage && node xml_merge.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anasuya/cars-api.git"
+  },
+  "author": "anasuya",
+  "license": "",
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "barrels": "^1.6.5",
+    "chai": "^4.1.2",
+    "eslint-detailed-reporter": "^0.7.3",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "grunt": "^1.0.2",
+    "grunt-mocha-istanbul": "^5.0.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.4",
+    "mocha-junit-reporter": "^1.17.0",
+    "nyc": "^11.6.0",
+    "sails-memory": "^0.10.7",
+    "should": "^13.2.1",
+    "sinon": "^4.4.3",
+    "supertest": "^3.0.0"
+  }
+}

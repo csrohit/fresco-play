@@ -1,0 +1,26 @@
+[
+  {
+    "name": "SUV"
+  },
+  {
+    "name": "Sedan"
+  },
+  {
+    "name": "HatchBack"
+  },
+  {
+    "name": "Luxury"
+  },
+  {
+    "name": "MPV"
+  },
+  {
+    "name": "Crossover"
+  },
+  {
+    "name": "Coupe"
+  },
+  {
+    "name": "Convertible"
+  }
+]

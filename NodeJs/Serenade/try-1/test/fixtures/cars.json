@@ -1,0 +1,17 @@
+[{
+		"name": "Tata Nexon",
+		"segment": 1,
+		"description": "This is a dummy text",
+		"manufacturer": 1,
+		"variants": [1,2,3,4],
+		"accessories": [1,4,5,8]
+	},
+	{
+		"name": "Honda City",
+		"segment": 4,
+		"description": "This is a dummy text",
+		"manufacturer": 3,
+		"variants": [7,8,9,10],
+		"accessories": [13,15,16,18]
+	}
+]
