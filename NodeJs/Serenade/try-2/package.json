@@ -1,0 +1,44 @@
+{
+  "name": "Bookstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "pretest": "eslint ./test -o eslint.xml -f junit;exit 0;",
+    "test": "mocha --timeout 10000 --reporter mocha-junit-reporter --exit",
+    "start": "node app.js",
+    "lint": "eslint ./test -o eslint.xml -f junit;exit 0;",
+    "coverage": "istanbul cover --report clover _mocha test --exit"
+  },
+  "author": "",
+  "dependencies": {
+    "xml-js": "^1.6.2",
+    "body-parser": "^1.18.2",
+    "chai-http": "^4.0.0",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "4.33.3",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "grunt": "^1.0.2",
+    "grunt-mocha-istanbul": "^5.0.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.5",
+    "mocha-junit-reporter": "^1.17.0",
+    "should": "^13.2.1",
+    "sqlite3": "^4.0.9",
+    "superagent": "^3.8.2",
+    "supertest": "^3.0.0"
+  }
+}
