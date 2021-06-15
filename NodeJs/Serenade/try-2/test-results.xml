@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0010" tests="0" failures="2">
+  <testsuite name="Root Suite" timestamp="2021-06-14T16:54:01" tests="0" time="0.0000" failures="1">
+    <testcase name="Uncaught error outside test suite" time="0.0000" classname="Uncaught error outside test suite">
+      <failure message="listen EADDRINUSE: address already in use :::5000" type="Error"><![CDATA[Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (net.js:1318:16)
+    at listenInCluster (net.js:1366:12)
+    at Server.listen (net.js:1452:7)
+    at Function.listen (node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (app.js:35:5)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (test\books.test.js:3:11)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Array.forEach (<anonymous>)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Book API" timestamp="2021-06-14T16:54:01" tests="0" file="D:\Fresco\NodeJs\Serenade\try-2\test\books.test.js" time="0.0010" failures="1">
+    <testcase name="Book API &quot;before all&quot; hook" time="0.0010" classname="&quot;before all&quot; hook">
+      <failure message="Cannot read property &apos;destroy&apos; of undefined" type="TypeError"><![CDATA[TypeError: Cannot read property 'destroy' of undefined
+    at Context.<anonymous> (test\books.test.js:23:10)
+    at processImmediate (internal/timers.js:461:21)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
