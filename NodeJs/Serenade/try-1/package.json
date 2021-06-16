@@ -19,8 +19,7 @@
     "debug": "node debug app.js",
     "start": "node node_modules/sails/bin/sails.js lift --port 8000",
     "coverage": "istanbul cover --report clover _mocha test",
-    "pretest": "eslint ./test -o eslint.xml -f junit;exit 0;",
-    "test": "rm -rf ./unit.xml && CI=true; node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/**/*.test.js --reporter mocha-junit-reporter",
+    "test": " node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/**/*.test.js --reporter mocha-junit-reporter",
     "posttest": "npm run coverage && node xml_merge.js"
   },
   "main": "app.js",
