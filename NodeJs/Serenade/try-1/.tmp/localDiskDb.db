@@ -1,0 +1,203 @@
+{
+  "data": {
+    "accessories": [],
+    "cars": [],
+    "manufacturer": [],
+    "segment": [],
+    "variant": [
+      {
+        "name": "REVETRQE  XE",
+        "type": "Diesel",
+        "capacity": 1497,
+        "price": 6,
+        "createdAt": "2021-06-16T14:17:22.315Z",
+        "updatedAt": "2021-06-16T14:17:22.315Z",
+        "id": 1
+      }
+    ],
+    "accessories_cars__cars_accessories": [],
+    "cars_variants__variant_cars": []
+  },
+  "schema": {
+    "accessories": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string",
+        "unique": true
+      },
+      "price": {
+        "type": "integer"
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "cars": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "segment": {
+        "type": "integer",
+        "model": "segment",
+        "foreignKey": true,
+        "alias": "segment"
+      },
+      "manufacturer": {
+        "type": "integer",
+        "model": "manufacturer",
+        "foreignKey": true,
+        "alias": "manufacturer"
+      },
+      "description": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "manufacturer": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string",
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "segment": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string",
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "variant": {
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string",
+        "unique": true
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "Petrol",
+          "Diesel",
+          "Hybrid"
+        ]
+      },
+      "capacity": {
+        "type": "integer"
+      },
+      "price": {
+        "type": "integer"
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "accessories_cars__cars_accessories": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "accessories_cars": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "accessories",
+        "on": "id",
+        "via": "cars_accessories"
+      },
+      "cars_accessories": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "cars",
+        "on": "id",
+        "via": "accessories_cars"
+      }
+    },
+    "cars_variants__variant_cars": {
+      "id": {
+        "primaryKey": true,
+        "unique": true,
+        "autoIncrement": true,
+        "type": "integer"
+      },
+      "cars_variants": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "cars",
+        "on": "id",
+        "via": "variant_cars"
+      },
+      "variant_cars": {
+        "type": "integer",
+        "foreignKey": true,
+        "references": "variant",
+        "on": "id",
+        "via": "cars_variants"
+      }
+    }
+  },
+  "counters": {
+    "accessories": {},
+    "cars": {},
+    "manufacturer": {
+      "id": 5
+    },
+    "segment": {
+      "id": 5
+    },
+    "variant": {
+      "id": 1
+    },
+    "accessories_cars__cars_accessories": {},
+    "cars_variants__variant_cars": {}
+  }
+}

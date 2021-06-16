@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.063" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-06-15T03:18:04" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Segment Controller" timestamp="2021-06-15T03:18:07" tests="1" file="D:\Fresco\NodeJs\Serenade\try-1\test\controllers\SegmentController.test.js" failures="0" time="0.063">
+    <testcase name="Segment Controller get /segment" time="0.063" classname="get /segment">
+    </testcase>
+  </testsuite>
+</testsuites>

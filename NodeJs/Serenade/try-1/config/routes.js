@@ -1,5 +1,5 @@
 module.exports.routes = {
-  '/':{
+  '/': {
     view: 'homepage'
   },
 
@@ -29,7 +29,7 @@ module.exports.routes = {
   'PUT     /accessories/:id': 'AccessoriesController.update',
   'DELETE  /accessories/:id': 'AccessoriesController.delete',
   'DELETE  /accessories': 'AccessoriesController.deleteAll',
-  'GET  /accessories/search': 'AccessoriesController.search',
+  'GET  /accessories/search/:where': 'AccessoriesController.search',
 
   'POST    /variant': 'VariantController.create',
   'GET     /variant': 'VariantController.fetch',

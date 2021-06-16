@@ -5,34 +5,34 @@
 
 module.exports = {
 
-  fetch: function(req, res, next) {
+  fetch: function (req, res, next) {
     Manufacturer.find()
       .populate('cars')
-      .exec(function(err, manufacturer) {
+      .exec(function (err, manufacturer) {
         if (err) return next(err);
         return res.json(manufacturer);
       });
   },
 
-  create: function(req, res, next) {
+  create: function (req, res, next) {
     var params = req.body;
     Manufacturer.create(params)
-      .exec(function(err, manufacturer) {
+      .exec(function (err, manufacturer) {
         if (err) return next(err);
         return res.json(manufacturer);
       });
   },
 
-  findOne: function(req, res, next) {
+  findOne: function (req, res, next) {
     var id = parseInt(req.param('id'));
     if (!id) {
       return res.badRequest('Required param: id not provided.');
     }
     Manufacturer.findOne({
-        id: id
-      })
+      id: id
+    })
       .populate('cars')
-      .exec(function(err, manufacturer) {
+      .exec(function (err, manufacturer) {
         if (manufacturer === undefined) return res.notFound({
           "error": "Manufacturer not found."
         });
@@ -41,23 +41,25 @@ module.exports = {
       });
   },
 
-  update: function(req, res, next) {
+  update: function (req, res, next) {
     var id = parseInt(req.param('id'));
     if (!id) {
       return res.badRequest('Required param: id not provided.');
     }
     var params = {};
     params = _.merge({}, req.params.all(), req.body);
-    Manufacturer.update(id, params, function(err, manufacturer) {
+    Manufacturer.update(id, params, function (err, manufacturer) {
+      console.log(err);
       if (manufacturer === undefined) return res.notFound({
         "error": "Record not found."
       });
+
       if (err) return next(err);
       res.json(manufacturer);
     });
   },
 
-  delete: function(req, res, next) {
+  delete: function (req, res, next) {
     var id = parseInt(req.param('id'));
     if (!id) {
       return res.badRequest({
@@ -66,21 +68,21 @@ module.exports = {
     }
     Manufacturer.findOne({
       id: id
-    }).exec(function(err, result) {
+    }).exec(function (err, result) {
       if (err) return res.serverError(err);
       if (!result) return res.notFound({
         "error": "Record not found."
       });
-      Manufacturer.destroy(id, function(err) {
+      Manufacturer.destroy(id, function (err) {
         if (err) return next(err);
         return res.json(result);
       });
     });
   },
 
-  deleteAll: function(req, res, next) {
+  deleteAll: function (req, res, next) {
     Manufacturer.destroy()
-      .exec(function(err) {
+      .exec(function (err) {
         if (err) return next(err);
         return res.send();
       });

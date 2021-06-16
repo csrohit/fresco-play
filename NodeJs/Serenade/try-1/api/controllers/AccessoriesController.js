@@ -7,19 +7,19 @@
 
 module.exports = {
 
-  fetch: function(req, res, next) {
+  fetch: function (req, res, next) {
     Accessories.find()
       .populate('cars')
-      .exec(function(err, accessories) {
+      .exec(function (err, accessories) {
         if (err) return next(err);
         return res.json(accessories);
       });
   },
 
-  create: function(req, res, next) {
+  create: function (req, res, next) {
     var accessoriesData = req.body;
     Accessories.create(accessoriesData)
-      .exec(function(err, accessories) {
+      .exec(function (err, accessories) {
         if (err) {
           sails.log.debug('Some error occured ' + err);
           return res.badRequest(err);
@@ -28,14 +28,14 @@ module.exports = {
       });
   },
 
-  update: function(req, res, next) {
+  update: function (req, res, next) {
     var id = parseInt(req.param('id'));
     if (!id) {
       return res.badRequest('Required param: id not provided.');
     }
     var params = {};
     params = _.merge({}, req.params.all(), req.body);
-    Accessories.update(id, params, function(err, accessories) {
+    Accessories.update(id, params, function (err, accessories) {
       if (accessories.length === 0) return res.notFound({
         "error": "Record not found."
       });
@@ -44,7 +44,7 @@ module.exports = {
     });
   },
 
-  delete: function(req, res) {
+  delete: function (req, res) {
     var id = parseInt(req.param('id'));
     if (!id) {
       return res.badRequest({
@@ -53,26 +53,27 @@ module.exports = {
     }
     Accessories.findOne({
       id: id
-    }).exec(function(err, result) {
+    }).exec(function (err, result) {
       if (err) return res.serverError(err);
       if (!result) return res.notFound({
         "error": "Record not found."
       });
-      Accessories.destroy(id, function(err) {
+      Accessories.destroy(id, function (err) {
         if (err) return next(err);
         return res.json(result);
       });
     });
   },
 
-  deleteAll: function(req, res, next) {
+  deleteAll: function (req, res, next) {
     Accessories.destroy()
-      .exec(function(err) {
+      .exec(function (err) {
         if (err) return next(err);
         return res.send();
       });
   },
-  search: function(req, res, next) {
+  search: function (req, res, next) {
+    console.log(req.params);
     var where = req.param('where');
     var query = {};
 
@@ -86,9 +87,9 @@ module.exports = {
       query["sort"] = req.param('sort');
 
     Accessories.find(query)
-      .exec(function(err, accessories) {
+      .exec(function (err, accessories) {
         if (err) return res.badRequest(err);
-        if(accessories.length > 0)
+        if (accessories.length > 0)
           return res.json(accessories);
         else
           return res.notFound(accessories);
