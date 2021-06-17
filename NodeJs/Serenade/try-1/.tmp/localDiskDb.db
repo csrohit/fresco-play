@@ -1,22 +1,85 @@
 {
   "data": {
-    "accessories": [],
-    "cars": [],
-    "manufacturer": [],
-    "segment": [],
-    "variant": [
+    "accessories": [
       {
-        "name": "REVETRQE  XE",
-        "type": "Diesel",
-        "capacity": 1497,
-        "price": 6,
-        "createdAt": "2021-06-16T14:17:22.315Z",
-        "updatedAt": "2021-06-16T14:17:22.315Z",
+        "name": "Car DVR Camera",
+        "price": 788,
+        "createdAt": "2021-06-17T02:48:19.981Z",
+        "updatedAt": "2021-06-17T02:48:19.981Z",
         "id": 1
       }
     ],
-    "accessories_cars__cars_accessories": [],
-    "cars_variants__variant_cars": []
+    "cars": [
+      {
+        "name": "Honda City",
+        "segment": 6,
+        "description": "This is a dummy text",
+        "manufacturer": 6,
+        "createdAt": "2021-06-17T02:48:29.165Z",
+        "updatedAt": "2021-06-17T02:48:29.190Z",
+        "id": 1
+      },
+      {
+        "name": "Honda City",
+        "segment": 6,
+        "description": "This is a dummy text",
+        "manufacturer": 6,
+        "createdAt": "2021-06-17T03:24:08.040Z",
+        "updatedAt": "2021-06-17T03:24:08.057Z",
+        "id": 2
+      }
+    ],
+    "manufacturer": [
+      {
+        "name": "Leyland",
+        "createdAt": "2021-06-17T02:47:28.279Z",
+        "updatedAt": "2021-06-17T02:47:28.279Z",
+        "id": 6
+      }
+    ],
+    "segment": [
+      {
+        "name": "MPV",
+        "createdAt": "2021-06-17T02:47:10.430Z",
+        "updatedAt": "2021-06-17T02:47:10.430Z",
+        "id": 6
+      }
+    ],
+    "variant": [
+      {
+        "name": "REVETRQE XM",
+        "type": "Diesel",
+        "capacity": 1497,
+        "price": 7,
+        "createdAt": "2021-06-17T02:46:20.355Z",
+        "updatedAt": "2021-06-17T02:46:20.355Z",
+        "id": 2
+      }
+    ],
+    "accessories_cars__cars_accessories": [
+      {
+        "accessories_cars": 1,
+        "cars_accessories": 1,
+        "id": 1
+      },
+      {
+        "accessories_cars": 1,
+        "cars_accessories": 2,
+        "id": 2
+      }
+    ],
+    "cars_variants__variant_cars": [
+      {
+        "variant_cars": 2,
+        "cars_variants": 1,
+        "id": 1
+      },
+      {
+        "variant_cars": 2,
+        "cars_variants": 2,
+        "id": 2
+      }
+    ]
   },
   "schema": {
     "accessories": {
@@ -186,18 +249,26 @@
     }
   },
   "counters": {
-    "accessories": {},
-    "cars": {},
-    "manufacturer": {
-      "id": 5
-    },
-    "segment": {
-      "id": 5
-    },
-    "variant": {
+    "accessories": {
       "id": 1
     },
-    "accessories_cars__cars_accessories": {},
-    "cars_variants__variant_cars": {}
+    "cars": {
+      "id": 2
+    },
+    "manufacturer": {
+      "id": 6
+    },
+    "segment": {
+      "id": 6
+    },
+    "variant": {
+      "id": 2
+    },
+    "accessories_cars__cars_accessories": {
+      "id": 2
+    },
+    "cars_variants__variant_cars": {
+      "id": 2
+    }
   }
 }

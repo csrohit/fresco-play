@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.389" tests="55" failures="0">
+    <testsuite name="Root Suite" timestamp="2021-06-17T03:26:58" tests="0" failures="0" time="0"/>
+    <testsuite name="Car Controller" timestamp="2021-06-17T03:26:59" tests="12" file="/projects/challenge/test/controllers/CarsController.test.js" failures="0" time="0.17100000000000004">
+        <testcase name="Car Controller Get all cars: OK" time="0.044" classname="Get all cars: OK"/>
+        <testcase name="Car Controller Insert new car: OK" time="0.065" classname="Insert new car: OK"/>
+        <testcase name="Car Controller Insert new Car (Manufacturer): Bad Request" time="0.006" classname="Insert new Car (Manufacturer): Bad Request"/>
+        <testcase name="Car Controller Insert new Car (Segment): Bad Request" time="0.006" classname="Insert new Car (Segment): Bad Request"/>
+        <testcase name="Car Controller Insert new Car: Bad Request" time="0.017" classname="Insert new Car: Bad Request"/>
+        <testcase name="Car Controller Update car: OK" time="0.005" classname="Update car: OK"/>
+        <testcase name="Car Controller Update car: Bad Request" time="0.003" classname="Update car: Bad Request"/>
+        <testcase name="Car Controller Update car: Not Found" time="0.004" classname="Update car: Not Found"/>
+        <testcase name="Car Controller Delete car: OK" time="0.01" classname="Delete car: OK"/>
+        <testcase name="Car Controller Delete car: Bad Request" time="0.002" classname="Delete car: Bad Request"/>
+        <testcase name="Car Controller Delete car: Not Found" time="0.004" classname="Delete car: Not Found"/>
+        <testcase name="Car Controller Delete all cars: OK" time="0.005" classname="Delete all cars: OK"/>
+    </testsuite>
+    <testsuite name="Manufacturer Controller" timestamp="2021-06-17T03:26:59" tests="11" file="/projects/challenge/test/controllers/ManufacturerController.test.js" failures="0" time="0.049">
+        <testcase name="Manufacturer Controller Get all manufacturers: OK" time="0.008" classname="Get all manufacturers: OK"/>
+        <testcase name="Manufacturer Controller Insert new manufacturer: OK" time="0.004" classname="Insert new manufacturer: OK"/>
+        <testcase name="Manufacturer Controller Find manufacturer: OK" time="0.007" classname="Find manufacturer: OK"/>
+        <testcase name="Manufacturer Controller Find Manufacturer: Not found" time="0.005" classname="Find Manufacturer: Not found"/>
+        <testcase name="Manufacturer Controller Find Manufacturer: Bad request" time="0.002" classname="Find Manufacturer: Bad request"/>
+        <testcase name="Manufacturer Controller Update manufacturer: OK" time="0.004" classname="Update manufacturer: OK"/>
+        <testcase name="Manufacturer Controller Update manufacturer: Bad request" time="0.003" classname="Update manufacturer: Bad request"/>
+        <testcase name="Manufacturer Controller Update manufacturer: Not found" time="0.005" classname="Update manufacturer: Not found"/>
+        <testcase name="Manufacturer Controller Delete manufacturer" time="0.005" classname="Delete manufacturer"/>
+        <testcase name="Manufacturer Controller Delete manufacturer: Bad Request" time="0.002" classname="Delete manufacturer: Bad Request"/>
+        <testcase name="Manufacturer Controller Delete all manufacturers: OK" time="0.004" classname="Delete all manufacturers: OK"/>
+    </testsuite>
+    <testsuite name="Segment Controller" timestamp="2021-06-17T03:26:59" tests="1" file="/projects/challenge/test/controllers/SegmentController.test.js" failures="0" time="0.007">
+        <testcase name="Segment Controller get /segment" time="0.007" classname="get /segment"/>
+    </testsuite>
+    <testsuite name="Variant Controller" timestamp="2021-06-17T03:26:59" tests="10" file="/projects/challenge/test/controllers/VarientController.test.js" failures="0" time="0.051">
+        <testcase name="Variant Controller Get all variants" time="0.01" classname="Get all variants"/>
+        <testcase name="Variant Controller Insert new variant: OK" time="0.005" classname="Insert new variant: OK"/>
+        <testcase name="Variant Controller Insert new variant: Bad Request" time="0.004" classname="Insert new variant: Bad Request"/>
+        <testcase name="Variant Controller Update variant: OK" time="0.005" classname="Update variant: OK"/>
+        <testcase name="Variant Controller Update variant: Bad Request" time="0.002" classname="Update variant: Bad Request"/>
+        <testcase name="Variant Controller Update variant: Not Found" time="0.006" classname="Update variant: Not Found"/>
+        <testcase name="Variant Controller Delete variant: OK" time="0.007" classname="Delete variant: OK"/>
+        <testcase name="Variant Controller Delete variant: Not Found" time="0.004" classname="Delete variant: Not Found"/>
+        <testcase name="Variant Controller Delete variant: Bad Request" time="0.003" classname="Delete variant: Bad Request"/>
+        <testcase name="Variant Controller Delete all variants: OK" time="0.005" classname="Delete all variants: OK"/>
+    </testsuite>
+    <testsuite name="Accessory Controller" timestamp="2021-06-17T03:26:59" tests="9" file="/projects/challenge/test/models/Accessories.test.js" failures="0" time="0.05299999999999999">
+        <testcase name="Accessory Controller Get all accessories: OK" time="0.008" classname="Get all accessories: OK"/>
+        <testcase name="Accessory Controller Delete all accessories" time="0.005" classname="Delete all accessories"/>
+        <testcase name="Accessory Controller Insert new accessory: OK" time="0.004" classname="Insert new accessory: OK"/>
+        <testcase name="Accessory Controller Insert new accessory: Bad Request" time="0.003" classname="Insert new accessory: Bad Request"/>
+        <testcase name="Accessory Controller Find accessory: OK" time="0.009" classname="Find accessory: OK"/>
+        <testcase name="Accessory Controller Find accessory: Bad Request" time="0.006" classname="Find accessory: Bad Request"/>
+        <testcase name="Accessory Controller Find accessory: : Not Found" time="0.005" classname="Find accessory: : Not Found"/>
+        <testcase name="Accessory Controller Update accessory: OK" time="0.006" classname="Update accessory: OK"/>
+        <testcase name="Accessory Controller Delete accessory: OK" time="0.007" classname="Delete accessory: OK"/>
+    </testsuite>
+    <testsuite name="Segment Controller" timestamp="2021-06-17T03:26:59" tests="12" file="/projects/challenge/test/models/Segment.test.js" failures="0" time="0.058">
+        <testcase name="Segment Controller Get all segments: OK" time="0.007" classname="Get all segments: OK"/>
+        <testcase name="Segment Controller Insert new segment: OK" time="0.004" classname="Insert new segment: OK"/>
+        <testcase name="Segment Controller Find segment: OK" time="0.008" classname="Find segment: OK"/>
+        <testcase name="Segment Controller Find segment: Bad Request" time="0.003" classname="Find segment: Bad Request"/>
+        <testcase name="Segment Controller Find segment: : Not Found" time="0.006" classname="Find segment: : Not Found"/>
+        <testcase name="Segment Controller Update segment: OK" time="0.006" classname="Update segment: OK"/>
+        <testcase name="Segment Controller Update segment: Bad Request" time="0.002" classname="Update segment: Bad Request"/>
+        <testcase name="Segment Controller Update segment: Not Found" time="0.003" classname="Update segment: Not Found"/>
+        <testcase name="Segment Controller Delete segment: OK" time="0.006" classname="Delete segment: OK"/>
+        <testcase name="Segment Controller Delete segment: Bad Request" time="0.002" classname="Delete segment: Bad Request"/>
+        <testcase name="Segment Controller Delete segment: Not Found" time="0.004" classname="Delete segment: Not Found"/>
+        <testcase name="Segment Controller Delete all segments" time="0.007" classname="Delete all segments"/>
+    </testsuite>
+    <testsuite name="CarsApi Test Coverage" errors="0" package="CarsApi Test Coverage" hostname="localhost" tests="10" failures="12" time="0.111" timestamp="" id="7">
+        <properties/>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
+            <failure type="">Missing Test Coverage </failure>
+        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage success"/>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage success"/>
+        <testcase name="CarsApi Lint Coverage" time="0" classname="Eslint success"/>
+        <testcase name="CarsApi Lint Coverage" time="0" classname="Eslint success"/>
+        <testcase name="CarsApi Eslint Coverage" time="0" classname="Eslint error">
+            <failure type="">Eslint error</failure>
+        </testcase>
+        <testcase name="CarsApi Eslint Coverage" time="0" classname="Eslint error">
+            <failure type="">Eslint error</failure>
+        </testcase>
+        <testcase name="CarsApi Eslint Coverage" time="0" classname="Eslint error">
+            <failure type="">Eslint error</failure>
+        </testcase>
+        <system-out/>
+        <system-err/>
+    </testsuite>
+</testsuites>

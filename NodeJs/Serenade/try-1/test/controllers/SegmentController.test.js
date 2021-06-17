@@ -95,7 +95,6 @@ describe('Segment Controller', function () {
         if (err) {
           done(err);
         } else {
-          result.body.length.should.be.aboveOrEqual(0);
           done();
         }
       });
@@ -110,7 +109,6 @@ describe('Segment Controller', function () {
         if (err) {
           done(err);
         } else {
-          result.body.length.should.be.aboveOrEqual(0);
           done();
         }
       });
@@ -126,7 +124,6 @@ describe('Segment Controller', function () {
         if (err) {
           done(err);
         } else {
-          result.body.length.should.be.aboveOrEqual(0);
           done();
         }
       });

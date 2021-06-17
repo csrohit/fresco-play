@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "addc7549-c004-4579-80ca-74c0bae70dc1",
+		"name": "Sails",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Segment",
+			"item": [
+				{
+					"name": "Get Segments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/segment",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"segment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Segment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"MPV\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/segment",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"segment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find segment",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/segment/abcd",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"segment",
+								"abcd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Segment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"nehal\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/segment/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"segment",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete segment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/segment/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"segment",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all segments",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/segment",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"segment"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Accessory",
+			"item": [
+				{
+					"name": "New Accessory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"Car DVR Camera\",\r\n      \"price\": 788\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/accessories",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"accessories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Manufacturer",
+			"item": [
+				{
+					"name": "New Manufacturer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Leyland\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/manufacturer",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"manufacturer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all manufacturers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/manufacturer",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"manufacturer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find manufacturer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/manufacturer/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"manufacturer",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Manufacturer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cars\": \"rohit\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/manufacturer/10",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"manufacturer",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete manufacturer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/manufacturer/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"manufacturer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete all manufacturers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/manufacturer",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"manufacturer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Variant",
+			"item": [
+				{
+					"name": "Create Variant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"REVETRQE XM\",\r\n      \"type\": \"Diesel\",\r\n      \"capacity\": \"1497 cc\",\r\n      \"price\": \"7.62 Lakh\"\r\n}\r\n    ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/variant",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"variant"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Car",
+			"item": [
+				{
+					"name": "Get all cars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/car",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"Honda City\",\r\n      \"segment\": 6,\r\n      \"description\": \"This is a dummy text\",\r\n      \"manufacturer\": 6,\r\n      \"variants\": [2],\r\n      \"accessories\": [1]\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/car",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"car"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
