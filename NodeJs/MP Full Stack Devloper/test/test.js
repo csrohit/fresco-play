@@ -1,7 +1,7 @@
 process.env.NODE_ENV = 'test';
 
 let mongoose = require("mongoose");
-let HandlerGenerator=require('../handlers/handler.js');
+// let HandlerGenerator=require('../handlers/handler.js');
 let assert=require("assert");
 let chai = require('chai');
 let chaiHttp = require('chai-http');
@@ -25,12 +25,12 @@ describe('Preparing to test API', () => {
   */
   describe('API testing started', () => {
 
-      
+
      /*Register API testing*/
 
 
       it('it should test register API', function(done) {
-  
+
         /*valid registration*/
 
         request(server)
@@ -38,7 +38,7 @@ describe('Preparing to test API', () => {
         .send({email:'test@gmail.com',pwd:'123456789',uname:"abcd",mobile:9848012345,location:"chennai"})
         .set('Accept', 'application/json')
         .expect(function(res) {
-      
+
         })
         .expect(200)
         .then(response => {
@@ -52,10 +52,10 @@ describe('Preparing to test API', () => {
 
 
        });
-      
+
 
       it('it should test login API', function(done) {
-        
+
        /*For Valid user*/
 
         request(server)
@@ -63,15 +63,15 @@ describe('Preparing to test API', () => {
         .send({uname:'abcd',pwd:'123456789'})
         .set('Accept', 'application/json')
         .expect(function(res) {
-       
+
         })
         .expect(200)
         .then(response => {
           response.body.should.have.property("success");
-          response.body.should.have.property("message"); 
+          response.body.should.have.property("message");
            assert(response.body.success,true);
-           assert(response.body.message,"Authentication successful!"); 
-           userId=mongoose.Types.ObjectId(response.body.uid);  
+           assert(response.body.message,"Authentication successful!");
+           userId=mongoose.Types.ObjectId(response.body.uid);
 
 
           done();
@@ -80,7 +80,7 @@ describe('Preparing to test API', () => {
           done(new Error(err));
         })
 
-     
+
        });
 
 
@@ -89,7 +89,7 @@ describe('Preparing to test API', () => {
 
 
      it('it should test addPatient API',function(){
-  
+
       var formData={
         fname: "patientFirstName",
         lname: "patientLastName",
@@ -100,7 +100,7 @@ describe('Preparing to test API', () => {
         desc:"patientDesc",
         userId: userId
         };
-           
+
           request(server)
              .post('/addPatient')
              .send(formData)
@@ -157,13 +157,13 @@ describe('Preparing to test API', () => {
           console.log(err);
           done(new Error(err));
         })
-       
+
        });
 
 
 
       it('it should test fetchPatient API', function(done) {
-        
+
     /*with token*/
 
         request(server)
@@ -179,16 +179,16 @@ describe('Preparing to test API', () => {
           done();
         }).catch(err => {
           //console.log(err);
-         
+
           done(new Error(err));
         })
-       
+
        });
 
    /*It should test diseases API*/
 
        it('it should test diseases API', function(done) {
-        
+
         /*with token*/
 
         request(server)
@@ -203,18 +203,18 @@ describe('Preparing to test API', () => {
           done();
         }).catch(err => {
           //console.log(err);
-         
+
           done(new Error(err));
         })
-          
+
 
        })
 
-      
+
     /*it should test bookAppointment API*/
-      
+
       it('it should test bookAppointment API',function(done){
-         
+
       var formdata={
         fname:"patientFirstName",
         lname:"patientLastName",
@@ -226,7 +226,7 @@ describe('Preparing to test API', () => {
       }
 
       console.log(formdata);
-           
+
         request(server)
         .post('/bookAppointment')
         .send(formdata)
@@ -236,13 +236,13 @@ describe('Preparing to test API', () => {
         })
         .expect(200)
         .then(response => {
-          
+
           response.body.should.have.property("status");
             //assert(response.body.success,true);
           done();
         }).catch(err => {
           //console.log(err);
-         
+
           done(new Error(err));
         })
 
@@ -250,10 +250,10 @@ describe('Preparing to test API', () => {
       })
 
      /*It should test fetchAppointment API*/
-     
+
      it('it should test fetchAppointment API',function(done){
-        
-       
+
+
     request(server)
     .get('/fetchAppointment')
     .set('Accept','application/json')
@@ -266,7 +266,7 @@ describe('Preparing to test API', () => {
       done();
     }).catch(err => {
       //console.log(err);
-     
+
       done(new Error(err));
     })
 
@@ -281,11 +281,11 @@ describe('Preparing to test API', () => {
       var formdata={
         patientId:patientId
         };
-         
+
 
 
     /*without token*/
-       
+
     request(server)
     .get('/fetchAppointment')
     .send(formdata)
@@ -299,13 +299,13 @@ describe('Preparing to test API', () => {
       done();
     }).catch(err => {
       //console.log(err);
-     
+
       done(new Error(err));
     })
 
 
       })
-    
+
 
   });
 
