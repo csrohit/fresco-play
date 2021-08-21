@@ -1,0 +1,21 @@
+mat-card mat-list-item mat-list-item {
+  cursor: pointer,
+}
+
+.searchOutput {
+  width: 400px;
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.mat-card {
+  padding: 0px !important;
+}
+
+.searchError {
+  background-color: #fafafa;
+}

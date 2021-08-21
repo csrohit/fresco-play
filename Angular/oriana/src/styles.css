@@ -1,0 +1,29 @@
+html, body { height: 100%; background-color: #fafafa; text-align: center }
+body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+.container {
+  width: 100%;
+}
+
+.container-mid {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.app-title {
+  background-color: blueviolet;
+}
+
+.text-mid {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fafafa;
+  font-weight: 500;
+}
+
+.searchItem {
+  cursor: pointer !important;
+}

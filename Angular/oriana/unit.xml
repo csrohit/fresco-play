@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<testsuite name="Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/11.12.0" package="unit" timestamp="2021-08-21T08:22:22" id="0" hostname="Rohit" tests="14" errors="0" failures="0" time="1.533">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/11.12.0"/>
+  </properties>
+  <testcase name="AppComponent should render title in a text-mid class" time="0.328" classname="unit.AppComponent"/>
+  <testcase name="AppComponent should call weatherService.getCityDetails when getCityDetails() is called" time="0.224" classname="unit.AppComponent"/>
+  <testcase name="CityComponent should display city and country" time="0.118" classname="unit.CityComponent"/>
+  <testcase name="CityComponent should display formatted date" time="0.076" classname="unit.CityComponent"/>
+  <testcase name="CityComponent should display temperature with only 1 decimal" time="0.079" classname="unit.CityComponent"/>
+  <testcase name="CityComponent should display temperature with minimum 2 digits left to decimal" time="0.077" classname="unit.CityComponent"/>
+  <testcase name="CityComponent should display weather name" time="0.08" classname="unit.CityComponent"/>
+  <testcase name="SearchComponent search() should call weatherService.searchLocation when some character is typed" time="0.106" classname="unit.SearchComponent"/>
+  <testcase name="SearchComponent search() should not call weatherService.searchLocation when searchedString is empty" time="0.108" classname="unit.SearchComponent"/>
+  <testcase name="SearchComponent selectedLocation() should emit cityid" time="0.108" classname="unit.SearchComponent"/>
+  <testcase name="SearchComponent selectedLocation() should clear searchResults" time="0.096" classname="unit.SearchComponent"/>
+  <testcase name="SearchComponent selectedLocation() should be called when cityName is clicked" time="0.09" classname="unit.SearchComponent"/>
+  <testcase name="WeatherService should fetch cities based on searched query" time="0.028" classname="unit.WeatherService"/>
+  <testcase name="WeatherService should fetch the city details based on the cityId" time="0.015" classname="unit.WeatherService"/>
+  <system-out>
+    <![CDATA[Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/11.12.0 LOG: undefined
+,Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/11.12.0 LOG: undefined
+,Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/11.12.0 LOG: Object{city: 'chennai', country: 'india', weather: [Object{date: ..., temperature: ..., weather_name: ..., weather_image: ...}]}
+,Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/11.12.0 LOG: Object{city: 'chennai', country: 'india', weather: [Object{date: ..., temperature: ..., weather_name: ..., weather_image: ...}]}
+,Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/11.12.0 LOG: Object{city: 'chennai', country: 'india', weather: [Object{date: ..., temperature: ..., weather_name: ..., weather_image: ...}]}
+,Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/11.12.0 LOG: Object{city: 'chennai', country: 'india', weather: [Object{date: ..., temperature: ..., weather_name: ..., weather_image: ...}]}
+,Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/11.12.0 LOG: Object{city: 'chennai', country: 'india', weather: [Object{date: ..., temperature: ..., weather_name: ..., weather_image: ...}]}
+,Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/11.12.0 LOG: 'paris'
+,Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/11.12.0 LOG: Object{city: 'title', country: 'country', weather: [Object{}]}
+,Mozilla/5.0 (win32) AppleWebKit/537.36 (KHTML, like Gecko) jsdom/11.12.0 LOG: Object{city: 'title', country: 'country', weather: [Object{}]}
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

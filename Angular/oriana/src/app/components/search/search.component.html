@@ -1,0 +1,41 @@
+<p>
+  <mat-form-field>
+    <mat-label>Search city</mat-label>
+    <mat-icon matSuffix>search</mat-icon>
+
+    <!-- Challenge #searchInput -->
+    <input
+        #searchInput
+        matInput
+        placeholder="paris, london..."
+        (keyup)="search($event.target.value)" 
+        class="searchInput">
+  </mat-form-field>
+</p>
+
+<div class="searchOutput">
+    <mat-card *ngIf="searchResults">
+        <!-- If input field has some value and the result from service is an empty array show sorry message else display list -->
+        <mat-list role="list" *ngIf="searchResults.length===0 && searchInput.value" class="searchError">
+            <mat-list-item  role="listitem">City not found &nbsp; &nbsp;&nbsp;
+                <mat-icon matSuffix>sentiment_very_dissatisfied</mat-icon>
+            </mat-list-item>
+        </mat-list>
+        <!-- Challenge .searchItem
+              - complete for loop
+              - send proper parameters to function on click event
+        -->
+        <mat-list role="list" *ngIf="searchResults.length">
+            <mat-list-item
+                role="listitem"
+                *ngFor="let result of searchResults"
+                (click)="selectedLocation(result)"
+                class="searchItem">
+                
+                {{result.title}}
+                <mat-divider>
+                </mat-divider>
+            </mat-list-item>
+        </mat-list>
+    </mat-card>
+</div>
