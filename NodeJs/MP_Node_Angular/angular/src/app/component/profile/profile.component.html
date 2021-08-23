@@ -1,0 +1,96 @@
+<!-- Write necessary code-->
+<app-header></app-header>
+<div class="main-view">
+  <div class="home-content-wrapper">
+    <div class="home-profile-wrapper">
+      <div class="profile-details">
+        <img [src]="userImg" width="120" height="100" class="profile-img">
+      </div>
+    </div>
+    <div class="home-profile-wrapper border">
+
+      <!-- hide profile details if editing the form-->
+      <ul id="profileDetails" class="profile-details">
+        <li class="list-items" >
+          <fa class="home-icons" name="user" size="2x"></fa>
+          <span id="usernameVal"  >
+            {{userDetails?.userName}}
+          </span>
+
+        </li>
+        <li class="list-items">
+          <fa class="home-icons fa-icon " name="mobile" size="2x"></fa>
+          <span id="mobileVal">
+            {{userDetails?.mobile}}
+          </span>
+        </li>
+        <li class="list-items">
+          <fa class="home-icons fa-icon" name="envelope" size="2x"></fa>
+          <span id="emailVal" class="list-items" >
+            {{userDetails?.email}}
+          </span>
+        </li>
+        <li class="list-items">
+          <fa class="home-icons" name="map-marker" size="2x"></fa>
+          <span id="locationVal" class="list-items">
+            {{userDetails?.location}}
+          </span>
+        </li>
+      </ul>
+
+      <!-- show edit profile form if edit profile button clicked-->
+      <form id="editProfileForm" class="ro-form profile-form">
+        <h2>Edit your profile</h2>
+        <div class="form-group">
+          <label for="username">
+            Name
+          </label>
+          <input type="text" id="consumerName" value="" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="mobile">
+            Contact number
+          </label>
+          <input type="text" value="" id="mobile" placeholder="mobile number">
+          <div class="form-error-messages">
+            {{mobileErrMsg}}
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">
+            Email
+          </label>
+          <input type="email" value="" id="email" placeholder="Email" >
+          <div class="form-error-messages">
+            {{emailErrMsg}}
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="location">
+            Location
+          </label>
+          <input type="text" value="" id="location" placeholder="Location">
+          <div class="form-error-messages">
+            {{locationErrMsg}}
+          </div>
+        </div>
+
+        <!-- disable button if form not valid -->
+        <!-- call changeMyProfile method when clicking on this button-->
+        <button class="btn" type="submit" id="editSubmitBtn">Make changes</button>
+      </form>
+      <div class="profile-edit-choice">
+        
+        <!-- show button if not editing the form-->
+        <!-- call editMyProfile method when clicking on this button-->
+        <button id="editProfileBtn" class="prompt-btn btn">
+        Edit profile</button>
+
+        <!-- show button if editing the form-->
+        <!-- call discardEdit method when clicking on this button-->
+        <button id="editDiscardBtn" class="alert-btn btn">Discard</button>
+      </div>
+    </div>
+  </div>
+</div>

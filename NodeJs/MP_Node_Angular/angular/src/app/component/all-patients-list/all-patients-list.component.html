@@ -1,0 +1,35 @@
+<app-header></app-header>
+  <div class="table-div">
+    <table class="table-class">
+      <thead>
+        <tr class="table-head">
+          <th>Patient ID</th>
+          <th>FirstName</th>
+          <th>LastName</th>
+          <th>Gender</th>
+          <th>DOB(yyyy-MM-dd)</th>
+          <th>Mobile</th>
+          <th>Email</th>
+          <th>Registered on</th>
+          <th>Update</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- display all patients list -->
+        <tr id="table-row">
+        	<td id="table-id" >{{item._id}}</td>
+          <td id="table-firstname" class="td-column">{{item.fname}}</td>
+          <td id="table-lastname" >{{item.lname}}</td>
+          <td id="table-gender">{{item.gender}}</td>
+          <td id="table-dob">{{item.dob| date: 'yyyy/MM/dd'}}</td>
+          <td id="table-mobile">{{item.mobile}}</td>
+          <td id="table-email">{{item.email}}</td>
+          <td id="table-registeredOn">{{item.createdAt| date: 'dd/MM/yyyy hh:mm:ss'}}</td>
+          <td class="column-btn">
+            <!--call view method with selected id when clicking this tag-->
+            <a id="view" class="view-details" (click)="view(item._id)">View Details</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

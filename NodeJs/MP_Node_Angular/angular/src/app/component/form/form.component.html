@@ -1,0 +1,116 @@
+<!-- Write necessary code-->
+<app-header></app-header>
+  <div id="form-container" >
+    <div class="form">
+      <div class="form-content">
+        <div class="col-sm-12 ">
+        <div class="col-sm-8 div-header">
+          <h2 class="header">Enter Patient details</h2>
+        </div>
+        </div>
+
+        <!-- call submitForm method with all form values if form is valid -->
+        <form>
+
+          <div class="form-group">
+            <label class="label-name">
+              First Name:<span class="required">*</span>
+            </label>
+            <input id="firstname" class="form-control text-box" type="text" placeholder="FIRSTNAME">
+            <div id="error-no-firstname" class="alert alert-danger error-msg">
+              {{emptyFirstname}}
+            </div>
+            <div id="error-minlength-firstname" class="alert alert-danger error-msg">
+              {{minlengthFirstname}}
+            </div>
+            <div class="alert alert-danger error-msg">
+              {{maxlengthFirstname}}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="label-name">Last Name:
+              <span class="required">*</span>
+            </label>
+            <input id="lastname" class="form-control text-box" type="text" placeholder="LASTNAME">
+            <div id="error-no-lastname"  class="alert alert-danger error-msg">
+              {{emptyLastname}}
+            </div>
+            <div id="error-minlength-lastname"  class="alert alert-danger error-msg">
+              {{minlengthLastname}}
+            </div>
+            <div id="error-maxlength-lastname" class="alert alert-danger error-msg">
+              {{maxlengthLastname}}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="label-name">Gender:
+              <span class="required">*</span>
+            </label>
+            <div class="input-div">
+            <input type="radio" id="male" class="input-content" value="Male">
+            <label class="label-content" for="male">Male</label>
+            <input type="radio" id="female" class="input-content" value="Female">
+            <label class="label-content" for="female">Female</label>
+            </div>
+            <div id="error-no-gender" class="alert alert-danger error-msg">
+              {{noGender}}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="label-name">
+              Date of birth:<span class="required">*</span>
+            </label>
+            <div >
+            <input id="date-input" class="form-control date-input glyphicon glyphicon-calendar" type="date" placeholder="Date of birth" min="1968-01-01" max="{{today}}">
+            </div>
+            <div id="error-no-dob" class="alert alert-danger error-msg">
+              {{noDob}}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="label-name">
+              Contact number:<span class="required">*</span>
+            </label>
+            <input id="mobile" class="form-control text-box" type="text" placeholder="mobile number">
+            <div id="error-no-mobile" class="alert alert-danger error-msg">
+              {{noMobile}}
+            </div>
+            <div id="error-number-mobile" class="alert alert-danger error-msg">
+              {{numberMobile}}
+            </div>
+            <div id="error-maxlength-mobile" class="alert alert-danger error-msg">
+              {{maxlengthMobile}}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="label-name" for="email">
+              Email:<span class="required">*</span>
+            </label>
+            <input id="email" class="form-control text-box" type="email"  placeholder="example:abc12@tcs.com">
+            <div id="error-pattern-email" class="alert alert-danger error-msg">
+              {{patternEmail}}
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="label-name" for="description">
+              Description: <span class="xs-font">(Optional)</span>
+            </label>
+            <textarea id="description" class="form-control " placeholder="Briefly describe the issue"></textarea>
+          </div>
+
+          <div class="form-group">
+            <!-- disable button if form not valid -->
+            <button type="submit" id="submit-btn" class="btn btn-primary submit-btn">Submit</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+

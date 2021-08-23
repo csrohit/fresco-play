@@ -1,0 +1,96 @@
+<!-- Write necessary code-->
+<div class="login-view-wrapper custom-container">
+  <div class="login-view">
+    <div class="logo-wrapper">
+      <h2 >SIGN UP</h2>
+    </div>
+    <div class="login-form-wrapper" >
+      <form class="ro-form">
+        <div class="form-group">
+          <label class="labelHead" for="username">
+            <b>Username</b>
+          </label>
+          <input type="text" id="username" placeholder="username">
+
+          <div class="form-error-messages"
+            id="error-no-username">
+            {{emptyUserName}}
+          </div>
+          <div class="form-error-messages"
+            id="error-minlength-username">
+            {{minlengthUserName}}
+          </div>
+          <div class="form-error-messages"
+            id="error-maxlength-username">
+            {{maxlengthUserName}}
+          </div>
+          <div class="form-error-messages"
+            id="error-pattern-username">
+            {{userNamePattern}}
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="labelHead" for="password">
+            <b>Password</b>
+          </label>
+          <input type="password" id="password" placeholder="password">
+          <div class="form-error-messages"
+            id="error-no-password">
+            {{emptyPassword}}
+          </div>
+          <div class="form-error-messages"
+            id="error-minlength-password">
+            {{minlengthPassword}}
+          </div>
+          <div class="form-error-messages"
+            id="error-maxlength-password">
+            {{maxlengthPassword}}
+          </div>
+          <div class="form-error-messages"
+            id="error-pattern-password">
+            {{passwordPattern}}
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="labelHead" for="mobile">
+            Contact number
+          </label>
+          <input type="number" value="" id="mobile" placeholder="mobile number">
+          <div id="error-mobile" class="form-error-messages">
+            {{mobileErrMsg}}
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="labelHead" for="email">
+            Email
+          </label>
+          <input type="email" value="" id="email" placeholder="Email">
+          <div id="error-email" class="form-error-messages">
+            {{emailErrMsg}}
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="labelHead" for="location">
+            Location
+          </label>
+          <input type="text" value="" id="location" placeholder="Location">
+          <div id="error-location" class="form-error-messages">
+            {{locationErrMsg}}
+          </div>
+        </div>
+
+        <div class="col-sm-12 clmn12">
+          <!-- call goBack method when clicking on this button-->
+        	<button id="back" class="guest-btn">Back</button>
+          <!-- disable button if form not valid -->
+          <!-- call signUp method when clicking on this button-->
+          <button id="signup" class="login-btn" type="submit">Create Account</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

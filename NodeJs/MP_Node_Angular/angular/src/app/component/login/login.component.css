@@ -1,0 +1,296 @@
+/*@import '../../styles';*/
+.logo-wrapper {
+    width: 100%;
+    padding-left: 38%;
+    @extend .flex-col-center;
+}
+
+.logo-wrapper h2 {
+    font-family: roboto;
+    font-style: oblique;
+    font-weight: 600;
+    color: #0b73b7;
+    font-size: 32px;
+    margin: 10px 0 20px;
+}
+
+.guest-btn {
+    padding: 4px 9px;
+    margin: 0px 3px 0px 106px;
+    background: #fff;
+    border: 2px solid #2980b9;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #2980b9;
+    font-family: roboto;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+.login-form-wrapper {
+    margin-top: 20px;
+}
+
+.login-view-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+html,body,.container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-view{
+    width: 100%;
+    min-height: 100%;
+    padding: 20px 50px;
+    margin: 0;
+    text-align: center;
+}
+.login-view{
+    width: 500px;
+    height: fit-content;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    min-height: 300px !important;
+    padding: 20px;
+}
+.form-group{
+    min-width: 250px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: start;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.form-group label{
+    width: 100%;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+.form-group input,textarea{
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 3px;
+    box-shadow: none;
+    padding: 5px 10px;
+    font-weight: 300;
+    border: 1px solid #ccc;
+    width:100%;
+}
+
+
+.ro-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.btn-group{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+.login-btn, .report-outage-btn, .btn{
+    padding: 5px 16px;
+    background: #2980b9;
+    border: 2px solid #2980b9;
+    border-radius: 2px;
+    box-shadow: none;
+    color: #fff;
+    cursor: pointer;
+    margin: 0px 0px 0px 90px;
+    font-family: roboto;
+    font-style: oblique;
+    font-weight: 600;
+}
+.alert-btn{
+background: #e74c3c;
+border: 2px solid #e74c3c;
+}
+.prompt-btn{
+    background: #2ecc71;
+    border: 2px solid #2ecc71;
+}
+.radio-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+.radio-form-group{
+    padding: 7px 2px;
+}
+.radio-form-group label{
+
+}
+
+.lbl-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #2980b9;
+  }
+
+  /* On mouse-over, add a grey background color */
+
+  .lbl-container {
+    &:hover input ~ .checkmark {
+      background-color: #eee;
+    }
+    input:checked ~ .checkmark {
+      background-color: #fff;
+    }
+  }
+
+  /* When the radio button is checked, add a blue background */
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+
+  .lbl-container {
+    input:checked ~ .checkmark:after {
+      display: block;
+    }
+    .checkmark:after {
+      top: 3px;
+      left: 3px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #2980b9;
+
+    }
+  }
+
+  /* Style the indicator (dot/circle) */
+.radio-group input{
+    margin-left: 15px;
+}
+.radio-group input:nth-child(1){
+    margin-left: 0;
+}
+.row-flex{
+    flex-direction: row;
+}
+
+.form-group select,textarea{
+    padding: 7px 10px;
+    font-size: 16px;
+    width: 100%;
+}
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-error-messages{
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+}
+.form-inp-success{
+    border-color: green !important;
+    outline-color: #fff !important;
+}
+.form-inp-error{
+border-color: red !important;
+outline-color: #fff !important;
+}
+.fa{
+    color: #3498db;
+    margin-right: 2px;
+}
+button .fa{
+    color: #fff;
+}
+
+button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.custom-container, .header-main {
+    background: #5a97bf;
+}
+
+.labelHead {
+    color: #1e3799;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: roboto;
+    font-style: oblique;
+}
+
+.login-msg {
+  color: green;
+  font-size: 24px;
+  padding: 30px 0px 0px 88px;
+  margin: 100px 0px 0px 0px;
+
+}
+
+.clmn12 {
+  margin-top: 18px;
+}
+.login-error {
+    margin-top: 20px;
+}

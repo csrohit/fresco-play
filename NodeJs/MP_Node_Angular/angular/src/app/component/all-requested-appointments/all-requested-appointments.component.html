@@ -1,0 +1,38 @@
+<app-header></app-header>
+  <div class="table-container">
+    <!-- display no records found message if there is no appointment -->
+    <div class="no-records">No Records Found</div>
+    <table class="table-class">
+      <thead>
+        <tr class="table-head">
+          <th>Appointment id</th>
+          <th>Patient id</th>
+          <th>Patient name</th>
+          <th>Disease</th>
+          <th>Priority</th>
+          <th>Tentative date</th>
+          <th>Requested on</th>
+          <th>Update</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!--display all appointments -->
+        <tr id="table-row">
+          <td id="app-id" >{{item._id}}</td>
+          <td id="patient-id" >{{item.patientId}}</td>
+          <td id="patient-name" >{{item.fname}} {{item.lname}}</td>
+          <td id="table-disease" class="td-column">{{item.disease}}</td>
+          <td id="table-priority" >{{item.priority}}</td>
+          <td id="table-tentativedate">{{item.AppointmentDate| date: 'dd/MM/yyyy'}}</td>
+          <td id="table-requestedOn">{{item.bookingTime| date: 'dd/MM/yyyy hh:mm:ss'}}</td>
+          <td class="column-btn">
+            <!--call view method with selected patient id when clicking this tag-->
+          	<a id="view" class="view-details">View Details</a>
+            <!-- call cancelAppointment method with selected appointment id when clicking on this button-->
+            <button id="reject" class="btn btn-danger btn-value">Cancel Appointment
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

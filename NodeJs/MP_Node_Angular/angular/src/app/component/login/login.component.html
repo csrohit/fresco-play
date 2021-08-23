@@ -1,0 +1,69 @@
+<!-- Write necessary code-->
+<div class="login-view-wrapper custom-container">
+  <div class="login-view">
+    <div class="logo-wrapper">
+      <img src="./../assets/login.png" width="100" height="100">
+      <h2 >LOGIN</h2>
+    </div>
+    <div class="login-form-wrapper" >
+      <form class="ro-form">
+        <div class="form-group">
+          <label class="labelHead" for="username">
+            <b>Username</b>
+          </label>
+          <input type="text" id="username" placeholder="username">
+
+          <div class="form-error-messages"
+            id="error-no-username">
+            {{emptyUserName}}
+          </div>
+          <div class="form-error-messages"
+            id="error-minlength-username">
+            {{minlengthUserName}}
+          </div>
+          <div class="form-error-messages"
+            id="error-maxlength-username">
+            {{maxlengthUserName}}
+          </div>
+          <div class="form-error-messages"
+            id="error-pattern-username">
+            {{userNamePattern}}
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="labelHead" for="password">
+            <b>Password</b>
+          </label>
+          <input type="password" id="password" placeholder="password">
+          <div class="form-error-messages"
+            id="error-no-password">
+            {{emptyPassword}}
+          </div>
+          <div class="form-error-messages"
+            id="error-minlength-password">
+            {{minlengthPassword}}
+          </div>
+          <div class="form-error-messages"
+            id="error-maxlength-password">
+            {{maxlengthPassword}}
+          </div>
+          <div class="form-error-messages"
+            id="error-pattern-password">
+            {{passwordPattern}}
+          </div>
+        </div>
+
+        <div class="col-sm-12 clmn12">
+
+          <!-- disable button if form not valid -->
+          <!-- call doLogin method when clicking on this button-->
+          <button id="loginBtn" class="login-btn" type="submit">Login</button>
+
+          <!-- call signUp method when clicking on this button-->
+          <button id="signupBtn" class="guest-btn">Sign up</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</div>

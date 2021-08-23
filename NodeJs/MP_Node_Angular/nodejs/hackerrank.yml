@@ -1,0 +1,18 @@
+version: 1.0
+configuration:
+  has_webserver: false
+  scoring:
+    command: npm install && bash dbinstall.sh &&bash test.sh && npm run-script lint && npm test
+    files:
+      - test-results.xml
+  ide_config:
+    default_open_files:
+      - server.js
+    project_menu:
+      run: (npm run-script coverage) && echo done
+      install: (npm install) && echo done
+      test: (npm run-script lint && npm test) && echo done
+    readonly_paths:
+      - package.json
+      - test-results.xml
+      - test/*.js

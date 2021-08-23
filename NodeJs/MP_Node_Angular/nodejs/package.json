@@ -1,0 +1,38 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint ./test -o eslint.xml -f junit;exit 0;",
+    "test": "mocha --timeout 10000 --reporter mocha-junit-reporter",
+    "coverage": "istanbul cover -x 'middleware.js' -x 'handlers/handler.js' --report clover --report html _mocha test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.4",
+    "cors": "2.8.5",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.19.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "xml-js": "^1.6.2",
+    "body-parser": "^1.18.2"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "eslint": "^4.19.1",
+    "grunt": "^1.0.2",
+    "grunt-mocha-istanbul": "^5.0.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^2.4.5",
+    "mocha-junit-reporter": "^1.17.0",
+    "nyc": "^14.1.1",
+    "supertest": "4.0.2"
+  }
+}
