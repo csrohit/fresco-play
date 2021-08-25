@@ -270,7 +270,7 @@ describe('ApiService', () => {
 
     httpMock.verify();
   });
-
+// 11 passed
   it('updateDetails should return new user details after submitting the update', (done) => {
 
     const reqURL = 'http://localhost:8000/editProfile';
@@ -491,5 +491,5 @@ describe('ApiService', () => {
 
     httpMock.verify();
   });
-
+// 23 success
 });

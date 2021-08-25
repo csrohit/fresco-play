@@ -10,6 +10,7 @@ import { Credentials } from '../models/credentials.model';
 import { Users } from '../models/users';
 import { Patient } from '../models/patient';
 import { Appointment } from '../models/appointment';
+import { catchError } from 'rxjs/operators';
 
 @Injectable()
 export class ApiService {
@@ -18,29 +19,30 @@ export class ApiService {
 
 
   constructor(private http: HttpClient) {
-    this.API_URL = 'api';
+    this.API_URL = 'http://localhost:8000';
 
   }
 
   public checkLogin(uname: string, pwd: string): Observable<any> {
     // should return response from server
-
+    return this.http.post(`${this.API_URL}/login`, {uname, pwd})
+      .pipe(catchError(this.handleError));
     // handle error 
 
-    return;
   }
 
   public regNewUser(regNewUser): Observable<any> {
     // should return response from server
-
+    return this.http.post(`${this.API_URL}/register`, regNewUser)
+    .pipe(catchError(this.handleError));
     // handle error 
 
-    return;
   }
 
   public getUserDetails(userId: string): Observable<any> {
     // should return user details retireved from server
-
+    return this.http.get(`${this.API_URL}/getProfile?uid=${userId}`)
+    .pipe(catchError(this.handleError));
     // handle error 
 
     return;
@@ -48,7 +50,8 @@ export class ApiService {
 
   public updateDetails(userDetails: any): Observable<any> {
     // should return response from server
-
+    return this.http.put(`${this.API_URL}/editProfile`, userDetails)
+    .pipe(catchError(this.handleError));
     // handle error 
 
     return;
@@ -56,7 +59,8 @@ export class ApiService {
 
   public registerPatient(patientDetails: any): Observable<any> {
     // should return response from server if patientDetails added successfully
-
+    return this.http.post(`${this.API_URL}/addPatient`, patientDetails)
+    .pipe(catchError(this.handleError));
     // handle error 
 
     return;
@@ -65,7 +69,8 @@ export class ApiService {
   public getAllPatientsList(): Observable<any> {
 
     // should return all patients from server
-
+    return this.http.get(`${this.API_URL}/fetchPatient`)
+    .pipe(catchError(this.handleError));
     // handle error 
 
     return;
@@ -74,7 +79,8 @@ export class ApiService {
   public getParticularPatient(patientId): Observable<any> {
 
     // should return particular patient details from server
-
+    return this.http.get(`${this.API_URL}/fetchSinglePatient?patientId=${patientId}`)
+    .pipe(catchError(this.handleError));
     // handle error 
 
     return;
@@ -83,7 +89,8 @@ export class ApiService {
   public diseasesList(): Observable<any> {
 
     // should return diseases from server
-
+    return this.http.get(`${this.API_URL}/diseases`)
+    .pipe(catchError(this.handleError));
     // handle error 
 
     return;
@@ -92,7 +99,8 @@ export class ApiService {
   public scheduleAppointment(appointmentDetails: any): Observable<any> {
 
     // should return response from server if appointment booked successfully
-
+    return this.http.post(`${this.API_URL}/bookAppointment`, appointmentDetails)
+    .pipe(catchError(this.handleError));
     // handle error 
 
     return;
@@ -101,7 +109,8 @@ export class ApiService {
   public requestedAppointments(): Observable<any> {
 
     // should return all requested appointments from server
-
+    return this.http.get(`${this.API_URL}/fetchAppointment`)
+    .pipe(catchError(this.handleError));
     // handle error 
 
     return;
@@ -110,7 +119,8 @@ export class ApiService {
   public getSinglePatientAppointments(patientId): Observable<any> {
 
     // should return appointments of particular patient from server
-
+    return this.http.get(`${this.API_URL}/singlePatientAppointments?patientId=${patientId}`)
+    .pipe(catchError(this.handleError));
     // handle error 
 
     return;
@@ -119,7 +129,8 @@ export class ApiService {
   public deleteAppointment(appointmentId): Observable<any> {
 
     // should delete the appointment
-
+    return this.http.delete(`${this.API_URL}/deleteAppointment?appointmentId=${appointmentId}`)
+    .pipe(catchError(this.handleError));
     // handle error
 
     return;

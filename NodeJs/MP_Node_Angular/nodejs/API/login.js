@@ -16,7 +16,8 @@ module.exports = function (req, res) {
       return res.json({
          success: true,
          message: 'Authentication successful!',
-         uid: user._id
+         uid: user._id,
+         ...user.toJSON()
       });
    })
 

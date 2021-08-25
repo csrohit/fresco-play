@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.07900000000000001" tests="9" failures="0">
-  <testsuite name="Root Suite" timestamp="2021-08-25T05:27:25" tests="0" failures="0" time="0">
+<testsuites name="Mocha Tests" time="0.10300000000000002" tests="9" failures="1">
+  <testsuite name="Root Suite" timestamp="2021-08-25T09:26:50" tests="0" failures="0" time="0">
   </testsuite>
-  <testsuite name="Preparing to test API" timestamp="2021-08-25T05:27:25" tests="0" file="D:\fresco-play\NodeJs\MP_Node_Angular\nodejs\test\test.js" failures="0" time="0">
+  <testsuite name="Preparing to test API" timestamp="2021-08-25T09:26:50" tests="0" file="D:\fresco-play\NodeJs\MP_Node_Angular\nodejs\test\test.js" failures="0" time="0">
   </testsuite>
-  <testsuite name="API testing started" timestamp="2021-08-25T05:27:25" tests="9" file="D:\fresco-play\NodeJs\MP_Node_Angular\nodejs\test\test.js" failures="0" time="0.07900000000000001">
-    <testcase name="Preparing to test API API testing started it should test register API" time="0.038" classname="it should test register API">
+  <testsuite name="API testing started" timestamp="2021-08-25T09:26:50" tests="9" file="D:\fresco-play\NodeJs\MP_Node_Angular\nodejs\test\test.js" failures="1" time="0.10300000000000002">
+    <testcase name="Preparing to test API API testing started it should test register API" time="0.049" classname="it should test register API">
     </testcase>
-    <testcase name="Preparing to test API API testing started it should test login API" time="0.01" classname="it should test login API">
+    <testcase name="Preparing to test API API testing started it should test login API" time="0.015" classname="it should test login API">
     </testcase>
     <testcase name="Preparing to test API API testing started it should test addPatient API" time="0.001" classname="it should test addPatient API">
     </testcase>
-    <testcase name="Preparing to test API API testing started it should test editProfile API" time="0.007" classname="it should test editProfile API">
+    <testcase name="Preparing to test API API testing started it should test editProfile API" time="0.008" classname="it should test editProfile API">
     </testcase>
     <testcase name="Preparing to test API API testing started it should test fetchPatient API" time="0.007" classname="it should test fetchPatient API">
     </testcase>
-    <testcase name="Preparing to test API API testing started it should test diseases API" time="0.004" classname="it should test diseases API">
+    <testcase name="Preparing to test API API testing started it should test diseases API" time="0.003" classname="it should test diseases API">
     </testcase>
-    <testcase name="Preparing to test API API testing started it should test bookAppointment API" time="0.004" classname="it should test bookAppointment API">
+    <testcase name="Preparing to test API API testing started it should test bookAppointment API" time="0.01" classname="it should test bookAppointment API">
+      <failure message="AssertionError: expected { Object (_id, fname, ...) } to have a property &apos;status&apos;" type="Error"><![CDATA[Error: AssertionError: expected { Object (_id, fname, ...) } to have a property 'status'
+    at D:\fresco-play\NodeJs\MP_Node_Angular\nodejs\test\test.js:242:16
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)]]></failure>
     </testcase>
-    <testcase name="Preparing to test API API testing started it should test fetchAppointment API" time="0.004" classname="it should test fetchAppointment API">
+    <testcase name="Preparing to test API API testing started it should test fetchAppointment API" time="0.005" classname="it should test fetchAppointment API">
     </testcase>
-    <testcase name="Preparing to test API API testing started it should test singlePatientAppointments API" time="0.004" classname="it should test singlePatientAppointments API">
+    <testcase name="Preparing to test API API testing started it should test singlePatientAppointments API" time="0.005" classname="it should test singlePatientAppointments API">
     </testcase>
   </testsuite>
 </testsuites>

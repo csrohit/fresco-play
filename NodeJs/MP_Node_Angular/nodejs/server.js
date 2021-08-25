@@ -22,13 +22,14 @@ function main () {
   let app = express(); // Export app for other routes to use
   let handlers = require('./handlers/handler.js');
   //const port = process.env.PORT || 8000;
-  const port= 9000;
+  const port= 8000;
   //app.use(express.static(__dirname + '/../frontend/build/'));
   app.use(bodyParser.urlencoded({ // Middleware
     extended: true
   }));
   app.use(bodyParser.json());
   app.use(function(req, res, next) {
+    console.log(`${req.method} request at ${req.url}`);
   res.header("Access-Control-Allow-Origin", "*");
   res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, authorization");
