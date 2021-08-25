@@ -14,7 +14,6 @@ module.exports = async function (req, res) {
     email: req.body.email,
     location: req.body.location
   });
-  console.log(user);
   /*write your code here*/
   user.save((err, usr) => {
     if (err)
@@ -22,6 +21,6 @@ module.exports = async function (req, res) {
     return res.json({
       status: 'success'
     })
-  })
+  });
 
 }
