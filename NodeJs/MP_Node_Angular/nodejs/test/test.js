@@ -224,8 +224,6 @@ describe('Preparing to test API', () => {
         patientId:patientId.toString(),
         bookingTime: new Date()
       }
-
-      console.log(formdata);
            
         request(server)
         .post('/bookAppointment')
@@ -236,13 +234,11 @@ describe('Preparing to test API', () => {
         })
         .expect(200)
         .then(response => {
-          
           response.body.should.have.property("status");
             //assert(response.body.success,true);
           done();
         }).catch(err => {
           //console.log(err);
-         
           done(new Error(err));
         })
 
