@@ -17,7 +17,7 @@
       </thead>
       <tbody>
         <!--display all appointments -->
-        <tr id="table-row">
+        <tr *ngFor="let item of allAppointments" id="table-row">
           <td id="app-id" >{{item._id}}</td>
           <td id="patient-id" >{{item.patientId}}</td>
           <td id="patient-name" >{{item.fname}} {{item.lname}}</td>
@@ -27,9 +27,9 @@
           <td id="table-requestedOn">{{item.bookingTime| date: 'dd/MM/yyyy hh:mm:ss'}}</td>
           <td class="column-btn">
             <!--call view method with selected patient id when clicking this tag-->
-          	<a id="view" class="view-details">View Details</a>
+          	<a id="view" class="view-details" (click)="view(item.patientId)">View Details</a>
             <!-- call cancelAppointment method with selected appointment id when clicking on this button-->
-            <button id="reject" class="btn btn-danger btn-value">Cancel Appointment
+            <button id="reject" class="btn btn-danger btn-value" (click)="cancelAppointment(item._id)">Cancel Appointment
             </button>
           </td>
         </tr>
