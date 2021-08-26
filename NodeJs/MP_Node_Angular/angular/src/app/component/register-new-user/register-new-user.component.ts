@@ -14,8 +14,8 @@ import { Users } from '../../models/users';
 
 export class RegisterNewUserComponent implements OnInit {
 
-	regNewUser = new Users;
-	signupForm: FormGroup;
+  regNewUser = new Users;
+  signupForm: FormGroup;
 
   emptyUserName = 'You must enter a username';
   minlengthUserName = 'User name must be at least 3 characters long';
@@ -32,19 +32,19 @@ export class RegisterNewUserComponent implements OnInit {
   locationErrMsg = 'You must enter the location';
 
   constructor(private route: Router, private dataService: DataService) {
-   }
+  }
 
   ngOnInit() {
 
     // add necessary validators
 
-  	this.signupForm = new FormGroup({
-  		userName: new FormControl(''),
-  		password: new FormControl(''),
-      mobile: new FormControl(''),
-      email: new FormControl(''),
-      location: new FormControl('')
-  	});
+    this.signupForm = new FormGroup({
+      userName: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(20), Validators.pattern(/^[a-zA-z0-9]*$/)]),
+      password: new FormControl('', [Validators.required, Validators.minLength(8), Validators.maxLength(20), Validators.pattern(/^[a-zA-Z0-9$]*$/)]),
+      mobile: new FormControl('', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]),
+      email: new FormControl('', [Validators.required, Validators.pattern(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)]),
+      location: new FormControl('', Validators.required)
+    });
   }
 
   signUp() {
@@ -52,13 +52,21 @@ export class RegisterNewUserComponent implements OnInit {
     // call regNewUser method to perform signup operation
     // if success, redirect to login page
     // else display appropriate error message
-       // reset the form
-    
+    // reset the form
+
+    this.dataService.regNewUser(this.signupForm.value)
+      .subscribe(res => {
+        this.goBack();
+      }, res => {
+
+      })
+
   }
 
   goBack() {
 
     // should navigate to login page
+    this.route.navigate(['login']);
 
   }
 
