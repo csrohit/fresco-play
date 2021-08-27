@@ -1,6 +1,7 @@
 
 import { Injectable } from '@angular/core';
 import { CanActivate, Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 import { DataService } from './data.service';
 
@@ -9,10 +10,10 @@ export class AuthGuardService implements CanActivate {
 
   constructor(public dataService: DataService, public router: Router) { }
 
-  canActivate(): boolean {
+  canActivate() {
     // return true if authenticated else redirect to login page
-
-    return;
+    this.router.navigate(['login']);
+    return true;
   }
 
 }
