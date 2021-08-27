@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { FormGroup, FormBuilder,Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DatePipe } from '@angular/common';
 import { Router } from '@angular/router';
 import { Patient } from '../../models/patient';
@@ -38,26 +38,41 @@ export class FormComponent implements OnInit {
     this.today = this.datePipe.transform(Date.now(), 'yyyy-MM-dd');
   }
 
-  constructor( fb: FormBuilder,private datePipe: DatePipe,private route: Router, private dataService: DataService){
+  constructor(fb: FormBuilder, private datePipe: DatePipe, private route: Router, private dataService: DataService) {
 
     // add necessary validators
 
     this.complexForm = fb.group({
-      'firstName' : [''],
-      'lastName': [''],
-      'gender' : [null],
-      'dob' : [null],
-      'mobile' : [''],
-      'email' : [''],
-      'description' : ''
+      'firstName': ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
+      'lastName': ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
+      'gender': [null, Validators.required],
+      'dob': [null, Validators.required],
+      'mobile': ['', [Validators.required, Validators.maxLength(10), Validators.minLength(10), Validators.pattern(/^[0-9]{10,}/)]],
+      'email': ['', [Validators.required, Validators.pattern(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)]],
+      'description': ''
     })
   }
 
-  submitForm(value: any){
+  submitForm(value: any) {
 
     // should reister new patient using service
-       // fields that need to be added: userId, fname, lname, gender, dob, mobile, email, desc
+    // fields that need to be added: userId, fname, lname, gender, dob, mobile, email, desc
     // if added successfully should redirect to 'patientList' page
+
+    const patient = {
+      fname: value.firstName,
+      lname: value.lastName,
+      gender: value.gender,
+      dob: value.dob,
+      mobile: value.mobile,
+      email: value.email,
+      desc: value.description,
+    };
+    this.dataService.registerPatient(patient).subscribe(res => {
+      if(res){
+        this.route.navigate(['patientList']);
+      }
+    })
 
   }
 
