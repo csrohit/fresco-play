@@ -11,16 +11,24 @@ export class HeaderInterceptor implements HttpInterceptor {
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
-  return;
 
+    return next.handle(this.addAuthenticationToken(req));
   }
 
   private addAuthenticationToken(request: HttpRequest<any>): HttpRequest<any> {
 
     // should add authorization token into headers except login and signup
+    const token = localStorage.getItem('token');
+    if (token) {
+      request = request.clone({
+        setHeaders: {
+          authorization: token
+        }
+      });
+    }
+    return request;
 
-    return;
-    
+
   }
 
 }
