@@ -41,3 +41,16 @@ export class HeaderComponent implements OnInit {
     this.dataService.doLogOut();
   }
 }
+
+
+
+/**
+ * 
+ * 
+ * 
+ * 
+ * I am something of a genious myself. testing the new keyboard that has been replaced just now. all the keys seemed to be working fine.
+ * 
+ * 
+ * 
+ */

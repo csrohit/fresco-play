@@ -1,0 +1,16 @@
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .20rem .9rem;
+    margin-bottom: -1px;
+    /* background-color: #fff; */
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.ml-2, .mx-2 {
+    margin-left: 0.9rem!important;
+}
+
+.active {
+    background-color: #363C42;    
+}
