@@ -1,0 +1,95 @@
+Deep Learning - Chorale Prelude
+
+>>In a Neural Network, all the edges and nodes have the same Weight and Bias values.
+>false
+
+>>Support Vector Machines, Naive Bayes and Logistic Regression are used for solving ___________________ problems.
+>classification
+
+>>Gradient at a given layer is the product of all gradients at the previous layers.
+>true
+
+>>Data Collected from Survey results is an example of ___________________.
+>structured data
+
+>>Data Collected from Survey results is an example of ___________________.
+>gradient
+
+>>A _________________ matches or surpases the output of an individual neuron to a visual stimuli.
+>convolution
+
+>>A Deep Belief Network is a stack of Restricted Boltzmann Machines.
+>true
+
+>>All the neurons in a convolution layer have different Weights and Biases.
+>false
+
+>>RELU stands for ______________________________.
+>rectified linear unit
+
+>>Recurrent Network can input Sequence of Data Points and Produce a Sequence of Output.
+>true
+
+>>How do RNTS interpret words?
+>vector representation
+
+>>A _______________ matches or surpases the output of an individual neuron to a visual stimuli.
+>convolution
+
+>>A Deep Belief Network is a stack of Restricted Boltzmann Machines.
+>true
+
+>>All the neurons in a convolution layer have different Weights and Biases.
+>false
+
+>>What is the best Neural Network Model for Temporal Data?
+>recurrent neural network
+
+
+>>Autoencoders are trained using _____________________.
+>back propagation 
+
+>>Why is the Pooling Layer used in a Convolution Neural Network?
+>dimension reduction
+
+>>De-noising and Contractive are examples of __________________.
+>autoencoders
+
+>>What are the two layers of a Restricted Boltzmann Machine called ?
+>hidden and visible layers
+
+>>Recurrent Networks work best for Speech Recognition.
+>true
+
+>>All the Visible Layers in a Restricted Boltzmann Machine are connected to each other.
+>false
+
+>>GPU stands for __________.
+>graphics processing unit
+
+>>Autoencoders cannot be used for Dimensionality Reduction.
+>false
+
+>>___________________ is a Neural Nets way of classifying inputs.
+>forward propgation
+
+>>Name the component of a Neural Network where the true value of the input is not observed.
+>hidden layer
+
+>>What is the method to overcome the Decay of Information through time in RNN known as?
+>gating
+
+>>The rate at which cost changes with respect to weight or bias is called __________________.
+>gradient
+
+>>________________ works best for Image Data.
+>convolution networks
+
+>>What does LSTM stand for?
+>long short term memory
+
+>> Recurrent Neural Networks are best suited for Text Processing. True
+
+
+
+
