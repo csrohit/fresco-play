@@ -1,0 +1,75 @@
+
+
+basket1 = {'Power Bank', 'Screen Guard' , 'Travel Charger'}
+basket2 = {'Screen Guard', 'Bluetooth Headset', 'Mobile Cover'}
+basket3 = {'Screen Guard','Arm Band','Mobile Cover'}
+basket4 = {'Power Bank','Screen Guard','Leather Pouch'}
+basket5 = {'Bluetooth Headset', 'Power Bank' , 'Mobile Cover'}
+
+What is the confidence for Screen Guard -> Mobile Cover ? 0.5
+
+
+
+basket1 = {'Power Bank', 'Screen Guard' , 'Travel Charger'}
+basket2 = {'Screen Guard', 'Bluetooth Headset', 'Mobile Cover'}
+basket3 = {'Screen Guard','Arm Band','Mobile Cover'}
+basket4 = {'Power Bank','Screen Guard','Leather Pouch'}
+basket5 = {'Bluetooth Headset', 'Power Bank' , 'Mobile Cover'}
+
+What is the support for Screen Guard ?0.8
+
+
+
+basket1 = {'Power Bank', 'Screen Guard' , 'Travel Charger'}
+basket2 = {'Screen Guard', 'Bluetooth Headset', 'Mobile Cover'}
+basket3 = {'Screen Guard','Arm Band','Mobile Cover'}
+basket4 = {'Power Bank','Screen Guard','Leather Pouch'}
+basket5 = {'Bluetooth Headset', 'Power Bank' , 'Mobile Cover'}
+
+What is the support for Power Bank ?0.6
+
+
+
+basket1 = {'Power Bank', 'Screen Guard' , 'Travel Charger'}
+basket2 = {'Screen Guard', 'Bluetooth Headset', 'Mobile Cover'}
+basket3 = {'Screen Guard','Arm Band','Mobile Cover'}
+basket4 = {'Power Bank','Screen Guard','Leather Pouch'}
+basket5 = {'Bluetooth Headset', 'Power Bank' , 'Mobile Cover'}
+
+What is the confidence for Power Bank -> Mobile Cover ?0.33
+
+
+In the Association Rule [ Screen Guard , Mobile Cover -> Power Bank ] , what is the consequent ?powerbank
+
+Proportion of transactions with A and B / (Proportion of transactions with A) * (Proportion of transactions with B) . What is this formula ?
+lift(A-->B)
+
+What are the pre-requisites for generating an Association Rule ? 
+Support and Confidence
+
+You are a Data Scientist in an e-commerce company . You are analyzing all the transactions that happened over the past 1 week in your site. You observe that of the five hundred transactions that happened , two hundred of them had a mobile phone in them. What is the support for mobile phones in the last 1 week ?
+0.4
+
+Which property states that an itemset can be considered frequent only if all the items in the set are frequent ? 
+Upward Closure Property
+
+Left hand side of an Association Rule is called ? 
+Antecedent
+
+What metric is first calculated for each item in the apriori algorithm ? 
+support
+
+The confidence of (A->B) is not always same as confidence of (B->A) .
+ False
+
+The FP Growth algorithm is not memory efficient. 
+True
+
+What is considered a challenge in implementing the Apriori Algorithm ? 
+Sometimes too few item sets that satisfy the minimum support
+
+Right hand side of an Association Rule is called ?
+ Consequent
+
+
+ 
