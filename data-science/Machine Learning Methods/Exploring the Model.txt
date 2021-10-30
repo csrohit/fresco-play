@@ -1,0 +1,83 @@
+Contributed By - Rohit Nimkar (csrohit.github.io)
+
+What is the process of dividing each feature by its range called ?
+Feature Scaling  --  Correct
+
+Input variables are also known as feature variables.
+True  --  Correct  
+
+Output variables are known as Feature Variables .
+False  --  Correct
+
+____________ controls the magnitude of a step taken during Gradient Descent .
+Learning Rate  --  Correct
+
+The objective function for linear regression is also known as Cost Function.
+True  --  Correct
+
+What is the process of subtracting the mean of each variable from its variable called ?
+Mean Normalization  --  Correct
+
+For different parameters of the hypothesis function we get the same hypothesis function.
+False  --  Correct
+
+How are the parameters updates during Gradient Descent Process ?
+Simultaneously  --  Correct
+
+The result of scaling is a variable in the range of [1 , 10].
+False  --  Correct
+
+What is the Learning Technique in which the right answer is given for each example in the data called ?
+Supervised Learning  --  Correct
+
+Problems that predict real values outputs are called ?
+Regression Problems  --  Correct
+
+Cost function in linear regression is also called squared error function.
+True  --  Correct
+
+What is the name of the function that takes the input and maps it to the output variable called ?
+Hypothesis Function  --  Correct
+
+Overfitting and Underfitting are applicable only to linear regression problems.
+False -- Correct
+
+Where does the sigmoid function asymptote?
+-1 and +1 -- Wrong
+-inf and +inf --Wrong
+
+____________ function is used as a mapping function for classification problems.
+Sigmoid -- Correct
+
+For ____________, the error is calculated by finding the sum of squared distance between actual and predicted values.
+Regression -- Correct
+
+A suggested approach for evaluating the hypothesis is to split the data into training and test set
+True - Correct
+
+I have a scenario where my hypothesis fits my training set well but fails to generalize for the test set. What is this scenario called?
+Overfitting -- Correct
+
+Problems, where discrete-valued outputs are predicted, are called?
+Regression Problems --Wrong
+
+The objective function for linear regression is also known as Cost Function.
+True -- Correct
+
+When an ML Model has a high bias, getting more training data will help in improving the model.
+False -- Correct
+
+For ____________, the error is determined by getting the proportion of values misclassified by the model.
+Classification --Correct
+
+For an overfit data set, the cross-validation error will be much bigger than the training error.
+True -- Correct
+
+For an underfit data set, the training and the cross-validation error will be high.
+True --Correct
+
+What measures the extent to which the predictions change between various realizations of the model?
+Variance -- Correct
+
+What is the name of the function that takes the input and maps it to the output variable called?
+Hypothesis Function --Correct
