@@ -1,0 +1,134 @@
+
+Contributed By - Rohit Nimkar (csrohit.github.io)
+
+If you have a basket of different fruit varieties with some prior information on size, color, shape of each and every fruit . Which learning methodology is best applicable?
+Supervised Learning  --  Correct
+
+Do you think heuristic for rule learning and heuristics for decision trees are both same ?
+False  --  Correct
+
+What is the benefit of Naïve Bayes ?
+Requires less training data  --  Correct
+
+What is the advantage of using an iterative algorithm like gradient descent ? (select the best)
+For Nonlinear regression problems, there is no closed form solution  --  Correct
+
+For which one of these relationships could we use a regression analysis? Choose the correct one
+Relationship between Height & weight (both Quantitative)  --  Correct
+
+Does Logistic regression check for the linear relationship between dependent and independent variables ?
+False  --  Correct
+
+Which helps SVM to implement the algorithm in high dimensional space?
+Kernel  --  Correct
+
+Kernel methods can be used for supervised and unsupervised problems
+True  --  Correct
+
+Perceptron is _______________
+a single layer feed-forward neural network  --  Correct
+
+While running the same algorithm multiple times, which algorithm produces same results?
+Hierarchical clustering  --  Correct
+
+**************************************************************************************************************
+
+SVM will not perform well with large data set because (select the best answer)
+classification becomes difficult , Difficult to simulate model, Lot of noise in data  --  Wrong
+training time is high
+ --  selected
+
+In a scenario, where the statistical model describes random error or noise instead of underlying relationship, what happens
+Overfitting  --  Correct
+
+Consider a regression equation, Now which of the following could not be answered by regression?
+Estimate whether the association is linear or non-linear  --  Correct
+
+Now Can you make quick guess where Decision tree will fall into _____ 
+Supervised Learning  --  Correct
+
+The main difficulty with using a regression line to analyze these data is _________________
+presence of 1 or more outliers  --  Correct
+
+For which one of these relationships could we use a regression analysis? Chose the correct one
+Relationship between Height & weight (both Quantitative)  --  Correct
+
+The correlation between two variables is given by r = 0.0. . This means
+The best straight line through the data is horizontal.  --  Correct
+
+Which of the following is not example of Clustering?
+RFM Analysis -- Correct
+
+Most famous technique used in Text mining is
+Naive Bayes  --  Correct
+
+Disadvantage of Neural network according to your purview is
+takes long time to be trained  --  Correct
+
+One has to run through ALL the samples in your training set to do a single update for a parameter in a particular iteration. This is applicable for
+Gradient Descent  --  Correct
+
+Which type of the clustering could handle Big Data?
+K Means clustering  --  Correct
+
+Effect of outlier on the correlation coefficient ______________
+An outlier might either decrease or increase a correlation coefficient, depending on where it is in relation to the other points  --  Correct
+
+If the outcome is continuous, which model to be applied?
+Multi-Linear Regression  --  Wrong
+
+SVM uses which method for pattern analysis in High dimensional space?
+Kernel  --  Correct
+
+The model which is widely used for the classification is
+Segmentation  --  Wrong
+
+Objective of unsupervised data covers all these aspect except
+low-dimensional representations of the data , find clusters of the data , detect interesting coordinates and correlations, trace interesting directions in data --  Wrong
+  --  selected
+
+Correlation and regression are concerned with the relationship between _________
+2 quantitative variables  --  Correct
+
+Which model helps SVM to implement the algorithm in high dimensional space?
+Kernel  --  Correct
+
+In Kernel trick method, We do not need the coordinates of the data in the feature space
+True  --  Correct
+
+What are different types of Supervised learning
+regression and classification  --  Correct
+
+Which methodology works with clear margins of separation points?
+Support Vector Machine  --  Correct
+
+Which of the learning methodology applies conditional probability of all the variables with respective the dependent variable?
+Supervised Learning --  Correct
+
+The main problem with using single regression line
+presence of 1 or more outliers  --  Correct
+
+What are the advantages of neural networks (i) ability to learn by example (ii) fault tolerant (iii) suited for real time operation due to their high 'computational' rates
+All the options are correct  --  Correct
+
+Which clustering technique requires prior knowledge of the number of clusters required?
+K Means clustering  --  Correct
+
+Which technique implicitly defines the class of possible patterns by introducing a notion of similarity between data?
+Kernel -- Correct
+
+Which of them, best represents the property of Kernel?
+Modularity  --  Correct
+
+The model in which one estimates the probability that the outcome variable assumes a certain value, rather than estimating the value itself.
+Logistic Regression --  Correct
+
+If the outcome is binary(0/1), which model to be applied?
+Logistic Regression  --  Correct
+
+SVM will not perform well with data with more noise because (select the best answer)
+target classes could overlap  --  correct
+
+The standard approach to supervised learning is to split the set of example into the training set and the test
+True  --  Correct
+
