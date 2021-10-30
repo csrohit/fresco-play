@@ -1,0 +1,142 @@
+Contributed By: Rohit Nimkar (csrohit.github.io)
+
+Companies expose their services as a set of HTTP _____.
+Endpoints -- Correct
+
+The Edge API proxie' s primary consumers are _____.
+App developers -- Correct
+
+Apigee provides ____ services.
+All the options 
+
+Apigee cannot modify the backend service implementation without affecting the public API.
+False -- Correct
+
+APIs are software interface that allow different applications to talk to one another.
+True
+
+Apigee's API platform allows you to ____ your APIs.
+All the options
+
+
+Apigee adds ____ before your API along with policies.
+Proxy
+
+--------------------------------------------
+Once data is loaded Apigee automatically creates an/a ___I to access your data.
+API -- Correct
+
+BaaS helps in setting Cloud based data platform without any server side coding.
+True
+
+An API proxy is a can be _____
+all the options-- Correct
+
+Using ____ will disable security and treat all request without any authentication as a guest.
+/**
+
+____ endpoint interacts with apps that consume your API.
+Proxy Endpoint
+
+____ endpoint interaction with your backend services on behalf of apps.
+Target Endpoints
+
+Apigee allows you to restrict the number of result retured from BaaS using the parameter _____
+limit 
+
+De-selecting the default check box in creating proxy process will make proxy available only through TSL.
+True
+
+-------------------------
+______ policy smooths traffic spikes by dividing a limit that you define into smaller intervals.
+Spike Arrest Policy -- Correct
+
+In Assign message policy ____ creates the named context variables.
+<AssignTo> -- Correct
+
+To write arbitrary data to the cache use _____
+Populate Cache 
+ 
+When you need to explicitly clear a cache during request processing, use ____.
+Invalidate Cache
+
+Which of the following is not a type of Policy in Apigee?
+Insurance  -- Correct
+
+______ can program the behavior of the proxies.
+Policy -- Correct
+
+_____ specifies the target URL to be used by the service call out.
+<HTTPTargetConnection><URL>
+
+
+--------------------------------------------------------------	
+You need to manually create API key for the developer app.
+False  --Correct
+
+While requesting for access token you can send consumer key and consumer secret as a parameter in _____.
+Body
+
+Authorization header can be sent to the backend service.
+False --Correct
+
+______ on Apigee Edge adds more programmability to the Edge API platform.
+Node.js 
+
+______command downloads the express module at the specified version and updates the dependencies list in the package.json file.
+npm install express@4.13.3 --save
+
+______ is a significant attack vector used by malicious API consumers.
+Message content --Correct
+
+
+VerifyAccessToken operation at the end of API proxy flow.
+True --Correct
+
+---------------------------------------------
+
+For Node.js the _____ module and its dependencies are designed.
+apigeetool 
+
+If you want a policy to execute after initial processing on the ProxyEndpoint use ____ .
+Preflow 
+
+Mashed-up APIs provides value-addition that is greater than the individual APIs.
+True 
+
+-------------------------------------
+
+_____ are the files that implement the configuration to be executed by a policy.
+
+None of the options
+
+Proxies xx
+
+API
+
+Resources
+
+
+An API proxy can be deployed in ____ environment.
+
+prod only
+
+test only xx
+
+both test and prod
+
+
+----------------------------------------------------------
+
+Clearing the default checkbox in the proxy creation process will make the proxy available only through TSL.
+True
+
+
+One of the features of BaaS is ____.
+Push Notification -- Correct
+
+________ uses Google Maps APIs to create a mashup of real estate information with interactive maps.
+Trulia
+
+Adding a policy without a flow is possible in Apigee.
+False

@@ -1,0 +1,120 @@
+Contributed By: Rohit Nimkar (csrohit.github.io)
+
+Which query parameter specifies the type of data?
+Metrics  --  Correct
+
+Apigee helps you to diagnose app performance by _____.
+All of the options  --  Correct
+
+_________ attribute is used to limit the results.
+Filter  --  Correct
+
+Apigee’s analytics metrics helps in ____ monitoring.
+Both the options  --  Correct
+
+By default, the dashboards are maintained for ______ months.
+12  --  Correct
+
+When using filter you should use _____ as a property.
+Dimensions  --  Correct
+
+By default, the Custom is maintained for ______ months.
+6  --  Correct
+
+*********************************************************************************************************************
+
+Apigee analytics allows you to export the data in ____ format.
+csv  --  Correct
+
+runload.js also applies a ______ function, so that the number of calls it actually makes varies randomly around a specified number.
+Gaussian  --  Correct
+
+____ lets you choose which set of data you want to plot.
+Plot selectors  --  Correct
+
+You can extract the returned access_token, and insert it into the context, and then use that token in subsequent calls.
+True  --  Correct
+
+You can hover on any part of the graph to get information about that particular data at that point.
+True  --  Correct
+
+____ settings helps you in selecting the of dates for which to show data and the aggregation or granularity of that data.
+Both the options  --  Correct
+
+The load generator is implemented as a nodejs program called _____.
+runLoad.js  --  Correct
+
+Apigee chooses the client key and secret based on _____.
+Weighted random selection  --  Correct
+
+To import a proxy into apigee edge, use ______.
+To import a proxy into apigee edge use ______.
+Proxy bundle  --  Correct
+
+In model.json change the ____ property to the DNS name of Apigee edge organization.
+Host  --  Correct
+
+The load generator act as a _____.
+Client  --  Correct
+
+Using ____, you should be able to see the traffic pattern after and before the spike or drop.
+Investigate Anomalies  --  Correct
+
+*********************************************************************************************************************
+
+______ is calculated between the time a complete request is sent by Apigee to a backend target and the response is returned the client app.
+Target error  --  Correct
+
+Which specifies whether a traffic is coming from a robot, a library, or a browser.
+Traffic by agent  --  Correct
+
+The dashboard that appears once you login has _____.
+all of the options  --  Correct
+
+Traffic patterns and processing time can be viewed in ____ dashboard.
+Proxy Performance  --  Correct
+
+______ dashboard tracks error patterns, traffic patterns, and quality of service across various locations.
+GeoMap dashboard  --  Correct
+
+______ dashboard measures the contribution of your top apps, APIs, and products.
+Traffic composition  --  Correct
+
+The ____ dashboard is used to visualize traffic patterns and performance for API proxy backend targets.
+Target Performance  --  Correct
+
+____ shows information like Highly Active Developers, Developers with Apps and Total Developers.
+Engagement  --  Correct
+
+The rate of API calls hitting the cache vs total API traffic is called _____.
+Cache Performance  --  Correct
+
+*********************************************************************************************************************
+
+A _____ is a method to specify exactly what you want to analyze in your API program.
+custom report  --  Correct
+
+The primary measure used for a report is called _____.
+Metric  --  Correct
+
+It is possible to fetch Analytics data using REST API.
+True  --  Correct
+
+______ plot allows you to see the central tendency and dispersion of data.
+Dispersion box plot  --  Correct
+
+Reports can be viewed in _____ format.
+all of the options  --  Correct
+
+____ will create a custom dimension that will be captured every time when that proxy is invoked.
+Statistics Collector Policy  --  Correct
+
+Custom reports will reflect API calls immediately in the Edge portal.
+False  --  Correct
+
+It is not possible to export custom reports to any format.
+False  --  Correct
+
+The ____ gives an high level overview of your entire API.
+Dashboard  --  Correct
+

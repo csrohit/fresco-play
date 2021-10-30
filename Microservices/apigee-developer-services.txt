@@ -1,0 +1,100 @@
+Contributed By: Rohit Nimkar (csrohit.github.io)
+
+Only a part of developer portal can be customized
+false
+
+Developer portal helps in exposing APIs.
+True
+  
+Apigee offers ___ type of developer portal
+
+Two...
+
+Only a part of developer portal can be customized
+False...
+
+Developer portal is mainly designed for
+APP Developer...
+
+You can generate ____ in developer portal.
+Both the options...
+
+Drupal based portal can be accessed from Apigee Edge
+False...
+
+Developer portal can be accessed using a ____
+Web Browser...
+
+Developer portal helps in exposing APIs.
+True...
+
+Swagger documentation is available in Developer portal.
+True...
+
+Both input parameter and output can be found in developer portal
+True...
+
+You can find Portal option under ____ menu in navigation.
+Publish...
+
+Apigee is capable of converting swagger in json format to yaml.
+True...
+
+Which of the following is not an option that is shown after clicking +spec in specpage
+Import json...
+
+A _____ represents a version of the OpenAPI Specification at a particular point intime
+snapshot...
+
+To launch the developer portal from edge click on ______
+Live Portal...
+
+ ____ is a document that describes everything about your API
+swagger...
+
+Apigees spec gen tool generates swagger in ____ format.
+JSON...
+
+Swagger documentation helps in understanding the functionality of ____
+Developer Portal...
+
+In Apigee swagger documentation can be in
+both the options...
+
+You can access developer portal’s CSS using the option ____
+CSS Settings -- Wrong
+
+The logo of the developer portal should be in ____ format.
+png
+
+What is the name of the logo file in Apigee developer portal.
+logo.png
+
+In developer portal developers are allowed to register their ___.
+app
+
+Apps registered in developer portal are visible in edge portal.
+True
+
+To reflect the changes made in the portal click on ____.
+update --Wrong
+
+Developer portal provides an environment for ______ your APIs.
+All --Wrong
+
+After signing up, you can directly login to the developer portal
+false
+
+Apigee allows you to add ____ header while creating proxy.
+CORS
+
+While creating an API from spec, the options available are
+All
+
+You can restrict the audience to your developer portal.
+True
+
+You can generate ____ in developer portal.
+Both
+An API product is a collection of proxies with _______
+Both
