@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href="C:\Users\Projectuser\Desktop\ex.css" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+ <link rel="stylesheet" href="/resources/demos/style.css">
+ <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+ <h1>Registration Form</h1>
+ <div id="container">
+ <form>
+ <table>
+ <tr>
+ <td>
+ <label>Name:</label>
+ </td>
+ <td>
+ <input type="text">
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <label>Date of Birth:</label>
+ </td>
+ <td>
+ <input type="date" placeholder="dd/mm/yyyy">
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <label>country:</label>
+ </td>
+ <td>
+ <input id="select" list="countries">
+ <datalist id="countries">
+ <option value="India">
+ <option value="United States">
+ <option value="United Kingdom">
+ <option value="Austraila">
+ <option value="France">
+ </datalist>
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <label>Phone number:</label>
+ </td>
+ <td>
+ <input type="tel">
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <label>Email:</label>
+ </td>
+ <td>
+ <input type="email">
+ </td>
+ </tr>
+ <tr>
+ <td>
+ <label>website:</label>
+ </td>
+ <td>
+ <input type="url">
+ </td>
+ </tr>
+ </table>
+ </form>
+</div>
+<button type="submit">Submit</button>
+</body>
+<script>$('#date').datepicker({ dateFormat: 'dd-mm-yy' }).val();</script>
+</html>

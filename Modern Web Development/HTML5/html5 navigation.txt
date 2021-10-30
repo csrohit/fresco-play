@@ -1,0 +1,24 @@
+Click on 'Alternatively, use online IDE'
+
+click Run--> Install
+
+copy paste below code in the (index.html)
+**********************************************
+<html>
+<head>
+<link href="mystyle.css" rel="stylesheet" type"text/css">
+</head>
+<body>
+<nav class="menu">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Blogs</a></li>
+<li><a href="#">Videos</a></li>
+<li><a href="#">About Me</a></li>
+</ul>
+</nav>
+</body>
+</html>
+**********************************************
+click Run--> Run
+run test and submit

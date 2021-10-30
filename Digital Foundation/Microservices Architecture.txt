@@ -1,0 +1,151 @@
+Complexity of developing, testing & deploying distributed system, Handling partial failures account to disadvantages of
+Microservices  --  Correct
+
+Decomposition of Microservices based on 2 categories namely
+Business capability , Subdomain  --  Correct
+
+Benefits of Microservices include -
+All the options  --  Correct
+
+Agile development & Deployment is difficult in case of __________________
+Monolithic  --  Correct
+
+Simple to Develop, Test, Deploy, Scale represents __________________
+Monolithic  --  Correct
+
+Software built as microservices can, by definition, be broken down into multiple component services ?
+True  --  Correct
+
+Separating components with conflicting resource requirements falls under the bucket of _____________
+Microservices  --  Correct
+
+Is Microservice is considered as subset of SOA ?
+True  --  Correct
+
+The 3Cs of Microservices includes all these except ______________
+Control  --  Correct
+
+********************************************************************************************************************
+
+The services communicate with each other internally ___________________________
+Both Messaging and Remote Procedure invocation  --  Correct
+
+The 2 types of Service Discovery only includes Client-side & server-side discovery ?
+True  --  Correct
+
+External clients communicate with Microservices using _________________________
+API GATEWAY  --  Correct
+
+Scenarios where client takes onus & are responsible for determining the network locations of available service instances
+Client-side  --  Correct
+
+API Gateway ensures _____________________________
+All the options  --  Correct
+
+Netflix OSS is example ____________
+Client-side  --  Correct
+
+AWS Elastic Load Balancer (ELB) is an example of a __________________
+Server-side discovery  --  Correct
+
+Which acts as database of services
+Service Registry  --  Correct
+
+Which ensures to insulate the applications by acting as barrier
+API Gateway  --  Correct
+
+The client expects a timely response from the service and might even block while it waits represents__________client service interaction styles
+Synchronous  --  Correct
+
+_____________ helps to control & limit the number of consecutive request failures crosses a threshold,
+Circuit breaker  --  Correct
+
+********************************************************************************************************************
+
+Amazon EC2 Container Service is an example of ________________
+Docker  --  Correct
+
+The transactions that span across multiple services are handled by
+Event driven Architecture  --  Correct
+
+Microservices supports different kinds of databases and this is called ____________.
+Polyglot persistence  --  Correct
+
+Microservices-based architecture enforces a Modular structure ?
+True  --  Correct
+
+The 2 components of CQRS include_______________
+Query & command side  --  Correct
+
+********************************************************************************************************************
+
+packer.io & Boxful represents __________________________ type of pattern
+Service Instance per Host  --  Correct
+
+Efficient Utilization & Fast Deployment represent which pattern __________________________________
+Multiple Services per Host pattern  --  Correct
+
+IDL stands for ______________________
+Interface definition language  --  Correct
+
+
+Which of these represent the drawback of Multiple Services per Host pattern
+faulty deployment  --  Correct
+
+Service Instance per Host pattern provides ________________
+All the options  --  Correct
+
+********************************************************************************************************************
+
+Caching helps in improving the performance of the system ?
+True  --  Correct
+
+In Microservices, the API Gateway takes care of the security aspect by rendering ________________
+Access tokens  --  Correct
+
+Which pattern collects & reports all exceptions to a centralized exception tracking service
+Exception tracing  --  Correct
+
+Which of this does not represent caching types_______________
+Server cache  --  Correct
+
+Microservice Chassis takes care of all except __________________
+token generation  --  Correct
+
+__________ is ability to store something temporarily in order to reduce the loading times and I/O of a system.
+Cache  --  Correct
+
+In __________, each external request is tagged with unique identifier which is passed to all services involved in handling the request and included in application logging messages
+Distributed tracing  --  Correct
+
+********************************************************************************************************************
+
+Microservice Architecture adapts following concepts
+All the options  --  Correct
+
+In __________ each external request is tagged with unique identifier which is passed to all services involved in handling the request and included in application logging messages
+Distributed tracing  --  Correct
+
+When any single application function or component fails, then the entire application goes down. (Single point of failure ) This is primary disadvantage of ________________
+Monolithic  --  Correct
+
+Functional Decomposition is an example of ____________
+Microservices  --  Correct
+
+Which among these helps in developing a microservice quickly ___________________
+Chassis  --  Correct
+
+Scaling the application can be challenging in _____________ due to conflicting needs of Memory, CPU, IO
+Monolithic  --  Correct
+
+Monolithic is identified by all these disadvantages except__________________
+High set-up costs  --  Wrong
+
+Long term commitment of Technology stack is a weakness of which model of architecture
+Monolithic  --  Correct
+
+Microservices based architecture prefers _______
+No Dependency  --  Correct
+
+Service Instance per Container pattern include all except _______________________________
+Slow Deployment  --  Correct

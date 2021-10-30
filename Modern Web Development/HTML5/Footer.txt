@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="icon" href="favicon.png" type="image/png">
+ <title>Destiny</title>
+ <link href="mystyle.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+ <footer>
+ <p>Copyright @ TCS 2016</p>
+ </footer>
+</body>
+</html>
