@@ -1,0 +1,50 @@
+Contributed By: Rohit Nimkar (csrohit.github.io)
+
+Members of the same cluster are far away / distant from each other .
+False
+
+____________ of a set of points is defined using a distance measure .
+Similarity
+
+Which learning is the method of finding structure in the data without labels.
+Unsupervisied
+
+___________ measures the goodness of a cluster
+Cohesion
+
+A centroid is a valid point in a non-Eucledian space .
+False
+
+What is the overall complexity of the the Agglomerative Hierarchical Clustering ?
+O(N^3)
+
+_____________ is when points don't move between clusters and centroids stabilize.
+Convergence
+
+___________ is a way of finding the k value for k means clustering.
+Cross Validation
+
+Sampling is one technique to pick the initial k points in K Means Clustering
+True
+
+___________ is the data point that is closest to the other point in the cluster.
+Custeroid
+
+What is a preferred distance measure while dealing with sets ?
+Jaccard
+
+Which learning is the method of finding structure in the data without labels.
+Unsupervised
+
+Members of the same cluster are far away / distant from each other .
+False
+
+Unsupervised learning focuses on understanding the data and its underlying pattern.
+True
+
+The number of rounds for convergence in k means clustering can be lage
+True
+
+K Means algorithm assumes Eucledian Space/Distance
+True
+
