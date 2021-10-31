@@ -1,0 +1,40 @@
+Contributed By: Rohit Nimkar (csrohit.github.io)
+
+Native Apps require another container app to execute in a mobile device. - False
+_________ is the type executable for iOS. - .IPA
+Process of obtaining a binary executable image and preparing it for distribution is same across platforms. - True
+Native apps are executed directly by the OS of mobile device. - True
+The right order of Native App Development is _________. (I) Package the binary executable with resources. (II) Create a binary executable (III)Distribute through the app store.-II, I, III
+Native apps are a choice for implementation because, it is (I) Executed directly by OS. (II) Makes explicit use of OS APIs. (III) cheaper to build in one platform.
+ - I and II
+Purely Native apps are binary executable image that is explicitly downloaded and stored on the file system of the mobile device. - True
+_________ is the type executable for Android. - .APK
+Looking at the mobile app and its features, is it possible to distinguish between the type as Native, Web or Hybrid? - False
+GUI Toolkit is an example of low-level API for Native Apps. - False
+Built-in Apps have direct access to low-level APIs. - True
+Native apps are not a choice for implementation because of its (I) Portability (II) Efficiency - I Only
+_________ is the type executable for Blackberry. - .COD
+Natives apps can be downloaded from (I) App Store (II) Enterprise Distributed Mechanism (III)Market Place of the Device - (I) and (III) Only
+_________ is the type executable for Windows. - .XAP
+Built-in Apps have direct access to low-level APIs only through High-level APIs. -False
+
+The rendering engine in the pure mobile web apps is called as - Webkit
+The main cons of Web app comprises _________. - limited scope accessing mobile device’s features
+Web apps are much easier to maintain, as they have a common code base across multiple mobile platforms. Is this statement true of false? - True
+In case of Pure mobile web apps, the code is executed by the _______. - browser
+Application caching is enabled with latest features of _________. - HTML5 and CSS3
+Pure mobile web apps are written only in _________. - HTML/CSS/JAVASCRIPT
+In hybrid apps, some native code is used to allow the app to access the wider functionality of the device. Is this True or False? - True
+The advantage that hybrid apps carry over native is that it's ________ - All the options
+
+Pure mobile websites are same as pure mobile apps.
+False
+
+Identify the correct sequence of steps in a native app development. (I) Set the configuration info and OS-specific declaration files. (II) Create additional resources like images, audio signals, etc. (III) Compile and link the source code.
+2,1,3
+
+Is a container app required for a native app to execute in a mobile device?
+False
+
+Which of these is the main player in the world of hybrid apps?
+Phonegap/Cardova
