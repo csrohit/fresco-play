@@ -1,0 +1,108 @@
+COntributed By: Rohit Nimkar (csrohit.github.io)
+
+Which of the following libraries stores and communicates data using blobs?
+caffe 
+
+what is a tensor?
+an n- dimentional array
+
+Which of the following library comes with visualization tool for deep learning?
+tensorflow
+
+Which of the following libraries is mainly designed for machine vision?
+caffe
+
+Which of the following libraries uses computations graph of deeplearning?
+Tensorflow
+
+Deep learning software platforms are available as downloadable package.
+True
+
+Deep learning performs better when sequential processing is used.
+F
+
+Deep learning are not suitable for text analysis.
+F 
+
+In Pruning technique initally we start with small number of neurons.
+F
+
+FPGAs are power efficienct when compared to GPU.
+T
+
+Convolutional neural network is mainly used for image recognition. 
+T
+
+Learning rate is learnt by the network when training. 
+T 
+
+What is ment by precision in terms of deep learning metrics?
+difference between actual and predicted value
+
+Which of the function always maps the values between 0 and 1?
+sigmoid
+
+Formula for recall is 
+TP/(TP + FN) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Radial Basis Function Neural Network uses _______________ function as the Activation Function.
+--Logistics
+
+Machine Learning is inspired by the structure of the brain.
+--True
+
+____________ function is also known as Transfer Function.
+--Activation
+
+In Deep Learning, ____________.
+--By the Network
+
+Every neuron in the Input Layer represents a/an _______________ variable that influences the output.
+--Dependant
+
+______________ activation function is the most commonly used activation function in Neural networks.
+--Non Linear
+
+Deep Learning can process an enormous amount of _______________
+--Both
+
+_______________ introduces the concept of memory cell which can process data within time lags.
+-CNN
+
+Machine Learning is a subset of _____________.
+-AI
+
+______________ tool supports the use of GPU.
+--Turi
+
+____________ is a technique which helps machines to mimic human behavior.
+--AI
+
+There is no exact formula for calculating the number of hidden layers, as well as the number of neurons in each hidden layer.
+--True
+
+Autoencoders are trained without supervision.
+---False
+
+As the amount of data increases, the performance of Machine Learning algorithms __________.
+--Decresases
+
+H2O.ai offers built-in integration tools for which platform?
+--All Opt.
