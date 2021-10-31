@@ -1,0 +1,57 @@
+Contributed By: Rohit Nimkar (csrohit.github.io)
+
+Support Vector Machine is used for ____________ type(s) of problems.
+--Classification & Regression
+
+Clustering is a/an ____________ learning method.
+--Unsupervised
+
+____________ learning uses the function that is inferred from labeled training data consisting of a set of training examples.
+--Supervised
+
+______________ outlier deviates significantly from the entire dataset.
+--Global
+
+Which machine learning technique would you suggest to develop a machine which detects the sudden increase or decrease in heartbeat?
+---Outlier Detection
+
+____________ learning uses data and answers to uncover the rules that build a problem.
+--Machine
+
+Which of the following machine learning models would you suggest to predict a category?
+--Classification
+
+Which of the following machine learning models would you suggest to predict a quantity?
+--Regression
+
+A marketing company wants to group its customers into various groups to advertise accordingly. Which machine learning technique would you suggest for the company?
+--Clustering
+
+Decision Trees are a non-parametric ____________ learning method used for classification and regression.
+--Supervised.
+
+An observation that deviates significantly from other observations in the dataset is known as ____________.
+--Outlier
+
+______________ is given a system of rewards and punishments.
+--Reinforcement…
+
+Which learning would you suggest the user for grouping customers into distinct categories (Clustering)?--Unsupervised
+
+_____________ aids in identifying the associations, correlations, and frequent patterns in data.--Associations Rule..
+
+The field of study that gives computers the ability to learn without being explicitly programmed is ___________.
+
+-ML
+
+____________ learning blends rules created by humans with data to develop answers to a problem.
+Traditional					
+
+A credit card company receives thousands of applications for new credit card issues with attributes like salary, debts, and so on. Which Machine Learning technique would you suggest to categorize applications into good credit and bad credit?
+Classification
+
+_____________ is a tool for turning information into knowledge.
+Machine Learning
+
+_____________ Learning draws inspiration from psychological behavior.
+Psychological -- Wrong
