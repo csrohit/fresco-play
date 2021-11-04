@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="0.574">
+ <testsuite name="pick2get" timestamp="2021-11-04T07:28:27" hostname="localhost" time="0.574" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="pick2get" name="Image should be displayed" time="0.574" />
+ </testsuite>
+</testsuites>

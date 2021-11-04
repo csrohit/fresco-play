@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div class="topnav">
+        <a href="#" style="float:right;font-size:20px"><i>Check out</i></a>
+        <a href="signin.html" style="float:right; font-size:20px"><i>Sign In</i></a>
+        <a href="index.html" style="float:left; width:150px;" class="active"><b><i>Pick2get</i></b></a>
+
+    </div>
+    <br />
+    <div class="search_drop_down">
+        <div class="tab">
+            <button class="tablinks active" onclick="openUser(event, 'New_Customer')">New Customer </button>
+            <button class="tablinks" onclick="openUser(event, 'Existing_Customer')">Existing Customer</button>
+
+        </div>
+
+        <div id="New_Customer" class="tabcontent active">
+            <form name="New_User">
+
+                <input type="text" name="userid" ng-model="userid" placeholder="UserID" required ng-minlength="8">
+                <br>
+                <label>Must be of 8 characters</label>
+                <br>
+                <br>
+                <input name="emailid" ng-model="emailid" placeholder="EmailID" type="email" required>
+                <br>
+                <label>Enter Valid Email</label>
+                <br>
+                <br>
+                <input type="text" name="pswd" ng-model="pswd" placeholder="Password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[@$]).*">
+                <br>
+                <label>Must be a combination of uppercase, lowercase and special characters</label>
+                <br>
+                <br>
+                <button id="reg_new_user" class="create_an_account"  ng-disabled="New_User.$invalid || New_User.$pristine" ng-click="registerUser();">Create an Account</button>
+            </form>
+        </div>
+
+        <div id="Existing_Customer" class="tabcontent">
+           <form name="Login">
+            <label>Enter you User ID</label>
+            <br>
+             <input type="text" name="login_userid" ng-model="login_userid" placeholder="UserID" required ng-minlength="8">
+            <br>
+
+            <br>
+            <label>Enter you Password</label>
+            <br>
+             <input type="Password" name="login_pswd" ng-model="login_pswd" placeholder="Password" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[@$]).*">
+            <br>
+            <br>
+            <br>
+
+            <button class="Login" ng-disabled="Login.$invalid || Login.$pristine" ng-click="login();">Login</button>
+        </form>
+        </div>
+
+
+    </div>
+
+<script>
+function openUser(event, userType) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(userType).style.display = "block";
+    event.currentTarget.className += " active";
+}
+</script>
+
+
+</body>
+
+</html>

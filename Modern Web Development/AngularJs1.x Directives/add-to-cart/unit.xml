@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<testsuite name="Node.js (linux; U; rv:v8.15.1)" package="unit" timestamp="2021-11-04T04:08:49" id="0" hostname="workspacexo9tvi3yfw3nijzx.ws-5d6f977b6-6hjg5" tests="9" errors="0" failures="0" time="0.054">
+  <properties>
+    <property name="browser.fullName" value="Node.js (linux; U; rv:v8.15.1)"/>
+  </properties>
+  <testcase name="AngularJS Test Controller $scope.ID Check the controller exists or not" time="0.02" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID Check the scope object products" time="0.007" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID should exist product name" time="0.003" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID should exist product discount" time="0.004" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID should exist product price" time="0.004" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID should exist product brand" time="0.004" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID should exist product quantity" time="0.003" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID should exist addToCart function" time="0.004" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID should addToCart function return &quot;success&quot; string" time="0.005" classname="unit.AngularJS Test Controller"/>
+  <system-out>
+    <![CDATA[Node.js (linux; U; rv:v8.15.1) ALERT: 'Product added to cart successfully'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

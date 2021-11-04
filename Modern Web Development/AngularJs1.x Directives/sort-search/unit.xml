@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<testsuite name="Node.js (win32; U; rv:v14.18.1)" package="unit" timestamp="2021-11-04T08:08:39" id="0" hostname="Chin2" tests="4" errors="0" failures="0" time="0.035">
+  <properties>
+    <property name="browser.fullName" value="Node.js (win32; U; rv:v14.18.1)"/>
+  </properties>
+  <testcase name="AngularJS Controller:  should exist options to be defined with values &quot;Low Price to High&quot; and &quot;High Price to Low&quot;" time="0.011" classname="unit.AngularJS Controller: "/>
+  <testcase name="AngularJS Controller:  selectPriceFilter() to be defined" time="0.007" classname="unit.AngularJS Controller: "/>
+  <testcase name="AngularJS Controller:  priceFilter should be false" time="0.004" classname="unit.AngularJS Controller: "/>
+  <testcase name="AngularJS Controller:  priceFilter should be true" time="0.013" classname="unit.AngularJS Controller: "/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

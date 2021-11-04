@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="9" tests="4" time="22.63">
+ <testsuite name="Testing Sort and Search Products app" timestamp="2021-11-04T08:05:42" hostname="localhost" time="22.63" errors="0" tests="4" skipped="0" disabled="0" failures="9">
+  <testcase classname="Testing Sort and Search Products app" name="Product list should be filtered based on the search field" time="1.946">
+   <failure type="toEqual" message="Expected 3 to equal 1."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (/projects/challenge/test/e2e/index.spec.js:9:25)
+    at /projects/challenge/node_modules/jasminewd2/index.js:112:25
+    at new ManagedPromise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+    at ControlFlow.promise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+    at schedulerExecute (/projects/challenge/node_modules/jasminewd2/index.js:95:18)
+    at TaskQueue.execute_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2974:25)
+    at /projects/challenge/node_modules/selenium-webdriver/lib/promise.js:668:7]]>
+   </failure>
+   <failure type="toEqual" message="Expected $.length = 3 to equal 1.
+Expected $[1] = &apos;Super Hero&apos; to equal undefined.
+Expected $[2] = &apos;Feel Good&apos; to equal undefined."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (/projects/challenge/test/e2e/index.spec.js:10:34)
+    at /projects/challenge/node_modules/jasminewd2/index.js:112:25
+    at new ManagedPromise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+    at ControlFlow.promise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+    at schedulerExecute (/projects/challenge/node_modules/jasminewd2/index.js:95:18)
+    at TaskQueue.execute_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2974:25)
+    at /projects/challenge/node_modules/selenium-webdriver/lib/promise.js:668:7]]>
+   </failure>
+   <failure type="toEqual" message="Expected 3 to equal 2."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (/projects/challenge/test/e2e/index.spec.js:13:25)
+    at /projects/challenge/node_modules/jasminewd2/index.js:112:25
+    at new ManagedPromise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+    at ControlFlow.promise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+    at schedulerExecute (/projects/challenge/node_modules/jasminewd2/index.js:95:18)
+    at TaskQueue.execute_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2974:25)
+    at /projects/challenge/node_modules/selenium-webdriver/lib/promise.js:668:7]]>
+   </failure>
+   <failure type="toEqual" message="Expected $.length = 3 to equal 2.
+Expected $[0] = &apos;Wheels&apos; to equal &apos;Super Hero&apos;.
+Expected $[1] = &apos;Super Hero&apos; to equal &apos;Feel Good&apos;.
+Expected $[2] = &apos;Feel Good&apos; to equal undefined."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (/projects/challenge/test/e2e/index.spec.js:14:34)
+    at /projects/challenge/node_modules/jasminewd2/index.js:112:25
+    at new ManagedPromise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+    at ControlFlow.promise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+    at schedulerExecute (/projects/challenge/node_modules/jasminewd2/index.js:95:18)
+    at TaskQueue.execute_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2974:25)
+    at /projects/challenge/node_modules/selenium-webdriver/lib/promise.js:668:7]]>
+   </failure>
+   <failure type="toEqual" message="Expected 3 to equal 1."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (/projects/challenge/test/e2e/index.spec.js:17:25)
+    at /projects/challenge/node_modules/jasminewd2/index.js:112:25
+    at new ManagedPromise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+    at ControlFlow.promise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+    at schedulerExecute (/projects/challenge/node_modules/jasminewd2/index.js:95:18)
+    at TaskQueue.execute_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2974:25)
+    at /projects/challenge/node_modules/selenium-webdriver/lib/promise.js:668:7]]>
+   </failure>
+   <failure type="toEqual" message="Expected $.length = 3 to equal 1.
+Expected $[0] = &apos;Wheels&apos; to equal &apos;Super Hero&apos;.
+Expected $[1] = &apos;Super Hero&apos; to equal undefined.
+Expected $[2] = &apos;Feel Good&apos; to equal undefined."><![CDATA[Error: Failed expectation
+    at UserContext.<anonymous> (/projects/challenge/test/e2e/index.spec.js:18:34)
+    at /projects/challenge/node_modules/jasminewd2/index.js:112:25
+    at new ManagedPromise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+    at ControlFlow.promise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+    at schedulerExecute (/projects/challenge/node_modules/jasminewd2/index.js:95:18)
+    at TaskQueue.execute_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2974:25)
+    at /projects/challenge/node_modules/selenium-webdriver/lib/promise.js:668:7]]>
+   </failure>
+  </testcase>
+  <testcase classname="Testing Sort and Search Products app" name="Should filter the product list based on the selected brand" time="0.314">
+   <failure type="exception" message="Failed: Index out of bound. Trying to access element at index: 0, but there are only 0 elements that match locator By(css selector, option)"><![CDATA[NoSuchElementError: Index out of bound. Trying to access element at index: 0, but there are only 0 elements that match locator By(css selector, option)
+    at selenium_webdriver_1.promise.all.then (/projects/challenge/node_modules/protractor/built/element.js:274:27)
+    at ManagedPromise.invokeCallback_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+    at TaskQueue.execute_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+    at /projects/challenge/node_modules/selenium-webdriver/lib/promise.js:668:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)Error
+    at ElementArrayFinder.applyAction_ (/projects/challenge/node_modules/protractor/built/element.js:459:27)
+    at ElementArrayFinder.(anonymous function).args [as click] (/projects/challenge/node_modules/protractor/built/element.js:91:29)
+    at ElementFinder.(anonymous function).args [as click] (/projects/challenge/node_modules/protractor/built/element.js:831:22)
+    at UserContext.<anonymous> (/projects/challenge/test/e2e/index.spec.js:29:16)
+    at /projects/challenge/node_modules/jasminewd2/index.js:112:25
+    at new ManagedPromise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+    at ControlFlow.promise (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+    at schedulerExecute (/projects/challenge/node_modules/jasminewd2/index.js:95:18)
+    at TaskQueue.execute_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+From: Task: Run it("Should filter the product list based on the selected brand") in control flow
+    at UserContext.<anonymous> (/projects/challenge/node_modules/jasminewd2/index.js:94:19)
+    at attempt (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at QueueRunner.execute (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+    at Spec.execute (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)
+    at UserContext.fn (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)
+    at attempt (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at runNext (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/projects/challenge/test/e2e/index.spec.js:21:3)
+    at addSpecsToSuite (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/projects/challenge/test/e2e/index.spec.js:1:63)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Testing Sort and Search Products app" name="Products should be sorted in Low Price to High" time="10.218">
+   <failure type="exception" message="Failed: Angular could not be found on the page http://localhost:8000/. If this is not an Angular application, you may need to turn off waiting for Angular.
+                          Please see 
+                          https://github.com/angular/protractor/blob/master/docs/timeouts.md#waiting-for-angular-on-page-load"><![CDATA[Error: Angular could not be found on the page http://localhost:8000/. If this is not an Angular application, you may need to turn off waiting for Angular.
+                          Please see 
+                          https://github.com/angular/protractor/blob/master/docs/timeouts.md#waiting-for-angular-on-page-load
+    at executeAsyncScript_.then (/projects/challenge/node_modules/protractor/built/browser.js:720:27)
+    at ManagedPromise.invokeCallback_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+    at TaskQueue.execute_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+    at /projects/challenge/node_modules/selenium-webdriver/lib/promise.js:668:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+From: Task: Run it("Products should be sorted in Low Price to High") in control flow
+    at UserContext.<anonymous> (/projects/challenge/node_modules/jasminewd2/index.js:94:19)
+    at attempt (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at QueueRunner.execute (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+    at Spec.execute (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)
+    at UserContext.fn (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)
+    at attempt (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at runNext (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/projects/challenge/test/e2e/index.spec.js:42:3)
+    at addSpecsToSuite (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/projects/challenge/test/e2e/index.spec.js:1:63)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="Testing Sort and Search Products app" name="Products should be sorted in High Price to Low" time="10.15">
+   <failure type="exception" message="Failed: Angular could not be found on the page http://localhost:8000/. If this is not an Angular application, you may need to turn off waiting for Angular.
+                          Please see 
+                          https://github.com/angular/protractor/blob/master/docs/timeouts.md#waiting-for-angular-on-page-load"><![CDATA[Error: Angular could not be found on the page http://localhost:8000/. If this is not an Angular application, you may need to turn off waiting for Angular.
+                          Please see 
+                          https://github.com/angular/protractor/blob/master/docs/timeouts.md#waiting-for-angular-on-page-load
+    at executeAsyncScript_.then (/projects/challenge/node_modules/protractor/built/browser.js:720:27)
+    at ManagedPromise.invokeCallback_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+    at TaskQueue.execute_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/projects/challenge/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+    at /projects/challenge/node_modules/selenium-webdriver/lib/promise.js:668:7
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7)
+From: Task: Run it("Products should be sorted in High Price to Low") in control flow
+    at UserContext.<anonymous> (/projects/challenge/node_modules/jasminewd2/index.js:94:19)
+    at attempt (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at QueueRunner.execute (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+    at Spec.queueRunnerFactory (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+    at Spec.execute (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)
+    at UserContext.fn (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)
+    at attempt (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at runNext (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (/projects/challenge/test/e2e/index.spec.js:49:3)
+    at addSpecsToSuite (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at describe (/projects/challenge/node_modules/jasmine/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/projects/challenge/test/e2e/index.spec.js:1:63)
+    at Module._compile (module.js:653:30)
+    at Object.Module._extensions..js (module.js:664:10)
+    at Module.load (module.js:566:32)
+    at tryModuleLoad (module.js:506:12)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>

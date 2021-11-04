@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<testsuite name="Node.js (linux; U; rv:v8.15.1)" package="unit" timestamp="2021-11-04T07:08:55" id="0" hostname="workspaceqy9l2xx4a44rsk9d.ws-9dbcb4866-6rzw9" tests="3" errors="0" failures="0" time="0.026">
+  <properties>
+    <property name="browser.fullName" value="Node.js (linux; U; rv:v8.15.1)"/>
+  </properties>
+  <testcase name="AngularJS Test Controller: Testing: Check the controller exists or not" time="0.018" classname="unit.AngularJS Test Controller:"/>
+  <testcase name="AngularJS Test Controller: Testing: Check the even function" time="0.006" classname="unit.AngularJS Test Controller:"/>
+  <testcase name="AngularJS Test Controller: Testing: Check the odd function" time="0.002" classname="unit.AngularJS Test Controller:"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

@@ -1,0 +1,28 @@
+{
+  "name": "karma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {
+    "grunt": "^1.0.3",
+    "grunt-concurrent": "^3.0.0",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-protractor-runner": "^5.0.0",
+    "jasmine-core": "^2.8.0",
+    "jasmine-reporters": "^2.3.2",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-jsdom-launcher": "^2.0.0",
+    "karma-junit-reporter": "^1.2.0",
+    "selenium-standalone": "^6.16.0"
+  },
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}

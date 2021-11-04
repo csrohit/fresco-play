@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div class="topnav">
+        <a href="#" style="float:right;font-size:20px"><i>Check out</i></a>
+        <a href="signin.html" style="float:right; font-size:20px"><i>Sign In</i></a>
+        <a href="index.html" style="float:left; width:150px;" class="active"><b><i>Pick2get</i></b></a>
+
+    </div>
+    <br />
+    <div class="search_drop_down">
+        <div class="tab">
+            <button id="newCustomer" class="tablinks active" onclick="openUser(event, 'New_Customer')">New Customer
+            </button>
+            <button id="existingCustomer" class="tablinks" onclick="openUser(event, 'Existing_Customer')">Existing
+                Customer</button>
+
+        </div>
+
+        <div id="New_Customer" class="tabcontent active">
+            <form name="New_User">
+                <!--
+                    Get UserID input
+                    Bind the input to 'userid'
+                -->
+            <input type="text" ng-model="userid" ng-required="true" ng-minlength="8">
+                <br>
+                <label>Must be of 8 characters</label>
+                <br>
+                <br>
+                <!--
+                    Get EmailID input and type should be email
+                    Bind the input to 'emailid' 
+                -->
+                            <input type="email" ng-model="emailid">
+
+             
+                <br>
+                <label>Enter Valid Email</label>
+                <br>
+                <br>
+                <!--
+                    Get Password input
+                    Bind the input to 'pswd'
+                -->
+                            <input type="password" ng-model="pswd" ng-required="true" ng-pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$">
+
+            
+                <br>
+                <label>Must be a combination of uppercase, lowercase and special characters</label>
+                <br>
+                <br>
+                <!--
+                     Create a button which should contain label text as 'Create an Account'
+                     Initialize button 'id' as "reg_new_user" and for class as "create_an_account"
+                     If the inputs are invalid disable the button
+                     When click is made the button should call 'registerUser()'
+                    -->
+                  <button type="submit" id="reg_new_user" class="create_an_account">Create an Account</button>
+  
+            </form>
+        </div>
+
+        <div id="Existing_Customer" class="tabcontent">
+            <form name="Login">
+                <label>Enter you User ID</label>
+                <br>
+    
+                <input type="text" name="login_userid" ng-model="login_userid" placeholder="UserID" required>
+                <br>
+
+                <br>
+                <label>Enter you Password</label>
+                <br>
+           
+                <input type="Password" name="login_pswd" ng-model="login_pswd" placeholder="Password" required>
+                <br>
+                <br>
+                <br>
+
+                <button id="login" class="Login" ng-click="login()">Login</button>
+            </form>
+        </div>
+
+
+    </div>
+
+    <script>
+        function openUser(event, userType) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(userType).style.display = "block";
+            event.currentTarget.className += " active";
+        }
+    </script>
+
+
+</body>
+
+</html>

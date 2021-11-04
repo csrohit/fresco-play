@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="index.js"></script>
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div class="topnav">
+        <a href="#" style="float:right;font-size:20px"><i>Check out</i></a>
+        <a href="signin.html" style="float:right; font-size:20px"><i>Sign In</i></a>
+        <a href="#/Home" style="float:left; width:150px;" class="active"><b><i>Pick2get</i></b></a>
+
+    </div>
+    <br />
+    <div class="search_drop_down">
+        <select id="month" class="select select-styled" >
+            <option value="hide">-- Brand --</option>
+            <option ng-repeat="pdt in products" >{{pdt.brand}}</option>
+        </select>
+
+        <select id="year" class="select select-styled" >
+            <option value="hide">-- Price --</option>
+            <option value="low_price_to_high">Low Price to High</option>
+	    <option value="hign_price_to_low">High Price to Low</option>
+        </select>
+
+        <input class="search" placeholder="Search" size="40" type="text">
+    </div>
+    <div class="product_box" ng-repeat="pdt in products">
+        <div class="single_1">
+            <div class="container">
+		<div class="discount">
+			<div class="discount_badge">{{pdt.discount}}</div>
+			<span class="discount_text">Discount</span>
+		</div>
+                <img ng-src="{{pdt.image}}" />
+            </div>
+
+        </div>
+        <div class="single_2">
+            <div class="prod_desc">
+                <span class="pdt_name">{{pdt.name}}</span>
+                <div class="pdt_details_2_col">
+                    <span class="brand">Brand</span>
+                    <span class="brand_name">{{pdt.brand}}</span>
+                </div>
+                <div class="pdt_details_2_col">
+                    <span class="brand">Price</span>
+                    <span class="brand_name">{{pdt.price}}</span>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="single_3">
+            <div class="quantity_sec">
+                <label>Quantity</label>
+                <br>
+               <input placeholder="Quantity" type="number" ng-model="pdt.quantity" >
+            </div>
+        </div>
+        <div class="single_4">
+            <input type="image" src="img/greyCart.png" alt="Submit" width="48" height="48" ng-show="pdt.quantity<1?true:false" />
+	    <input type="image" src="img/orangeCart.png" alt="Submit" width="48" height="48"  ng-hide="pdt.quantity<1?true:false" ng-click="addToCart();"/>
+        </div>
+    </div>
+ 
+
+
+</body>
+
+</html>

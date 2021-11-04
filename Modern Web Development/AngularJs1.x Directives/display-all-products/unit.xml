@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<testsuite name="Node.js (linux; U; rv:v8.15.1)" package="unit" timestamp="2021-11-04T07:14:52" id="0" hostname="workspaceeuzpgapn998uchhn.ws-f78b85d4b-tfxs5" tests="6" errors="0" failures="0" time="0.04">
+  <properties>
+    <property name="browser.fullName" value="Node.js (linux; U; rv:v8.15.1)"/>
+  </properties>
+  <testcase name="AngularJS Test Controller $scope.ID Check the controller exists or not" time="0.022" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID Check the scope object products" time="0.006" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID should exist product name" time="0.003" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID should exist product discount" time="0.003" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID should exist product price" time="0.003" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID should exist product brand" time="0.003" classname="unit.AngularJS Test Controller"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

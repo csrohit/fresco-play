@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<testsuite name="Node.js (linux; U; rv:v8.15.1)" package="unit" timestamp="2021-11-04T07:42:21" id="0" hostname="workspaceu07stmu59vodcf0l.ws-f8df78d95-nf6bq" tests="3" errors="0" failures="0" time="0.036">
+  <properties>
+    <property name="browser.fullName" value="Node.js (linux; U; rv:v8.15.1)"/>
+  </properties>
+  <testcase name="AngularJS Test Controller $scope.ID should exist registerUser function" time="0.02" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID should exist registerUser function" time="0.007" classname="unit.AngularJS Test Controller"/>
+  <testcase name="AngularJS Test Controller $scope.ID registerUser function should call alert function with the message &quot;Registration Successful&quot;" time="0.009" classname="unit.AngularJS Test Controller"/>
+  <system-out>
+    <![CDATA[Node.js (linux; U; rv:v8.15.1) ALERT: 'Registration Successful'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

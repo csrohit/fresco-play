@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script>
+    <script src="index.js"></script>
+
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div class="topnav">
+        <a href="#" style="float:right;font-size:20px"><i>Check out</i></a>
+        <a href="" style="float:right; font-size:20px"><i>Sign In</i></a>
+        <a href="#/Home" style="float:left; width:150px;" class="active"><b><i>Pick2get</i></b></a>
+
+    </div>
+    <br />
+    <div class="search_drop_down">
+        <!--
+             Create drop down for brand 
+             bind the value to 'searchKeyword' 
+             Initialize the id as "brandSelection"
+            -->
+            <select ng-model="searchKeyword" id="brandSelection">
+                <option ng-repeat="option in brands" value="{{option}}">{{option}}</option>
+
+            </select>
+      
+        
+
+        <!--
+             Create drop down for price 
+             Bind the value to 'selectedPriceFilter'  
+             Call the function 'selectPriceFilter()' on select change
+            -->
+            <select ng-model="selectedPriceFilter" ng-change="selectPriceFilter()">
+              <option ng-repeat="option in options" value="{{option}}">{{option}}</option>
+            </select>
+        
+        <!--
+             Create a input field for Search 
+             Bind the input value to 'searchKeyword' 
+             Initialize id and class as "search"
+        -->
+        <input type="text" ng-model="searchKeyword" id="search" class="search"/>
+    </div>
+
+    
+    <!--Use AngularJS sorting / searching features for the Product list-->
+    <!--Product List -->
+    <div class="product_box" id="product-list" ng-repeat="pdt in products | orderBy:'price':priceFilter | filter:searchKeyword">
+        <div class="single_1">
+            <div class="container">
+                <div class="discount">
+                    <div class="discount_badge">{{pdt.discount}}</div>
+                    <span class="discount_text">Discount</span>
+                </div>
+                <img ng-src="{{pdt.image}}" />
+            </div>
+
+        </div>
+        <div class="single_2">
+            <div class="prod_desc">
+                <span class="pdt_name">{{pdt.name}}</span>
+                <div class="pdt_details_2_col">
+                    <span class="brand">Brand</span>
+                    <span class="brand_name brdName">{{pdt.brand}}</span>
+                </div>
+                <div class="pdt_details_2_col">
+                    <span class="brand">Price</span>
+                    <span class="brand_name prdPrice">{{pdt.price}}</span>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="single_3">
+            <div class="quantity_sec">
+                <label>Quantity</label>
+                <br>
+                <input placeholder="Quantity" type="number" ng-model="pdt.quantity">
+            </div>
+        </div>
+        <div class="single_4">
+            <input type="image" src="img/greyCart.png" alt="Submit" width="48" height="48"
+                ng-show="pdt.quantity<1?true:false" />
+            <input type="image" src="img/orangeCart.png" alt="Submit" width="48" height="48"
+                ng-hide="pdt.quantity<1?true:false" ng-click="addToCart();" />
+        </div>
+    </div>
+ <!--Product List End-->
+
+
+</body>
+
+</html>

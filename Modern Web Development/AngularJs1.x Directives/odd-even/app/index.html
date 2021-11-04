@@ -1,0 +1,25 @@
+  <!-- Hmtl -->
+<html>
+<head>
+<script src="lib/angularjs/angular.min.js"></script>
+<script src="lib/angularjs/angular-mocks.js"></script>
+<script src="index.js" type="text/javascript"></script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<h2>Odd or Even!</h2>
+<input type="number" ng-model="number1"><br><br>
+<input type="number" ng-model="number2"><br><br>
+{{number1}} + {{number2}} = <span style="color:green" type="text">{{number1 + number2}}</span> which is an
+<span ng-bind="odd_even(number1 + number2)"></span> number
+
+<br><br>
+{{number1}} - {{number2}} = <span style="color:green" type="text">{{number1 - number2}}</span> which is 
+<span ng-bind="odd_even(number1 + number2)"></span> number
+<br><br>
+
+
+</div>
+
+</body>
+</html>
