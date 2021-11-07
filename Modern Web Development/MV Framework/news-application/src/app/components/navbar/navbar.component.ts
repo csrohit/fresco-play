@@ -23,6 +23,7 @@ export class NavbarComponent implements OnInit {
   }
 
   dispatchAction($event: string) {
+    this.store.dispatch()
   }
 
 }
