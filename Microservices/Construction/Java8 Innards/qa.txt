@@ -1,0 +1,171 @@
+Contributed By: Rohit Nimkar
+
+Which of the following is a valid use of lambda expressions?
+Runnable
+
+The following lambda expression is valid.   (x, y) -> return x + y
+false
+
+Lambda expressions in Java allow us to treat ___________
+Code as Data
+
+-----------------------------------------------------
+public class Main{
+public static void main(String [] args){
+String name="WelcomeJava";
+Runnable r1=() -> System.out.println(name);
+String name1 = name.toUpperCase();
+Runnable r2=() -> System.out.println(name1);
+r1.run();
+}
+}
+What is the output of the above program?
+-- WelcomeJava
+----------------------------------------------------
+
+public class App{
+  public static void main(String [] args){
+    String name="WelcomeJava";
+    Runnable r1=() -> System.out.println(name);
+    String name1="";
+    name1=name.toUpperCase();
+    Runnable r2=() -> System.out.println(name1);
+    r1.run();
+  }
+} 
+What is the output of the above program?
+Compilation Error
+
+------------------------------------------------------
+
+The following are valid lambda expressions, except _________
+() -> {} -- Wrong
+
+
+-------------------------------------
+The following code includes a valid Functional Interface.
+
+package functionalInterfaceExample;
+
+@FunctionalInterface
+public interface MyFirstFunctionalInterface {
+public void firstWork();
+@Override
+public String toString();                
+@Override
+public boolean equals(Object obj);        
+}
+
+True
+--------------------------------
+
+A FunctionalInterface annotation (@FunctionalInterface) is necessary for making an interface a functional interface.
+False
+
+Which of the following functional interfaces represents an operation upon two long-valued operands and produces a long-valued result?
+LongBinaryOperator
+
+A functional interface acts as a target type for which of the following?
+All
+
+Which of the following functional interfaces represents a function that accepts an int-valued argument and produces a long-valued result?
+IntToLongFunction
+
+Which of these does Stream filter() operates on?
+Predicate
+
+Which of the following is a valid Stream operation type?
+All
+
+If you wanted to process a stream of names, extract the male names, and store them in a new list, what is the appropriate operation to be used?
+Collect
+
+Stream operation iterations are internal over the source of elements.
+False
+
+The newly introduced Streams API is available in which package of Java 8?
+java.util.stream
+
+On which of these can annotations be used on in Java 8?
+All
+
+Type annotation is used to depict the non-blank string value _________
+@NotBlank
+
+Repeating annotations can be retrieved using _________
+getAnnotationsByType
+
+Which of the following class implements an encoder for encoding byte data using the Base64 encoding scheme in Java 8?
+Base64.Encoder
+
+Which of the following can be a valid input for jdeps dependency analyzer?
+All the Options
+
+Which of the following can be a valid input for jdeps dependency analyzer?
+java.time
+
+
+----------------------------------------------
+   import java.util.Optional;  
+    public class App {  
+        public static void main(String[] args) {  
+            String[] str = new String[10];        
+            str[5] = null;;
+            str[4] = "JAVA OPTIONAL CLASS EXAMPLE";
+            Optional<String> checkNull = Optional.ofNullable(str[5]);  
+            if(checkNull.isPresent()){  // It Checks, value is present or not  
+                String lowercaseString = str[5].toLowerCase();  
+                System.out.print(lowercaseString);  
+            }else  
+                System.out.println("String value is not present");  
+        }  
+    }  
+Choose the correct output.
+String Value is not present
+-------------------------------------------------
+
+Reactive Programming deals with ____________
+Asynchronous Data
+
+The library used to write reactive programs in Java is _________
+RxJava
+
+Which of the following is the correct lambda expression, which adds two numbers and returns their sum?
+Both the Options
+
+Which method is used to connect the consumer to the source in reactive programming?
+subscribe()
+
+-----------------------------------------
+DateTimeFormatter formatter=DateTimeFormatter.ofPattern("EEEE",Locale.US);
+    System.out.println(formatter.format(LocalDateTime.now()));
+Choose the correct output.
+Friday
+--------------------------------------------
+
+PermGen space has been replaced with which of these in Java 8?
+MetaSpace
+
+The method used to fetch the parameter types using method parameter reflection is _________
+getParameterTypes()
+
+In Functional Reactive programming, we pull the stream of data.
+False
+
+Object o = () -> {System.out.println(“Example”); };
+Object o can be replaced with?
+Runnable r
+
+Which of the following is correct about Java 8 lambda expression?
+Both
+
+Which method can be overridden from the Predicate class in Java 8?
+test
+
+--------------------------------------------------------
+ ZoneId zoneId=ZoneId.of("Asia/Singapore");
+   ZonedDateTime dateTime =ZonedDateTime.of(LocalDateTime.now(),zoneId);
+   System.out.println(dateTime.getOffset());
+Assuming that the offset value for Asia/Singapore time zone from UTC/Greenwich is +08:00, what would be the output?
++8:00
+-------------------------------------------------------------
