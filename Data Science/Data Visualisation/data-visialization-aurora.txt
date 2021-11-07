@@ -1,0 +1,92 @@
+Contributed By: Rohit Nimkar(csrohit.github.io)
+
+__________________ principle helps in displaying the objects that are similar to each other.
+-Patterns
+
+The following are all Edward Tufte's principles of Graphical Integrity, except?
+--Show Design variation…
+
+The design principle Proportion deals with ________________.
+--Size of the O.
+
+State True/False. Graphics must quote data out of context.
+-F
+
+A classic design solution that has intense data, simple design and word-sized graphics is called ______________.
+
+--Sparklines
+
+________________ are used for analyzing trend over a period of time.
+--Line Chart
+
+The excessive and unnecessary use of graphical effects in graphs that are not necessary to comprehend the information but to distract viewer's attention is known as ______________.
+--Chart Junk
+
+Harmony of the design is ensured by _______________ design principle.
+--Theme
+
+__________________ help in inspecting multiple variables simultaneously by color coding.
+
+--ScatterPloters
+
+Good graphical representation ___________________ data-ink and erases as much non-data-ink as possible.
+
+-maximizes
+
+In ___________, ranges of data are grouped into bins and intervals.
+-Histograms
+
+There are _______ types of Balances in design principle.
+-3
+
+_____________________ interface is provided with drag and drop utility.
+
+--Sisense
+
+Identify the element(s) of Design.
+--ALL
+
+Representation of numbers, as physically measured on the surface of the graph itself, should be ______________ proportional to the numerical quantities represented.
+
+--Direclty
+
+FusionCharts is a __________________ based visualization package.
+-JS
+
+Identify the classic design solution which has series of the same small graphs repeated in a visual.
+
+-small Multiples
+
+Which database solution is integrated with Tableau Data Visualization Tool?
+--ALL Options
+
+__________________ is integrated with Salesforce.
+--Plotly
+
+Maximizing data density and the size of the data matrix within reason is attained by
+
+-Shrink Principle
+
+__________________ design principle is closely associated with movement.
+-Rhythm
+
+FusionCharts produces ___________ different chart types.
+-90
+
+A package in QlikView that handles data exploration and discovery is ______________.
+Qlik sense
+
+The number of principles stated by Edward Tufte is _____.
+-6
+
+_________________ principle of design ensures that the important data is highlighted with color, size or contrast.
+-Emphasis
+
+
+State True/ False. Plotly is integrated with analytical oriented programming languages.
+True
+
+__________ takes in raw data and transforms into charts, graphs and images that can flawlessly explain numbers in a marvelous way to gain insights from it.
+Data Visualization
+
+
