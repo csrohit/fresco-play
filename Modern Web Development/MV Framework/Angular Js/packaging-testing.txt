@@ -1,0 +1,75 @@
+Contributed By: Rohit Nimkar(csrohit.github.com)
+
+Grunt relies on _______.
+Both
+
+Bower is a new package manager for ______.
+Client side compoenents
+
+In Package.json, to include the latest version we can use ______.
+.(period) symbol
+
+Grunt runs tasks using temporary files, which are disk I/O operations.
+True
+
+_____ is all about splitting your code into small testable modules with each module having its own functionality and level of abstraction.
+Unit Testing
+
+______ allows you to inject and mock angular services to help you test your application.
+ngMock
+
+When will you start writing the unit test?
+As soon as possible
+
+Testing an individual working part of source code is called _____.
+Unit Testing
+
+---------------------------------------
+What will be the output of the following snippet , if we pass 3e,5?
+
+vm.add = function(a,b){
+        if(typeof a !== 'number' || typeof b !== 'number'){
+            return 'invalid args';
+        }
+        return a+b;
+    }
+-- invalid args
+----------------------------------------
+
+To run the test, we have to type ______.
+karma start
+
+Protractor is built on top of ______.
+WebDriverJs
+
+The following code is used to install Protractor _________.   npm install -g protractor
+Globally
+
+
+The E2E testing framework for AngularJS is ______.
+Protactor
+
+App folder contains ______ and tests folder contains ______.
+script files, tests
+
+Bower was introduced by engineers at _____.
+Twitter
+
+The webdriver-manager can be used, and the necessary binaries can be downloaded using _______.
+webdriver-manager update
+
+The syntax for installing a component in Bower is ______.
+bower install component-name
+
+Which one of the following is a Bower Concept?
+Task -- Wrong
+
+
+
+
+
+
+
+
+
+
