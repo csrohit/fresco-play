@@ -1,0 +1,5 @@
+(5,)
+float64
+(5, 2)
+172.37417741633146
+Index(['Student_height', 'Student_weight'], dtype='object')
