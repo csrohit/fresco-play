@@ -1,0 +1,16 @@
+158.4
+s2    158.4
+s3    167.6
+s4    156.2
+dtype: float64
+<class 'pandas.core.series.Series'>
+    Student_height  Student_weight
+s1           176.2            85.1
+s2           158.4            90.2
+    Student_height  Student_weight
+s2           158.4            90.2
+s5           161.4            78.9
+s1           176.2            85.1
+    Student_height  Student_weight
+s1           176.2            85.1
+s4           156.2            80.4
