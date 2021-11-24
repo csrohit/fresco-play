@@ -1,0 +1,15 @@
+---
+version: 1.0
+configuration:
+  has_webserver: true
+  scoring:
+    command: bash .score.sh;
+  ide_config:
+    default_open_files:
+    - src/app/app.module.ts
+    project_menu:
+      run: ./node_modules/.bin/ng serve --host 0.0.0.0 --port 8000 --disable-host-check | node server/server.js;
+      install: bash .install.sh;
+      test: ./node_modules/.bin/ng test;
+  readonly_paths:
+  - README.md

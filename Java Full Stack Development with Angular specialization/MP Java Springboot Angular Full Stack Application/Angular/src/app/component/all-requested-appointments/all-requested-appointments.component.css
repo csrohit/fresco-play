@@ -1,0 +1,77 @@
+table {
+  border-collapse: collapse ! important;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.table-container {
+  border-radius: 5px;
+  padding: 10px 15px 10px 15px;
+  margin: 15px;
+  box-shadow: 5px 5px 35px -9px rgba(0, 0, 0, 0.75);
+  font-size: 17px;
+}
+
+.table-class {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-class td, .table-class th {
+    border: 1px solid #babfd4;
+    padding: 6px;
+    font-family: roboto;
+}
+
+.table-class tr:nth-child(even){background-color: #f2f2f2;}
+
+.table-class tr:hover {background-color: #ddd;}
+
+.table-class th {
+  padding: 10px 45px 5px 10px;
+  text-align: left;
+  background-color: #7276e6;
+  color: white;
+  font-family: roboto;
+  font-style: oblique;
+}
+.msg-div {
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  font-size: 16px;
+}
+.btn-value {
+  font-family: roboto;
+  font-weight: 600;
+  font-style: oblique;
+  margin-left: 17px;
+}
+.column-btn {
+
+}
+.btn-width {
+  width: 96px;
+}
+.btn-spc {
+  margin: 0px 0px 2px 0px;
+}
+.btn-div {
+  float: right;
+  padding-left: 227px;
+}
+
+.view-details {
+  cursor: pointer;
+  color: #43439c;
+  font-size: 19px;
+  font-weight: 600;
+  margin-left: 30px;
+  font-family: roboto;
+  font-style: oblique;
+}
+
+.no-records {
+  color: red;
+  font-weight: 600;
+  font-size: 18px;
+}
