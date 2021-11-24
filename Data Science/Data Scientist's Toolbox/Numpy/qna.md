@@ -44,4 +44,29 @@ print(y.dtype)
 Ans: **complex128**
 
 
-##
+## Basic Operations on NumPy Arrays
+
+### What is the shape of the broadcasting array resulted from arrays with shapes (9, 2, 1, 5) and (3, 1)?
+Ans: ~~Not Feasible~~
+
+### Is broadcasting feasible between two arrays whose shapes are (5, 8, 2) and (2,)?
+Ans: **yes**
+
+## Which of the following method is used to check if a number is infinite or not?
+Ans: **isinf**
+
+## What is the output of the following code?
+```Python
+    import numpy as np
+    x = np.arange(4)
+    y = np.arange(4)
+    print(x == y)
+```
+Ans: **[ True True True True]**
+
+## What is the output of the following code?
+```Python
+    import numpy as np
+    print(np.repeat(3, 4))
+```
+Ans: **[3 3 3 3]**
