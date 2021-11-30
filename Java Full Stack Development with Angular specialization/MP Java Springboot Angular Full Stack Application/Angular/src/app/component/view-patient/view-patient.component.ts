@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../services/data.service';
-import { FormGroup, FormBuilder,Validators } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { DatePipe } from '@angular/common';
 import { Appointment } from '../../models/appointment';
@@ -16,7 +16,7 @@ import { switchMap } from 'rxjs/operators';
 export class ViewPatientComponent implements OnInit {
 
   patient;
-  listOfDiseases;
+  listOfDiseases: string[] = [];
   today;
   isBookAppointment: boolean = true;
   isFormEnabled: boolean = false;
@@ -27,20 +27,31 @@ export class ViewPatientComponent implements OnInit {
   bookedAppointmentResponse;
   ScheduledAppointmentResponse;
 
-  constructor(fb: FormBuilder,private route: Router, private datePipe: DatePipe, private activatedRoute: ActivatedRoute, private dataService: DataService) {
+  constructor(fb: FormBuilder, private route: Router, private datePipe: DatePipe, private activatedRoute: ActivatedRoute, private dataService: DataService) {
     this.today = this.datePipe.transform(Date.now(), 'yyyy-MM-dd');
 
     // add necessary validators
 
     this.appointmentForm = fb.group({
-      'selectDisease' : [null],
-      'tentativeDate' : [null],
-      'priority' : [null]
+      'selectDisease': [null],
+      'tentativeDate': [null],
+      'priority': [null]
     })
-   }
+  }
 
   ngOnInit() {
+    this.activatedRoute
+      .params
+      .pipe(
+        switchMap(params => {
+          return this.dataService
+            .getParticularPatient(params.id)
+        })
+      ).subscribe(res => {
+        this.patient = res;
+      }, err => {
 
+      })
     // get selected patient id
     // get Particular Patient from service using patient id and assign response to patient property
 
@@ -48,8 +59,15 @@ export class ViewPatientComponent implements OnInit {
 
   bookAppointment() {
     // get diseases list from service
-
+    this.dataService
+      .diseasesList()
+      .subscribe(res =>{
+        this.listOfDiseases = res;
+      })
     // change isBookAppointment, isScheduledAppointment, isFormEnabled, isTableEnabled property values appropriately
+    this.isBookAppointment = false;
+    this.isFormEnabled = true;
+    this.isTableEnabled = false;
   }
 
   scheduleAppointment() {
@@ -58,22 +76,66 @@ export class ViewPatientComponent implements OnInit {
     // patientId, disease, priority, tentativedate
 
     // if booked successfully should redirect to 'requested_appointments' page
-    
+
+    const apt = {
+      disease: this.appointmentForm.value.selectDisease,
+      priority: this.appointmentForm.value.priority,
+      tentativeDate: this.appointmentForm.value.tentativeDate,
+      patientId: this.patient.userId,
+      fname: this.patient.fname,
+      lname: this.patient.lname,
+      registeredTime: this.appointmentForm.value.tentativeDate
+    };
+    this.dataService.scheduleAppointment(apt)
+      .subscribe(res => {
+        if (res) {
+          this.route.navigate(['requested_appointments']);
+        }
+      }, err => {
+
+      })
+
   }
 
   scheduledAppointment() {
 
     // change isBookAppointment, isScheduledAppointment, isFormEnabled, isTableEnabled property values appropriately
 
-    // get particular patient appointments using getSinglePatientAppointments method of DataService 
+    // get particular patient appointments using getSinglePatientAppointments method of DataService
+    this.isScheduledAppointment = false;
+    this.isBookAppointment = true;
+    this.isFormEnabled = false;
+    this.isTableEnabled = true;
 
+    // get particular patient appointments using getSinglePatientAppointments method of DataService
+    this.getAppointments();
   }
+
 
   cancelAppointment(appointmentId) {
     // delete selected appointment uing service
 
     // After deleting the appointment, get particular patient appointments
+    this.dataService.deleteAppointment(appointmentId)
+      .subscribe(res => {
+        if (res) {
+          this.getAppointments();
+        } else {
+
+        }
+      }, err => {
+
+      })
 
   }
-  
+
+  getAppointments() {
+    this.dataService.getSinglePatientAppointments(this.patient.patient_Id)
+      .subscribe(res => {
+        if (res) {
+          this.ScheduledAppointmentResponse = res;
+        }
+      });
+  }
+
 }
