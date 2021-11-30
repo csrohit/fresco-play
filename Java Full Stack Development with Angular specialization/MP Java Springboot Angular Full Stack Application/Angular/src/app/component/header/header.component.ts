@@ -12,27 +12,34 @@ import {ActivatedRoute} from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   userDetails: any = {};
-  
-  constructor(private dataService: DataService) { 
+
+  constructor(private dataService: DataService) {
 
   }
 
   ngOnInit() {
 
     // call getProfileDetails method to get user details
+    this.getProfileDetails();
 
   }
 
   getProfileDetails() {
 
   // call getUserDetails method of dataService and assign response to userDetails property
+    this.dataService
+    .getUserDetails()
+    .subscribe(res => {
+      this.userDetails = res;
+    }, err => {
 
+    });
   }
 
   logout() {
 
     // call doLogOut method
-    
+    this.dataService.doLogOut();
   }
-  
+
 }
