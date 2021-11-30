@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e97febb3-b6ee-45af-b3be-285c05faef41" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/HealthCareService/src/main/java/com/example/project/controller/ApplicationUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/HealthCareService/src/main/java/com/example/project/controller/ApplicationUserController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="21bGDxoskzmNtjOGW9b3WLa2aMd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../java/Spring/health-services" />
+  </component>
+  <component name="RunManager">
+    <configuration name="HealthCare" type="Application" factoryName="Application">
+      <module name="MP Java Springboot Angular Full Stack Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e97febb3-b6ee-45af-b3be-285c05faef41" name="Changes" comment="" />
+      <created>1638202257672</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638202257672</updated>
+    </task>
+    <servers />
+  </component>
+</project>
