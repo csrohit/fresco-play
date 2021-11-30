@@ -33,17 +33,16 @@ export class RegisterNewUserComponent implements OnInit {
 
   constructor(private route: Router, private dataService: DataService) {
    }
-
-  ngOnInit() {
+   ngOnInit() {
 
     // add necessary validators
 
     this.signupForm = new FormGroup({
-      userName: new FormControl(''),
-      password: new FormControl(''),
-      mobile: new FormControl(''),
-      email: new FormControl(''),
-      location: new FormControl('')
+      userName: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(20), Validators.pattern(/^[a-zA-z0-9]*$/)]),
+      password: new FormControl('', [Validators.required, Validators.minLength(8), Validators.maxLength(20), Validators.pattern(/^[a-zA-Z0-9$]*$/)]),
+      mobile: new FormControl('', [Validators.required, Validators.pattern(/^[0-9]{10}$/)]),
+      email: new FormControl('', [Validators.required, Validators.pattern(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)]),
+      location: new FormControl('', Validators.required)
     });
   }
 
@@ -52,13 +51,21 @@ export class RegisterNewUserComponent implements OnInit {
     // call regNewUser method to perform signup operation
     // if success, redirect to login page
     // else display appropriate error message
-       // reset the form
-    
+    // reset the form
+
+    this.dataService.regNewUser(this.signupForm.value)
+      .subscribe(res => {
+        this.goBack();
+      }, err => {
+
+      })
+
   }
 
   goBack() {
 
     // should navigate to login page
+    this.route.navigate(['login']);
 
   }
 

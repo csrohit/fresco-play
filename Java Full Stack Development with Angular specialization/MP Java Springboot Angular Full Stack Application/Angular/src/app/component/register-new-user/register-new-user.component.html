@@ -4,89 +4,112 @@
       <h2 >SIGN UP</h2>
     </div>
     <div class="login-form-wrapper" >
-      <form class="ro-form">
+      <form class="ro-form" [formGroup]="signupForm">
         <div class="form-group">
           <label class="labelHead" for="username">
             <b>Username</b>
           </label>
-          <input type="text" id="username" placeholder="username">
+          <input type="text" formControlName="userName" id="username" placeholder="username">
 
-          <div class="form-error-messages"
-            id="error-no-username">
+          <ng-container
+          *ngIf="signupForm.get('userName').invalid && (signupForm.get('userName').dirty || signupForm.get('userName').touched)">
+          <div *ngIf="signupForm.get('userName').errors?.required" class="form-error-messages" id="error-no-username">
             {{emptyUserName}}
           </div>
-          <div class="form-error-messages"
+          <div *ngIf="signupForm.get('userName').errors?.minlength" class="form-error-messages"
             id="error-minlength-username">
             {{minlengthUserName}}
           </div>
-          <div class="form-error-messages"
+          <div *ngIf="signupForm.get('userName').errors?.maxlength" class="form-error-messages"
             id="error-maxlength-username">
             {{maxlengthUserName}}
           </div>
-          <div class="form-error-messages"
+          <div *ngIf="signupForm.get('userName').errors?.pattern" class="form-error-messages"
             id="error-pattern-username">
             {{userNamePattern}}
           </div>
+        </ng-container>
+
+
+
         </div>
         <div class="form-group">
           <label class="labelHead" for="password">
             <b>Password</b>
           </label>
-          <input type="password" id="password" placeholder="password">
-          <div class="form-error-messages"
-            id="error-no-password">
-            {{emptyPassword}}
-          </div>
-          <div class="form-error-messages"
-            id="error-minlength-password">
-            {{minlengthPassword}}
-          </div>
-          <div class="form-error-messages"
-            id="error-maxlength-password">
-            {{maxlengthPassword}}
-          </div>
-          <div class="form-error-messages"
-            id="error-pattern-password">
-            {{passwordPattern}}
-          </div>
+          <input type="password" formControlName="password" id="password" placeholder="password">
+          <ng-container
+            *ngIf="signupForm.get('password').invalid && (signupForm.get('password').dirty || signupForm.get('password').touched)">
+
+            <div *ngIf="signupForm.get('password').errors?.required" class="form-error-messages" id="error-no-password">
+              {{emptyPassword}}
+            </div>
+            <div *ngIf="signupForm.get('password').errors?.minlength" class="form-error-messages"
+              id="error-minlength-password">
+              {{minlengthPassword}}
+            </div>
+            <div *ngIf="signupForm.get('password').errors?.maxlength" class="form-error-messages"
+              id="error-maxlength-password">
+              {{maxlengthPassword}}
+            </div>
+            <div *ngIf="signupForm.get('password').errors?.pattern" class="form-error-messages"
+              id="error-pattern-password">
+              {{passwordPattern}}
+            </div>
+          </ng-container>
         </div>
 
         <div class="form-group">
           <label class="labelHead" for="mobile">
             Contact number
           </label>
-          <input type="number" value="" id="mobile" placeholder="mobile number">
-          <div id="error-mobile" class="form-error-messages" >
-            {{mobileErrMsg}}
-          </div>
+          <input formControlName="mobile" type="number" value="" id="mobile" placeholder="mobile number">
+          <ng-container
+            *ngIf="signupForm.get('mobile').invalid && (signupForm.get('mobile').dirty || signupForm.get('mobile').touched)">
+            <div *ngIf="signupForm.get('mobile').errors" id="error-mobile" class="form-error-messages">
+              {{mobileErrMsg}}
+            </div>
+            <!-- <div *ngIf="signupForm.get('mobile').errors?.pattern" id="error-mobile" class="form-error-messages">
+              You must enter a valid mobile number
+            </div> -->
+          </ng-container>
         </div>
 
         <div class="form-group">
           <label class="labelHead" for="email">
             Email
           </label>
-          <input type="email" value="" id="email" placeholder="Email">
-          <div id="error-email" class="form-error-messages">
-            {{emailErrMsg}}
-          </div>
+          <input type="email" formControlName="email" id="email" placeholder="Email">
+          <ng-container
+            *ngIf="signupForm.get('email').invalid && (signupForm.get('email').dirty || signupForm.get('email').touched)">
+            <div *ngIf="signupForm.get('email').errors?.required" id="error-email" class="form-error-messages">
+              {{emailErrMsg}}
+            </div>
+            <div *ngIf="signupForm.get('email').errors?.pattern" id="error-email" class="form-error-messages">
+              You must enter a valid Email ID
+            </div>
+          </ng-container>
         </div>
 
         <div class="form-group">
           <label class="labelHead" for="location">
             Location
           </label>
-          <input type="text" value="" id="location" placeholder="Location">
-          <div id="error-location" class="form-error-messages">
-            {{locationErrMsg}}
-          </div>
+          <input type="text" formControlName="location" id="location" placeholder="Location">
+          <ng-container
+            *ngIf="signupForm.get('location').invalid && (signupForm.get('location').dirty || signupForm.get('location').touched)">
+            <div *ngIf="signupForm.get('location').errors?.required" id="error-location" class="form-error-messages">
+              {{locationErrMsg}}
+            </div>
+          </ng-container>
         </div>
 
         <div class="col-sm-12 clmn12">
           <!-- call goBack method when clicking on this button-->
-          <button id="back" class="guest-btn">Back</button>
+          <button id="back" class="guest-btn" (click)="goBack()">Back</button>
           <!-- disable button if form not valid -->
           <!-- call signUp method when clicking on this button-->
-          <button id="signup" class="login-btn" type="submit">Create Account</button>
+          <button id="signup" class="login-btn" type="submit" [disabled]="!signupForm.valid" (click)="signUp()">Create Account</button>
         </div>
 
       </form>
