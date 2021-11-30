@@ -15,17 +15,17 @@
       </thead>
       <tbody>
         <!-- display all patients list -->
-        <tr id="table-row">
-          <td id="table-id" ><!--display patient_Id--></td>
-          <td id="table-firstname" class="td-column"><!--display patient_name--></td>
-          <td id="table-gender"><!--display patient_gender--></td>
-          <td id="table-dob"><!--display patient_dob--></td>
-          <td id="table-mobile"><!--display patient_mobile-->}</td>
-          <td id="table-email"><!--display patient_email--></td>
-          <td id="table-registeredOn"><!--display registeredDate--></td>
+        <tr *ngFor="let item of allPatients" id="table-row">
+          <td id="table-id" >{{item.patient_Id}}</td>
+          <td id="table-firstname" class="td-column">{{item.patient_name}}</td>
+          <td id="table-gender">{{item.patient_gender}}</td>
+          <td id="table-dob">{{item.patient_dob}}</td>
+          <td id="table-mobile">{{item.patient_mobile}}</td>
+          <td id="table-email">{{item.patient_email}}</td>
+          <td id="table-registeredOn">{{item.registeredDate}}</td>
           <td class="column-btn">
             <!--call view method with selected id when clicking this button-->
-            <a id="view" class="view-details">View Details</a>
+            <a id="view" class="view-details" (click)="view(item.patient_Id)">View Details</a>
           </td>
         </tr>
       </tbody>

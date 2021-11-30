@@ -11,20 +11,26 @@ import {ActivatedRoute, RouterLinkActive} from '@angular/router';
 })
 export class AllPatientsListComponent implements OnInit {
 
-  allPatients;
+  allPatients= [];
 
   constructor(private route: Router, private dataService: DataService) { }
 
   ngOnInit() {
 
     // get all patients list from service
+    this.dataService
+      .getAllPatientsList()
+      .subscribe(patients =>{
+        this.allPatients = patients;
+      }, err => {
 
+      })
   }
 
   view(patientId) {
 
     // should navigate to 'patientList' page with selected patientId
-    
+    this.route.navigate(['patientList', patientId]);
   }
-  
+
 }
