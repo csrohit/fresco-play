@@ -12,7 +12,7 @@ import { DataService } from '../../services/data.service';
 	styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-	
+
 	isLoggedIn: boolean = false;
 	loginForm: FormGroup;
 	isLoginFailed: boolean = false;
@@ -33,23 +33,35 @@ export class LoginComponent implements OnInit {
 	ngOnInit() {
 		// add necessary validators
 
-		this.loginForm = new FormGroup({
-			userName: new FormControl(''),
-			password: new FormControl('')
-		});
+    this.loginForm = new FormGroup({
+      userName: new FormControl('', [Validators.required, Validators.minLength(3), Validators.maxLength(20), Validators.pattern(/^[a-zA-z0-9]*$/)]),
+      password: new FormControl('', [Validators.required, Validators.minLength(8), Validators.maxLength(20), Validators.pattern(/^[a-zA-Z0-9$]*$/)])
+    });
 	}
+  doLogin() {
 
-	doLogin() {
-		// call authenticateUser method to perform login operation
-		// if success, redirect to profile page
-		// else display appropriate error message
-		   // reset the form
-	}
+    // call authenticateUser method to perform login operation
+    // if success, redirect to profile page
+    // else display appropriate error message
+    // reset the form
+    this.dataService.authenticateUser(this.loginForm.value.userName, this.loginForm.value.password)
+      .subscribe(res => {
+        if (res) {
+          this.route.navigate(['profile']);
+        } else {
+          localStorage.clear();
+        }
+      }, err=> {
 
-	signUp() {
-		// should navigate to register new user page
-	}
+      });
 
+    this.loginForm.reset();
+  }
+
+  signUp() {
+    // should navigate to register new user page
+    this.route.navigate(['register_user']);
+  }
 }
 
 
