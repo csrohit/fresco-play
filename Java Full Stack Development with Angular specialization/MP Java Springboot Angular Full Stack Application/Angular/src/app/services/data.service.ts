@@ -37,6 +37,7 @@ export class DataService {
             this.userId = user.id;
             localStorage.setItem('id', user.id)
             localStorage.setItem('token', user.token)
+            this.isLoggedIn = true;
             return true;
           } else {
             return false;
@@ -45,6 +46,7 @@ export class DataService {
         catchError(err => {
         this.userId = null;
         localStorage.clear();
+        this.isLoggedIn = false;
         return of(false);
       }))
       ;
@@ -53,7 +55,7 @@ export class DataService {
   getAuthStatus(): Observable<boolean> {
     // return true/false as a auth status
 
-    return of(this.userId ? true: false);
+    return of(this.isLoggedIn);
   }
 
   regNewUser(regNewUser): Observable<any> {
@@ -67,6 +69,7 @@ export class DataService {
   doLogOut() {
     // You should remove the key 'id', 'token' if exists
     localStorage.clear();
+    this.isLoggedIn = false;
     this.userId = null;
   }
 
