@@ -1,6 +1,6 @@
-import { HttpErrorResponse} from '@angular/common/http';
+import { HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject,Observable, of, throwError } from 'rxjs';
+import { BehaviorSubject, Observable, of, throwError } from 'rxjs';
 
 import { Credentials } from '../models/credentials.model';
 import { Users } from '../models/users';
@@ -13,7 +13,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 @Injectable()
 export class DataService {
 
-  userId : string;
+  userId: string;
 
   isLoggedIn = false;
   isLogIn: BehaviorSubject<boolean>;
@@ -150,6 +150,7 @@ export class DataService {
 
   private handleError(error: HttpErrorResponse) {
     // handle error here
+    return throwError(error);
   }
 
 
