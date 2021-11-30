@@ -14,7 +14,7 @@ export class ApiService {
   API_URL: String;
 
   constructor(private http: HttpClient) {
-    
+
     this.API_URL = 'api';
 
   }
@@ -22,7 +22,7 @@ export class ApiService {
   public checkLogin(user_name: string, password: string): Observable<any> {
     // should return response from server
 
-    // handle error 
+    // handle error
 
     return;
   }
@@ -30,7 +30,7 @@ export class ApiService {
   public regNewUser(regNewUser): Observable<any> {
     // should return response from server
 
-    // handle error 
+    // handle error
 
     return;
   }
@@ -38,7 +38,7 @@ export class ApiService {
   public getUserDetails(userId: string): Observable<any> {
     // should return user details retireved from server
 
-    // handle error 
+    // handle error
 
     return;
   }
@@ -46,7 +46,7 @@ export class ApiService {
   public updateDetails(userId:string, userDetails: any): Observable<any> {
     // should return response from server
 
-    // handle error 
+    // handle error
 
     return;
   }
@@ -54,7 +54,7 @@ export class ApiService {
   public registerPatient(patient: any): Observable<any> {
     // should return response from server if patientDetails added successfully
 
-    // handle error 
+    // handle error
 
     return;
   }
@@ -62,7 +62,7 @@ export class ApiService {
   public getAllPatientsList(): Observable<any> {
     // should return all patients from server
 
-    // handle error 
+    // handle error
 
     return;
   }
@@ -70,7 +70,7 @@ export class ApiService {
   public getParticularPatient(patientId): Observable<any> {
     // should return particular patient details from server
 
-    // handle error 
+    // handle error
 
     return;
   }
@@ -78,7 +78,7 @@ export class ApiService {
   public diseasesList(): Observable<any> {
     // should return diseases from server
 
-    // handle error 
+    // handle error
 
     return;
   }
@@ -86,7 +86,7 @@ export class ApiService {
   public scheduleAppointment(appointmentDetails: any) : Observable<any>{
     // should return response from server if appointment booked successfully
 
-    // handle error 
+    // handle error
 
     return;
   }
@@ -94,7 +94,7 @@ export class ApiService {
   public getSinglePatientAppointments(patientId): Observable<any> {
     // should return appointments of particular patient from server
 
-    // handle error 
+    // handle error
 
     return;
   }
@@ -110,7 +110,7 @@ export class ApiService {
   public requestedAppointments(): Observable<any> {
     // should return all requested appointments from server
 
-    // handle error 
+    // handle error
 
     return;
   }
