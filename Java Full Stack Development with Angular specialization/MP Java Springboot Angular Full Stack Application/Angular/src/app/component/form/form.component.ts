@@ -39,11 +39,12 @@ export class FormComponent implements OnInit {
   constructor( fb: FormBuilder,private datePipe: DatePipe,private route: Router, private dataService: DataService){
     // add necessary validators
     this.complexForm = fb.group({
-      'name' : [''],
-      'gender' : [null],
-      'dob' : [null],
-      'mobile' : [''],
-      'email' : ['']
+      'name' : ['',[Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
+      'gender': [null, Validators.required],
+      'dob': [null, Validators.required],
+      'mobile': ['', [Validators.required, Validators.maxLength(10), Validators.minLength(10), Validators.pattern(/^[0-9]{10,}/)]],
+      'email': ['', [Validators.required, Validators.pattern(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)]],
+      'description': ''
     })
   }
 
@@ -52,7 +53,19 @@ export class FormComponent implements OnInit {
     // should reister new patient using service
        // fields that need to be added: patient_name, patient_gender, patient_dob, patient_mobile, patient_email
     // if added successfully should redirect to 'patientList' page
-
+    const patient = {
+      patient_name: value.name,
+      patient_gender: value.gender,
+      patient_dob: value.dob,
+      patient_mobile: value.mobile,
+      patient_email: value.email,
+      desc: value.description,
+    };
+    this.dataService.registerPatient(patient).subscribe(res => {
+      if(res){
+        this.route.navigate(['patientList']);
+      }
+    })
   }
 
 }

@@ -5,41 +5,42 @@
   <div class="details-container">
     <h2 class="view-header" style="font-weight: bold;">Patient Details</h2>
     <div class="div-name">
-      ID:<span class="details"><!--display patient_Id--></span>
+      ID:<span class="details">{{patient._id}}</span>
     </div>
     <div class="div-name">
-      Name:<span class="name"><!--display patient_name--></span>
+      Name:<span class="name">{{patient.fname}} {{patient.lname}}</span>
     </div>
     <div class="div-name">
-      Gender:<span class="details"><!--display patient_gender--></span>
+      Gender:<span class="details">{{patient.gender}}</span>
     </div>
     <div class="div-name">
-      Date of birth:<span class="details"><!--display patient_dob--></span>
+      Date of birth:<span class="details">{{patient.dob| date: 'yyyy/MM/dd'}}</span>
     </div>
     <div class="div-name">
-      Mobile:<span class="details"><!--display patient_mobile--></span>
+      Mobile:<span class="details">{{patient.mobile}}</span>
     </div>
     <div class="div-name">
-      Email:<span class="details"><!--display patient_email--></span>
+      Email:<span class="details">{{patient.email}}</span>
     </div>
     <div class="div-name">
-      Registered on:<span class="details"><!--display registeredDate--></span>
+      Registered on:<span class="details">{{patient.createdAt| date: 'dd/MM/yyyy hh:mm:ss'}}</span>
     </div>
     <div class="update">
 
         <!-- disable the same when clicking on this button -->
         <!-- call bookAppointment method when clicking on this button-->
-        <button id="book-appointment" class="btn btn-success book-btn">Book Appointment</button>
+        <button id="book-appointment" class="btn btn-success book-btn" [disabled]="!isBookAppointment" (click)="bookAppointment()">Book Appointment</button>
 
         <!-- disable the same when clicking on this button -->
         <!-- call scheduledAppointment method when clicking on this button-->
-        <button id="Scheduled-appointment" class="btn btn-warning book-btn">Scheduled Appointment</button>
+        <button id="Scheduled-appointment" class="btn btn-warning book-btn" [disabled]="!isScheduledAppointment" (click)="scheduledAppointment()">Scheduled Appointment</button>
     </div>
   </div>
 
+
     <!-- show book appointment form if "Book Appointment" button clicked-->
     <!-- call scheduleAppointment method if form is valid-->
-    <form id="form-container" class="form-container">
+    <form *ngIf="isFormEnabled" [formGroup]="appointmentForm" id="form-container" class="form-container">
       <h2 class="view-header" style="padding-left: 100px">Book Appointment</h2>
         <div class="form-content">
 
@@ -52,7 +53,7 @@
                   <select id="select-selectDisease" class="text-box select" >
                     <option class="label-content" value="null" disabled="true" >Select disease</option>
                     <!-- display diseases list-->
-                    <option id="option-value" class="label-content"><!-- display diseases here--></option>
+                    <option *ngFor="let item of listOfDiseases" id="option-value" class="label-content">{{item}}</option>
                   </select>
                 </div>
                 <div id="error-no-selectDisease" class="alert alert-danger error-msg">
@@ -81,7 +82,7 @@
                 tentativeDate:<span class="required">*</span>
               </label>
               <div >
-                <input id="date-input" class="form-control date-input glyphicon glyphicon-calendar" type="date" placeholder="tentativeDate" required min="{{today}}">
+                <input id="date-input" class="form-control date-input glyphicon glyphicon-calendar" type="date" placeholder="tentativeDate" min="{{today}}">
               </div>
               <div id="error-no-tentativeDate" class="alert alert-danger error-msg">
                 notentativeDate
@@ -90,17 +91,17 @@
           </div>
         <div class="form-group">
           <!-- disable button if form not valid -->
-          <button type="submit" id="submit-btn" class="btn btn-primary submit-btn">Schedule</button>
+          <button type="submit" id="submit-btn" class="btn btn-primary submit-btn" [disabled]="!appointmentForm.valid" (click)="scheduleAppointment()">Schedule</button>
         </div>
       </div>
     </form>
 
   <!-- show Scheduled Appointment table if "Scheduled Appointment" button clicked-->
-  <div id="table-container" class="table-container">
+  <div id="table-container" *ngIf="isTableEnabled" class="table-container">
     <h2 class="view-header">Scheduled Appointment</h2>
     <!-- display no records found message if there is no appointment -->
     <div class="no-records">No Records Found</div>
-    <table  class="table-class">
+    <table class="table-class">
       <thead>
         <tr class="table-head">
           <th>Appointment id</th>
@@ -113,15 +114,15 @@
       </thead>
       <tbody>
         <!--display scheduled appointments-->
-        <tr id="table-row">
-          <td id="table-id" ><!--display booking_id--></td>
-          <td id="table-disease" class="td-column"><!--display disease--></td>
-          <td id="table-priority" ><!--display priority--></td>
-          <td id="table-tentativedate"><!--display tentativeDate--></td>
-          <td id="table-requestedOn"><!--display registeredDate--></td>
+        <tr *ngFor="let item of ScheduledAppointmentResponse" id="table-row">
+          <td id="table-id" >{{item._id}}</td>
+          <td id="table-disease" class="td-column">{{item.disease}}</td>
+          <td id="table-priority" >{{item.priority}}</td>
+          <td id="table-tentativedate">{{item.AppointmentDate| date: 'dd/MM/yyyy'}}</td>
+          <td id="table-requestedOn">{{item.bookingTime| date: 'dd/MM/yyyy hh:mm:ss'}}</td>
           <td class="column-btn">
             <!-- call cancelAppointment method with selected id when clicking on this button-->
-            <button id="user-cancel" class="btn btn-danger btn-spc">
+            <button id="user-cancel" (click)="cancelAppointment(item._id)" class="btn btn-danger btn-spc">
               <span class="btn-value">Cancel Appointment</span>
             </button>
           </td>
@@ -129,5 +130,6 @@
       </tbody>
     </table>
   </div>
+
 
 </div>

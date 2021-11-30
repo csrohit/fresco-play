@@ -28,12 +28,12 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['ChromeHeadless'],
-    singleRun: true,
+    singleRun: false,
     restartOnFileChange: true,
     junitReporter: {
       useBrowserName: false,
       outputFile : 'unit.xml',
       suite: 'unit'
-    }    
+    }
   });
 };

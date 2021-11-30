@@ -22,7 +22,7 @@ export class ProfileComponent implements OnInit {
   mobileErrMsg = 'You must enter a valid mobile number';
   emailErrMsg = 'You must enter a valid Email ID';
   locationErrMsg = 'You must enter the location';
-  constructor(private dataService: DataService) { 
+  constructor(private dataService: DataService) {
 
   }
 
@@ -37,33 +37,49 @@ export class ProfileComponent implements OnInit {
       email: new FormControl(''),
       location: new FormControl('')
     });
-    
+
     // get profile details and display it
-    
+
   }
 
   getProfileDetails() {
 
     // retrieve user details from service using userId
+    this.dataService.getUserDetails()
+    .subscribe(res => {
+      this.userDetails = res;
+    }, err => {
+
+    });
 
   }
 
   changeMyProfile() {
-
+    const id = localStorage.getItem("id");
     // if successfully changed the profile it should display new details hiding the form
+    this.dataService.updateProfile(id, this.editProfileForm.value)
+    .subscribe(res => {
+      if(res) {
+        this.discardEdit();
+      this.getProfileDetails();
+      }
+    }, err => {
 
+    })
   }
 
   editMyProfile() {
 
     // change editProfile property value appropriately
+    this.editProfile = true;
+    this.editProfileForm.patchValue(this.userDetails);
 
   }
 
   discardEdit() {
 
     // change editProfile property value appropriately
+    this.editProfile = false;
 
   }
-
 }
