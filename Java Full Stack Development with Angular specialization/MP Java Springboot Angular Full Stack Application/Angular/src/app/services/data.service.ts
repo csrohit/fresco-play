@@ -103,7 +103,7 @@ export class DataService {
     return this.api.getAllPatientsList();
   }
 
-  getParticularPatient(id: Patient['patient_Id']): Observable<any> {
+  getParticularPatient(id: any): Observable<any> {
     // should return particular patient details from server
 
     // handle error

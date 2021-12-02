@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<testsuite name="Edge 96.0.1054.34 (Windows 10)" package="unit" timestamp="2021-11-30T15:55:36" id="0" hostname="Chin2" tests="154" errors="0" failures="0" time="1.822">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.34"/>
+  </properties>
+  <testcase name="ProfileComponent should submit profile changes with validation" time="0.106" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should not call getProfileDetails if profile is not updated" time="0.013" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should get getUserDetails method error on occurence of error" time="0.018" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should display edit profile form on edit profile button click" time="0.021" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should display profile details on clicking discard button" time="0.016" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent getUserDetails should return error on occurence of error" time="0.012" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent updateProfile should return error on occurence of error" time="0.013" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should validate the edit profile form" time="0.016" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should populate form fields with values on edit profile button click" time="0.016" classname=".ProfileComponent"/>
+  <testcase name="ProfileComponent should display profile details on load" time="0.022" classname=".ProfileComponent"/>
+  <testcase name="LoginComponent should display maxlength password validation error when the password length exceeds 20" time="0.035" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display password pattern validation error" time="0.011" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display no password validation error when the field kept as null(dirty)" time="0.009" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display username pattern validation error" time="0.01" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should not display any error when the username field is valid" time="0.013" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display minlength 8 password validation error when the password length less than 8" time="0.013" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should not display password error when the password field is valid" time="0.012" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should enable login button(form valid) when both field are valid" time="0.015" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display no username validation error when the field kept as null(dirty)" time="0.021" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should hide validation messages and call login method from authservice for valid credentials" time="0.019" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should not redirect to other pages on incorrect credentials" time="0.018" classname=".LoginComponent"/>
+  <testcase name="LoginComponent clear localStorage if any, when login" time="0.015" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should redirect to profile page on correct credentials" time="0.032" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should not redirect to other pages on occurence of error" time="0.016" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should navigate to register-new-user page when clicked on &quot;sign up&quot; button" time="0.021" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display minlength 3 username validation error when the username length less than 3" time="0.009" classname=".LoginComponent"/>
+  <testcase name="LoginComponent should display maxlength 20 username validation error when the username length greater than 20" time="0.012" classname=".LoginComponent"/>
+  <testcase name="LoginComponent All validation errors should be hidden and form should be invalid by default" time="0.012" classname=".LoginComponent"/>
+  <testcase name="LoginComponent #dologin should return false if form is invalid" time="0.013" classname=".LoginComponent"/>
+  <testcase name="ViewPatientComponent should call scheduleAppointment method of DataService with appointment details" time="0.046" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should get particular patient appointments when clicking on &quot;scheduled Appointment&quot; button" time="0.011" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call scheduleded method after deleting an appointment" time="0.015" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent &quot;Book Appointment&quot; button should be disabled after clicking on &quot;Scheduled Appointment&quot;" time="0.011" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call scheduleAppointment method for valid form input&quot;" time="0.028" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call getParticularPatient method of DataService by default" time="0.01" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent Book Appointment &amp; Scheduled Appointment should be enabled by default" time="0.007" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent &quot;Scheduled Appointment&quot; button should be disabled after clicking on &quot;Scheduled Appointment&quot;" time="0.015" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call cancelAppointment method with selected appointment id" time="0.022" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should navigate to requested_appointments page after booking an appointment" time="0.029" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should call deleteAppointment method of DataService with selected appointment id" time="0.013" classname=".ViewPatientComponent"/>
+  <testcase name="ViewPatientComponent should get diseasesList when clicking on &quot;Book Appointment&quot;" time="0.014" classname=".ViewPatientComponent"/>
+  <testcase name="RegisterNewUserComponent should display email pattern validation error" time="0.026" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should not display email validation error when the email field is valid" time="0.011" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display password pattern validation error" time="0.016" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should not redirect to login page on occurence of error" time="0.023" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent navigate to login page when clicked on back button" time="0.018" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should redirect to login page after successful registration" time="0.027" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should not display password error when the password field is valid" time="0.012" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display minlength 3 username validation error when the username length less than 3" time="0.016" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should not display location validation error when the location field is valid" time="0.013" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display no password validation error when the field kept as null(dirty)" time="0.016" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display no username validation error when the field kept as null(dirty)" time="0.016" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should not display any error when the username field is valid" time="0.016" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display location validation error when the field kept as null(dirty)" time="0.012" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should not display mobile error when the mobile field is valid" time="0.008" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display mobile pattern validation error" time="0.014" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should navigate to login when clicked on back button" time="0.026" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent All validation errors should be hidden and form should be invalid by default" time="0.013" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display username pattern validation error" time="0.017" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should call signUp method when all fields are valid" time="0.026" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display maxlength 20 password validation error when the password length greater less than 20" time="0.009" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display maxlength 20 username validation error when the username length greater than 20" time="0.021" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should display minlength 8 password validation error when the password length less than 8" time="0.011" classname=".RegisterNewUserComponent"/>
+  <testcase name="RegisterNewUserComponent should enable Create Account button(form valid) when all fields are valid" time="0.011" classname=".RegisterNewUserComponent"/>
+  <testcase name="HeaderInterceptor should not add an Authorization header for checkLogin method" time="0.008" classname=".HeaderInterceptor"/>
+  <testcase name="HeaderInterceptor should add an Authorization header for getParticularPatient method" time="0.004" classname=".HeaderInterceptor"/>
+  <testcase name="HeaderInterceptor should add an Authorization header for getAllPatientsList method" time="0.001" classname=".HeaderInterceptor"/>
+  <testcase name="HeaderInterceptor should add an Authorization header for scheduleAppointment method" time="0.002" classname=".HeaderInterceptor"/>
+  <testcase name="HeaderInterceptor should add an Authorization header for deleteAppointment method" time="0.002" classname=".HeaderInterceptor"/>
+  <testcase name="HeaderInterceptor should add an Authorization header for requestedAppointments method" time="0.001" classname=".HeaderInterceptor"/>
+  <testcase name="HeaderInterceptor should add an Authorization header for getSinglePatientAppointments method" time="0.001" classname=".HeaderInterceptor"/>
+  <testcase name="HeaderInterceptor should add an Authorization header for diseasesList method" time="0.001" classname=".HeaderInterceptor"/>
+  <testcase name="HeaderInterceptor should add an Authorization header for getUserDetails method" time="0.003" classname=".HeaderInterceptor"/>
+  <testcase name="HeaderInterceptor should not add an Authorization header for regNewUser method" time="0.002" classname=".HeaderInterceptor"/>
+  <testcase name="HeaderInterceptor should add an Authorization header for registerPatient method" time="0.002" classname=".HeaderInterceptor"/>
+  <testcase name="HeaderInterceptor should add an Authorization header for updateDetails method" time="0.007" classname=".HeaderInterceptor"/>
+  <testcase name="ApiService registerPatient should add patient details in post request body" time="0.003" classname=".ApiService"/>
+  <testcase name="ApiService getParticularPatient should return particular patient details" time="0.003" classname=".ApiService"/>
+  <testcase name="ApiService deleteAppointment should return success status if appointment deleted" time="0.003" classname=".ApiService"/>
+  <testcase name="ApiService getAllPatientsList should return all patient details" time="0.003" classname=".ApiService"/>
+  <testcase name="ApiService scheduleAppointment should return success message if POST method success" time="0.006" classname=".ApiService"/>
+  <testcase name="ApiService requestedAppointments should return all appointments requested by all patients" time="0.005" classname=".ApiService"/>
+  <testcase name="ApiService getSinglePatientAppointments should return requested appointments of particular patient" time="0.012" classname=".ApiService"/>
+  <testcase name="ApiService regNewUser should return status as success if new user registered successfully" time="0.005" classname=".ApiService"/>
+  <testcase name="ApiService diseasesList should return the list of diseases" time="0.012" classname=".ApiService"/>
+  <testcase name="ApiService scheduleAppointment should add appointment details in post request body" time="0.005" classname=".ApiService"/>
+  <testcase name="ApiService login should return user details if auth success" time="0.007" classname=".ApiService"/>
+  <testcase name="ApiService login should return error message if auth fails" time="0.007" classname=".ApiService"/>
+  <testcase name="ApiService should be created" time="0.002" classname=".ApiService"/>
+  <testcase name="ApiService login should send user credentials in post request body" time="0.004" classname=".ApiService"/>
+  <testcase name="ApiService regNewUser should return status as failed if new user is not registered(email is already exists) " time="0.01" classname=".ApiService"/>
+  <testcase name="ApiService getUserDetails should return false status if userId is not valid" time="0.007" classname=".ApiService"/>
+  <testcase name="ApiService updateDetails should return status 500 if user details not updated" time="0.004" classname=".ApiService"/>
+  <testcase name="ApiService getUserDetails should return user details" time="0.01" classname=".ApiService"/>
+  <testcase name="ApiService updateDetails should return new user details after submitting the update" time="0.008" classname=".ApiService"/>
+  <testcase name="ApiService registerPatient should return success if POST method success" time="0.009" classname=".ApiService"/>
+  <testcase name="AllRequestedAppointmentsComponent should call cancelAppointment method with the id of selected patient" time="0.019" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should navigate to patientList page with selected patientId" time="0.008" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should call view method with the id of selected patient" time="0.011" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should call requestedAppointments method by default " time="0.009" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should fetch all appointments after cancelling an appointment" time="0.012" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="AllRequestedAppointmentsComponent should call deleteAppointment method of dataService with the id of selected patient" time="0.014" classname=".AllRequestedAppointmentsComponent"/>
+  <testcase name="AuthGuardService #canActivate should return false and navigate to login if user is not logged in" time="0.026" classname=".AuthGuardService"/>
+  <testcase name="AuthGuardService #canActivate should navigate to login if error occurs" time="0.003" classname=".AuthGuardService"/>
+  <testcase name="AuthGuardService #canActivate should return true for logged in users" time="0.005" classname=".AuthGuardService"/>
+  <testcase name="AllPatientsListComponent should navigate to patientList page with selected patientId : case 1" time="0.015" classname=".AllPatientsListComponent"/>
+  <testcase name="AllPatientsListComponent should call getAllPatientsList method when page loads " time="0.009" classname=".AllPatientsListComponent"/>
+  <testcase name="AllPatientsListComponent should navigate to patientList page with selected patientId : case 2" time="0.017" classname=".AllPatientsListComponent"/>
+  <testcase name="AllPatientsListComponent should call view method with the id of selected patient" time="0.015" classname=".AllPatientsListComponent"/>
+  <testcase name="HeaderComponent should get profile details by default(when page loads)" time="0.017" classname=".HeaderComponent"/>
+  <testcase name="HeaderComponent should get error on occurence of error" time="0.013" classname=".HeaderComponent"/>
+  <testcase name="HeaderComponent should get logged user details" time="0.011" classname=".HeaderComponent"/>
+  <testcase name="HeaderComponent should logout when clicked on &quot;logout&quot; menu" time="0.015" classname=".HeaderComponent"/>
+  <testcase name="FormComponent should display no name validation error when the field kept as null(dirty)" time="0.018" classname=".FormComponent"/>
+  <testcase name="FormComponent should display name minimum length validation error when the field has less than 3 length" time="0.015" classname=".FormComponent"/>
+  <testcase name="FormComponent should display mobile number pattern validation error when the field has value" time="0.02" classname=".FormComponent"/>
+  <testcase name="FormComponent All validation errors should be hidden and form should be invalid by default" time="0.01" classname=".FormComponent"/>
+  <testcase name="FormComponent should navigate to PatientList page after successful registration" time="0.022" classname=".FormComponent"/>
+  <testcase name="FormComponent should not display email validation error when the email field is valid" time="0.012" classname=".FormComponent"/>
+  <testcase name="FormComponent should display no date of birth validation error when the field kept as null(dirty)" time="0.013" classname=".FormComponent"/>
+  <testcase name="FormComponent should call submitform method for valid form" time="0.03" classname=".FormComponent"/>
+  <testcase name="FormComponent should display email pattern validation error" time="0.013" classname=".FormComponent"/>
+  <testcase name="FormComponent should display name maximum length validation error when the field has greater than 20 length" time="0.013" classname=".FormComponent"/>
+  <testcase name="FormComponent gender validation gets pass when clicking male radio button" time="0.009" classname=".FormComponent"/>
+  <testcase name="FormComponent gender validation gets pass when clicking female radio button" time="0.01" classname=".FormComponent"/>
+  <testcase name="FormComponent gender field validity" time="0.022" classname=".FormComponent"/>
+  <testcase name="FormComponent Date of birth validation gets pass when the field has valid value" time="0.014" classname=".FormComponent"/>
+  <testcase name="FormComponent mobile field validity" time="0.019" classname=".FormComponent"/>
+  <testcase name="DataService getAllPatientsList should return error on occurence of error" time="0.003" classname=".DataService"/>
+  <testcase name="DataService regNewUser should return success status if user added successfully" time="0.003" classname=".DataService"/>
+  <testcase name="DataService requestedAppointments should return all appointments booked by all patients" time="0.002" classname=".DataService"/>
+  <testcase name="DataService doLogOut should store clear localStorage" time="0.002" classname=".DataService"/>
+  <testcase name="DataService requestedAppointments should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService updateProfile should return true on providing valid user details" time="0.001" classname=".DataService"/>
+  <testcase name="DataService deleteAppointment should return success status on providing valid appointment id" time="0.005" classname=".DataService"/>
+  <testcase name="DataService diseasesList should return list of diseases" time="0.001" classname=".DataService"/>
+  <testcase name="DataService getUserDetails should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService authenticateUser should return false on occurence of error" time="0.002" classname=".DataService"/>
+  <testcase name="DataService getAllPatientsList should return user details on providing valid user id" time="0.001" classname=".DataService"/>
+  <testcase name="DataService regNewUser status as failed if new user is not registered(username or email is already exists)" time="0.001" classname=".DataService"/>
+  <testcase name="DataService deleteAppointment should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService getUserDetails should return user details on providing valid user id" time="0.002" classname=".DataService"/>
+  <testcase name="DataService getParticularPatient should return patient details on providing valid user id" time="0.001" classname=".DataService"/>
+  <testcase name="DataService scheduleAppointment should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService getSinglePatientAppointments should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService authenticateUser should store id, token in localStorage if auth success" time="0.002" classname=".DataService"/>
+  <testcase name="DataService getParticularPatient should return error on occurence of error" time="0.002" classname=".DataService"/>
+  <testcase name="DataService registerPatient should return patientDetails  on reporting with valid user id " time="0.006" classname=".DataService"/>
+  <testcase name="DataService scheduleAppointment should return success status on reporting with valid appointmentDetails " time="0.001" classname=".DataService"/>
+  <testcase name="DataService updateProfile should return false on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService diseasesList should return error on occurence of error" time="0.001" classname=".DataService"/>
+  <testcase name="DataService authenticateUser should return true if auth success" time="0.002" classname=".DataService"/>
+  <testcase name="DataService registerPatient should return error on occurence of error " time="0.001" classname=".DataService"/>
+  <testcase name="DataService getSinglePatientAppointments should return appointment details on providing valid appointment id" time="0.001" classname=".DataService"/>
+  <system-out>
+    <![CDATA[Chrome Headless 96.0.4664.45 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 96.0.4664.45 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 96.0.4664.45 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Edge 96.0.1054.34 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Edge 96.0.1054.34 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Edge 96.0.1054.34 (Windows 10) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
