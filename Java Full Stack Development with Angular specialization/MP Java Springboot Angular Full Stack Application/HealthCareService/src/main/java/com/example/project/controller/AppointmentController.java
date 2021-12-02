@@ -6,18 +6,23 @@ import java.util.List;
 
 import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.project.Model.Appointment;
 import com.example.project.service.AppointmentService;
 
 @RestController
+@RequestMapping("appointment")
 public class AppointmentController {
-	
+
+    @Autowired
+    private AppointmentService appointmentService;
+
+    @PostMapping("register")
+    public ResponseEntity<Appointment> registerAppointment(@RequestBody Appointment appointment){
+        return ResponseEntity.ok(appointmentService.save(appointment));
+    }
 	
 }

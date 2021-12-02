@@ -12,15 +12,15 @@ import org.hibernate.annotations.GenericGenerator;
 @Entity
 public class Appointment {
     @Id
-    @GeneratedValue(generator="system-uuid")
-    @GenericGenerator(name="system-uuid", strategy = "uuid")
+    @GeneratedValue(generator = "system-uuid")
+    @GenericGenerator(name = "system-uuid", strategy = "uuid")
     private String booking_id;
     private String disease;
     private Date tentativeDate;
     private String priority;
     private String patientId;
     private Date registeredDate;
-    
+
     public String getBooking_id() {
         return booking_id;
     }
@@ -60,9 +60,11 @@ public class Appointment {
     public void setPatientId(String patientId) {
         this.patientId = patientId;
     }
+
     public Date getRegisteredDate() {
         return registeredDate;
     }
+
     public void setRegisteredDate(Date registeredDate) {
         this.registeredDate = registeredDate;
     }
@@ -76,19 +78,20 @@ public class Appointment {
         this.patientId = patientId;
         this.registeredDate = registeredDate;
     }
-    public Appointment( String disease, Date tentativeDate, String priority, String patientId) {
+
+    public Appointment(String disease, Date tentativeDate, String priority, String patientId) {
         super();
-        
+
         this.disease = disease;
         this.tentativeDate = tentativeDate;
         this.priority = priority;
         this.patientId = patientId;
-        
+
     }
 
     public Appointment() {
         super();
     }
-    
-    
+
+
 }

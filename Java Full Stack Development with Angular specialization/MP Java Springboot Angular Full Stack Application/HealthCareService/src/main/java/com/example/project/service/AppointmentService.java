@@ -15,5 +15,12 @@ import com.example.project.repository.PatientRepository;
 
 @Service
 public class AppointmentService {
-	
+
+    @Autowired
+    private AppointmentRepository appointmentRepository;
+
+
+    public Appointment save(Appointment appointment) {
+        return appointmentRepository.save(appointment);
+    }
 }

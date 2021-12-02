@@ -23,10 +23,12 @@ private String patient_dob;
 private String patient_email;
 private String patient_mobile;
 private Date registeredDate;
-public String getPatient_Id() {
-    return patient_Id;
-}
-public void setPatient_Id(String patient_Id) {
+
+    public String getPatient_Id() {
+        return patient_Id;
+    }
+
+    public void setPatient_Id(String patient_Id) {
     this.patient_Id = patient_Id;
 }
 public String getPatient_name() {
