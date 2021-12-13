@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<testsuite name="Node.js (linux; U; rv:v8.15.1)" package="unit" timestamp="2021-12-11T03:15:53" id="0" hostname="workspacepftos489pljdg1qt.ws-95c6b9f7b-27fps" tests="5" errors="0" failures="0" time="0.033">
+  <properties>
+    <property name="browser.fullName" value="Node.js (linux; U; rv:v8.15.1)"/>
+  </properties>
+  <testcase name="D3 JS: Unit Testing: .list_items li[0] fontSize to be 10px" time="0.009" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: .list_items li[1] fontSize to be 20px" time="0.009" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: .list_items li[2] fontSize to be 30px" time="0.006" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: .list_items li[3] fontSize to be 40px" time="0.004" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: .list_items li[4] fontSize to be 50px" time="0.005" classname="unit.D3 JS:"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

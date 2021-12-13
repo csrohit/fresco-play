@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<testsuite name="Node.js (linux; U; rv:v8.15.1)" package="unit" timestamp="2021-12-12T05:41:21" id="0" hostname="workspaceyoe5m5st5r6lhw8g.ws-864bd57645-446kw" tests="7" errors="0" failures="0" time="0.05">
+  <properties>
+    <property name="browser.fullName" value="Node.js (linux; U; rv:v8.15.1)"/>
+  </properties>
+  <testcase name="D3 JS: Unit Testing: svg should be created" time="0.014" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: should have the correct height" time="0.008" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: should have the correct width" time="0.006" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: should have rect" time="0.008" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: should have data in rect" time="0.004" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: data length should be greater than zero" time="0.005" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: data length should be five" time="0.005" classname="unit.D3 JS:"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

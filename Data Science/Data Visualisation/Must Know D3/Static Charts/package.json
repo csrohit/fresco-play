@@ -1,0 +1,24 @@
+{
+  "name": "karma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-jsdom-launcher": "^2.0.0",
+    "karma-junit-reporter": "^1.2.0"
+  },
+  "scripts": {
+    "test": "./node_modules/karma/bin/karma start",
+    "start": "http-server -a 0.0.0.0 -p 8000 -c-1 ./app"
+  },
+  "author": "",
+  "license": "ISC"
+}

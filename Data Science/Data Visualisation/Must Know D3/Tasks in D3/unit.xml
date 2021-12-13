@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<testsuite name="Node.js (linux; U; rv:v8.15.1)" package="unit" timestamp="2021-12-11T02:08:22" id="0" hostname="workspacewmy0xrxhd89czqxo.ws-7f66fd44d6-g94tg" tests="3" errors="0" failures="0" time="0.021">
+  <properties>
+    <property name="browser.fullName" value="Node.js (linux; U; rv:v8.15.1)"/>
+  </properties>
+  <testcase name="D3 JS: Unit Testing: li[2] text to be Hello World" time="0.01" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: li[2] style to be blue" time="0.007" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: li[2] should have class big" time="0.004" classname="unit.D3 JS:"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
