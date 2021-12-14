@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<testsuite name="Node.js (linux; U; rv:v8.15.1)" package="unit" timestamp="2021-12-13T03:33:43" id="0" hostname="workspace1owvwnqyv1jgpquy.ws-58d9bff79c-29nrp" tests="6" errors="0" failures="0" time="0.05">
+  <properties>
+    <property name="browser.fullName" value="Node.js (linux; U; rv:v8.15.1)"/>
+  </properties>
+  <testcase name="D3 JS: Unit Testing: svg should be created" time="0.013" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: should have the correct height" time="0.01" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: should have the correct width" time="0.008" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: should have arc/pie with 5 sections(elements)" time="0.006" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: should have pie" time="0.008" classname="unit.D3 JS:"/>
+  <testcase name="D3 JS: Unit Testing: should have data" time="0.005" classname="unit.D3 JS:"/>
+  <system-out>
+    <![CDATA[
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
