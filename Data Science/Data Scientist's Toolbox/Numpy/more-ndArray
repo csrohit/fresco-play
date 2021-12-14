@@ -1,0 +1,16 @@
+import numpy as np
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+def arr(a, x, y, z):
+    #Write your code here
+    x1 = np.arange(2, a, 2)
+    x2 = np.linspace(x,y,z)
+    print(x1)
+    print(x2)
+    
+
+if __name__ == "__main__":
+    a=int(input())
+    x, y, z=list(map(int,input().split()))
+    arr(a, x, y, z)
+	

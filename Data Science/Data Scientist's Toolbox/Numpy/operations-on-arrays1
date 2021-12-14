@@ -1,0 +1,15 @@
+import numpy as np
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+def array_oper(num1,num2):
+    
+    x1 = np.arange(num1, num2+1).reshape(2,3)
+    x2 = np.add(np.square(x1),5)
+    print(x2)
+    
+    
+
+if __name__ == "__main__":
+    num1 = int(input())
+    num2 = int(input())
+    array_oper(num1,num2)
