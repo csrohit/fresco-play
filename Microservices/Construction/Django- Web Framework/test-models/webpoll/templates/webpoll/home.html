@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% if recent_question_list %}
+    <ul>
+    {% for question in recent_question_list %}
+        <li><a href="{% url 'webpoll:detail' question.id %}">{{ question.questionname }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Questions not available for polling!</p>
+{% endif %}

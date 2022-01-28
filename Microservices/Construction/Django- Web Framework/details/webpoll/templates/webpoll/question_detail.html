@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<h2>{{ question.questionname }}</h2>
+
+<form>
+
+{% for choice in question.choice_set.all %}
+{% endfor %}
+<input type="submit" value="Submit Vote" />
+</form>
+

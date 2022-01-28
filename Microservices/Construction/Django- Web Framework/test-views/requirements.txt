@@ -1,0 +1,17 @@
+beautifulsoup4==4.6.0
+Django==1.11.10
+djangotoolbox==1.8.0
+future==0.16.0
+jsondiff==1.1.1
+nose==1.3.7
+pytest==3.2.1
+python-dateutil==2.6.1
+requests==2.18.1
+six==1.10.0
+SQLAlchemy==1.1.12
+traitlets==4.3.2
+unittest-tap-reporting==0.2
+unittest-xml-reporting==2.1.0
+urllib3==1.21.1
+virtualenv==15.1.0
+virtualenv-clone==0.2.6

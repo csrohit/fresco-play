@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<h2>{{ question.questionname }}</h2>
+
+<!-- code to display error_message -->
+
+<form>
+
+{% for choice in question.choice_set.all %}
+<!-- code to display choices as radio buttons -->
+{% endfor %}
+<input type="submit" value="Submit Vote" />
+</form>

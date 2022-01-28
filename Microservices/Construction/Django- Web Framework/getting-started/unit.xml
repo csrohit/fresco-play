@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite errors="0" failures="0" name="webpoll.tests.QuestionIndexViewTests-20220128023802" skipped="0" tests="5" time="0.028">
+		<testcase classname="webpoll.tests.QuestionIndexViewTests" name="test_future_question" time="0.014"/>
+		<testcase classname="webpoll.tests.QuestionIndexViewTests" name="test_no_questions" time="0.005"/>
+		<testcase classname="webpoll.tests.QuestionIndexViewTests" name="test_past_future_question" time="0.004"/>
+		<testcase classname="webpoll.tests.QuestionIndexViewTests" name="test_past_question" time="0.003"/>
+		<testcase classname="webpoll.tests.QuestionIndexViewTests" name="test_two_questions" time="0.003"/>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testsuite>
+	<testsuite errors="0" failures="0" name="webpoll.tests.QuestionModelTests-20220128023802" skipped="0" tests="3" time="0.000">
+		<testcase classname="webpoll.tests.QuestionModelTests" name="test_question_is_current" time="0.000"/>
+		<testcase classname="webpoll.tests.QuestionModelTests" name="test_question_is_future" time="0.000"/>
+		<testcase classname="webpoll.tests.QuestionModelTests" name="test_question_is_old" time="0.000"/>
+		<system-out>
+<![CDATA[]]>		</system-out>
+		<system-err>
+<![CDATA[]]>		</system-err>
+	</testsuite>
+</testsuites>
